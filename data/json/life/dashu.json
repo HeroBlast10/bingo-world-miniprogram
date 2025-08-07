@@ -1,0 +1,125 @@
+{
+    "bingoId": "dashu",
+    "title": "大叔宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你已经变成大叔了",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "吃夜宵",
+                "type": "standard"
+            },
+            {
+                "text": "有一块腹肌",
+                "type": "standard"
+            },
+            {
+                "text": "背手走路",
+                "type": "standard"
+            },
+            {
+                "text": "喝茶",
+                "type": "standard"
+            },
+            {
+                "text": "需要上班",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "看不懂部分网络用语",
+                "type": "standard"
+            },
+            {
+                "text": "吃保健品",
+                "type": "standard"
+            },
+            {
+                "text": "觉得周围很多傻逼",
+                "type": "standard"
+            },
+            {
+                "text": "相过亲",
+                "type": "standard"
+            },
+            {
+                "text": "拎个奶茶袋就能出门]",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "不刮腿毛",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢看扭曲剧情",
+                "type": "standard"
+            },
+            {
+                "text": "爱喝酒",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢吹牛皮",
+                "type": "standard"
+            },
+            {
+                "text": "玩模型",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "在酒桌上聊过时政",
+                "type": "standard"
+            },
+            {
+                "text": "吃蒜",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢NTR",
+                "type": "standard"
+            },
+            {
+                "text": "有知识焦虑",
+                "type": "standard"
+            },
+            {
+                "text": "总是休息不够",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "经常回忆往昔",
+                "type": "standard"
+            },
+            {
+                "text": "找不到另一只袜子",
+                "type": "standard"
+            },
+            {
+                "text": "不记得前天吃了什么",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢人妻",
+                "type": "standard"
+            },
+            {
+                "text": "感觉自己快秃了",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

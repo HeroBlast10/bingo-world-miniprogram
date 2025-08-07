@@ -1,0 +1,125 @@
+{
+    "bingoId": "jiangsuren",
+    "title": "江苏人宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你是纯血江苏人！",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "听不懂周围区县人讲话",
+                "type": "standard"
+            },
+            {
+                "text": "别的江苏人晒的饭菜没见过",
+                "type": "standard"
+            },
+            {
+                "text": "在外喜欢报自己的县级市/县名",
+                "type": "standard"
+            },
+            {
+                "text": "觉得浙江人比江苏人有钱",
+                "type": "standard"
+            },
+            {
+                "text": " 从小的梦想是去南京上学",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": " 工作/学习不愿意离开本省",
+                "type": "standard"
+            },
+            {
+                "text": "家里有台打印机",
+                "type": "standard"
+            },
+            {
+                "text": " 打过/身边有人打掼蛋",
+                "type": "standard"
+            },
+            {
+                "text": "参与过江苏与广东之间的比较",
+                "type": "standard"
+            },
+            {
+                "text": " 晚上十点前必须回家(晚自习除外)",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "做过《南通小题》",
+                "type": "standard"
+            },
+            {
+                "text": "与省内大部分城市文化差异大",
+                "type": "standard"
+            },
+            {
+                "text": " 参与过苏州与南京之间的比较",
+                "type": "standard"
+            },
+            {
+                "text": "宴席上饮料是果粒橙和椰汁",
+                "type": "standard"
+            },
+            {
+                "text": "宴席上一定先有几盘凉菜",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": " 身边的人非常卷",
+                "type": "standard"
+            },
+            {
+                "text": "听过老辈人讲出河工的事",
+                "type": "standard"
+            },
+            {
+                "text": " 经常吃丝 瓜/茨菇",
+                "type": "standard"
+            },
+            {
+                "text": "家里的盐是淮盐",
+                "type": "standard"
+            },
+            {
+                "text": " 过年吃阜宁大糕",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "没怎么见过山",
+                "type": "standard"
+            },
+            {
+                "text": "热衷于江苏公务员",
+                "type": "standard"
+            },
+            {
+                "text": "自己/亲戚/朋友在苏州打工",
+                "type": "standard"
+            },
+            {
+                "text": "有老师是南师毕业的",
+                "type": "standard"
+            },
+            {
+                "text": " 有河湖伴随长大",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

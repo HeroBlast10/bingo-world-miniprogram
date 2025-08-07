@@ -1,0 +1,50 @@
+{
+    "bingoId": "kejidaren",
+    "title": "科技达人宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你是前沿科技掌控者",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "首发抢购新品", "type": "standard"},
+            {"text": "会编程语言", "type": "standard"},
+            {"text": "拥有智能家居", "type": "standard"},
+            {"text": "订阅科技媒体", "type": "standard"},
+            {"text": "参加开发者大会", "type": "standard"}
+        ],
+        [
+            {"text": "VR设备使用者", "type": "standard"},
+            {"text": "自制电子产品", "type": "standard"},
+            {"text": "关注芯片进展", "type": "standard"},
+            {"text": "使用Linux系统", "type": "standard"},
+            {"text": "拥有3D打印机", "type": "standard"}
+        ],
+        [
+            {"text": "测试版软件用户", "type": "standard"},
+            {"text": "搭建个人服务器", "type": "standard"},
+            {"text": "加密货币玩家", "type": "standard"},
+            {"text": "开源项目贡献", "type": "standard"},
+            {"text": "电子设备维修", "type": "standard"}
+        ],
+        [
+            {"text": "AI工具深度使用", "type": "standard"},
+            {"text": "拥有无人机", "type": "standard"},
+            {"text": "订阅学术论文", "type": "standard"},
+            {"text": "参与众测项目", "type": "standard"},
+            {"text": "写技术博客", "type": "standard"}
+        ],
+        [
+            {"text": "掌握量子计算", "type": "standard"},
+            {"text": "拥有穿戴设备", "type": "standard"},
+            {"text": "搭建家庭实验室", "type": "standard"},
+            {"text": "订阅专利动态", "type": "standard"},
+            {"text": "机器人编程", "type": "standard"}
+        ]
+    ],
+    "category": "科技",
+    "tags": [],
+    "createdAt": ""
+}

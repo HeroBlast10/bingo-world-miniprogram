@@ -1,0 +1,125 @@
+{
+    "bingoId": "xiaozijiating",
+    "title": "小资家庭宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线你就超越了95%以上网友",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "生活受物价影响小",
+                "type": "standard"
+            },
+            {
+                "text": "从小在市区上学",
+                "type": "standard"
+            },
+            {
+                "text": "有三套及以上房产",
+                "type": "standard"
+            },
+            {
+                "text": " 座驾>20w",
+                "type": "standard"
+            },
+            {
+                "text": " 买衣服会经常考虑牌子",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "信息资讯超越多数大学同学",
+                "type": "standard"
+            },
+            {
+                "text": "家庭存款与各形式和投资不少于七位数",
+                "type": "standard"
+            },
+            {
+                "text": " 独生子女",
+                "type": "standard"
+            },
+            {
+                "text": "出过国",
+                "type": "standard"
+            },
+            {
+                "text": "请过家教/一对一",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "有小资情结",
+                "type": "standard"
+            },
+            {
+                "text": "家庭年收入>30w",
+                "type": "standard"
+            },
+            {
+                "text": "直系亲属有公务员",
+                "type": "standard"
+            },
+            {
+                "text": "去过至少五个省",
+                "type": "standard"
+            },
+            {
+                "text": "有过人均500以上餐饮消费",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "在东部省份地区",
+                "type": "standard"
+            },
+            {
+                "text": "有工薪以外的收入来源",
+                "type": "standard"
+            },
+            {
+                "text": "在二线及以上城市有房",
+                "type": "standard"
+            },
+            {
+                "text": "考虑出国/出国留学过",
+                "type": "standard"
+            },
+            {
+                "text": "上过不止一个兴趣班",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "有过人均5k以上旅游经历",
+                "type": "standard"
+            },
+            {
+                "text": "在二线及以上城市生活",
+                "type": "standard"
+            },
+            {
+                "text": "父母有一方有本科学历",
+                "type": "standard"
+            },
+            {
+                "text": "大学恩格尔系数小于百分之四十",
+                "type": "standard"
+            },
+            {
+                "text": "有多项花钱的爱好",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

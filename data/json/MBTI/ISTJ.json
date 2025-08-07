@@ -1,0 +1,47 @@
+{
+    "bingoId": "mbti-istj",
+    "title": "ISTJ宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，那么你可能是可靠卫士",
+    "gridSize": {"rows":5,"cols":5},
+    "gridContent": [
+        [
+            {"text": "十年前收据还按月份装订", "type":"standard"},
+            {"text": "手机相册全是说明书照片", "type":"standard"},
+            {"text": "认为'突发惊喜'是矛盾词", "type":"standard"},
+            {"text": "衣柜像博物馆标本陈列", "type":"standard"},
+            {"text": "给遥控器穿防尘外套", "type":"standard"}
+        ],
+        [
+            {"text": "旅行前做79页应急预案", "type":"standard"},
+            {"text": "觉得创新需要风险评估", "type":"standard"},
+            {"text": "冰箱食物按保质期列队", "type":"standard"},
+            {"text": "认为感情应该定期审计", "type":"standard"},
+            {"text": "给多肉植物写生长日志", "type":"standard"}
+        ],
+        [
+            {"text": "看剧必须按出品年代排序", "type":"standard"},
+            {"text": "'让我查下手册'是本能", "type":"standard"},
+            {"text": "把突发聚会视为系统攻击", "type":"standard"},
+            {"text": "手机闹钟误差不超过3秒", "type":"standard"},
+            {"text": "认为彩虹应该标准七色", "type":"standard"}
+        ],
+        [
+            {"text": "超市购物像精密实验", "type":"standard"},
+            {"text": "书柜按国际标准分类法", "type":"standard"},
+            {"text": "把散步称为'地形勘察'", "type":"standard"},
+            {"text": "认为幽默需要提前排练", "type":"standard"},
+            {"text": "给WiFi信号画覆盖地图", "type":"standard"}
+        ],
+        [
+            {"text": "看云朵像在检查生产瑕疵", "type":"standard"},
+            {"text": "觉得'差不多'是危险词汇", "type":"standard"},
+            {"text": "把生日称为'年度维护日'", "type":"standard"},
+            {"text": "认为混乱是可控变量", "type":"standard"},
+            {"text": "给咖啡杯做使用登记表", "type":"standard"}
+        ]
+    ],
+    "category": "MBTI",
+    "tags": ["人格测试","心理学"],
+    "createdAt": ""
+}

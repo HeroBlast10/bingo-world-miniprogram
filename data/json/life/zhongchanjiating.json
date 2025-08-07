@@ -1,0 +1,17 @@
+{
+    "bingoId": "middle_class_bingo",
+    "title": "中产家庭宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你深陷中产围城",
+    "gridSize": {"rows": 5, "cols": 5},
+    "gridContent": [
+        [{"text": "学区房焦虑", "type": "standard"}, {"text": "有机食品控", "type": "standard"}, {"text": "定期私教课", "type": "standard"}, {"text": "海外游必晒", "type": "standard"}, {"text": "儿童兴趣班", "type": "standard"}],
+        [{"text": "房贷压顶族", "type": "standard"}, {"text": "中产三件套", "type": "standard"}, {"text": "焦虑教育军", "type": "standard"}, {"text": "精致露营派", "type": "standard"}, {"text": "咖啡机必备", "type": "standard"}],
+        [{"text": "体检买套餐", "type": "standard"}, {"text": "轻奢品傍身", "type": "standard"}, {"text": "鸡娃不眠夜", "type": "standard"}, {"text": "特斯拉车主", "type": "standard"}, {"text": "中产式离婚", "type": "standard"}],
+        [{"text": "知识付费狂", "type": "standard"}, {"text": "山姆会员卡", "type": "standard"}, {"text": "滑雪季必去", "type": "standard"}, {"text": "假装在减糖", "type": "standard"}, {"text": "焦虑养老金", "type": "standard"}],
+        [{"text": "北欧风装修", "type": "standard"}, {"text": "定期心理咨询", "type": "standard"}, {"text": "拒绝预制菜", "type": "standard"}, {"text": "中产返贫怕", "type": "standard"}, {"text": "鄙视链站位", "type": "standard"}]
+    ],
+    "category": "社会",
+    "tags": ["消费主义", "阶级认同"],
+    "createdAt": ""
+}

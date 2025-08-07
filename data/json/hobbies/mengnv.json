@@ -1,0 +1,125 @@
+{
+    "bingoId": "mengnv",
+    "title": "梦女宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你就是终极梦女",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "当过男角色的爱情梦",
+                "type": "standard"
+            },
+            {
+                "text": "代入过角色",
+                "type": "standard"
+            },
+            {
+                "text": "当过梦三",
+                "type": "standard"
+            },
+            {
+                "text": "当过嗑梦一",
+                "type": "standard"
+            },
+            {
+                "text": "写过和梦角的h文",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "有自产过梦女稿",
+                "type": "standard"
+            },
+            {
+                "text": "给梦角约过稿",
+                "type": "standard"
+            },
+            {
+                "text": "给梦设约过稿",
+                "type": "standard"
+            },
+            {
+                "text": "买过梦角的谷",
+                "type": "standard"
+            },
+            {
+                "text": "自印过梦设的谷",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "梦设和自设/oc是同一个人",
+                "type": "standard"
+            },
+            {
+                "text": "玩过角色梗",
+                "type": "standard"
+            },
+            {
+                "text": "梦设还活着",
+                "type": "standard"
+            },
+            {
+                "text": "梦设元素很小众",
+                "type": "standard"
+            },
+            {
+                "text": "建设过背景故事",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "梦设和梦角有单独的世界观",
+                "type": "standard"
+            },
+            {
+                "text": "梦角是三次元",
+                "type": "standard"
+            },
+            {
+                "text": "梦向cp是bg/gb",
+                "type": "standard"
+            },
+            {
+                "text": "是梦角的嬷嬷",
+                "type": "standard"
+            },
+            {
+                "text": "画过cp的h图",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "向tag",
+                "type": "standard"
+            },
+            {
+                "text": "嫁",
+                "type": "standard"
+            },
+            {
+                "text": "塑",
+                "type": "standard"
+            },
+            {
+                "text": "龄固定",
+                "type": "standard"
+            },
+            {
+                "text": " 梦角还活着",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

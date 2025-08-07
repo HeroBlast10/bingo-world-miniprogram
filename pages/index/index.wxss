@@ -1,0 +1,138 @@
+/* pages/index/index.wxss */
+
+/* 容器样式 */
+.container {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+}
+
+/* 主要内容区域 */
+.main-content {
+  flex: 1;
+  padding: 24rpx 24rpx 160rpx 24rpx; /* 减少padding，底部留出空间给tabBar */
+}
+
+/* 搜索区域 */
+.search-section {
+  margin-bottom: 32rpx;
+}
+
+/* 搜索栏样式 */
+.search-bar {
+  position: relative;
+  background-color: #f3f4f6;
+  border-radius: 40rpx;
+  padding: 20rpx 28rpx;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  font-size: 32rpx;
+  color: #9ca3af;
+  margin-right: 16rpx;
+}
+
+.search-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 28rpx;
+  color: #111827;
+}
+
+.search-input::placeholder {
+  color: #6b7280;
+}
+
+/* 分类网格 */
+.categories-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 8rpx; /* 减少左右内边距 */
+}
+
+/* 分类卡片 */
+.category-card {
+  width: calc(50% - 12rpx); /* 使用calc确保两列布局，减去间距 */
+  background-color: #ffffff;
+  border-radius: 24rpx;
+  padding: 32rpx;
+  margin-bottom: 20rpx; /* 减少底部间距 */
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.category-card:active {
+  transform: scale(0.98);
+  box-shadow: 0 8rpx 24rpx rgba(0, 0, 0, 0.08);
+}
+
+/* 分类内容 */
+.category-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16rpx;
+}
+
+/* 分类图标 */
+.category-icon {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-text {
+  font-size: 40rpx;
+}
+
+/* 分类颜色 */
+.bg-purple {
+  background-color: #f3e8ff;
+}
+
+.bg-pink {
+  background-color: #fce7f3;
+}
+
+.bg-orange {
+  background-color: #fed7aa;
+}
+
+.bg-blue {
+  background-color: #dbeafe;
+}
+
+.bg-green {
+  background-color: #dcfce7;
+}
+
+.bg-indigo {
+  background-color: #e0e7ff;
+}
+
+.bg-emerald {
+  background-color: #d1fae5;
+}
+
+.bg-yellow {
+  background-color: #fef3c7;
+}
+
+/* 分类名称 */
+.category-name {
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #1f2937;
+  text-align: center;
+}

@@ -1,0 +1,50 @@
+{
+    "bingoId": "shekong",
+    "title": "社恐宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你已进入社交节能模式",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "假装看手机避开熟人", "type": "standard"},
+            {"text": "电话铃响就心跳加速", "type": "standard"},
+            {"text": "外卖放门口才开门", "type": "standard"},
+            {"text": "电梯里只有两人时最煎熬", "type": "standard"},
+            {"text": "宁可绕路也不问路", "type": "standard"}
+        ],
+        [
+            {"text": "群聊只发表情包", "type": "standard"},
+            {"text": "聚会时专注喂宠物", "type": "standard"},
+            {"text": "戴口罩才有安全感", "type": "standard"},
+            {"text": "提前演练要说的话", "type": "standard"},
+            {"text": "对未接来电恐惧", "type": "standard"}
+        ],
+        [
+            {"text": "在厕所隔间等同事走光", "type": "standard"},
+            {"text": "用快递柜代替驿站", "type": "standard"},
+            {"text": "生日关闭提醒", "type": "standard"},
+            {"text": "觉得微笑好累", "type": "standard"},
+            {"text": "网购代替实体店", "type": "standard"}
+        ],
+        [
+            {"text": "邻居出门就退回屋里", "type": "standard"},
+            {"text": "把耳机当保护罩", "type": "standard"},
+            {"text": "收到语音消息转文字", "type": "standard"},
+            {"text": "走路紧盯地面", "type": "standard"},
+            {"text": "超市自助结账区信徒", "type": "standard"}
+        ],
+        [
+            {"text": "快递员敲门时装不在家", "type": "standard"},
+            {"text": "朋友圈仅三天可见", "type": "standard"},
+            {"text": "对团建活动生理不适", "type": "standard"},
+            {"text": "把植物当理想社交对象", "type": "standard"},
+            {"text": "觉得微信\"拍一拍\"是酷刑", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

@@ -1,0 +1,34 @@
+/* pages/debug/debug.wxss */
+.container {
+  padding: 32rpx;
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+.header {
+  margin-bottom: 32rpx;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.debug-content {
+  background-color: #ffffff;
+  border-radius: 16rpx;
+  padding: 24rpx;
+}
+
+.debug-item {
+  margin-bottom: 16rpx;
+  padding: 8rpx 0;
+  border-bottom: 1rpx solid #f3f4f6;
+}
+
+.debug-text {
+  font-size: 28rpx;
+  color: #374151;
+  font-family: monospace;
+}

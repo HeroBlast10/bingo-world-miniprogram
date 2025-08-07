@@ -1,0 +1,125 @@
+{
+    "bingoId": "mogu",
+    "title": "蘑菇宾果",
+    "creator": "请手动填写",
+    "description": "你也是蘑菇吗?来试着将五个连成一条线吧!",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "经常撑着伞",
+                "type": "standard"
+            },
+            {
+                "text": "夏天比冬天活动更多",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢待在潮湿的暗处",
+                "type": "standard"
+            },
+            {
+                "text": "靠各种死掉的东西续命",
+                "type": "standard"
+            },
+            {
+                "text": "形态千变万化,难以捉摸",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "当过喷子或时不时想当喷子",
+                "type": "standard"
+            },
+            {
+                "text": "是精神病或被当成过精神病",
+                "type": "standard"
+            },
+            {
+                "text": "感觉大自然才是自己的家",
+                "type": "standard"
+            },
+            {
+                "text": "被评价过“你有毒啊”",
+                "type": "standard"
+            },
+            {
+                "text": "留过齐刘海或整齐短发",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "喜欢玩捉迷藏害怕被发现",
+                "type": "standard"
+            },
+            {
+                "text": "有大脑袋或喜欢戴大帽子",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢雨天",
+                "type": "standard"
+            },
+            {
+                "text": "身材比较圆润或矮小",
+                "type": "standard"
+            },
+            {
+                "text": "幻想过和僵尸战斗n个回合",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "会长时间地一动也不动",
+                "type": "standard"
+            },
+            {
+                "text": "晒太多阳光会死掉",
+                "type": "standard"
+            },
+            {
+                "text": "让他人感觉难以捉摸",
+                "type": "standard"
+            },
+            {
+                "text": "把云南当成精神故乡之一",
+                "type": "standard"
+            },
+            {
+                "text": "拥有让人产生幻觉的能力",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "身上散发着淡淡的死意",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢草地或大树脚下",
+                "type": "standard"
+            },
+            {
+                "text": "不怕各种虫子或蜗牛",
+                "type": "standard"
+            },
+            {
+                "text": "经常和同类们待在一起",
+                "type": "standard"
+            },
+            {
+                "text": "生存环境脏兮兮的",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

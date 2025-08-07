@@ -1,0 +1,125 @@
+{
+    "bingoId": "shaonv",
+    "title": "少女宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你还是18岁！",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "喜欢可爱的小动物",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢甜点",
+                "type": "standard"
+            },
+            {
+                "text": "经常背痛包",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢收集",
+                "type": "standard"
+            },
+            {
+                "text": "性格活泼",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "喜欢粉色的衣服",
+                "type": "standard"
+            },
+            {
+                "text": "曾经为了一个叶子/树枝/云朵而开心半天",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢好看的裙子",
+                "type": "standard"
+            },
+            {
+                "text": "经常幻想美好剧情",
+                "type": "standard"
+            },
+            {
+                "text": "拥有十条以上小裙子",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "喜欢果冻/棒棒糖泡芙/小蛋糕",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢彩虹",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢桃子汽水",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢可爱的玩具",
+                "type": "standard"
+            },
+            {
+                "text": "使用钥匙/手机挂件",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "喜欢纯爱",
+                "type": "standard"
+            },
+            {
+                "text": "做手账",
+                "type": "standard"
+            },
+            {
+                "text": "比较在意环境或者氛围",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢马卡龙色系",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢赋予意义",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "爱发颜文字或者可爱表情包",
+                "type": "standard"
+            },
+            {
+                "text": "对生活观察细致",
+                "type": "standard"
+            },
+            {
+                "text": "会给自己打气加油",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢被夸夸",
+                "type": "standard"
+            },
+            {
+                "text": "爱看恋综",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

@@ -1,0 +1,72 @@
+<!--pages/game/game.wxml-->
+<view class="container">
+  <!-- 加载状态 -->
+  <view class="loading" wx:if="{{isLoading}}">
+    <text>加载中...</text>
+  </view>
+
+  <!-- 游戏内容 -->
+  <view class="game-content" wx:else>
+    <!-- 游戏头部信息 -->
+    <view class="game-header" wx:if="{{game}}">
+      <!-- 小程序标识 -->
+      <text class="app-brand">小程序@宾果世界</text>
+      <!-- 显示游戏标题和描述 -->
+      <text class="game-title">{{game.title}}</text>
+      <text class="game-description" wx:if="{{game.description && game.description.trim() !== '' && game.description !== '五个连成一线...'}}">
+        {{game.description}}
+      </text>
+    </view>
+
+    <!-- 宾果网格 -->
+    <view class="bingo-container" wx:if="{{game}}">
+      <view class="grid-container">
+        <!-- 使用两层嵌套的 wx:for 来遍历 game.gridContent -->
+        <!-- 外层 wx:for-index 为 rowIndex -->
+        <view
+          class="grid-row"
+          wx:for="{{game.gridContent}}"
+          wx:for-index="rowIndex"
+          wx:key="rowIndex"
+        >
+          <!-- 内层为 colIndex -->
+          <view
+            class="cell {{selectedCells[rowIndex][colIndex] ? 'selected' : ''}}"
+            wx:for="{{item}}"
+            wx:for-index="colIndex"
+            wx:key="colIndex"
+            data-row-index="{{rowIndex}}"
+            data-col-index="{{colIndex}}"
+            bindtap="handleCellClick"
+          >
+            <!-- 显示单元格文本 -->
+            <text class="cell-text {{item.textSizeClass}}">{{item.text}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 底部导航栏 -->
+    <view class="bottom-nav" wx:if="{{game}}">
+      <view class="nav-item" bindtap="onSaveGame">
+        <view class="nav-icon">💾</view>
+        <text class="nav-text">保存</text>
+      </view>
+      <view class="nav-item" bindtap="onDownloadGame">
+        <view class="nav-icon">📥</view>
+        <text class="nav-text">下载</text>
+      </view>
+      <view class="nav-item" bindtap="onShareGame">
+        <view class="nav-icon">📤</view>
+        <text class="nav-text">分享</text>
+      </view>
+    </view>
+
+    <!-- 隐藏的canvas用于生成图片 -->
+    <canvas
+      canvas-id="bingoCanvas"
+      class="hidden-canvas"
+      style="width: 750px; height: 1000px; position: absolute; left: -9999px; top: -9999px;"
+    ></canvas>
+  </view>
+</view>

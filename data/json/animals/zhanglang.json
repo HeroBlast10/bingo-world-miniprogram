@@ -1,0 +1,125 @@
+{
+    "bingoId": "zhanglang",
+    "title": "蟑螂宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，那么你可能是一只小小的蟑螂",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "被冒犯后能迅速攀爬到别人身上",
+                "type": "standard"
+            },
+            {
+                "text": "拥有在危急时刻迅速逃跑的能力",
+                "type": "standard"
+            },
+            {
+                "text": "很难被捕捉",
+                "type": "standard"
+            },
+            {
+                "text": "日常运动是阴暗地爬行",
+                "type": "standard"
+            },
+            {
+                "text": "被小猫玩弄于股掌之间",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "成为焦点时会感到孤立和无助",
+                "type": "standard"
+            },
+            {
+                "text": "没人知道你到底睡不睡觉",
+                "type": "standard"
+            },
+            {
+                "text": "很难彻底被消灭",
+                "type": "standard"
+            },
+            {
+                "text": "走路静悄悄的经常吓人-跳",
+                "type": "standard"
+            },
+            {
+                "text": "宅在家里会很有安全感",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "生活在一团糟全是垃圾的环境中",
+                "type": "standard"
+            },
+            {
+                "text": "对单个出现的拖鞋感到恐慌",
+                "type": "standard"
+            },
+            {
+                "text": "拥有可再生的稳定双马尾",
+                "type": "standard"
+            },
+            {
+                "text": "对人类的出现很警惕",
+                "type": "standard"
+            },
+            {
+                "text": "不喜欢晒太阳",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "不会放过任何薯片的碎渣",
+                "type": "standard"
+            },
+            {
+                "text": "能够用很少的食物生存",
+                "type": "standard"
+            },
+            {
+                "text": "无法抗拒土豆泥",
+                "type": "standard"
+            },
+            {
+                "text": "能够在狭小空间中穿梭自如",
+                "type": "standard"
+            },
+            {
+                "text": "虽然不敢见人但意外地合群",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "习惯性地出现在被忽视的角落",
+                "type": "standard"
+            },
+            {
+                "text": "脸黑",
+                "type": "standard"
+            },
+            {
+                "text": "对有害化学物质有一定的耐受性",
+                "type": "standard"
+            },
+            {
+                "text": "总能迅速找到新的避难所",
+                "type": "standard"
+            },
+            {
+                "text": "出场的时候会收获尖叫",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

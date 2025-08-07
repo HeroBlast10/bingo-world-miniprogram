@@ -1,0 +1,38 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <!-- Main Content -->
+  <view class="main-content">
+    <!-- Search Bar -->
+    <view class="search-section">
+      <view class="search-bar">
+        <view class="search-icon">🔍</view>
+        <input
+          class="search-input"
+          placeholder="搜索你感兴趣的宾果"
+          value="{{searchValue}}"
+          bindinput="onSearchInput"
+          bindconfirm="onSearchConfirm"
+          confirm-type="search"
+        />
+      </view>
+    </view>
+
+    <!-- Categories Grid -->
+    <view class="categories-grid">
+      <view
+        class="category-card"
+        wx:for="{{categories}}"
+        wx:key="id"
+        data-slug="{{item.slug}}"
+        bindtap="onCategoryTap"
+      >
+        <view class="category-content">
+          <view class="category-icon {{item.color}}">
+            <text class="icon-text">{{item.icon}}</text>
+          </view>
+          <text class="category-name">{{item.name}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

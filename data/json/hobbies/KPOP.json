@@ -1,0 +1,50 @@
+{
+    "bingoId": "kpop",
+    "title": "KPOP宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你已是韩流十级学者",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "买过十张同专辑", "type": "standard"},
+            {"text": "会跳完整编舞", "type": "standard"},
+            {"text": "分得清所有成员声音", "type": "standard"},
+            {"text": "追过打歌现场", "type": "standard"},
+            {"text": "觉得本命团最惨", "type": "standard"}
+        ],
+        [
+            {"text": "手机存万张照片", "type": "standard"},
+            {"text": "学韩语为看直播", "type": "standard"},
+            {"text": "买过应援棒", "type": "standard"},
+            {"text": "熬夜刷音源", "type": "standard"},
+            {"text": "能背成员生日", "type": "standard"}
+        ],
+        [
+            {"text": "卧室是周边博物馆", "type": "standard"},
+            {"text": "为偶像剪过视频", "type": "standard"},
+            {"text": "参加线下应援", "type": "standard"},
+            {"text": "买过小卡盲盒", "type": "standard"},
+            {"text": "觉得公司迫害自家", "type": "standard"}
+        ],
+        [
+            {"text": "分析MV符号学", "type": "standard"},
+            {"text": "听前奏猜歌", "type": "standard"},
+            {"text": "收藏历代舞台", "type": "standard"},
+            {"text": "会唱所有副歌", "type": "standard"},
+            {"text": "嫌弃翻跳不标准", "type": "standard"}
+        ],
+        [
+            {"text": "用偶像当手机壁纸", "type": "standard"},
+            {"text": "知道恋爱传闻", "type": "standard"},
+            {"text": "买过演唱会机票", "type": "standard"},
+            {"text": "在超话签到三年", "type": "standard"},
+            {"text": "觉得韩团比内娱专业", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

@@ -1,0 +1,50 @@
+{
+    "bingoId": "wuyuzegang",
+    "title": "无欲则刚宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你就是当代扫地僧",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "对双十一毫无波澜", "type": "standard"},
+            {"text": "旧手机用出包浆", "type": "standard"},
+            {"text": "拒绝无效社交", "type": "standard"},
+            {"text": "被说佛系也不反驳", "type": "standard"},
+            {"text": "衣柜只有基础款", "type": "standard"}
+        ],
+        [
+            {"text": "食物只为生存", "type": "standard"},
+            {"text": "删光购物车毫不心疼", "type": "standard"},
+            {"text": "觉得奢侈品是智商税", "type": "standard"},
+            {"text": "假期宅家赛神仙", "type": "standard"},
+            {"text": "对升职无执念", "type": "standard"}
+        ],
+        [
+            {"text": "别人晒娃你点赞", "type": "standard"},
+            {"text": "旅行嫌麻烦", "type": "standard"},
+            {"text": "生日愿望是别过生日", "type": "standard"},
+            {"text": "朋友圈三年没更新", "type": "standard"},
+            {"text": "觉得恋爱费能量", "type": "standard"}
+        ],
+        [
+            {"text": "运动鞋穿到开口笑", "type": "standard"},
+            {"text": "外卖超20元就肉疼", "type": "standard"},
+            {"text": "对八卦毫无兴趣", "type": "standard"},
+            {"text": "觉得攀比是酷刑", "type": "standard"},
+            {"text": "理想是当门卫", "type": "standard"}
+        ],
+        [
+            {"text": "喝白水很快乐", "type": "standard"},
+            {"text": "被夸节俭暗喜", "type": "standard"},
+            {"text": "拒绝网红打卡", "type": "standard"},
+            {"text": "认为极简是美学", "type": "standard"},
+            {"text": "口头禅\"都行\"", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

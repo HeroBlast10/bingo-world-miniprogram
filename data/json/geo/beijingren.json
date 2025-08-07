@@ -1,0 +1,50 @@
+{
+    "bingoId": "beijingren",
+    "title": "北京人宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，嘿，您可是地道老北京",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "说话自带儿化音", "type": "standard"},
+            {"text": "豆汁当早餐", "type": "standard"},
+            {"text": "有胡同童年记忆", "type": "standard"},
+            {"text": "管谁都叫\"师傅\"", "type": "standard"},
+            {"text": "觉得五环外是外地", "type": "standard"}
+        ],
+        [
+            {"text": "春节必去庙会", "type": "standard"},
+            {"text": "能分清真·老北京炸酱面", "type": "standard"},
+            {"text": "有公园年票", "type": "standard"},
+            {"text": "张口就是历史典故", "type": "standard"},
+            {"text": "雾霾天照常晨练", "type": "standard"}
+        ],
+        [
+            {"text": "家里有军大衣", "type": "standard"},
+            {"text": "能坐公交绝不打车", "type": "standard"},
+            {"text": "用\"您\"称呼所有人", "type": "standard"},
+            {"text": "知道哪家卤煮最地道", "type": "standard"},
+            {"text": "聊天必提政治", "type": "standard"}
+        ],
+        [
+            {"text": "在故宫遛过弯", "type": "standard"},
+            {"text": "有亲戚住大院", "type": "standard"},
+            {"text": "冬天囤百斤大白菜", "type": "standard"},
+            {"text": "能背地铁全线路", "type": "standard"},
+            {"text": "觉得外地人不懂麻酱", "type": "standard"}
+        ],
+        [
+            {"text": "把北冰洋当水喝", "type": "standard"},
+            {"text": "见面问\"吃了么您\"", "type": "standard"},
+            {"text": "家里有文玩手串", "type": "standard"},
+            {"text": "吐槽新北京人", "type": "standard"},
+            {"text": "觉得全国都该供暖", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

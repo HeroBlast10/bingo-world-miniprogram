@@ -1,0 +1,125 @@
+{
+    "bingoId": "tuzi",
+    "title": "兔兔宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你是一只小兔子",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "喜欢蔬菜水果",
+                "type": "standard"
+            },
+            {
+                "text": "夜晚比白天更有精力",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢啃咬东西",
+                "type": "standard"
+            },
+            {
+                "text": "享受被摸头",
+                "type": "standard"
+            },
+            {
+                "text": "随时会陷入短暂的睡眠",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "牙齿需要被好好照顾",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢数据线",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢探索世界",
+                "type": "standard"
+            },
+            {
+                "text": "和新朋友需要时间磨合",
+                "type": "standard"
+            },
+            {
+                "text": "通过舔表达爱意",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "吃到好吃的东西会想跳舞",
+                "type": "standard"
+            },
+            {
+                "text": "会被突如其来的声音吓到",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢躲起来",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢从高处观察世界",
+                "type": "standard"
+            },
+            {
+                "text": "会自己洗澡",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "会用厕所",
+                "type": "standard"
+            },
+            {
+                "text": "不喜欢炎热的环境",
+                "type": "standard"
+            },
+            {
+                "text": "听觉很灵敏",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢自己把控和人贴贴的节奏",
+                "type": "standard"
+            },
+            {
+                "text": "有时间观念和生活规律",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "在喜欢的人身边会安心睡着",
+                "type": "standard"
+            },
+            {
+                "text": "会自己铺床",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢躺在柔软的地方",
+                "type": "standard"
+            },
+            {
+                "text": "生气的时候谁靠近都不行",
+                "type": "standard"
+            },
+            {
+                "text": "很能吃",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

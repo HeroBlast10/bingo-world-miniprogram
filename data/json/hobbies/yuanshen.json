@@ -1,0 +1,50 @@
+{
+    "bingoId": "genshin_impact",
+    "title": "原神玩家宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你是资深旅行者",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "全图探索100%", "type": "standard"},
+            {"text": "满星深渊12层", "type": "standard"},
+            {"text": "收集全角色", "type": "standard"},
+            {"text": "记住七国设定", "type": "standard"},
+            {"text": "研究元素反应", "type": "standard"}
+        ],
+        [
+            {"text": "有满命五星", "type": "standard"},
+            {"text": "参加线下活动", "type": "standard"},
+            {"text": "制作二创内容", "type": "standard"},
+            {"text": "收集全成就", "type": "standard"},
+            {"text": "分析剧情细节", "type": "standard"}
+        ],
+        [
+            {"text": "精通烹饪系统", "type": "standard"},
+            {"text": "研究圣遗物", "type": "standard"},
+            {"text": "记住NPC故事", "type": "standard"},
+            {"text": "参与社区讨论", "type": "standard"},
+            {"text": "制作攻略视频", "type": "standard"}
+        ],
+        [
+            {"text": "挑战无伤BOSS", "type": "standard"},
+            {"text": "收藏周边", "type": "standard"},
+            {"text": "研究配队", "type": "standard"},
+            {"text": "完成所有任务", "type": "standard"},
+            {"text": "分析角色背景", "type": "standard"}
+        ],
+        [
+            {"text": "满精炼武器", "type": "standard"},
+            {"text": "参加音乐会", "type": "standard"},
+            {"text": "记住所有台词", "type": "standard"},
+            {"text": "研究世界任务", "type": "standard"},
+            {"text": "创建同人作品", "type": "standard"}
+        ]
+    ],
+    "category": "游戏",
+    "tags": ["原神", "米哈游"],
+    "createdAt": ""
+}

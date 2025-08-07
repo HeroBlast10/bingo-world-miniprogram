@@ -1,0 +1,50 @@
+{
+    "bingoId": "zuqiu",
+    "title": "足球爱好者宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你已是绿茵场百事通",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "背得出世界杯冠军", "type": "standard"},
+            {"text": "收藏球星球衣", "type": "standard"},
+            {"text": "分得清所有阵型", "type": "standard"},
+            {"text": "用球队当头像", "type": "standard"},
+            {"text": "觉得马拉多纳是神", "type": "standard"}
+        ],
+        [
+            {"text": "买过赛季围巾", "type": "standard"},
+            {"text": "为德比战失眠", "type": "standard"},
+            {"text": "凌晨看欧冠", "type": "standard"},
+            {"text": "收藏签名足球", "type": "standard"},
+            {"text": "能当战术分析师", "type": "standard"}
+        ],
+        [
+            {"text": "房间挂队旗", "type": "standard"},
+            {"text": "用足球梗聊天", "type": "standard"},
+            {"text": "追俱乐部超十年", "type": "standard"},
+            {"text": "买过绝版球鞋", "type": "standard"},
+            {"text": "觉得现场助威最震撼", "type": "standard"}
+        ],
+        [
+            {"text": "分析球员跑动距离", "type": "standard"},
+            {"text": "为点球捂眼睛", "type": "standard"},
+            {"text": "收藏各年代队徽", "type": "standard"},
+            {"text": "会模仿庆祝动作", "type": "standard"},
+            {"text": "嫌弃VAR毁比赛", "type": "standard"}
+        ],
+        [
+            {"text": "用FIFA游戏排阵容", "type": "standard"},
+            {"text": "知道更衣室故事", "type": "standard"},
+            {"text": "买过世界杯门票", "type": "standard"},
+            {"text": "在懂球帝对喷", "type": "standard"},
+            {"text": "觉得梅西是外星人", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

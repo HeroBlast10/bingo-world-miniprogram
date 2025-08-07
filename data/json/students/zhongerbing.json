@@ -1,0 +1,50 @@
+{
+    "bingoId": "zhongerbing",
+    "title": "中二病宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，体内封印着暗夜之力！",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "对着镜子练邪笑", "type": "standard"},
+            {"text": "给文具起中二名", "type": "standard"},
+            {"text": "相信自己是转世", "type": "standard"},
+            {"text": "突然在雨中奔跑", "type": "standard"},
+            {"text": "暗念奇怪咒语", "type": "standard"}
+        ],
+        [
+            {"text": "用外套蒙头装刺客", "type": "standard"},
+            {"text": "觉得左眼在封印力量", "type": "standard"},
+            {"text": "写羞耻日记称\"圣典\"", "type": "standard"},
+            {"text": "走路刻意带风", "type": "standard"},
+            {"text": "幻想被异世界召唤", "type": "standard"}
+        ],
+        [
+            {"text": "给技能取超长名字", "type": "standard"},
+            {"text": "坚信有魔法阵", "type": "standard"},
+            {"text": "摆pose自觉很帅", "type": "standard"},
+            {"text": "收藏塑料宝石当神器", "type": "standard"},
+            {"text": "对黑红色有执念", "type": "standard"}
+        ],
+        [
+            {"text": "觉得伤口是勋章", "type": "standard"},
+            {"text": "用\"凡人\"称呼普通人", "type": "standard"},
+            {"text": "偷偷练习结印手势", "type": "standard"},
+            {"text": "把楼梯当魔王城堡爬", "type": "standard"},
+            {"text": "自称\"孤王\"", "type": "standard"}
+        ],
+        [
+            {"text": "对电闪雷鸣兴奋", "type": "standard"},
+            {"text": "给宠物封神兽职位", "type": "standard"},
+            {"text": "认为眼镜是伪装", "type": "standard"},
+            {"text": "上课突然握拳低吼", "type": "standard"},
+            {"text": "觉得校服是战袍", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

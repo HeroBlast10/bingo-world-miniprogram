@@ -1,0 +1,17 @@
+{
+    "bingoId": "homebody_bingo",
+    "title": "宅家日常宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你是居家大师",
+    "gridSize": {"rows": 5, "cols": 5},
+    "gridContent": [
+        [{"text": "睡衣全天候", "type": "standard"}, {"text": "外卖到门口", "type": "standard"}, {"text": "追剧马拉松", "type": "standard"}, {"text": "快递不进门", "type": "standard"}, {"text": "床是根据地", "type": "standard"}],
+        [{"text": "三天不洗头", "type": "standard"}, {"text": "泡面当正餐", "type": "standard"}, {"text": "游戏刷副本", "type": "standard"}, {"text": "窗帘永紧闭", "type": "standard"}, {"text": "社交软件瘫", "type": "standard"}],
+        [{"text": "步数不过百", "type": "standard"}, {"text": "囤积速冻品", "type": "standard"}, {"text": "昼夜时颠倒", "type": "standard"}, {"text": "宠物当室友", "type": "standard"}, {"text": "快递箱堆山", "type": "standard"}],
+        [{"text": "拒接视频聊", "type": "standard"}, {"text": "网购解千愁", "type": "standard"}, {"text": "地板积灰层", "type": "standard"}, {"text": "水杯放床头", "type": "standard"}, {"text": "充电器常插", "type": "standard"}],
+        [{"text": "综艺背景音", "type": "standard"}, {"text": "外卖垃圾堆", "type": "standard"}, {"text": "运动靠翻身", "type": "standard"}, {"text": "门铃装聋哑", "type": "standard"}, {"text": "日历不翻页", "type": "standard"}]
+    ],
+    "category": "生活方式",
+    "tags": ["居家生活", "数字游民"],
+    "createdAt": ""
+}

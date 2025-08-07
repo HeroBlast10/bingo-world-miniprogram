@@ -1,0 +1,50 @@
+{
+    "bingoId": "shanxiren",
+    "title": "陕西人宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你是个忒色的老陕",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "蹲着吃饭最舒坦", "type": "standard"},
+            {"text": "把\"嫽扎咧\"挂嘴边", "type": "standard"},
+            {"text": "家里常备油泼辣子", "type": "standard"},
+            {"text": "有秦始皇情结", "type": "standard"},
+            {"text": "觉得肉夹馍必须纯肉", "type": "standard"}
+        ],
+        [
+            {"text": "能吼两嗓子秦腔", "type": "standard"},
+            {"text": "分得清各种面食", "type": "standard"},
+            {"text": "去兵马俑当导游", "type": "standard"},
+            {"text": "说话像吵架", "type": "standard"},
+            {"text": "觉得羊肉泡馍要自己掰", "type": "standard"}
+        ],
+        [
+            {"text": "冬天穿单裤抗冻", "type": "standard"},
+            {"text": "用海碗吃面", "type": "standard"},
+            {"text": "有黄土高原情怀", "type": "standard"},
+            {"text": "把锅盔当干粮", "type": "standard"},
+            {"text": "觉得陕西话最古老", "type": "standard"}
+        ],
+        [
+            {"text": "家里有窑洞", "type": "standard"},
+            {"text": "唱过信天游", "type": "standard"},
+            {"text": "管女孩叫\"女子\"", "type": "standard"},
+            {"text": "在城墙根下喝茶", "type": "standard"},
+            {"text": "觉得山西是面食兄弟", "type": "standard"}
+        ],
+        [
+            {"text": "早餐喝胡辣汤配馍", "type": "standard"},
+            {"text": "把\"额滴神\"当感叹", "type": "standard"},
+            {"text": "有亲戚在新疆", "type": "standard"},
+            {"text": "觉得凉皮要配冰峰", "type": "standard"},
+            {"text": "用biangbiang面待客", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

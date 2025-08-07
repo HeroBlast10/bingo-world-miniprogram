@@ -1,0 +1,17 @@
+{
+    "bingoId": "sleep_disorder_bingo",
+    "title": "睡眠障碍宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你与周公关系紧张",
+    "gridSize": {"rows": 5, "cols": 5},
+    "gridContent": [
+        [{"text": "数羊到千只", "type": "standard"}, {"text": "凌晨三点醒", "type": "standard"}, {"text": "午觉睡不着", "type": "standard"}, {"text": "起床如受刑", "type": "standard"}, {"text": "咖啡当水喝", "type": "standard"}],
+        [{"text": "夜猫型选手", "type": "standard"}, {"text": "多梦连环剧", "type": "standard"}, {"text": "白天秒断片", "type": "standard"}, {"text": "安眠药常备", "type": "standard"}, {"text": "怕光又怕声", "type": "standard"}],
+        [{"text": "昼夜颠倒党", "type": "standard"}, {"text": "鬼压床体验", "type": "standard"}, {"text": "睡前刷手机", "type": "standard"}, {"text": "鼾声如雷响", "type": "standard"}, {"text": "眼罩收藏家", "type": "standard"}],
+        [{"text": "睡眠监测狂", "type": "standard"}, {"text": "认床综合症", "type": "standard"}, {"text": "周末补觉王", "type": "standard"}, {"text": "梦游嫌疑犯", "type": "standard"}, {"text": "褪黑素依赖", "type": "standard"}],
+        [{"text": "秒醒型选手", "type": "standard"}, {"text": "闹钟连环炸", "type": "standard"}, {"text": "睡前焦虑症", "type": "standard"}, {"text": "黑眼圈焊脸", "type": "standard"}, {"text": "白天哈欠精", "type": "standard"}]
+    ],
+    "category": "健康",
+    "tags": ["失眠", "生物钟紊乱"],
+    "createdAt": ""
+}

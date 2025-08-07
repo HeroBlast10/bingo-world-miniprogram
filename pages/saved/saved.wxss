@@ -1,0 +1,242 @@
+/* pages/saved/saved.wxss */
+.container {
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+/* 标签页容器 */
+.tabs-container {
+  background-color: #ffffff;
+  border-bottom: 1rpx solid #f3f4f6;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tab-item {
+  flex: 1;
+  position: relative;
+  padding: 32rpx 0;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.tab-text {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #6b7280;
+  transition: color 0.2s ease;
+}
+
+.tab-item.active .tab-text {
+  color: #ff6b6b;
+}
+
+.tab-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background-color: #ff6b6b;
+  border-radius: 2rpx;
+}
+
+/* 内容区域 */
+.content {
+  padding: 32rpx 32rpx 160rpx 32rpx; /* 减少顶部padding，底部留出tabBar空间 */
+}
+
+/* 宾果网格 */
+.bingo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32rpx;
+}
+
+/* 宾果卡片 */
+.bingo-card {
+  background-color: #ffffff;
+  border-radius: 32rpx;
+  padding: 32rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+}
+
+.bingo-card:active {
+  transform: scale(0.98);
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.08);
+}
+
+/* 宾果头部 */
+.bingo-header {
+  margin-bottom: 24rpx;
+}
+
+.bingo-title {
+  display: block;
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 8rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bingo-creator {
+  font-size: 22rpx;
+  color: #6b7280;
+}
+
+/* 宾果缩略图 */
+.bingo-thumbnail {
+  margin-bottom: 24rpx;
+}
+
+.thumbnail-grid {
+  display: grid;
+  gap: 2rpx;
+  width: 100%;
+  aspect-ratio: 1;
+  border: 1rpx solid #e5e7eb;
+  border-radius: 8rpx;
+  overflow: hidden;
+}
+
+.thumbnail-cell {
+  background-color: #ffffff;
+  border: 1rpx solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rpx;
+  box-sizing: border-box;
+}
+
+.thumbnail-cell.selected {
+  background-color: #ff6b6b;
+  border-color: #ff6b6b;
+}
+
+.cell-text {
+  font-size: 16rpx;
+  line-height: 1.2;
+  color: #6b7280;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.thumbnail-cell.selected .cell-text {
+  color: #ffffff;
+}
+
+/* 元数据 */
+.bingo-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16rpx;
+}
+
+.grid-size {
+  font-size: 22rpx;
+  color: #9ca3af;
+}
+
+.date-info {
+  font-size: 22rpx;
+  color: #9ca3af;
+}
+
+/* 完成统计 */
+.completion-stats {
+  padding-top: 16rpx;
+  border-top: 1rpx solid #f3f4f6;
+}
+
+.stats-text {
+  font-size: 22rpx;
+  color: #6b7280;
+}
+
+/* 空状态 */
+.empty-state {
+  text-align: center;
+  padding: 120rpx 0;
+}
+
+.empty-icon {
+  margin-bottom: 32rpx;
+}
+
+.empty-grid {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 0 auto;
+  background-color: #f3f4f6;
+  border-radius: 32rpx;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8rpx;
+  padding: 24rpx;
+  box-sizing: border-box;
+}
+
+.empty-cell {
+  background-color: #d1d5db;
+  border-radius: 4rpx;
+}
+
+.empty-title {
+  display: block;
+  font-size: 32rpx;
+  color: #6b7280;
+  margin-bottom: 16rpx;
+}
+
+.empty-desc {
+  font-size: 26rpx;
+  color: #9ca3af;
+  line-height: 1.5;
+}
+
+/* 响应式调整 */
+@media (max-width: 750rpx) {
+  .bingo-grid {
+    grid-template-columns: 1fr;
+    gap: 24rpx;
+  }
+  
+  .content {
+    padding: 32rpx 24rpx;
+  }
+  
+  .bingo-card {
+    padding: 24rpx;
+  }
+  
+  .cell-text {
+    font-size: 14rpx;
+  }
+}
+
+/* 单列布局优化 */
+@media (max-width: 600rpx) {
+  .thumbnail-grid {
+    max-width: 200rpx;
+    margin: 0 auto;
+  }
+  
+  .bingo-header {
+    text-align: center;
+  }
+  
+  .bingo-meta {
+    justify-content: center;
+    gap: 32rpx;
+  }
+}

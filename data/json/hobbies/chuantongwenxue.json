@@ -1,0 +1,125 @@
+{
+    "bingoId": "chuantongwenxue",
+    "title": "传统文学宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你就是传统文学爱好者",
+    "gridSize": {
+        "rows": 6,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "反感别人一上来就说喜欢东野圭吾",
+                "type": "standard"
+            },
+            {
+                "text": "嘉欢看侦探、刑侦小说",
+                "type": "standard"
+            },
+            {
+                "text": "写过书评文章",
+                "type": "standard"
+            },
+            {
+                "text": "会把喜欢的段落摘抄下来",
+                "type": "standard"
+            },
+            {
+                "text": "会关注出版社最新出版的实体书",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "有特别喜欢的作家",
+                "type": "standard"
+            },
+            {
+                "text": "看书时不掠过前言",
+                "type": "standard"
+            },
+            {
+                "text": "衣着朴素大方",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢准确无误的表达",
+                "type": "standard"
+            },
+            {
+                "text": "戴眼镜,外表斯文,但内心狂野",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "会写文学作品",
+                "type": "standard"
+            },
+            {
+                "text": "被别人说“书呆子”不生气",
+                "type": "standard"
+            },
+            {
+                "text": "女权主义者",
+                "type": "standard"
+            },
+            {
+                "text": "身边没有能够聊书籍内容的人",
+                "type": "standard"
+            },
+            {
+                "text": "随身携带Kindle",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "不喜欢朋友聚会,甚至反感",
+                "type": "standard"
+            },
+            {
+                "text": "参加过线下书展活动",
+                "type": "standard"
+            },
+            {
+                "text": "会看各种文学奖获奖作品",
+                "type": "standard"
+            },
+            {
+                "text": "会阅读作家的日记访谈录",
+                "type": "standard"
+            },
+            {
+                "text": "不喜欢网络小说",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "关注了很多读书博主的wb/gz号等",
+                "type": "standard"
+            },
+            {
+                "text": "爱买特别的文创帆布袋",
+                "type": "standard"
+            },
+            {
+                "text": "很享受下雨天在被窝里看书",
+                "type": "standard"
+            },
+            {
+                "text": "吃过一些出版社的瓜",
+                "type": "standard"
+            },
+            {
+                "text": "平时脾气很好,比较温和真诚,待人礼貌",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

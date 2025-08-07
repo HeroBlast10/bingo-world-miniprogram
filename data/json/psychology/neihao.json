@@ -1,0 +1,50 @@
+{
+  "bingoId": "neihua_index",
+  "title": "内耗指数宾果",
+  "creator": "请手动填写",
+  "description": "五个连成一线，说明你正在自我攻击，请抱抱自己",
+  "gridSize": {
+    "rows": 5,
+    "cols": 5
+  },
+  "gridContent": [
+    [
+      { "text": "因为回复晚了开始焦虑", "type": "standard" },
+      { "text": "跟人说话前先在脑子里彩排三遍", "type": "standard" },
+      { "text": "回到家开始反思今天说的话", "type": "standard" },
+      { "text": "听到语气重一点就觉得别人不喜欢我", "type": "standard" },
+      { "text": "别人在发火我会觉得是我错了", "type": "standard" }
+    ],
+    [
+      { "text": "即使不喜欢也不敢拒绝", "type": "standard" },
+      { "text": "每天都要怀疑自己能力", "type": "standard" },
+      { "text": "总想让所有人满意", "type": "standard" },
+      { "text": "突然想到以前的尴尬事就满脸通红", "type": "standard" },
+      { "text": "明明没事但脑子一直在转", "type": "standard" }
+    ],
+    [
+      { "text": "没做事也觉得累，是心累", "type": "standard" },
+      { "text": "经常想逃避现实", "type": "standard" },
+      { "text": "总担心别人误会我", "type": "standard" },
+      { "text": "道歉成口头禅", "type": "standard" },
+      { "text": "容易因为小事否定自己", "type": "standard" }
+    ],
+    [
+      { "text": "做决定前反复纠结", "type": "standard" },
+      { "text": "因为没回消息而担心对方生气", "type": "standard" },
+      { "text": "别人皱眉就以为是我惹的祸", "type": "standard" },
+      { "text": "经常觉得“我是不是太差了”", "type": "standard" },
+      { "text": "自己跟自己吵架", "type": "standard" }
+    ],
+    [
+      { "text": "明明是别人错但自己更内疚", "type": "standard" },
+      { "text": "总是反复检查自己说过的话", "type": "standard" },
+      { "text": "被夸了也不敢相信是真的", "type": "standard" },
+      { "text": "很在意别人对我的看法", "type": "standard" },
+      { "text": "常觉得自己让人失望", "type": "standard" }
+    ]
+  ],
+  "category": "心理类",
+  "tags": ["自我内耗", "社交焦虑"],
+  "createdAt": ""
+}

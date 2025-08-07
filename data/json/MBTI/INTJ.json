@@ -1,0 +1,50 @@
+{
+    "bingoId": "mbti-intj",
+    "title": "INTJ宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，那么你可能是高冷战略家",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "看到低效方案会瞳孔地震", "type": "standard"},
+            {"text": "人生计划精确到五年后周二", "type": "standard"},
+            {"text": "辩论时像在下一盘大棋", "type": "standard"},
+            {"text": "对'感情用事'这个词过敏", "type": "standard"},
+            {"text": "手机备忘录全是思维导图", "type": "standard"}
+        ],
+        [
+            {"text": "认为拥抱不如解决方案实在", "type": "standard"},
+            {"text": "深夜思考人类文明存续问题", "type": "standard"},
+            {"text": "把社交称为'能量回收时间'", "type": "standard"},
+            {"text": "衣柜只有黑白灰三色战袍", "type": "standard"},
+            {"text": "被夸'你好有人情味'会愣住", "type": "standard"}
+        ],
+        [
+            {"text": "看爱情片在分析人物动机", "type": "standard"},
+            {"text": "觉得团建是反人类发明", "type": "standard"},
+            {"text": "书架上尼采旁边放着《君主论》", "type": "standard"},
+            {"text": "用SWOT分析早餐吃什么", "type": "standard"},
+            {"text": "'随便'是最可怕的答案", "type": "standard"}
+        ],
+        [
+            {"text": "电脑桌面整洁得像手术室", "type": "standard"},
+            {"text": "认为眼泪是决策干扰项", "type": "standard"},
+            {"text": "对'你太较真了'感到困惑", "type": "standard"},
+            {"text": "秘密梦想是设计乌托邦", "type": "standard"},
+            {"text": "安慰人时像在写可行性报告", "type": "standard"}
+        ],
+        [
+            {"text": "看到漏洞会忍不住修改", "type": "standard"},
+            {"text": "'我觉得'后面必跟数据支撑", "type": "standard"},
+            {"text": "把人生当战略游戏在玩", "type": "standard"},
+            {"text": "认为小丑表情包是最高赞美", "type": "standard"},
+            {"text": "遇到彩虹屁会反向技术拆解", "type": "standard"}
+        ]
+    ],
+    "category": "MBTI",
+    "tags": ["人格测试", "心理学"],
+    "createdAt": ""
+}

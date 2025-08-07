@@ -1,0 +1,50 @@
+{
+  "bingoId": "sheniu_index",
+  "title": "社牛指数宾果",
+  "creator": "请手动填写",
+  "description": "五个连成一线，你是名副其实的社交王者",
+  "gridSize": {
+    "rows": 5,
+    "cols": 5
+  },
+  "gridContent": [
+    [
+      { "text": "和陌生人搭讪完全没障碍", "type": "standard" },
+      { "text": "主动组织聚会", "type": "standard" },
+      { "text": "在群聊里秒回", "type": "standard" },
+      { "text": "不怕冷场，能随时接梗", "type": "standard" },
+      { "text": "朋友圈更新比天气还勤", "type": "standard" }
+    ],
+    [
+      { "text": "自来熟属性", "type": "standard" },
+      { "text": "喜欢公共场合表演", "type": "standard" },
+      { "text": "参加陌生局毫无压力", "type": "standard" },
+      { "text": "永远是话题中心", "type": "standard" },
+      { "text": "当众发言不带稿", "type": "standard" }
+    ],
+    [
+      { "text": "经常被说“你太能聊了”", "type": "standard" },
+      { "text": "喜欢交新朋友", "type": "standard" },
+      { "text": "任何时候都能开启聊天模式", "type": "standard" },
+      { "text": "敢在KTV唱第一首", "type": "standard" },
+      { "text": "看到熟人必须打招呼", "type": "standard" }
+    ],
+    [
+      { "text": "坐电梯也能搭话", "type": "standard" },
+      { "text": "给别人起外号是日常操作", "type": "standard" },
+      { "text": "拍照发朋友圈毫无心理负担", "type": "standard" },
+      { "text": "会在社交场合主动照顾社恐朋友", "type": "standard" },
+      { "text": "社交电量永远满格", "type": "standard" }
+    ],
+    [
+      { "text": "有自己的小圈子+大圈子", "type": "standard" },
+      { "text": "给每个朋友都有备注", "type": "standard" },
+      { "text": "不怕尴尬，怕冷场", "type": "standard" },
+      { "text": "任何社交局都能控场", "type": "standard" },
+      { "text": "声音响亮、情绪外放", "type": "standard" }
+    ]
+  ],
+  "category": "社交类",
+  "tags": ["社交能力", "社牛", "外向"],
+  "createdAt": ""
+}

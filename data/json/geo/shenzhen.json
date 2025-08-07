@@ -1,0 +1,125 @@
+{
+    "bingoId": "shenzhen",
+    "title": "深圳人宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，来了就是深圳人！",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "去过大/小梅沙",
+                "type": "standard"
+            },
+            {
+                "text": "初中时引体向上能做0个",
+                "type": "standard"
+            },
+            {
+                "text": "认为椰子鸡是深圳菜",
+                "type": "standard"
+            },
+            {
+                "text": "把深圳校服/裤当睡衣/裤穿过",
+                "type": "standard"
+            },
+            {
+                "text": "拥有一周多次的香港通行证",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "知道深圳校服不同厂家的服务、版型和材质的不一样",
+                "type": "standard"
+            },
+            {
+                "text": "吃过面点王",
+                "type": "standard"
+            },
+            {
+                "text": "认为逛商场晕生活必要活动",
+                "type": "standard"
+            },
+            {
+                "text": "认为深圳景中果排名第三的城市",
+                "type": "standard"
+            },
+            {
+                "text": "介绍“哪里人”时市内说老家市外说深圳人",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "除非工作不经常去广州",
+                "type": "standard"
+            },
+            {
+                "text": "经常去香港",
+                "type": "standard"
+            },
+            {
+                "text": "深圳有房",
+                "type": "standard"
+            },
+            {
+                "text": "知道关内和关外",
+                "type": "standard"
+            },
+            {
+                "text": "经常去海岸城/星河cocopark海上世界/老街",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "祖籍不在深圳",
+                "type": "standard"
+            },
+            {
+                "text": "小学郊游去过民俗文化村/欢乐谷 界之窗",
+                "type": "standard"
+            },
+            {
+                "text": "拥有标准的普通话",
+                "type": "standard"
+            },
+            {
+                "text": "爬过多次莲花山梧桐山",
+                "type": "standard"
+            },
+            {
+                "text": "小学就拥有或玩过无人机",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "家附近永远在施工",
+                "type": "standard"
+            },
+            {
+                "text": "知道四大名校",
+                "type": "standard"
+            },
+            {
+                "text": "没上过平安金融",
+                "type": "standard"
+            },
+            {
+                "text": "不会讲粤语但能听",
+                "type": "standard"
+            },
+            {
+                "text": "认为界生穿白校服是女装",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

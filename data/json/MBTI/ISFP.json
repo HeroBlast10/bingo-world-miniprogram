@@ -1,0 +1,47 @@
+{
+    "bingoId": "mbti-isfp",
+    "title": "ISFP宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，那么你可能是诗意精灵",
+    "gridSize": {"rows":5,"cols":5},
+    "gridContent": [
+        [
+            {"text": "给外卖包装写俳句", "type":"standard"},
+            {"text": "觉得雨声是天空钢琴", "type":"standard"},
+            {"text": "把咖啡渍当抽象画", "type":"standard"},
+            {"text": "会议笔记变成涂鸦本", "type":"standard"},
+            {"text": "认为云朵需要取名", "type":"standard"}
+        ],
+        [
+            {"text": "手机存着142张夕阳", "type":"standard"},
+            {"text": "给扫地机器人编芭蕾", "type":"standard"},
+            {"text": "觉得数据线在跳舞", "type":"standard"},
+            {"text": "把垃圾分类当调色", "type":"standard"},
+            {"text": "认为彩虹是未完成", "type":"standard"}
+        ],
+        [
+            {"text": "备忘录记着落叶脉络", "type":"standard"},
+            {"text": "看财务报表在找韵律", "type":"standard"},
+            {"text": "给电梯按钮画笑脸", "type":"standard"},
+            {"text": "觉得WiFi需要配色", "type":"standard"},
+            {"text": "把沉默当创作前奏", "type":"standard"}
+        ],
+        [
+            {"text": "超市排队设计手链", "type":"standard"},
+            {"text": "认为会议室需要薰衣草", "type":"standard"},
+            {"text": "给多肉植物写情书", "type":"standard"},
+            {"text": "手机铃声是自创雨声", "type":"standard"},
+            {"text": "觉得月亮是夜光颜料", "type":"standard"}
+        ],
+        [
+            {"text": "给外卖小哥画肖像", "type":"standard"},
+            {"text": "把消防演习当行为艺术", "type":"standard"},
+            {"text": "认为苦瓜有忧郁美", "type":"standard"},
+            {"text": "给咖啡渣占卜人生", "type":"standard"},
+            {"text": "觉得彩虹是天空裂痕", "type":"standard"}
+        ]
+    ],
+    "category": "MBTI",
+    "tags": ["人格测试","心理学"],
+    "createdAt": ""
+}

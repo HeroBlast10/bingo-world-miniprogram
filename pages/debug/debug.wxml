@@ -1,0 +1,12 @@
+<!--pages/debug/debug.wxml-->
+<view class="container">
+  <view class="header">
+    <text class="title">宾果数据调试</text>
+  </view>
+  
+  <view class="debug-content">
+    <view class="debug-item" wx:for="{{debugInfo}}" wx:key="index">
+      <text class="debug-text">{{item}}</text>
+    </view>
+  </view>
+</view>

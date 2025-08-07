@@ -1,0 +1,125 @@
+{
+    "bingoId": "shehuizhishu",
+    "title": "社会指数宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线,说明你不社会,还可能很社恐",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "不玩王者吃鸡，",
+                "type": "standard"
+            },
+            {
+                "text": "不喜欢轰趴,ktv",
+                "type": "standard"
+            },
+            {
+                "text": "不刷短视频",
+                "type": "standard"
+            },
+            {
+                "text": "休息日喜欢宅在家(大部分是床上)",
+                "type": "standard"
+            },
+            {
+                "text": "天天玩qq",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "很少发朋友圈",
+                "type": "standard"
+            },
+            {
+                "text": "没纹身",
+                "type": "standard"
+            },
+            {
+                "text": "没去过酒吧",
+                "type": "standard"
+            },
+            {
+                "text": "不追星",
+                "type": "standard"
+            },
+            {
+                "text": "不嚼槟郎",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "异性朋友不超过2个",
+                "type": "standard"
+            },
+            {
+                "text": "没染过发",
+                "type": "standard"
+            },
+            {
+                "text": "没打过耳洞",
+                "type": "standard"
+            },
+            {
+                "text": "过年不打麻将扑克",
+                "type": "standard"
+            },
+            {
+                "text": "不喜欢综艺,看剧",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "不爱看电影",
+                "type": "standard"
+            },
+            {
+                "text": "觉得一个人出门吃饭完全没问题",
+                "type": "standard"
+            },
+            {
+                "text": "没谈过恋爱",
+                "type": "standard"
+            },
+            {
+                "text": "没有穿鞋出门",
+                "type": "standard"
+            },
+            {
+                "text": "没在朋友圈发过自拍",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "没有擅长的运动",
+                "type": "standard"
+            },
+            {
+                "text": "不抽烟",
+                "type": "standard"
+            },
+            {
+                "text": "出门习惯性戴☐罩",
+                "type": "standard"
+            },
+            {
+                "text": "不喜欢和人打交道",
+                "type": "standard"
+            },
+            {
+                "text": "不戴手表,项链之类的东西",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

@@ -1,0 +1,215 @@
+/* pages/create/create.wxss */
+.container {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  padding: 32rpx;
+  padding-bottom: 160rpx; /* 为底部按钮留出空间 */
+}
+
+/* 页面标题 */
+.page-header {
+  text-align: center;
+  margin-bottom: 48rpx;
+}
+
+.page-title {
+  display: block;
+  font-size: 48rpx;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 16rpx;
+}
+
+.page-desc {
+  font-size: 26rpx;
+  color: #6b7280;
+}
+
+/* 表单样式 */
+.create-form {
+  width: 100%;
+}
+
+/* 表单区块 */
+.form-section {
+  background-color: #ffffff;
+  border-radius: 24rpx;
+  padding: 32rpx;
+  margin-bottom: 32rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.04);
+}
+
+.section-title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 8rpx;
+}
+
+.section-desc {
+  font-size: 24rpx;
+  color: #6b7280;
+  margin-bottom: 32rpx;
+  line-height: 1.5;
+}
+
+/* 表单项 */
+.form-item {
+  margin-bottom: 32rpx;
+}
+
+.form-item:last-child {
+  margin-bottom: 0;
+}
+
+.form-label {
+  display: block;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 16rpx;
+}
+
+/* 输入框样式 */
+.form-input {
+  width: 100%;
+  padding: 24rpx;
+  border: 2rpx solid #e5e7eb;
+  border-radius: 16rpx;
+  font-size: 28rpx;
+  color: #1f2937;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  line-height: 1.4;
+  min-height: 80rpx; /* 确保输入框有足够高度 */
+}
+
+.form-input:focus {
+  border-color: #ff6b6b;
+  outline: none;
+}
+
+.form-textarea {
+  width: 100%;
+  min-height: 120rpx;
+  padding: 24rpx;
+  border: 2rpx solid #e5e7eb;
+  border-radius: 16rpx;
+  font-size: 28rpx;
+  color: #1f2937;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+.form-textarea:focus {
+  border-color: #ff6b6b;
+  outline: none;
+}
+
+/* 网格容器 */
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+}
+
+.grid-row {
+  display: flex;
+  gap: 8rpx;
+}
+
+.grid-cell {
+  flex: 1;
+  aspect-ratio: 1;
+  position: relative;
+}
+
+/* 免费格子样式 */
+.free-cell {
+  background-color: #fef3c7;
+  border-radius: 12rpx;
+}
+
+/* 格子输入框 */
+.cell-input {
+  width: 100%;
+  height: 100%;
+  padding: 8rpx;
+  border: 2rpx solid #e5e7eb;
+  border-radius: 12rpx;
+  font-size: 20rpx;
+  color: #1f2937;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 1.2;
+  resize: none;
+}
+
+.cell-input:focus {
+  border-color: #ff6b6b;
+  outline: none;
+}
+
+/* 免费格子输入框 */
+.free-input {
+  background-color: #fef3c7;
+  border-color: #f59e0b;
+  color: #92400e;
+  font-weight: 500;
+}
+
+/* 提交按钮区域 */
+.form-actions {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  padding: 32rpx;
+  border-top: 1rpx solid #e5e7eb;
+  box-shadow: 0 -2rpx 8rpx rgba(0, 0, 0, 0.04);
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #ff6b6b;
+  color: #ffffff;
+  border: none;
+  border-radius: 48rpx;
+  padding: 32rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.submit-btn:active {
+  background-color: #ef4444;
+  transform: scale(0.98);
+}
+
+/* 占位符样式 */
+.form-input::placeholder,
+.form-textarea::placeholder,
+.cell-input::placeholder {
+  color: #9ca3af;
+  font-size: 28rpx;
+  line-height: 1.4;
+}
+
+/* 响应式调整 */
+@media (max-width: 750rpx) {
+  .cell-input {
+    font-size: 18rpx;
+    padding: 6rpx;
+  }
+  
+  .grid-container {
+    gap: 6rpx;
+  }
+  
+  .grid-row {
+    gap: 6rpx;
+  }
+}

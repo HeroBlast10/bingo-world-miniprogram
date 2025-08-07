@@ -1,0 +1,50 @@
+{
+    "bingoId": "lishitongshi",
+    "title": "历史通识宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你是历史知识达人",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "能说出四大文明古国", "type": "standard"},
+            {"text": "知道春秋五霸是谁", "type": "standard"},
+            {"text": "了解文艺复兴三杰", "type": "standard"},
+            {"text": "熟悉中国朝代顺序", "type": "standard"},
+            {"text": "能解释冷战概念", "type": "standard"}
+        ],
+        [
+            {"text": "知道丝绸之路路线", "type": "standard"},
+            {"text": "了解工业革命影响", "type": "standard"},
+            {"text": "能说出战国七雄", "type": "standard"},
+            {"text": "熟悉三国鼎立局面", "type": "standard"},
+            {"text": "了解法国大革命", "type": "standard"}
+        ],
+        [
+            {"text": "知道郑和下西洋", "type": "standard"},
+            {"text": "了解美国独立战争", "type": "standard"},
+            {"text": "能解释禅让制", "type": "standard"},
+            {"text": "熟悉明治维新", "type": "standard"},
+            {"text": "了解拜占庭帝国", "type": "standard"}
+        ],
+        [
+            {"text": "知道玄武门之变", "type": "standard"},
+            {"text": "了解启蒙运动", "type": "standard"},
+            {"text": "能说出唐宋八大家", "type": "standard"},
+            {"text": "熟悉地理大发现", "type": "standard"},
+            {"text": "了解戊戌变法", "type": "standard"}
+        ],
+        [
+            {"text": "知道诺曼征服", "type": "standard"},
+            {"text": "了解贞观之治", "type": "standard"},
+            {"text": "能解释圈地运动", "type": "standard"},
+            {"text": "熟悉汉谟拉比法典", "type": "standard"},
+            {"text": "了解鸦片战争", "type": "standard"}
+        ]
+    ],
+    "category": "历史",
+    "tags": ["知识", "通识"],
+    "createdAt": ""
+}

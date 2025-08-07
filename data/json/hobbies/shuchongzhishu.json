@@ -1,0 +1,50 @@
+{
+    "bingoId": "shuchongzhishu",
+    "title": "书虫指数宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你是深度文学爱好者",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "家里藏书超200本", "type": "standard"},
+            {"text": "有专属书房/阅读角", "type": "standard"},
+            {"text": "能背诵经典段落", "type": "standard"},
+            {"text": "买书优先于买衣服", "type": "standard"},
+            {"text": "参加过签售会", "type": "standard"}
+        ],
+        [
+            {"text": "读书笔记超5本", "type": "standard"},
+            {"text": "收藏绝版书", "type": "standard"},
+            {"text": "每月读书≥4本", "type": "standard"},
+            {"text": "给书包书皮", "type": "standard"},
+            {"text": "按颜色分类书架", "type": "standard"}
+        ],
+        [
+            {"text": "通读过四大名著", "type": "standard"},
+            {"text": "有作者亲笔签名", "type": "standard"},
+            {"text": "读书会常驻成员", "type": "standard"},
+            {"text": "拒绝电子书", "type": "standard"},
+            {"text": "送书当礼物", "type": "standard"}
+        ],
+        [
+            {"text": "图书馆VIP用户", "type": "standard"},
+            {"text": "读书时不吃零食", "type": "standard"},
+            {"text": "床头常放3本书", "type": "standard"},
+            {"text": "用书签不用折角", "type": "standard"},
+            {"text": "能辨印刷体差异", "type": "standard"}
+        ],
+        [
+            {"text": "购书预算超衣物", "type": "standard"},
+            {"text": "读书计划表", "type": "standard"},
+            {"text": "书腰收集者", "type": "standard"},
+            {"text": "按出版社选书", "type": "standard"},
+            {"text": "修复过破损书", "type": "standard"}
+        ]
+    ],
+    "category": "阅读",
+    "tags": [],
+    "createdAt": ""
+}

@@ -1,0 +1,50 @@
+{
+    "bingoId": "yishujianshang",
+    "title": "艺术鉴赏宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你具备专业艺术鉴赏力",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "能识别印象派作品", "type": "standard"},
+            {"text": "知道贝多芬交响曲", "type": "standard"},
+            {"text": "了解京剧四大名旦", "type": "standard"},
+            {"text": "熟悉文艺复兴三杰", "type": "standard"},
+            {"text": "能分析哥特式建筑", "type": "standard"}
+        ],
+        [
+            {"text": "能区分巴洛克与洛可可", "type": "standard"},
+            {"text": "知道柴可夫斯基三大舞剧", "type": "standard"},
+            {"text": "了解书法五种书体", "type": "standard"},
+            {"text": "熟悉中国画技法", "type": "standard"},
+            {"text": "能鉴赏古典歌剧", "type": "standard"}
+        ],
+        [
+            {"text": "能识别超现实主义", "type": "standard"},
+            {"text": "知道莫扎特代表作品", "type": "standard"},
+            {"text": "了解昆曲艺术特点", "type": "standard"},
+            {"text": "熟悉敦煌壁画价值", "type": "standard"},
+            {"text": "能分析现代舞特征", "type": "standard"}
+        ],
+        [
+            {"text": "能解读抽象表现主义", "type": "standard"},
+            {"text": "知道肖邦音乐风格", "type": "standard"},
+            {"text": "了解皮影戏历史", "type": "standard"},
+            {"text": "熟悉青花瓷工艺", "type": "standard"},
+            {"text": "能鉴赏芭蕾舞剧", "type": "standard"}
+        ],
+        [
+            {"text": "能识别后现代艺术", "type": "standard"},
+            {"text": "知道巴赫复调音乐", "type": "standard"},
+            {"text": "了解剪纸艺术流派", "type": "standard"},
+            {"text": "熟悉景泰蓝制作", "type": "standard"},
+            {"text": "能分析装置艺术", "type": "standard"}
+        ]
+    ],
+    "category": "艺术",
+    "tags": ["知识", "鉴赏"],
+    "createdAt": ""
+}

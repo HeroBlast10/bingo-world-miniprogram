@@ -1,0 +1,47 @@
+{
+    "bingoId": "mbti-entj",
+    "title": "ENTJ宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，那么你可能是天生领袖",
+    "gridSize": {"rows":5,"cols":5},
+    "gridContent": [
+        [
+            {"text": "团建时自动接管话筒", "type":"standard"},
+            {"text": "把闲聊视为资源浪费", "type":"standard"},
+            {"text": "认为感情需要KPI考核", "type":"standard"},
+            {"text": "手机壁纸是'世界地图作战版'", "type":"standard"},
+            {"text": "安慰人像在做战前动员", "type":"standard"}
+        ],
+        [
+            {"text": "看爱情片在分析权力结构", "type":"standard"},
+            {"text": "'我建议'其实是命令", "type":"standard"},
+            {"text": "把度假村当临时指挥部", "type":"standard"},
+            {"text": "认为效率是最高美德", "type":"standard"},
+            {"text": "给朋友发人生规划建议书", "type":"standard"}
+        ],
+        [
+            {"text": "谈判时像在占领高地", "type":"standard"},
+            {"text": "手机备忘录标题带'战略'二字", "type":"standard"},
+            {"text": "把宠物当部下训练", "type":"standard"},
+            {"text": "认为犹豫是决策系统漏洞", "type":"standard"},
+            {"text": "健身时像在军事训练", "type":"standard"}
+        ],
+        [
+            {"text": "超市购物像物资调配", "type":"standard"},
+            {"text": "'五分钟'是最大时间单位", "type":"standard"},
+            {"text": "把生日派对当项目管理", "type":"standard"},
+            {"text": "认为眼泪是战略失误信号", "type":"standard"},
+            {"text": "给咖啡因摄入做效益分析", "type":"standard"}
+        ],
+        [
+            {"text": "看云朵像在看战场态势", "type":"standard"},
+            {"text": "把休闲称为'战术调整'", "type":"standard"},
+            {"text": "认为妥协是阶段性策略", "type":"standard"},
+            {"text": "给植物下达生长指令", "type":"standard"},
+            {"text": "觉得彩虹需要优化色谱", "type":"standard"}
+        ]
+    ],
+    "category": "MBTI",
+    "tags": ["人格测试","心理学"],
+    "createdAt": ""
+}

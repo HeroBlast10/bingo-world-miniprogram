@@ -1,0 +1,125 @@
+{
+    "bingoId": "xingnu",
+    "title": "星奴宾果 ",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你就是资深星奴！",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "种青豆把自己关了起来",
+                "type": "standard"
+            },
+            {
+                "text": "找玛尼买东西玛尼不在家",
+                "type": "standard"
+            },
+            {
+                "text": "誓死不加入joja",
+                "type": "standard"
+            },
+            {
+                "text": "梦想能得到垃圾目录",
+                "type": "standard"
+            },
+            {
+                "text": "把淘盘扣头上",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "告诉潘姆是谁给她建了房学",
+                "type": "standard"
+            },
+            {
+                "text": "期期不落酱料女皇",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢科罗布斯",
+                "type": "standard"
+            },
+            {
+                "text": "抓出娃娃机里最大的植物家具",
+                "type": "standard"
+            },
+            {
+                "text": "达成完美成就",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "一点不看酱科女皇",
+                "type": "standard"
+            },
+            {
+                "text": "让哈维嬈蜀犧多钱",
+                "type": "standard"
+            },
+            {
+                "text": "吃绿藻",
+                "type": "standard"
+            },
+            {
+                "text": "被假人模特I 吓到",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢帽子老鼠",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "为了改外貌和法师装燕",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢祝尼魔",
+                "type": "standard"
+            },
+            {
+                "text": "小猫叫味增 ”",
+                "type": "standard"
+            },
+            {
+                "text": "让马厩和屋子连在一起",
+                "type": "standard"
+            },
+            {
+                "text": "显示高级打造信息",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "看别人玩1.6羡慕得流☐水",
+                "type": "standard"
+            },
+            {
+                "text": "星期三去杂货店",
+                "type": "standard"
+            },
+            {
+                "text": "有一枚铱环+幸运组合戒指",
+                "type": "standard"
+            },
+            {
+                "text": "拿五彩碎片做衣服玩",
+                "type": "standard"
+            },
+            {
+                "text": "地窖里有33个以上的木桶",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "爱好",
+    "tags": ["星际"],
+    "createdAt": ""
+}

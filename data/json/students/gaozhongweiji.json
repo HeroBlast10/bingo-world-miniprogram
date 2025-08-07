@@ -1,0 +1,122 @@
+{
+    "bingoId": "gaozhongweiji",
+    "title": "高中违纪宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线,说明你是一个不合格的高中生",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "偷玩电子设备",
+                "type": "standard"
+            },
+            {
+                "text": "考试作弊",
+                "type": "standard"
+            },
+            {
+                "text": "旷课",
+                "type": "standard"
+            },
+            {
+                "text": "校内抽烟",
+                "type": "standard"
+            },
+            {
+                "text": "发型不合格(染/烫/不符合学校的长度要求)",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "抄作业",
+                "type": "standard"
+            },
+            {
+                "text": "携带违规电子设备",
+                "type": "standard"
+            },
+            {
+                "text": "点外卖",
+                "type": "standard"
+            },
+            {
+                "text": "旷自习",
+                "type": "standard"
+            },
+            {
+                "text": "不按要求穿校服",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "自习/上课时玩棋牌游戏(麻将/打牌/下棋等",
+                "type": "standard"
+            },
+            {
+                "text": "谈恋爱",
+                "type": "standard"
+            },
+            {
+                "text": "上课睡觉",
+                "type": "standard"
+            },
+            {
+                "text": "逃学",
+                "type": "standard"
+            },
+            {
+                "text": "美甲",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "辱骂老师",
+                "type": "standard"
+            },
+            {
+                "text": "进入校内不允许进入的区域",
+                "type": "standard"
+            },
+            {
+                "text": "戴首饰",
+                "type": "standard"
+            },
+            {
+                "text": "打架",
+                "type": "standard"
+            },
+            {
+                "text": "扰乱课堂/自习/晚休秩序",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "校内饮酒",
+                "type": "standard"
+            },
+            {
+                "text": "携带管制刀具",
+                "type": "standard"
+            },
+            {
+                "text": "旷操",
+                "type": "standard"
+            },
+            {
+                "text": "违规充电/破坏公物使用电器",
+                "type": "standard"
+            },
+            {}
+        ]
+    ],
+    "category": "学生",
+    "tags": [],
+    "createdAt": ""
+}

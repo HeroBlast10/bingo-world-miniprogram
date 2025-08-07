@@ -1,0 +1,125 @@
+{
+    "bingoId": "yaogun",
+    "title": "摇滚宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线,说明你是一个真正的摇滚b",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "有一个专门的摇滚歌单",
+                "type": "standard"
+            },
+            {
+                "text": "年度歌手是摇滚乐队",
+                "type": "standard"
+            },
+            {
+                "text": "去过三次及以上livehouse",
+                "type": "standard"
+            },
+            {
+                "text": "去过school",
+                "type": "standard"
+            },
+            {
+                "text": "在现场打拳/排甩/开火车",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "看不起乐队的夏天",
+                "type": "standard"
+            },
+            {
+                "text": "朋友圈个性签名是乐队歌词",
+                "type": "standard"
+            },
+            {
+                "text": "去过音乐节",
+                "type": "standard"
+            },
+            {
+                "text": "有乐队T恤/周边",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢的乐队被爆黑料",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "在ktv发现只会唱摇滚并发现搜不到",
+                "type": "standard"
+            },
+            {
+                "text": "听的歌被骂土/非主流",
+                "type": "standard"
+            },
+            {
+                "text": "有一把吉他/贝斯",
+                "type": "standard"
+            },
+            {
+                "text": "在livehouse跳水",
+                "type": "standard"
+            },
+            {
+                "text": "有乐队专辑/黑胶",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "幻想自己搞乐队/搞乐队",
+                "type": "standard"
+            },
+            {
+                "text": "抽烟/喝酒",
+                "type": "standard"
+            },
+            {
+                "text": "去音乐节/live house当志愿者",
+                "type": "standard"
+            },
+            {
+                "text": "偷偷听被骂的乐队的歌",
+                "type": "standard"
+            },
+            {
+                "text": "在音乐节蹦一整天",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "去过迷笛",
+                "type": "standard"
+            },
+            {
+                "text": "朋友圈分享很多国摇",
+                "type": "standard"
+            },
+            {
+                "text": "没什么好.看衣服",
+                "type": "standard"
+            },
+            {
+                "text": "在音乐节摇旗/放冷焰",
+                "type": "standard"
+            },
+            {
+                "text": "爱讲94年红勘/魔岩三杰",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

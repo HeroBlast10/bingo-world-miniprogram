@@ -1,0 +1,125 @@
+{
+    "bingoId": "wobushibingshen",
+    "title": "我不是病神宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线成为病神",
+    "gridSize": {
+        "rows": 6,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "全身超过15种疾病",
+                "type": "standard"
+            },
+            {
+                "text": "得过肿瘤",
+                "type": "standard"
+            },
+            {
+                "text": "用过超过40种药",
+                "type": "standard"
+            },
+            {
+                "text": "每年必住院",
+                "type": "standard"
+            },
+            {
+                "text": "每天都吃药",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "有心理疾病",
+                "type": "standard"
+            },
+            {
+                "text": "有精神疾病",
+                "type": "standard"
+            },
+            {
+                "text": "有重大疾病",
+                "type": "standard"
+            },
+            {
+                "text": "做过手术",
+                "type": "standard"
+            },
+            {
+                "text": "连续扎针超过48小时",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "有无法治愈的疾病",
+                "type": "standard"
+            },
+            {
+                "text": "对某种药物过敏",
+                "type": "standard"
+            },
+            {
+                "text": "每天服用5片以上药物",
+                "type": "standard"
+            },
+            {
+                "text": "有很罕见的疾病",
+                "type": "standard"
+            },
+            {
+                "text": "家里无法支付治疗费",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "吃的药很贵",
+                "type": "standard"
+            },
+            {
+                "text": "缝过针",
+                "type": "standard"
+            },
+            {
+                "text": "被抢救过",
+                "type": "standard"
+            },
+            {
+                "text": "有严重的吃药副作用",
+                "type": "standard"
+            },
+            {
+                "text": "有疾病后遗症",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "骨折过",
+                "type": "standard"
+            },
+            {
+                "text": "晕针",
+                "type": "standard"
+            },
+            {
+                "text": "晕血",
+                "type": "standard"
+            },
+            {
+                "text": "自己一个人看病",
+                "type": "standard"
+            },
+            {
+                "text": "坐过救护车",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

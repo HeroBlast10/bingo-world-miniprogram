@@ -1,0 +1,50 @@
+{
+    "bingoId": "gameplayer",
+    "title": "游戏玩家宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你是硬核游戏玩家",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "拥有3个以上游戏平台", "type": "standard"},
+            {"text": "白金/全成就≥5款游戏", "type": "standard"},
+            {"text": "参加过电竞赛事", "type": "standard"},
+            {"text": "能速通经典游戏", "type": "standard"},
+            {"text": "收藏限定版主机", "type": "standard"}
+        ],
+        [
+            {"text": "游戏时间超5000小时", "type": "standard"},
+            {"text": "会修改游戏文件", "type": "standard"},
+            {"text": "拥有电竞外设", "type": "standard"},
+            {"text": "制作过游戏MOD", "type": "standard"},
+            {"text": "记得秘籍代码", "type": "standard"}
+        ],
+        [
+            {"text": "首发购入游戏", "type": "standard"},
+            {"text": "通关过魂类游戏", "type": "standard"},
+            {"text": "参加游戏测试", "type": "standard"},
+            {"text": "会分析游戏机制", "type": "standard"},
+            {"text": "收藏游戏原声", "type": "standard"}
+        ],
+        [
+            {"text": "有游戏周边收藏", "type": "standard"},
+            {"text": "能背出角色台词", "type": "standard"},
+            {"text": "写过游戏攻略", "type": "standard"},
+            {"text": "参与过众筹游戏", "type": "standard"},
+            {"text": "会速建红石机关", "type": "standard"}
+        ],
+        [
+            {"text": "精通格斗游戏连招", "type": "standard"},
+            {"text": "了解游戏开发流程", "type": "standard"},
+            {"text": "有游戏截图集", "type": "standard"},
+            {"text": "能还原经典关卡", "type": "standard"},
+            {"text": "订阅游戏杂志", "type": "standard"}
+        ]
+    ],
+    "category": "游戏",
+    "tags": ["玩家", "硬核"],
+    "createdAt": ""
+}

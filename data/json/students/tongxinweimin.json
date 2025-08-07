@@ -1,0 +1,50 @@
+{
+    "bingoId": "tongxinweimin",
+    "title": "童心未泯宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，恭喜你永驻快乐星球！",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "认真和玩偶开会", "type": "standard"},
+            {"text": "踩水坑必溅最高", "type": "standard"},
+            {"text": "收集卡通橡皮", "type": "standard"},
+            {"text": "相信冰箱有零食精灵", "type": "standard"},
+            {"text": "给云朵编故事", "type": "standard"}
+        ],
+        [
+            {"text": "看到泡泡机走不动路", "type": "standard"},
+            {"text": "吃儿童套餐为玩具", "type": "standard"},
+            {"text": "和小孩抢滑梯", "type": "standard"},
+            {"text": "保留小学课本涂鸦", "type": "standard"},
+            {"text": "给家电起名字", "type": "standard"}
+        ],
+        [
+            {"text": "沉迷拼图/乐高", "type": "standard"},
+            {"text": "看动画片哭得比娃惨", "type": "standard"},
+            {"text": "坚信玩沙是顶级娱乐", "type": "standard"},
+            {"text": "收到贴纸会狂喜", "type": "standard"},
+            {"text": "吹风扇啊啊叫", "type": "standard"}
+        ],
+        [
+            {"text": "按颜色分类糖果", "type": "standard"},
+            {"text": "偷吃宝宝辅食", "type": "standard"},
+            {"text": "给蚂蚁让路", "type": "standard"},
+            {"text": "追着影子踩", "type": "standard"},
+            {"text": "相信玩火会尿床", "type": "standard"}
+        ],
+        [
+            {"text": "用吸管吹饮料冒泡", "type": "standard"},
+            {"text": "捏泡泡纸不舍得丢", "type": "standard"},
+            {"text": "给流浪猫编史诗身世", "type": "standard"},
+            {"text": "看到彩虹必拍照", "type": "standard"},
+            {"text": "至今怕黑要开灯睡", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

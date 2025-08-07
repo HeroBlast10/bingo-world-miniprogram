@@ -1,0 +1,50 @@
+{
+    "bingoId": "movielover",
+    "title": "电影迷宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你是骨灰级影迷",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "看过IMDb Top250", "type": "standard"},
+            {"text": "能识别导演风格", "type": "standard"},
+            {"text": "收藏蓝光碟", "type": "standard"},
+            {"text": "参加电影节", "type": "standard"},
+            {"text": "写过长影评", "type": "standard"}
+        ],
+        [
+            {"text": "熟悉电影史", "type": "standard"},
+            {"text": "分析镜头语言", "type": "standard"},
+            {"text": "有导演签名", "type": "standard"},
+            {"text": "看导演剪辑版", "type": "standard"},
+            {"text": "参加观影团", "type": "standard"}
+        ],
+        [
+            {"text": "记住配乐作者", "type": "standard"},
+            {"text": "看默片", "type": "standard"},
+            {"text": "收藏电影海报", "type": "standard"},
+            {"text": "研究过色彩运用", "type": "standard"},
+            {"text": "马拉松式观影", "type": "standard"}
+        ],
+        [
+            {"text": "熟悉各流派", "type": "standard"},
+            {"text": "看黑白电影", "type": "standard"},
+            {"text": "拜访拍摄地", "type": "standard"},
+            {"text": "分析剧本结构", "type": "standard"},
+            {"text": "订阅专业杂志", "type": "standard"}
+        ],
+        [
+            {"text": "记住演员本名", "type": "standard"},
+            {"text": "看修复版", "type": "standard"},
+            {"text": "制作混剪视频", "type": "standard"},
+            {"text": "研究过服化道", "type": "standard"},
+            {"text": "建立观影数据库", "type": "standard"}
+        ]
+    ],
+    "category": "影视",
+    "tags": ["电影", "影迷"],
+    "createdAt": ""
+}

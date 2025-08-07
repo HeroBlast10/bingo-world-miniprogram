@@ -1,0 +1,125 @@
+{
+    "bingoId": "gudu",
+    "title": "孤独谱系宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你可能是孤独谱系个体",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "不会见人说人话见鬼说鬼话",
+                "type": "standard"
+            },
+            {
+                "text": "在社交场合掩饰自己",
+                "type": "standard"
+            },
+            {
+                "text": "需要一致的日程来维持正常生活",
+                "type": "standard"
+            },
+            {
+                "text": "表情严肃或“太傻”",
+                "type": "standard"
+            },
+            {
+                "text": "经常模仿台词/文章/对话的一 部分",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "被人评价“身体姿势奇怪”",
+                "type": "standard"
+            },
+            {
+                "text": "有被同学集体排挤的经历",
+                "type": "standard"
+            },
+            {
+                "text": "长期专注于某些强烈的兴趣",
+                "type": "standard"
+            },
+            {
+                "text": "被评价“爱钻牛角尖\"",
+                "type": "standard"
+            },
+            {
+                "text": "寻求视觉刺激,或害怕强光",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "维持双向对话困难",
+                "type": "standard"
+            },
+            {
+                "text": "重复动作",
+                "type": "standard"
+            },
+            {
+                "text": "避免眼神接触",
+                "type": "standard"
+            },
+            {
+                "text": "经常需要耳塞/耳罩/隔音耳机",
+                "type": "standard"
+            },
+            {
+                "text": "需要独处来恢复能量",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "触觉敏感(对衣服材质/标签敏感)",
+                "type": "standard"
+            },
+            {
+                "text": "语调太平淡或太夸张",
+                "type": "standard"
+            },
+            {
+                "text": "很想交朋友但交不到/维持不久",
+                "type": "standard"
+            },
+            {
+                "text": "长期收集某些感兴趣的物品",
+                "type": "standard"
+            },
+            {
+                "text": "在觉得自己很礼貌时被人评价没礼貌",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "有一些需要遵守的个人规则(比如打招呼的脚本/吃同样的食物)",
+                "type": "standard"
+            },
+            {
+                "text": "非常挑食(无法忍受某 些食物的质地 或气味)",
+                "type": "standard"
+            },
+            {
+                "text": "述情障碍(难以识别和描述自己的情绪)",
+                "type": "standard"
+            },
+            {
+                "text": "经常社交耗竭",
+                "type": "standard"
+            },
+            {
+                "text": "对话时注视对方的眉毛/鼻子1脖子以下",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

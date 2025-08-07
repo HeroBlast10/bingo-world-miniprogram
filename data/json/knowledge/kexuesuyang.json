@@ -1,0 +1,50 @@
+{
+    "bingoId": "kexuesuyang",
+    "title": "科学素养宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你具备优秀科学素养",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "理解相对论基础", "type": "standard"},
+            {"text": "知道元素周期表规律", "type": "standard"},
+            {"text": "了解DNA双螺旋结构", "type": "standard"},
+            {"text": "熟悉牛顿三大定律", "type": "standard"},
+            {"text": "能解释光合作用", "type": "standard"}
+        ],
+        [
+            {"text": "理解量子纠缠概念", "type": "standard"},
+            {"text": "知道细胞分裂过程", "type": "standard"},
+            {"text": "了解大气环流原理", "type": "standard"},
+            {"text": "熟悉火山形成机制", "type": "standard"},
+            {"text": "能解释潮汐现象", "type": "standard"}
+        ],
+        [
+            {"text": "理解黑洞基本原理", "type": "standard"},
+            {"text": "知道人类进化阶段", "type": "standard"},
+            {"text": "了解板块构造理论", "type": "standard"},
+            {"text": "熟悉电磁感应定律", "type": "standard"},
+            {"text": "能解释酸碱中和", "type": "standard"}
+        ],
+        [
+            {"text": "理解基因编辑原理", "type": "standard"},
+            {"text": "知道太阳系行星特征", "type": "standard"},
+            {"text": "了解生态系统平衡", "type": "standard"},
+            {"text": "熟悉光的波粒二象性", "type": "standard"},
+            {"text": "能解释温室效应", "type": "standard"}
+        ],
+        [
+            {"text": "理解纳米技术应用", "type": "standard"},
+            {"text": "知道免疫系统工作原理", "type": "standard"},
+            {"text": "了解量子计算机原理", "type": "standard"},
+            {"text": "熟悉生物多样性价值", "type": "standard"},
+            {"text": "能解释伯努利原理", "type": "standard"}
+        ]
+    ],
+    "category": "科学",
+    "tags": ["知识", "科普"],
+    "createdAt": ""
+}

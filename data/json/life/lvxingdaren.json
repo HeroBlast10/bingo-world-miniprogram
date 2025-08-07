@@ -1,0 +1,50 @@
+{
+    "bingoId": "lvxingdaren",
+    "title": "旅行达人宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你是环球旅行专家",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "独自跨国旅行", "type": "standard"},
+            {"text": "会说3门外语", "type": "standard"},
+            {"text": "沙发客经历", "type": "standard"},
+            {"text": "洲际旅行达人", "type": "standard"},
+            {"text": "收集旅行印章", "type": "standard"}
+        ],
+        [
+            {"text": "自驾穿越大陆", "type": "standard"},
+            {"text": "住过青旅10+", "type": "standard"},
+            {"text": "会看星空导航", "type": "standard"},
+            {"text": "旅行手账达人", "type": "standard"},
+            {"text": "会搭帐篷", "type": "standard"}
+        ],
+        [
+            {"text": "旅行急救证书", "type": "standard"},
+            {"text": "收集冰箱贴", "type": "standard"},
+            {"text": "错峰旅行专家", "type": "standard"},
+            {"text": "会搭顺风车", "type": "standard"},
+            {"text": "深度文化体验", "type": "standard"}
+        ],
+        [
+            {"text": "背包客装备", "type": "standard"},
+            {"text": "会换旅行支票", "type": "standard"},
+            {"text": "旅行摄影作品", "type": "standard"},
+            {"text": "跨国义工经历", "type": "standard"},
+            {"text": "会认世界货币", "type": "standard"}
+        ],
+        [
+            {"text": "制作旅行视频", "type": "standard"},
+            {"text": "火车旅行专家", "type": "standard"},
+            {"text": "旅行美食地图", "type": "standard"},
+            {"text": "克服时差大师", "type": "standard"},
+            {"text": "会读等高线图", "type": "standard"}
+        ]
+    ],
+    "category": "旅行",
+    "tags": [],
+    "createdAt": ""
+}

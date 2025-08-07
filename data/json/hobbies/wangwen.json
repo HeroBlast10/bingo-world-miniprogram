@@ -1,0 +1,50 @@
+{
+    "bingoId": "wangwen",
+    "title": "网文爱好者宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你已是文学城城主",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "记得起点创站时间", "type": "standard"},
+            {"text": "收藏实体出版书", "type": "standard"},
+            {"text": "分得清修仙等级", "type": "standard"},
+            {"text": "用角色名当ID", "type": "standard"},
+            {"text": "觉得早期网文更野", "type": "standard"}
+        ],
+        [
+            {"text": "买过作者定制周边", "type": "standard"},
+            {"text": "为CP写同人文", "type": "standard"},
+            {"text": "熬夜追更新", "type": "standard"},
+            {"text": "收藏签名书", "type": "standard"},
+            {"text": "能写万章长评", "type": "standard"}
+        ],
+        [
+            {"text": "手机存百部TXT", "type": "standard"},
+            {"text": "用网文梗聊天", "type": "standard"},
+            {"text": "追更超十年", "type": "standard"},
+            {"text": "买过打赏盟主", "type": "standard"},
+            {"text": "觉得盗版毁行业", "type": "standard"}
+        ],
+        [
+            {"text": "分析世界观漏洞", "type": "standard"},
+            {"text": "为BE哭三天", "type": "standard"},
+            {"text": "收藏各题材神作", "type": "standard"},
+            {"text": "会模仿大神文风", "type": "standard"},
+            {"text": "嫌弃套路化严重", "type": "standard"}
+        ],
+        [
+            {"text": "用网文学冷知识", "type": "standard"},
+            {"text": "知道网站八卦", "type": "standard"},
+            {"text": "买过众筹项目", "type": "standard"},
+            {"text": "在龙空舌战群儒", "type": "standard"},
+            {"text": "觉得网文是第九艺术", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

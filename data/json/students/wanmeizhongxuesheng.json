@@ -1,0 +1,50 @@
+{
+    "bingoId": "wanmeizhongsheng",
+    "title": "完美中学生宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你就是校园传说级人物",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "书包永远整齐", "type": "standard"},
+            {"text": "作业被当范本展示", "type": "standard"},
+            {"text": "校服一尘不染", "type": "standard"},
+            {"text": "上课笔记五色分区", "type": "standard"},
+            {"text": "课桌像陈列馆", "type": "standard"}
+        ],
+        [
+            {"text": "月考稳居年级前十", "type": "standard"},
+            {"text": "老师提问必举手", "type": "standard"},
+            {"text": "错题本厚过教材", "type": "standard"},
+            {"text": "书包里有计划本", "type": "standard"},
+            {"text": "拒绝早恋专心学习", "type": "standard"}
+        ],
+        [
+            {"text": "同时是班长+课代表", "type": "standard"},
+            {"text": "运动会报名三项", "type": "standard"},
+            {"text": "艺术节独奏表演", "type": "standard"},
+            {"text": "假期参加学科竞赛", "type": "standard"},
+            {"text": "给同学无偿补课", "type": "standard"}
+        ],
+        [
+            {"text": "六点起床背单词", "type": "standard"},
+            {"text": "手机用老人机", "type": "standard"},
+            {"text": "书包装养生茶", "type": "standard"},
+            {"text": "给老师准备润喉糖", "type": "standard"},
+            {"text": "放学直接去自习室", "type": "standard"}
+        ],
+        [
+            {"text": "家长会父母被围观", "type": "standard"},
+            {"text": "有专属奖学金", "type": "standard"},
+            {"text": "拒绝玩手游", "type": "standard"},
+            {"text": "寒暑假预习下学期", "type": "standard"},
+            {"text": "梦想是清北", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

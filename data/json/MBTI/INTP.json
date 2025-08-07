@@ -1,0 +1,50 @@
+{
+    "bingoId": "mbti-intp",
+    "title": "INTP宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，那么你可能是好奇宝宝",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "聊天时突然陷入宇宙沉思", "type": "standard"},
+            {"text": "书签栏有47个未读论文", "type": "standard"},
+            {"text": "认为'这不合逻辑'是脏话", "type": "standard"},
+            {"text": "把冰箱当图书馆用", "type": "standard"},
+            {"text": "对冷笑话数据库了如指掌", "type": "standard"}
+        ],
+        [
+            {"text": "洗澡时发明时间机器", "type": "standard"},
+            {"text": "'稍等'意味着三小时研究", "type": "standard"},
+            {"text": "用数学公式解感情问题", "type": "standard"},
+            {"text": "收藏夹里有黑洞解剖图", "type": "standard"},
+            {"text": "觉得社交礼仪是玄学", "type": "standard"}
+        ],
+        [
+            {"text": "定义'收拾'为堆出新形状", "type": "standard"},
+            {"text": "突然验证牙膏挤法最优解", "type": "standard"},
+            {"text": "看说明书比看小说入迷", "type": "standard"},
+            {"text": "认为小狗摇尾巴是混沌理论", "type": "standard"},
+            {"text": "把生日蜡烛当小型实验", "type": "standard"}
+        ],
+        [
+            {"text": "聊天记录充满'为什么'", "type": "standard"},
+            {"text": "用编程思维养盆栽", "type": "standard"},
+            {"text": "觉得表情包是信息压缩艺术", "type": "standard"},
+            {"text": "给咖啡杯分类量子态", "type": "standard"},
+            {"text": "解释笑话比讲笑话时间长", "type": "standard"}
+        ],
+        [
+            {"text": "衣柜里有元素周期表T恤", "type": "standard"},
+            {"text": "认为'差不多'是危险词汇", "type": "standard"},
+            {"text": "给扫地机器人写优化代码", "type": "standard"},
+            {"text": "用贝叶斯定理决定吃啥", "type": "standard"},
+            {"text": "觉得彩虹是光谱诈骗", "type": "standard"}
+        ]
+    ],
+    "category": "MBTI",
+    "tags": ["人格测试", "心理学"],
+    "createdAt": ""
+}

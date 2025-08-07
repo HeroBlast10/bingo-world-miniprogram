@@ -1,0 +1,87 @@
+<!--pages/settings/settings.wxml-->
+<view class="container">
+  <!-- 宾果颜色设置 -->
+  <view class="settings-section">
+    <text class="section-title">宾果颜色</text>
+    <text class="section-desc">选择你喜欢的宾果选中颜色</text>
+    
+    <view class="color-grid">
+      <view 
+        class="color-option {{selectedColor === item.id ? 'selected' : ''}}"
+        wx:for="{{colorOptions}}" 
+        wx:key="id"
+        data-color="{{item.id}}"
+        bindtap="onColorSelect"
+      >
+        <view class="color-header">
+          <view class="color-circle {{item.bgClass}}">
+            <text wx:if="{{selectedColor === item.id}}" class="check-icon">✓</text>
+          </view>
+          <text class="color-name">{{item.name}}</text>
+        </view>
+        
+        <!-- 预览网格 -->
+        <view class="preview-grid">
+          <view 
+            class="preview-cell {{(index === 1 || index === 4 || index === 7) ? item.bgClass + ' selected-cell' : 'default-cell'}}"
+            wx:for="{{previewCells}}" 
+            wx:for-index="index"
+            wx:key="index"
+          >
+            <text wx:if="{{index === 4}}" class="preview-check">✓</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 通用设置 -->
+  <view class="settings-section">
+    <text class="section-title">通用设置</text>
+    
+    <view class="setting-item">
+      <view class="setting-info">
+        <text class="setting-title">推送通知</text>
+        <text class="setting-desc">接收新宾果和活动通知</text>
+      </view>
+      <view class="toggle-switch {{notifications ? 'active' : ''}}" bindtap="onToggleNotifications">
+        <view class="toggle-thumb"></view>
+      </view>
+    </view>
+    
+    <view class="setting-item">
+      <view class="setting-info">
+        <text class="setting-title">自动保存</text>
+        <text class="setting-desc">自动保存宾果进度</text>
+      </view>
+      <view class="toggle-switch {{autoSave ? 'active' : ''}}" bindtap="onToggleAutoSave">
+        <view class="toggle-thumb"></view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 关于信息 -->
+  <view class="settings-section">
+    <text class="section-title">关于</text>
+    
+    <view class="about-item">
+      <text class="about-label">版本</text>
+      <text class="about-value">1.0.0</text>
+    </view>
+    
+    <view class="about-item">
+      <text class="about-label">开发者</text>
+      <text class="about-value">宾果世界团队</text>
+    </view>
+
+    <view class="about-item">
+      <text class="about-label">公众号</text>
+      <text class="about-value feedback-link" bindtap="onFollowWechat">宾果世界</text>
+    </view>
+
+    <view class="about-item">
+      <text class="about-label">反馈</text>
+      <text class="about-value feedback-link" bindtap="onFeedback">联系我们</text>
+    </view>
+  </view>
+</view>

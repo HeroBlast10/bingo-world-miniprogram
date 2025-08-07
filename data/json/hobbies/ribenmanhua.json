@@ -1,0 +1,50 @@
+{
+    "bingoId": "ribenmanhua",
+    "title": "日本漫画宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你已晋升为二次元大佬",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "能背出JUMP创刊年份", "type": "standard"},
+            {"text": "收藏全套单行本", "type": "standard"},
+            {"text": "分得清手冢和鸟山明画风", "type": "standard"},
+            {"text": "用日语喊招式名", "type": "standard"},
+            {"text": "觉得动画不如漫画", "type": "standard"}
+        ],
+        [
+            {"text": "买过限定版书腰", "type": "standard"},
+            {"text": "为CP打架过", "type": "standard"},
+            {"text": "在漫展出过cos", "type": "standard"},
+            {"text": "收藏作者签名板", "type": "standard"},
+            {"text": "能画分镜稿", "type": "standard"}
+        ],
+        [
+            {"text": "卧室贴满海报", "type": "standard"},
+            {"text": "用漫画格做表情包", "type": "standard"},
+            {"text": "追连载超过十年", "type": "standard"},
+            {"text": "买过天价绝版书", "type": "standard"},
+            {"text": "觉得纸质比电子版有灵魂", "type": "standard"}
+        ],
+        [
+            {"text": "分析过伏笔回收", "type": "standard"},
+            {"text": "为角色哭湿三包纸巾", "type": "standard"},
+            {"text": "收藏不同版本", "type": "standard"},
+            {"text": "会临摹经典场景", "type": "standard"},
+            {"text": "嫌弃动画改编", "type": "standard"}
+        ],
+        [
+            {"text": "用漫画学日语", "type": "standard"},
+            {"text": "知道编辑八卦", "type": "standard"},
+            {"text": "买过作者周边", "type": "standard"},
+            {"text": "在论坛写分析长文", "type": "standard"},
+            {"text": "觉得少年漫比现实热血", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

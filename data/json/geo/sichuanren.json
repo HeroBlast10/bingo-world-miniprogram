@@ -1,0 +1,50 @@
+{
+    "bingoId": "sichuanren",
+    "title": "四川人宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你是个巴适的四川娃儿",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "火锅点特辣", "type": "standard"},
+            {"text": "把\"要得\"当口头禅", "type": "standard"},
+            {"text": "家里泡菜坛比碗多", "type": "standard"},
+            {"text": "地震时先发朋友圈", "type": "standard"},
+            {"text": "觉得花椒是灵魂", "type": "standard"}
+        ],
+        [
+            {"text": "搓麻将到凌晨", "type": "standard"},
+            {"text": "能分清香辣麻辣酸辣", "type": "standard"},
+            {"text": "养熊猫是终极梦想", "type": "standard"},
+            {"text": "说话像吵架", "type": "standard"},
+            {"text": "觉得外地火锅是洗澡水", "type": "standard"}
+        ],
+        [
+            {"text": "夏天去青城山避暑", "type": "standard"},
+            {"text": "用菜籽油炒一切", "type": "standard"},
+            {"text": "有李伯清情结", "type": "standard"},
+            {"text": "把折耳根当零食", "type": "standard"},
+            {"text": "觉得四川话最幽默", "type": "standard"}
+        ],
+        [
+            {"text": "冬天靠一身正气", "type": "standard"},
+            {"text": "家里常备火锅底料", "type": "standard"},
+            {"text": "管所有女性叫\"嬢嬢\"", "type": "standard"},
+            {"text": "在茶馆谈过生意", "type": "standard"},
+            {"text": "觉得川A车牌最霸气", "type": "standard"}
+        ],
+        [
+            {"text": "早餐吃红油抄手", "type": "standard"},
+            {"text": "把\"瓜娃子\"当爱称", "type": "standard"},
+            {"text": "有亲戚在西藏", "type": "standard"},
+            {"text": "觉得重庆是亲兄弟", "type": "standard"},
+            {"text": "用火锅解乡愁", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

@@ -1,0 +1,47 @@
+{
+    "bingoId": "mbti-estj",
+    "title": "ESTJ宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，那么你可能是高效指挥官",
+    "gridSize": {"rows":5,"cols":5},
+    "gridContent": [
+        [
+            {"text": "看到歪斜的标签会立即扶正", "type":"standard"},
+            {"text": "手机闹钟按五分钟间隔排兵布阵", "type":"standard"},
+            {"text": "认为'流程优化'是情话", "type":"standard"},
+            {"text": "团建时自动成为总指挥", "type":"standard"},
+            {"text": "把休闲称为'战略补给时间'", "type":"standard"}
+        ],
+        [
+            {"text": "衣柜按色系和季节精确分区", "type":"standard"},
+            {"text": "'差不多'会触发警报系统", "type":"standard"},
+            {"text": "用Excel管理追剧进度", "type":"standard"},
+            {"text": "认为拖延症是文明之敌", "type":"standard"},
+            {"text": "给朋友发聚会流程PDF", "type":"standard"}
+        ],
+        [
+            {"text": "超市购物像军事演习", "type":"standard"},
+            {"text": "把生日蛋糕切成几何图形", "type":"standard"},
+            {"text": "认为弹性工作时间是阴谋", "type":"standard"},
+            {"text": "手机相册全是流程图截图", "type":"standard"},
+            {"text": "给咖啡机制定操作手册", "type":"standard"}
+        ],
+        [
+            {"text": "看球赛时自动分析战术漏洞", "type":"standard"},
+            {"text": "把散步称为'地面侦察'", "type":"standard"},
+            {"text": "认为浪漫就是准时赴约", "type":"standard"},
+            {"text": "给多肉植物排值班表", "type":"standard"},
+            {"text": "'让我看看你的计划'是口头禅", "type":"standard"}
+        ],
+        [
+            {"text": "认为混乱是可控变量", "type":"standard"},
+            {"text": "用甘特图规划周末", "type":"standard"},
+            {"text": "把发呆定义为系统维护", "type":"standard"},
+            {"text": "给遥控器贴使用标签", "type":"standard"},
+            {"text": "觉得弹性是计划的敌人", "type":"standard"}
+        ]
+    ],
+    "category": "MBTI",
+    "tags": ["人格测试","心理学"],
+    "createdAt": ""
+}

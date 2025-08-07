@@ -1,0 +1,50 @@
+{
+    "bingoId": "hunanren",
+    "title": "湖南人宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你是霸得蛮的湖南伢子",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "炒菜必放小米辣", "type": "standard"},
+            {"text": "把\"妹陀\"当统称", "type": "standard"},
+            {"text": "早餐嗦粉不放汤", "type": "standard"},
+            {"text": "有毛泽东情结", "type": "standard"},
+            {"text": "觉得臭豆腐是香水", "type": "standard"}
+        ],
+        [
+            {"text": "冬天靠抖取暖", "type": "standard"},
+            {"text": "能喝高度白酒", "type": "standard"},
+            {"text": "家里常备槟榔", "type": "standard"},
+            {"text": "说话像放鞭炮", "type": "standard"},
+            {"text": "觉得湘菜是八大菜系之首", "type": "standard"}
+        ],
+        [
+            {"text": "去橘子洲头遛弯", "type": "standard"},
+            {"text": "用剁辣椒拌饭", "type": "standard"},
+            {"text": "有卫视情结", "type": "standard"},
+            {"text": "把塑料普通话当暗号", "type": "standard"},
+            {"text": "觉得四川人吃辣不行", "type": "standard"}
+        ],
+        [
+            {"text": "家里熏腊肉", "type": "standard"},
+            {"text": "唱花鼓戏有模有样", "type": "standard"},
+            {"text": "管辣椒叫\"辣子\"", "type": "standard"},
+            {"text": "在洞庭湖钓过鱼", "type": "standard"},
+            {"text": "觉得湖南话最热血", "type": "standard"}
+        ],
+        [
+            {"text": "夜宵必去大排档", "type": "standard"},
+            {"text": "把\"哦该咯\"当感叹", "type": "standard"},
+            {"text": "有亲戚在广东", "type": "standard"},
+            {"text": "觉得江西是辣友", "type": "standard"},
+            {"text": "用槟榔社交", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

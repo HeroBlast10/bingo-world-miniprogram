@@ -1,0 +1,50 @@
+{
+    "bingoId": "tuoyanzhengzhishu",
+    "title": "拖延症指数宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线, 说明你是拖延症晚期患者。",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "不到最后不动手", "type": "standard"},
+            {"text": "准备工作前先打扫卫生", "type": "standard"},
+            {"text": "先吃点东西再说", "type": "standard"},
+            {"text": "口头禅：'明天一定开始'", "type": "standard"},
+            {"text": "还有时间, 不急", "type": "standard"}
+        ],
+        [
+            {"text": "打开文档, 先刷会手机", "type": "standard"},
+            {"text": "DDL是第一生产力", "type": "standard"},
+            {"text": "收藏=学会了", "type": "standard"},
+            {"text": "计划表只是心理安慰", "type": "standard"},
+            {"text": "经常说'五分钟后就做'", "type": "standard"}
+        ],
+        [
+            {"text": "因为拖延而熬夜", "type": "standard"},
+            {"text": "把闹钟按掉继续睡", "type": "standard"},
+            {"text": "Free Space (自由发挥)", "type": "standard"},
+            {"text": "任务越难越想拖", "type": "standard"},
+            {"text": "先玩一局游戏", "type": "standard"}
+        ],
+        [
+            {"text": "总是在寻找'最佳状态'", "type": "standard"},
+            {"text": "衣服堆成山才洗", "type": "standard"},
+            {"text": "消息看到但等会再回", "type": "standard"},
+            {"text": "买的书只看了封面", "type": "standard"},
+            {"text": "夏天结束了才想起要减肥", "type": "standard"}
+        ],
+        [
+            {"text": "同时开很多任务但都没完成", "type": "standard"},
+            {"text": "为逃避大任务去做一堆小事", "type": "standard"},
+            {"text": "手机APP通知超过99+", "type": "standard"},
+            {"text": "会员快过期了才想起来用", "type": "standard"},
+            {"text": "经常幻想自己高效完成任务", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

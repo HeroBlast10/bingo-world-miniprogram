@@ -1,0 +1,126 @@
+{
+    "bingoId": "wenzhou",
+    "title": "温州宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你是纯血温州人",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "蘸料要用酱油醋",
+                "type": "standard"
+            },
+            {
+                "text": "方言问方言答、普通话问普通话答",
+                "type": "standard"
+            },
+            {
+                "text": "曾经寒暑假在外地过或在外地读过书",
+                "type": "standard"
+            },
+            {
+                "text": "有亲戚在意大利",
+                "type": "standard"
+            },
+            {
+                "text": "家里有非常有钱的亲戚",
+                "type": "standard"
+            }
+        ],
+        [
+
+            {
+                "text": "不能吃辣",
+                "type": "standard"
+            },
+            {
+                "text": "认为其他县市区属于外地",
+                "type": "standard"
+            },
+            {
+                "text": "玩过游戏茶苑",
+                "type": "standard"
+            },
+            {
+                "text": "被家里人要求过以后只能在本地人间婚娶",
+                "type": "standard"
+            },
+            {
+                "text": "过节家里一定有松糕",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "喜欢吃生腌海鲜、鱼干之类的",
+                "type": "standard"
+            },
+            {
+                "text": "父母在外做生意",
+                "type": "standard"
+            },
+            {
+                "text": "免费格子",
+                "type": "standard"
+            },
+            {
+                "text": "讲话带点温普",
+                "type": "standard"
+            },
+            {
+                "text": "只吃甜豆腐脑",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "有山里移民出来的亲戚或者还有亲戚在山里",
+                "type": "standard"
+            },
+            {
+                "text": "说黄天三宝被长辈教训过",
+                "type": "standard"
+            },
+            {
+                "text": "被人说过皮革厂的梗",
+                "type": "standard"
+            },
+            {
+                "text": "会讲自己镇上的温州话",
+                "type": "standard"
+            },
+            {
+                "text": "听不懂其他县市区温州人讲土话",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "在鹿人有品小程序买过东西",
+                "type": "standard"
+            },
+            {
+                "text": "过年一定要回老家",
+                "type": "standard"
+            },
+            {
+                "text": "微信里有温州话表情包",
+                "type": "standard"
+            },
+            {
+                "text": "会就着米饭吃西瓜",
+                "type": "standard"
+            },
+            {
+                "text": "看过百晓讲新闻",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

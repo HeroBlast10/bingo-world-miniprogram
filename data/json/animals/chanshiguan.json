@@ -1,0 +1,129 @@
+{
+    "bingoId": "chanshiguan",
+    "title": "铲屎官宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你已经是铲屎官资深代表",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "撸猫成瘾",
+                "type": "standard"
+            },
+            {
+                "text": "家中猫主子地位高",
+                "type": "standard"
+            },
+            {
+                "text": "看猫打哈欠都会截图",
+                "type": "standard"
+            },
+            {
+                "text": "猫叫你就秒回应",
+                "type": "standard"
+            },
+            {
+                "text": "不管几只都叫“宝宝”",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "手机全是猫照片",
+                "type": "standard"
+            },
+            {
+                "text": "猫不理你你还贴贴",
+                "type": "standard"
+            },
+            {
+                "text": "懂得猫的肚皮陷阱",
+                "type": "standard"
+            },
+            {
+                "text": "玩具比猫还多",
+                "type": "standard"
+            },
+            {
+                "text": "养猫就是不吸猫就难受",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "愿为猫省吃俭用",
+                "type": "standard"
+            },
+            {
+                "text": "猫咪误删你资料你还能笑",
+                "type": "standard"
+            },
+            {
+                "text": "和猫互相监视",
+                "type": "standard"
+            },
+            {
+                "text": "吸猫成晚睡原因",
+                "type": "standard"
+            },
+            {
+                "text": "对别人家的猫也热情",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "给猫洗澡像打仗",
+                "type": "standard"
+            },
+            {
+                "text": "知道猫最怕吹风机",
+                "type": "standard"
+            },
+            {
+                "text": "猫掉毛你也乐呵呵",
+                "type": "standard"
+            },
+            {
+                "text": "猫咪生气你先道歉",
+                "type": "standard"
+            },
+            {
+                "text": "和猫说“对不起”是常态",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "猫扑你脸你都幸福",
+                "type": "standard"
+            },
+            {
+                "text": "被猫咬叫“爱咬人精”",
+                "type": "standard"
+            },
+            {
+                "text": "想过开猫咖",
+                "type": "standard"
+            },
+            {
+                "text": "下班回家第一句话是喊猫",
+                "type": "standard"
+            },
+            {
+                "text": "猫咪才是生活中心",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "兴趣类",
+    "tags": [
+        "猫咪",
+        "宠物",
+        "猫奴"
+    ],
+    "createdAt": ""
+}

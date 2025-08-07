@@ -1,0 +1,50 @@
+{
+    "bingoId": "fanfiction",
+    "title": "同人创作宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你是资深同人作者",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "写过10万字以上", "type": "standard"},
+            {"text": "创作过ABO设定", "type": "standard"},
+            {"text": "有连载作品", "type": "standard"},
+            {"text": "参与过合志", "type": "standard"},
+            {"text": "研究过原著细节", "type": "standard"}
+        ],
+        [
+            {"text": "创作过AU设定", "type": "standard"},
+            {"text": "收到过长评", "type": "standard"},
+            {"text": "有固定读者群", "type": "standard"},
+            {"text": "写过敏感题材", "type": "standard"},
+            {"text": "分析过角色心理", "type": "standard"}
+        ],
+        [
+            {"text": "创作过RPS", "type": "standard"},
+            {"text": "被要求授权翻译", "type": "standard"},
+            {"text": "写过多CP作品", "type": "standard"},
+            {"text": "设计过OC角色", "type": "standard"},
+            {"text": "研究过时间线", "type": "standard"}
+        ],
+        [
+            {"text": "创作过性转", "type": "standard"},
+            {"text": "参加过创作挑战", "type": "standard"},
+            {"text": "写过不同体裁", "type": "standard"},
+            {"text": "为爱发电多年", "type": "standard"},
+            {"text": "分析过原著漏洞", "type": "standard"}
+        ],
+        [
+            {"text": "创作过cross-over", "type": "standard"},
+            {"text": "被读者催更", "type": "standard"},
+            {"text": "写过角色死亡", "type": "standard"},
+            {"text": "制作过番外", "type": "standard"},
+            {"text": "建立过设定集", "type": "standard"}
+        ]
+    ],
+    "category": "创作",
+    "tags": ["同人", "二次创作"],
+    "createdAt": ""
+}

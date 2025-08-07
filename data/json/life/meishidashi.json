@@ -1,0 +1,125 @@
+{
+    "bingoId": "meishidashi",
+    "title": "美食大师宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你就是美食大师！",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "香菜",
+                "type": "standard"
+            },
+            {
+                "text": "生吃大蒜",
+                "type": "standard"
+            },
+            {
+                "text": "螺蛳粉",
+                "type": "standard"
+            },
+            {
+                "text": "皮蛋/变蛋",
+                "type": "standard"
+            },
+            {
+                "text": "榴莲",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "折耳根",
+                "type": "standard"
+            },
+            {
+                "text": "蝎子/蜈蚣",
+                "type": "standard"
+            },
+            {
+                "text": "生腌/醉虾",
+                "type": "standard"
+            },
+            {
+                "text": "芹菜",
+                "type": "standard"
+            },
+            {
+                "text": "牛瘪火锅",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "长沙臭豆腐",
+                "type": "standard"
+            },
+            {
+                "text": "臭鳜鱼",
+                "type": "standard"
+            },
+            {
+                "text": "活珠子/毛鸡蛋",
+                "type": "standard"
+            },
+            {
+                "text": "锅底猪肝",
+                "type": "standard"
+            },
+            {
+                "text": "血",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "鲱鱼罐头",
+                "type": "standard"
+            },
+            {
+                "text": "蛇",
+                "type": "standard"
+            },
+            {
+                "text": "咸奶茶",
+                "type": "standard"
+            },
+            {
+                "text": "脑花",
+                "type": "standard"
+            },
+            {
+                "text": "蚕蛹",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "蚂蚱/蝗虫",
+                "type": "standard"
+            },
+            {
+                "text": "活章鱼",
+                "type": "standard"
+            },
+            {
+                "text": "肥肠",
+                "type": "standard"
+            },
+            {
+                "text": "鸡屁股/百里香",
+                "type": "standard"
+            },
+            {
+                "text": "豆汽",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

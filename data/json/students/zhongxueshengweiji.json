@@ -1,0 +1,125 @@
+{
+    "bingoId": "zhognxueshengweiji",
+    "title": "中学生违纪宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你该退学了",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "考试作弊",
+                "type": "standard"
+            },
+            {
+                "text": "开黄腔,颜色笑话",
+                "type": "standard"
+            },
+            {
+                "text": "上课玩手机",
+                "type": "standard"
+            },
+            {
+                "text": "旷课",
+                "type": "standard"
+            },
+            {
+                "text": "不写作业",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "校内抽烟",
+                "type": "standard"
+            },
+            {
+                "text": "染发,或奇装异服",
+                "type": "standard"
+            },
+            {
+                "text": "学校里点外卖",
+                "type": "standard"
+            },
+            {
+                "text": "逃晚自习",
+                "type": "standard"
+            },
+            {
+                "text": "不穿校服",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "谈恋爱",
+                "type": "standard"
+            },
+            {
+                "text": "上课睡觉",
+                "type": "standard"
+            },
+            {
+                "text": "免费格子",
+                "type": "standard"
+            },
+            {
+                "text": "美甲/化妆上学",
+                "type": "standard"
+            },
+            {
+                "text": "辱骂老师",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "和同学打架",
+                "type": "standard"
+            },
+            {
+                "text": "进入校内不允许进入的区域",
+                "type": "standard"
+            },
+            {
+                "text": "扰乱课堂/自戴首饰上学习秩序",
+                "type": "standard"
+            },
+            {
+                "text": "不去学校",
+                "type": "standard"
+            },
+            {
+                "text": "去酒吧",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "去网吧上网",
+                "type": "standard"
+            },
+            {
+                "text": "旗不参加",
+                "type": "standard"
+            },
+            {
+                "text": "破坏学校公共设施",
+                "type": "standard"
+            },
+            {
+                "text": "抄作业",
+                "type": "standard"
+            },
+            {
+                "text": "用班级电脑打游戏",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

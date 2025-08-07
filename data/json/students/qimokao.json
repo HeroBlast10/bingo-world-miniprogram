@@ -1,0 +1,50 @@
+{
+    "bingoId": "qimoka",
+    "title": "期末考宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你已进入学术生存模式",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "一周学完一学期内容", "type": "standard"},
+            {"text": "咖啡当水喝", "type": "standard"},
+            {"text": "打印店排队到凌晨", "type": "standard"},
+            {"text": "发现重点全没背", "type": "standard"},
+            {"text": "在书上发现新笔记", "type": "standard"}
+        ],
+        [
+            {"text": "图书馆抢座大战", "type": "standard"},
+            {"text": "用荧光笔画成彩虹书", "type": "standard"},
+            {"text": "梦见考试迟到惊醒", "type": "standard"},
+            {"text": "创造记忆口诀", "type": "standard"},
+            {"text": "向学霸借笔记被拒", "type": "standard"}
+        ],
+        [
+            {"text": "发现老师划的重点是整本书", "type": "standard"},
+            {"text": "用便利贴贴满墙", "type": "standard"},
+            {"text": "在考场传纸条被抓", "type": "standard"},
+            {"text": "带错准考证", "type": "standard"},
+            {"text": "考完集体对答案", "type": "standard"}
+        ],
+        [
+            {"text": "复习到呕吐", "type": "standard"},
+            {"text": "凌晨发朋友圈哀嚎", "type": "standard"},
+            {"text": "发现重点章节没看", "type": "standard"},
+            {"text": "用光十支笔芯", "type": "standard"},
+            {"text": "拜考神", "type": "standard"}
+        ],
+        [
+            {"text": "考试时大脑空白", "type": "standard"},
+            {"text": "提前交卷的都是学霸", "type": "standard"},
+            {"text": "带小抄不敢看", "type": "standard"},
+            {"text": "考完发誓下学期努力", "type": "standard"},
+            {"text": "成绩出来前天天查系统", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

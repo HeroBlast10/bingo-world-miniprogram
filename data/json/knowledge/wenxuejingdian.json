@@ -1,0 +1,50 @@
+{
+    "bingoId": "wenxuejingdian",
+    "title": "文学经典宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你博览文学经典",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "读过《红楼梦》全本", "type": "standard"},
+            {"text": "知道莎士比亚四大悲剧", "type": "standard"},
+            {"text": "了解魔幻现实主义", "type": "standard"},
+            {"text": "熟悉唐诗三百首", "type": "standard"},
+            {"text": "能分析鲁迅代表作", "type": "standard"}
+        ],
+        [
+            {"text": "读过《百年孤独》", "type": "standard"},
+            {"text": "知道古希腊三大悲剧家", "type": "standard"},
+            {"text": "了解意识流写作手法", "type": "standard"},
+            {"text": "熟悉宋词主要流派", "type": "standard"},
+            {"text": "能背诵《离骚》选段", "type": "standard"}
+        ],
+        [
+            {"text": "读过《战争与和平》", "type": "standard"},
+            {"text": "知道诺贝尔文学奖得主", "type": "standard"},
+            {"text": "了解后现代主义文学", "type": "standard"},
+            {"text": "熟悉元曲四大家", "type": "standard"},
+            {"text": "能赏析杜甫诗作", "type": "standard"}
+        ],
+        [
+            {"text": "读过《追忆似水年华》", "type": "standard"},
+            {"text": "知道唐宋八大家", "type": "standard"},
+            {"text": "了解浪漫主义文学", "type": "standard"},
+            {"text": "熟悉明清小说代表作", "type": "standard"},
+            {"text": "能解读海明威风格", "type": "standard"}
+        ],
+        [
+            {"text": "读过《堂吉诃德》", "type": "standard"},
+            {"text": "知道鲁迅杂文特点", "type": "standard"},
+            {"text": "了解自然主义文学", "type": "standard"},
+            {"text": "熟悉现代诗歌流派", "type": "standard"},
+            {"text": "能比较中西史诗差异", "type": "standard"}
+        ]
+    ],
+    "category": "文学",
+    "tags": ["知识", "阅读"],
+    "createdAt": ""
+}

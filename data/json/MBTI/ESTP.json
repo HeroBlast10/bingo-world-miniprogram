@@ -1,0 +1,47 @@
+{
+    "bingoId": "mbti-estp",
+    "title": "ESTP宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，那么你可能是冒险家",
+    "gridSize": {"rows":5,"cols":5},
+    "gridContent": [
+        [
+            {"text": "把消防演习当极限运动", "type":"standard"},
+            {"text": "谈判时像在玩德州扑克", "type":"standard"},
+            {"text": "认为安全手册是科幻小说", "type":"standard"},
+            {"text": "电梯故障反而兴奋拍照", "type":"standard"},
+            {"text": "用街舞动作按ATM密码", "type":"standard"}
+        ],
+        [
+            {"text": "危机时刻肾上腺素狂喜", "type":"standard"},
+            {"text": "把会议室当跑酷场地", "type":"standard"},
+            {"text": "觉得计划是创意枷锁", "type":"standard"},
+            {"text": "迷路时发现新大陆", "type":"standard"},
+            {"text": "用篮球动作扔垃圾", "type":"standard"}
+        ],
+        [
+            {"text": "看说明书是浪费时间", "type":"standard"},
+            {"text": "把团建变成生存挑战", "type":"standard"},
+            {"text": "认为'风险评估'是骂人", "type":"standard"},
+            {"text": "停电时组织烛光派对", "type":"standard"},
+            {"text": "用滑板代步取外卖", "type":"standard"}
+        ],
+        [
+            {"text": "超市推车玩漂移", "type":"standard"},
+            {"text": "把截止日期当兴奋剂", "type":"standard"},
+            {"text": "觉得安全带影响发挥", "type":"standard"},
+            {"text": "暴雨天出门测试防水", "type":"standard"},
+            {"text": "用攀岩技巧拿高处零食", "type":"standard"}
+        ],
+        [
+            {"text": "把警告牌当挑战书", "type":"standard"},
+            {"text": "认为会议室需要球框", "type":"standard"},
+            {"text": "交通堵塞时表演车技", "type":"standard"},
+            {"text": "给消防演练加特效", "type":"standard"},
+            {"text": "觉得安全网是蹦床", "type":"standard"}
+        ]
+    ],
+    "category": "MBTI",
+    "tags": ["人格测试","心理学"],
+    "createdAt": ""
+}

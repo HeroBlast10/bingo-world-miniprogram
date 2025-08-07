@@ -1,0 +1,243 @@
+/* pages/settings/settings.wxss */
+.container {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  padding: 32rpx 32rpx 160rpx 32rpx; /* 减少顶部padding */
+}
+
+/* 设置区块 */
+.settings-section {
+  background-color: #ffffff;
+  border-radius: 32rpx;
+  padding: 48rpx 32rpx;
+  margin-bottom: 32rpx;
+  margin-left: -32rpx; /* 扩展到屏幕边缘 */
+  margin-right: -32rpx; /* 扩展到屏幕边缘 */
+  padding-left: 64rpx; /* 增加内边距保持内容间距 */
+  padding-right: 64rpx; /* 增加内边距保持内容间距 */
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.04);
+}
+
+.section-title {
+  display: block;
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 16rpx;
+}
+
+.section-desc {
+  display: block;
+  font-size: 26rpx;
+  color: #6b7280;
+  margin-bottom: 48rpx;
+  line-height: 1.5;
+}
+
+/* 颜色选择网格 */
+.color-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32rpx;
+}
+
+.color-option {
+  width: calc(50% - 16rpx);
+  border: 4rpx solid #e5e7eb;
+  border-radius: 24rpx;
+  padding: 24rpx; /* 减少内边距 */
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.color-option.selected {
+  border-color: #ff6b6b;
+  background-color: #fef7f7;
+}
+
+.color-option:active {
+  transform: scale(0.98);
+}
+
+/* 颜色头部 */
+.color-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16rpx; /* 减少底部间距 */
+}
+
+.color-circle {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24rpx;
+}
+
+.check-icon {
+  color: #ffffff;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.color-name {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+/* 预览网格 */
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rpx;
+  height: 120rpx; /* 减少高度 */
+}
+
+.preview-cell {
+  aspect-ratio: 1;
+  border-radius: 6rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18rpx;
+}
+
+.default-cell {
+  background-color: #f3f4f6;
+  color: #9ca3af;
+}
+
+.selected-cell {
+  color: #ffffff;
+}
+
+.preview-check {
+  font-weight: bold;
+}
+
+/* 颜色类 */
+.bg-coral {
+  background-color: #ff6b6b;
+}
+
+.bg-blue {
+  background-color: #3b82f6;
+}
+
+.bg-purple {
+  background-color: #8b5cf6;
+}
+
+.bg-green {
+  background-color: #10b981;
+}
+
+.bg-pink {
+  background-color: #ec4899;
+}
+
+.bg-orange {
+  background-color: #f59e0b;
+}
+
+/* 设置项 */
+.setting-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32rpx 0;
+  border-bottom: 1rpx solid #f3f4f6;
+}
+
+.setting-item:last-child {
+  border-bottom: none;
+}
+
+.setting-info {
+  flex: 1;
+}
+
+.setting-title {
+  display: block;
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #1f2937;
+  margin-bottom: 8rpx;
+}
+
+.setting-desc {
+  font-size: 26rpx;
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+/* 切换开关 */
+.toggle-switch {
+  width: 88rpx;
+  height: 48rpx;
+  background-color: #e5e7eb;
+  border-radius: 24rpx;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.toggle-switch.active {
+  background-color: #ff6b6b;
+}
+
+.toggle-thumb {
+  width: 32rpx;
+  height: 32rpx;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 8rpx;
+  left: 8rpx;
+  transition: all 0.2s ease;
+  box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.1);
+}
+
+.toggle-switch.active .toggle-thumb {
+  transform: translateX(40rpx);
+}
+
+/* 关于信息 */
+.about-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24rpx 0;
+  border-bottom: 1rpx solid #f3f4f6;
+}
+
+.about-item:last-child {
+  border-bottom: none;
+}
+
+.about-label {
+  font-size: 28rpx;
+  color: #6b7280;
+}
+
+.about-value {
+  font-size: 28rpx;
+  color: #1f2937;
+}
+
+.feedback-link {
+  color: #ff6b6b !important;
+}
+
+/* 响应式调整 */
+@media (max-width: 750rpx) {
+  .color-option {
+    width: 100%;
+  }
+  
+  .color-grid {
+    flex-direction: column;
+  }
+}

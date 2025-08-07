@@ -1,0 +1,50 @@
+{
+    "bingoId": "liuzi",
+    "title": "留子宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，恭喜你解锁全球流浪者成就",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "凌晨四点写due写到流泪", "type": "standard"},
+            {"text": "把老干妈当传家宝", "type": "standard"},
+            {"text": "在超市比价一小时", "type": "standard"},
+            {"text": "被问\"什么时候回国\"就焦虑", "type": "standard"},
+            {"text": "朋友圈有时差", "type": "standard"}
+        ],
+        [
+            {"text": "学会用五种语言点菜", "type": "standard"},
+            {"text": "租房遇到奇葩室友", "type": "standard"},
+            {"text": "在图书馆通宵见过日出", "type": "standard"},
+            {"text": "行李箱总超重", "type": "standard"},
+            {"text": "给家人代购到手软", "type": "standard"}
+        ],
+        [
+            {"text": "把IKEA当第二个家", "type": "standard"},
+            {"text": "用计算器心算汇率", "type": "standard"},
+            {"text": "遭遇过种族歧视", "type": "standard"},
+            {"text": "靠泡面活过期末周", "type": "standard"},
+            {"text": "在唐人街找乡愁", "type": "standard"}
+        ],
+        [
+            {"text": "被当免费翻译工具人", "type": "standard"},
+            {"text": "练就十分钟做饭技能", "type": "standard"},
+            {"text": "收到过海关警告单", "type": "standard"},
+            {"text": "解释过中餐不是左宗棠鸡", "type": "standard"},
+            {"text": "在机场丢过行李", "type": "standard"}
+        ],
+        [
+            {"text": "把微信当生命线", "type": "standard"},
+            {"text": "看过急诊破产", "type": "standard"},
+            {"text": "用VPN比用筷子熟", "type": "standard"},
+            {"text": "对家乡菜产生执念", "type": "standard"},
+            {"text": "练成报喜不报忧神功", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

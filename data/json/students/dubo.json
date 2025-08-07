@@ -1,0 +1,125 @@
+{
+    "bingoId": "dubo",
+    "title": "读博指数宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线,你是一个苦逼博士生",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "不玩电子游戏",
+                "type": "standard"
+            },
+            {
+                "text": "延毕",
+                "type": "standard"
+            },
+            {
+                "text": "不刷社交媒体",
+                "type": "standard"
+            },
+            {
+                "text": "休息日很少出门",
+                "type": "standard"
+            },
+            {
+                "text": "天天写论文",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "经常熬夜",
+                "type": "standard"
+            },
+            {
+                "text": "经常点外卖",
+                "type": "standard"
+            },
+            {
+                "text": "经常借酒消愁",
+                "type": "standard"
+            },
+            {
+                "text": "每天读文献",
+                "type": "standard"
+            },
+            {
+                "text": "没有时间旅游",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "没有稳定的作息",
+                "type": "standard"
+            },
+            {
+                "text": "一周工作超过60小时",
+                "type": "standard"
+            },
+            {
+                "text": "没有时间健身",
+                "type": "standard"
+            },
+            {
+                "text": "经常喝咖啡",
+                "type": "standard"
+            },
+            {
+                "text": "很少参加社交活动",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "经常参加学术会议",
+                "type": "standard"
+            },
+            {
+                "text": "觉得实验室是第二个家",
+                "type": "standard"
+            },
+            {
+                "text": "没有时间陪家人",
+                "type": "standard"
+            },
+            {
+                "text": "习惯使用LaTeX写作",
+                "type": "standard"
+            },
+            {
+                "text": "很少休假",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "很少运动",
+                "type": "standard"
+            },
+            {
+                "text": "不喜欢聚会/团建",
+                "type": "standard"
+            },
+            {
+                "text": "没发过sci",
+                "type": "standard"
+            },
+            {
+                "text": "不会花时间打扮",
+                "type": "standard"
+            },
+            {
+                "text": "经常在实验室过夜",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "学生",
+    "tags": [],
+    "createdAt": ""
+}

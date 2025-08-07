@@ -1,0 +1,50 @@
+{
+    "bingoId": "jijianshenghuo",
+    "title": "极简生活宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你是极简主义实践者",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "衣物≤50件", "type": "standard"},
+            {"text": "不用一次性用品", "type": "standard"},
+            {"text": "无装饰性物品", "type": "standard"},
+            {"text": "数字文件定期清理", "type": "standard"},
+            {"text": "家具少于10件", "type": "standard"}
+        ],
+        [
+            {"text": "购物清单制", "type": "standard"},
+            {"text": "半年未购物", "type": "standard"},
+            {"text": "所有物品有定位", "type": "standard"},
+            {"text": "不用储物柜", "type": "standard"},
+            {"text": "纸质书电子化", "type": "standard"}
+        ],
+        [
+            {"text": "每周清理邮箱", "type": "standard"},
+            {"text": "食物零浪费", "type": "standard"},
+            {"text": "单色系衣柜", "type": "standard"},
+            {"text": "无订阅服务", "type": "standard"},
+            {"text": "墙面无悬挂", "type": "standard"}
+        ],
+        [
+            {"text": "旅行20寸箱", "type": "standard"},
+            {"text": "定期捐赠物品", "type": "standard"},
+            {"text": "多功能家具", "type": "standard"},
+            {"text": "不存包装盒", "type": "standard"},
+            {"text": "护肤品≤3瓶", "type": "standard"}
+        ],
+        [
+            {"text": "无实体相册", "type": "standard"},
+            {"text": "餐具成套4件", "type": "standard"},
+            {"text": "不买纪念品", "type": "standard"},
+            {"text": "手机APP≤12个", "type": "standard"},
+            {"text": "日历唯一装饰", "type": "standard"}
+        ]
+    ],
+    "category": "生活方式",
+    "tags": [],
+    "createdAt": ""
+}

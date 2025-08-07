@@ -1,0 +1,47 @@
+{
+    "bingoId": "mbti-enfp",
+    "title": "ENFP宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，那么你可能是能量火箭",
+    "gridSize": {"rows":5,"cols":5},
+    "gridContent": [
+        [
+            {"text": "给外卖小哥人生规划", "type":"standard"},
+            {"text": "觉得云朵需要鼓励", "type":"standard"},
+            {"text": "把会议变成创意风暴", "type":"standard"},
+            {"text": "手机存着500个灵感", "type":"standard"},
+            {"text": "认为彩虹能量不足", "type":"standard"}
+        ],
+        [
+            {"text": "超市排队认识全家", "type":"standard"},
+            {"text": "给咖啡渣写赞美诗", "type":"standard"},
+            {"text": "觉得沉默是SOS", "type":"standard"},
+            {"text": "把消防演习变嘉年华", "type":"standard"},
+            {"text": "认为植物有梦想", "type":"standard"}
+        ],
+        [
+            {"text": "备忘录记着陌生人梦", "type":"standard"},
+            {"text": "看悲剧片在找希望", "type":"standard"},
+            {"text": "给电梯按钮贴爱心", "type":"standard"},
+            {"text": "觉得WiFi需要陪伴", "type":"standard"},
+            {"text": "把数据线打结转缘", "type":"standard"}
+        ],
+        [
+            {"text": "团建时发射彩虹炮弹", "type":"standard"},
+            {"text": "认为说明书限制潜能", "type":"standard"},
+            {"text": "给多肉植物开辅导班", "type":"standard"},
+            {"text": "手机铃声是加油歌", "type":"standard"},
+            {"text": "觉得月亮需要充电", "type":"standard"}
+        ],
+        [
+            {"text": "给扫地机器人颁奖", "type":"standard"},
+            {"text": "把生日蛋糕当舞台", "type":"standard"},
+            {"text": "认为眼泪是能量源", "type":"standard"},
+            {"text": "给外卖写成长报告", "type":"standard"},
+            {"text": "觉得彩虹是宇宙微笑", "type":"standard"}
+        ]
+    ],
+    "category": "MBTI",
+    "tags": ["人格测试","心理学"],
+    "createdAt": ""
+}

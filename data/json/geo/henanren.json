@@ -1,0 +1,50 @@
+{
+    "bingoId": "henanren",
+    "title": "河南人宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，恁是地道河南老表",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "早餐必喝胡辣汤", "type": "standard"},
+            {"text": "把\"中\"当万能应答", "type": "standard"},
+            {"text": "家里种过小麦", "type": "standard"},
+            {"text": "会唱豫剧选段", "type": "standard"},
+            {"text": "觉得烩面是乡愁", "type": "standard"}
+        ],
+        [
+            {"text": "过年炸麻叶", "type": "standard"},
+            {"text": "管所有饮料叫茶", "type": "standard"},
+            {"text": "有少林寺情结", "type": "standard"},
+            {"text": "说话带\"哩\"尾音", "type": "standard"},
+            {"text": "分得清十三朝古都", "type": "standard"}
+        ],
+        [
+            {"text": "用井水冰西瓜", "type": "standard"},
+            {"text": "被问\"井盖\"就急眼", "type": "standard"},
+            {"text": "囤百斤面粉过冬", "type": "standard"},
+            {"text": "走亲戚带道口烧鸡", "type": "standard"},
+            {"text": "觉得湖北人吃面不正宗", "type": "standard"}
+        ],
+        [
+            {"text": "在窑洞住过", "type": "standard"},
+            {"text": "把河南卫视当骄傲", "type": "standard"},
+            {"text": "会用荆条编筐", "type": "standard"},
+            {"text": "冬至必吃饺子", "type": "standard"},
+            {"text": "觉得郑州是最牛交通枢纽", "type": "standard"}
+        ],
+        [
+            {"text": "见过黄河泛滥", "type": "standard"},
+            {"text": "给外地人带新郑大枣", "type": "standard"},
+            {"text": "用\"得劲\"夸人", "type": "standard"},
+            {"text": "有亲戚在富士康", "type": "standard"},
+            {"text": "觉得河南话最接近古汉语", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

@@ -1,0 +1,50 @@
+{
+    "bingoId": "shandongren",
+    "title": "山东人宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，恁是地道山东好汉/大嫚",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "身高超过一米八", "type": "standard"},
+            {"text": "能空口吃大葱", "type": "standard"},
+            {"text": "逢人便叫\"老师儿\"", "type": "standard"},
+            {"text": "家里有煎饼鏊子", "type": "standard"},
+            {"text": "觉得山东以外都是南方", "type": "standard"}
+        ],
+        [
+            {"text": "酒桌规矩倒背如流", "type": "standard"},
+            {"text": "过年必磕头", "type": "standard"},
+            {"text": "冰箱常备鲅鱼", "type": "standard"},
+            {"text": "把\"俺\"当第一人称", "type": "standard"},
+            {"text": "会开拖拉机", "type": "standard"}
+        ],
+        [
+            {"text": "家里有公务员", "type": "standard"},
+            {"text": "能分清香椿芽和花椒芽", "type": "standard"},
+            {"text": "聊天必提孔子", "type": "standard"},
+            {"text": "有体制内情结", "type": "standard"},
+            {"text": "觉得青岛啤酒才是真啤酒", "type": "standard"}
+        ],
+        [
+            {"text": "年夜饭必有酥锅", "type": "standard"},
+            {"text": "能徒手开钙奶饼干", "type": "standard"},
+            {"text": "给外地人带周村烧饼", "type": "standard"},
+            {"text": "在炕上长大", "type": "standard"},
+            {"text": "劝酒词一套套", "type": "standard"}
+        ],
+        [
+            {"text": "家里种过大棚", "type": "standard"},
+            {"text": "说话像吵架", "type": "standard"},
+            {"text": "给邻居送新蒸的馒头", "type": "standard"},
+            {"text": "觉得山东卫视最好看", "type": "standard"},
+            {"text": "把\"杠赛来\"当感叹词", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

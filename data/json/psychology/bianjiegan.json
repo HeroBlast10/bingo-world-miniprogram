@@ -1,0 +1,125 @@
+{
+    "bingoId": "bianjiegan",
+    "title": "边界感宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你就很有边界感",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "只愿与非人事物建立情感联结",
+                "type": "standard"
+            },
+            {
+                "text": "不需要任何人帮助",
+                "type": "standard"
+            },
+            {
+                "text": "非黑即白的边界",
+                "type": "standard"
+            },
+            {
+                "text": "严格划分责任",
+                "type": "standard"
+            },
+            {
+                "text": "回避深度对话",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "拒绝展现脆弱",
+                "type": "standard"
+            },
+            {
+                "text": "恐惧承诺",
+                "type": "standard"
+            },
+            {
+                "text": "极少分享真实感受",
+                "type": "standard"
+            },
+            {
+                "text": "婉拒他人情感倾诉",
+                "type": "standard"
+            },
+            {
+                "text": "用逻辑替代情感",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "我的事不用你管",
+                "type": "standard"
+            },
+            {
+                "text": "随时准备从关系中撤退",
+                "type": "standard"
+            },
+            {
+                "text": "不喜欢肢体接触",
+                "type": "standard"
+            },
+            {
+                "text": "情感疏离",
+                "type": "standard"
+            },
+            {
+                "text": "反复解释边界",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "熟练掌握课题分离",
+                "type": "standard"
+            },
+            {
+                "text": "依赖等于软弱",
+                "type": "standard"
+            },
+            {
+                "text": "回避型\\恐惧型依恋",
+                "type": "standard"
+            },
+            {
+                "text": "对被帮助有很强亏欠感",
+                "type": "standard"
+            },
+            {
+                "text": "对私人问题感到冒犯",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "需要帮助时不会主动开☐",
+                "type": "standard"
+            },
+            {
+                "text": "独立成瘾",
+                "type": "standard"
+            },
+            {
+                "text": "用愤怒来维护边界",
+                "type": "standard"
+            },
+            {
+                "text": "严格划分社交圈",
+                "type": "standard"
+            },
+            {
+                "text": "冷漠",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "心理",
+    "tags": ["边界感"],
+    "createdAt": ""
+}

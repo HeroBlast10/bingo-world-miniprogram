@@ -1,0 +1,50 @@
+{
+    "bingoId": "kubideqingchun",
+    "title": "苦逼的青春宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你的青春疼痛文学可拍80集",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "食堂菜吃出橡皮", "type": "standard"},
+            {"text": "暗恋对象有12个情敌", "type": "standard"},
+            {"text": "月考总在生病", "type": "standard"},
+            {"text": "被补习班掏空钱包", "type": "standard"},
+            {"text": "校服总大两码", "type": "standard"}
+        ],
+        [
+            {"text": "自行车总掉链子", "type": "standard"},
+            {"text": "偷带手机被没收", "type": "standard"},
+            {"text": "家长会前夜失眠", "type": "standard"},
+            {"text": "写小说被当检讨书收", "type": "standard"},
+            {"text": "表白撞上对方恋爱", "type": "standard"}
+        ],
+        [
+            {"text": "永远抢不到球场", "type": "standard"},
+            {"text": "饭卡总在最饿时没钱", "type": "standard"},
+            {"text": "剪发像劳改犯", "type": "standard"},
+            {"text": "假期作业最后一天抄", "type": "standard"},
+            {"text": "被比较\"别人家孩子\"", "type": "standard"}
+        ],
+        [
+            {"text": "偶像塌房在你生日", "type": "standard"},
+            {"text": "长痘长在鼻尖正中间", "type": "standard"},
+            {"text": "重要考试必拉肚子", "type": "standard"},
+            {"text": "全班就你没情侣", "type": "standard"},
+            {"text": "手机掉进汤碗里", "type": "standard"}
+        ],
+        [
+            {"text": "熬夜复习却考原题", "type": "standard"},
+            {"text": "新鞋必被踩脏", "type": "standard"},
+            {"text": "抽卡永远保底", "type": "standard"},
+            {"text": "追公交摔个劈叉", "type": "standard"},
+            {"text": "存钱买的东西降价", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

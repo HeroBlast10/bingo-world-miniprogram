@@ -1,0 +1,125 @@
+{
+    "bingoId": "zhebeiziyoule",
+    "title": "这辈子有了宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线,你这辈子就彻彻底底完完全全地有了",
+    "gridSize": {
+        "rows": 6,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "休过学",
+                "type": "standard"
+            },
+            {
+                "text": "患难以治疗的慢性病",
+                "type": "standard"
+            },
+            {
+                "text": "听摇滚",
+                "type": "standard"
+            },
+            {
+                "text": "时常失眠",
+                "type": "standard"
+            },
+            {
+                "text": "觉得自己难以就业",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "认识的人都比自己厉害",
+                "type": "standard"
+            },
+            {
+                "text": "看一些挂壁或流浪的UP",
+                "type": "standard"
+            },
+            {
+                "text": "感觉自己缺爱/缺自尊",
+                "type": "standard"
+            },
+            {
+                "text": "害怕被人找麻烦",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢读悲伤无奈的故事",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "很多知识储备都没有鸟用",
+                "type": "standard"
+            },
+            {
+                "text": "没有得到过令人骄傲的成功",
+                "type": "standard"
+            },
+            {
+                "text": "觉得自己没有性吸引力",
+                "type": "standard"
+            },
+            {
+                "text": "从政治上担忧未来",
+                "type": "standard"
+            },
+            {
+                "text": "性取向/性别表达不标准",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "觉得自己不幸福",
+                "type": "standard"
+            },
+            {
+                "text": "愿意为了巨款出卖身体和灵魂",
+                "type": "standard"
+            },
+            {
+                "text": "觉得很多事情只能将错就错",
+                "type": "standard"
+            },
+            {
+                "text": "无法执行生活计划",
+                "type": "standard"
+            },
+            {
+                "text": "多年以前有美好的梦想(忘差不多了)",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "有过十几个半途而废的美好计划",
+                "type": "standard"
+            },
+            {
+                "text": "想毁灭自己或毁灭世界",
+                "type": "standard"
+            },
+            {
+                "text": "不想和其他人过多地争论(因为没有意义)",
+                "type": "standard"
+            },
+            {
+                "text": "哪怕悲伤痛苦",
+                "type": "standard"
+            },
+            {
+                "text": "看6时",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "生活",
+    "tags": ["失眠", "生物钟紊乱"],
+    "createdAt": ""
+}

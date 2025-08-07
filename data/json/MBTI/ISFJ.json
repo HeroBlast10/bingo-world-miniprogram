@@ -1,0 +1,47 @@
+{
+    "bingoId": "mbti-isfj",
+    "title": "ISFJ宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，那么你可能是无声天使",
+    "gridSize": {"rows":5,"cols":5},
+    "gridContent": [
+        [
+            {"text": "记得十年前借出的橡皮", "type":"standard"},
+            {"text": "聚会后默默收拾所有杯子", "type":"standard"},
+            {"text": "认为'不用谢'是客套话", "type":"standard"},
+            {"text": "给邻居门把挂自制小点心", "type":"standard"},
+            {"text": "觉得被需要是最高赞美", "type":"standard"}
+        ],
+        [
+            {"text": "手机存着82个用药提醒", "type":"standard"},
+            {"text": "超市特价会帮老人代购", "type":"standard"},
+            {"text": "把倾听当作心灵瑜伽", "type":"standard"},
+            {"text": "认为感谢信要手写三遍", "type":"standard"},
+            {"text": "给共享单车装防雨座套", "type":"standard"}
+        ],
+        [
+            {"text": "衣柜里有应急爱心包裹", "type":"standard"},
+            {"text": "觉得没回消息让人担心", "type":"standard"},
+            {"text": "把调解称为'和平维护'", "type":"standard"},
+            {"text": "认为细节是爱的密码", "type":"standard"},
+            {"text": "给电梯按钮消毒并贴花", "type":"standard"}
+        ],
+        [
+            {"text": "看天气预报像战备检查", "type":"standard"},
+            {"text": "'你需要吗'是本能问候", "type":"standard"},
+            {"text": "把独处称为'服务待机'", "type":"standard"},
+            {"text": "认为关怀是基本义务", "type":"standard"},
+            {"text": "给流浪云朵准备虚拟伞", "type":"standard"}
+        ],
+        [
+            {"text": "备忘录记着同事过敏源", "type":"standard"},
+            {"text": "觉得植物需要睡前故事", "type":"standard"},
+            {"text": "给打印机喂“心灵鸡汤”", "type":"standard"},
+            {"text": "认为点赞是能量补给", "type":"standard"},
+            {"text": "把数据线缠绕当拥抱", "type":"standard"}
+        ]
+    ],
+    "category": "MBTI",
+    "tags": ["人格测试","心理学"],
+    "createdAt": ""
+}

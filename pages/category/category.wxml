@@ -1,0 +1,37 @@
+<!--pages/category/category.wxml-->
+<view class="container">
+  <!-- 加载状态 -->
+  <view class="loading" wx:if="{{isLoading}}">
+    <text>加载中...</text>
+  </view>
+
+  <!-- 游戏列表 -->
+  <view class="games-list" wx:else>
+    <!-- 空状态 -->
+    <view class="empty-state" wx:if="{{games.length === 0}}">
+      <text class="empty-icon">🎯</text>
+      <text class="empty-text">暂无相关游戏</text>
+      <text class="empty-desc">该分类下还没有游戏</text>
+    </view>
+
+    <!-- 游戏卡片列表 -->
+    <view class="game-list" wx:else>
+      <navigator
+        class="game-card-wrapper"
+        wx:for="{{games}}"
+        wx:for-item="game"
+        wx:key="id"
+        url="/pages/game/game?id={{game.id}}"
+      >
+        <view class="game-card">
+          <view class="game-content">
+            <text class="game-title">{{game.title}}</text>
+            <text class="game-description" wx:if="{{game.description && game.description !== '五个连成一线，你就是一只小蝴蝶' && game.description !== '五个连成一线...'}}">
+              {{game.description}}
+            </text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

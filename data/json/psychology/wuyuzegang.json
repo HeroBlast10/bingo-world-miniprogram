@@ -1,0 +1,17 @@
+{
+    "bingoId": "desireless_bingo",
+    "title": "无欲则刚宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你已超凡脱俗",
+    "gridSize": {"rows": 5, "cols": 5},
+    "gridContent": [
+        [{"text": "购物车长草", "type": "standard"}, {"text": "拒收节日礼", "type": "standard"}, {"text": "工资卡不动", "type": "standard"}, {"text": "清心寡欲脸", "type": "standard"}, {"text": "断舍离大师", "type": "standard"}],
+        [{"text": "美食无诱惑", "type": "standard"}, {"text": "关闭朋友圈", "type": "standard"}, {"text": "佛系工作者", "type": "standard"}, {"text": "旧衣穿十年", "type": "standard"}, {"text": "不羡鸳鸯仙", "type": "standard"}],
+        [{"text": "手机用古董", "type": "standard"}, {"text": "拒绝升职加", "type": "standard"}, {"text": "旅游嫌麻烦", "type": "standard"}, {"text": "生日忘庆祝", "type": "standard"}, {"text": "无物欲境界", "type": "standard"}],
+        [{"text": "美食当燃料", "type": "standard"}, {"text": "红包懒得抢", "type": "standard"}, {"text": "赞美无波澜", "type": "standard"}, {"text": "批评如清风", "type": "standard"}, {"text": "双十一旁观", "type": "standard"}],
+        [{"text": "家居极简风", "type": "standard"}, {"text": "社交零需求", "type": "standard"}, {"text": "成功学免疫", "type": "standard"}, {"text": "节日无感症", "type": "standard"}, {"text": "情绪无波动", "type": "standard"}]
+    ],
+    "category": "心理",
+    "tags": ["极简主义", "精神修行"],
+    "createdAt": ""
+}

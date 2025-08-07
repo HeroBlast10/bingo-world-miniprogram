@@ -1,0 +1,50 @@
+{
+    "bingoId": "xianggangliuzi",
+    "title": "香港留子宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你已修炼成港岛生存大师",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "在5平米房间学会收纳", "type": "standard"},
+            {"text": "掌握茶餐厅暗语", "type": "standard"},
+            {"text": "被冷气冻出老寒腿", "type": "standard"},
+            {"text": "挤过早晚高峰地铁", "type": "standard"},
+            {"text": "用八达通比用钱熟练", "type": "standard"}
+        ],
+        [
+            {"text": "在重庆大厦迷过路", "type": "standard"},
+            {"text": "学会粤语粗口", "type": "standard"},
+            {"text": "被台风困在屋里", "type": "standard"},
+            {"text": "在维港拍过夜景", "type": "standard"},
+            {"text": "吐槽过天价水果", "type": "standard"}
+        ],
+        [
+            {"text": "参加过抗议活动", "type": "standard"},
+            {"text": "在图书馆抢插座", "type": "standard"},
+            {"text": "被菲佣姐姐照顾过", "type": "standard"},
+            {"text": "学会用\"唔该\"开路", "type": "standard"},
+            {"text": "有深圳口岸通关经验", "type": "standard"}
+        ],
+        [
+            {"text": "在旺角街头被推销", "type": "standard"},
+            {"text": "吃遍711车仔面", "type": "standard"},
+            {"text": "被繁体字作业逼疯", "type": "standard"},
+            {"text": "在太平山顶挤过观景台", "type": "standard"},
+            {"text": "买过黄道益活络油", "type": "standard"}
+        ],
+        [
+            {"text": "学会用纸币不找零", "type": "standard"},
+            {"text": "在红馆看过演唱会", "type": "standard"},
+            {"text": "被蟑螂吓到尖叫", "type": "standard"},
+            {"text": "吐槽过电梯速度", "type": "standard"},
+            {"text": "把\"湿湿碎\"当口头禅", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

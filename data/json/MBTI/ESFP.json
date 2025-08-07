@@ -1,0 +1,47 @@
+{
+    "bingoId": "mbti-esfp",
+    "title": "ESFP宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，那么你可能是派对动物",
+    "gridSize": {"rows":5,"cols":5},
+    "gridContent": [
+        [
+            {"text": "超市购物车当舞蹈道具", "type":"standard"},
+            {"text": "电梯里开个人演唱会", "type":"standard"},
+            {"text": "认为镜子是最好听众", "type":"standard"},
+            {"text": "把工作会议变脱口秀", "type":"standard"},
+            {"text": "停电时组织影子剧院", "type":"standard"}
+        ],
+        [
+            {"text": "手机相册全是表情包", "type":"standard"},
+            {"text": "觉得沉默是健康隐患", "type":"standard"},
+            {"text": "给外卖小哥编加油歌", "type":"standard"},
+            {"text": "把垃圾分类当打击乐", "type":"standard"},
+            {"text": "认为彩虹需要伴舞", "type":"standard"}
+        ],
+        [
+            {"text": "备忘录记着笑话库存", "type":"standard"},
+            {"text": "看悲剧片在找笑点", "type":"standard"},
+            {"text": "给咖啡拉花办颁奖礼", "type":"standard"},
+            {"text": "觉得云朵需要美颜", "type":"standard"},
+            {"text": "把数据线当麦克风", "type":"standard"}
+        ],
+        [
+            {"text": "排队时教陌生人跳舞", "type":"standard"},
+            {"text": "认为PPT需要灯光秀", "type":"standard"},
+            {"text": "给扫地机器人加油", "type":"standard"},
+            {"text": "手机铃声是自创单曲", "type":"standard"},
+            {"text": "觉得会议记录要押韵", "type":"standard"}
+        ],
+        [
+            {"text": "给自动门设计出场音效", "type":"standard"},
+            {"text": "把消防演习当蹦迪", "type":"standard"},
+            {"text": "认为苦瓜需要鼓励", "type":"standard"},
+            {"text": "给WiFi起明星名字", "type":"standard"},
+            {"text": "觉得月亮是舞台灯光", "type":"standard"}
+        ]
+    ],
+    "category": "MBTI",
+    "tags": ["人格测试","心理学"],
+    "createdAt": ""
+}

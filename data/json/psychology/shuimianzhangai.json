@@ -1,0 +1,50 @@
+{
+    "bingoId": "shuimianzhangai",
+    "title": "睡眠障碍宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，证明你的睡眠比纸片还脆弱",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "数羊数到三位数", "type": "standard"},
+            {"text": "凌晨3点刷美食视频", "type": "standard"},
+            {"text": "白天咖啡当水喝", "type": "standard"},
+            {"text": "做梦在赶DDL", "type": "standard"},
+            {"text": "午睡后更懵圈", "type": "standard"}
+        ],
+        [
+            {"text": "听白噪音听到耳鸣", "type": "standard"},
+            {"text": "被子必须掖成蚕蛹", "type": "standard"},
+            {"text": "对光线敏感如吸血鬼", "type": "standard"},
+            {"text": "幻想砸了闹钟", "type": "standard"},
+            {"text": "记得所有夜剧台词", "type": "standard"}
+        ],
+        [
+            {"text": "白天站着也能打盹", "type": "standard"},
+            {"text": "深夜思考人生意义", "type": "standard"},
+            {"text": "拥有3种褪黑素", "type": "standard"},
+            {"text": "床上有4个枕头", "type": "standard"},
+            {"text": "被鸟叫惊醒", "type": "standard"}
+        ],
+        [
+            {"text": "午休=昏迷2小时", "type": "standard"},
+            {"text": "恐惧清晨闹铃", "type": "standard"},
+            {"text": "能秒睡但只睡10分钟", "type": "standard"},
+            {"text": "研究睡眠周期图", "type": "standard"},
+            {"text": "买过助眠喷雾", "type": "standard"}
+        ],
+        [
+            {"text": "凌晨发朋友圈仅自己见", "type": "standard"},
+            {"text": "认床认枕头认窗帘", "type": "standard"},
+            {"text": "把失眠归咎于月亮", "type": "standard"},
+            {"text": "试过\"478呼吸法\"", "type": "standard"},
+            {"text": "觉得睡觉是浪费时间", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

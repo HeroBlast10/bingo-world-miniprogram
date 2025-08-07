@@ -1,0 +1,125 @@
+{
+    "bingoId": "daomei",
+    "title": "倒霉宾果",
+    "creator": "请手动填写",
+    "description": "如果连成一条线,那真的是很倒霉了",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "糟糕的形象被重要的人看到",
+                "type": "standard"
+            },
+            {
+                "text": "违纪一次被抓违纪多次的人无事发生",
+                "type": "standard"
+            },
+            {
+                "text": "快要破产依旧没有抽到想要的奖品",
+                "type": "standard"
+            },
+            {
+                "text": "无法融入朋友之间",
+                "type": "standard"
+            },
+            {
+                "text": "只有你负责的部分被一直找茬",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "抽奖抽到最赔钱的奖品",
+                "type": "standard"
+            },
+            {
+                "text": "发现讨厌的人风生水起",
+                "type": "standard"
+            },
+            {
+                "text": "明明是你最努力功劳被别入抢走",
+                "type": "standard"
+            },
+            {
+                "text": "别人主动找你却又抛弃你",
+                "type": "standard"
+            },
+            {
+                "text": "属于自己的东西被抢走",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "暗恋的人被别人伤害",
+                "type": "standard"
+            },
+            {
+                "text": "刚好是多余的那个",
+                "type": "standard"
+            },
+            {
+                "text": "不是你干的事情被陷害",
+                "type": "standard"
+            },
+            {
+                "text": "成对的东西损坏/丢失一个",
+                "type": "standard"
+            },
+            {
+                "text": "使用很久的东西你一用就坏掉",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "重要的日子遇见糟糕天气",
+                "type": "standard"
+            },
+            {
+                "text": "在将项目完成时被告知从买开始",
+                "type": "standard"
+            },
+            {
+                "text": "抽签抽到最不想要的",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢的东西最后一个被人买走",
+                "type": "standard"
+            },
+            {
+                "text": "记住的事情关键时刻怎么都想不起来",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "到达具的地发现有东西没有拿",
+                "type": "standard"
+            },
+            {
+                "text": "许多人都违纪你明明守纪却也一起被罚",
+                "type": "standard"
+            },
+            {
+                "text": "到车站刚好车子离开",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢的人性取向不是你的性别",
+                "type": "standard"
+            },
+            {
+                "text": "发现选择的东西别人的都比自己好",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "生活",
+    "tags": ["倒霉"],
+    "createdAt": ""
+}

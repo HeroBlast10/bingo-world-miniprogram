@@ -1,0 +1,50 @@
+{
+    "bingoId": "meiguoliuzi",
+    "title": "美国留子宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，恭喜解锁北美生存专家成就",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "在Costco买大包装", "type": "standard"},
+            {"text": "学会假笑说I'm fine", "type": "standard"},
+            {"text": "被黑人兄弟喊bro", "type": "standard"},
+            {"text": "有中超会员卡", "type": "standard"},
+            {"text": "把Thanksgiving当吃鸡日", "type": "standard"}
+        ],
+        [
+            {"text": "在纽约地铁迷路", "type": "standard"},
+            {"text": "分得清各种咖啡尺寸", "type": "standard"},
+            {"text": "被小费文化逼疯", "type": "standard"},
+            {"text": "在奥特莱斯代购", "type": "standard"},
+            {"text": "把老干妈当奢侈品", "type": "standard"}
+        ],
+        [
+            {"text": "遭遇过零元购", "type": "standard"},
+            {"text": "学会用Y'all装本地人", "type": "standard"},
+            {"text": "在图书馆通宵写paper", "type": "standard"},
+            {"text": "被警察pull over", "type": "standard"},
+            {"text": "买过天价教科书", "type": "standard"}
+        ],
+        [
+            {"text": "在黄石公园遇熊", "type": "standard"},
+            {"text": "把亚米网当救星", "type": "standard"},
+            {"text": "被问是不是日本人", "type": "standard"},
+            {"text": "在拉斯维加斯输过钱", "type": "standard"},
+            {"text": "把中餐外卖当生命线", "type": "standard"}
+        ],
+        [
+            {"text": "参加过于热情的教会活动", "type": "standard"},
+            {"text": "有学校周边帽衫", "type": "standard"},
+            {"text": "被流浪汉要过钱", "type": "standard"},
+            {"text": "学会用Bro/Dude称呼", "type": "standard"},
+            {"text": "把\"It is what it is\"当口头禅", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

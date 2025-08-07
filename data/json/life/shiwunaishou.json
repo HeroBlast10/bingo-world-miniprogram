@@ -1,0 +1,125 @@
+{
+    "bingoId": "shiwunaishou",
+    "title": "食物耐受宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你就是食物耐受超人",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "脑",
+                "type": "standard"
+            },
+            {
+                "text": "鱼腥草又叫折耳根",
+                "type": "standard"
+            },
+            {
+                "text": "葱姜蒜",
+                "type": "standard"
+            },
+            {
+                "text": "燕窝",
+                "type": "standard"
+            },
+            {
+                "text": "血",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "内脏",
+                "type": "standard"
+            },
+            {
+                "text": "猫狗肉",
+                "type": "standard"
+            },
+            {
+                "text": "白煮蛋",
+                "type": "standard"
+            },
+            {
+                "text": "臭豆腐",
+                "type": "standard"
+            },
+            {
+                "text": "辣",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "生肉生鱼片等",
+                "type": "standard"
+            },
+            {
+                "text": "牛奶",
+                "type": "standard"
+            },
+            {
+                "text": "香菜",
+                "type": "standard"
+            },
+            {
+                "text": "海鲜",
+                "type": "standard"
+            },
+            {
+                "text": "虫或长得像虫如士笋冻",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "秋葵",
+                "type": "standard"
+            },
+            {
+                "text": "榴莲",
+                "type": "standard"
+            },
+            {
+                "text": "肥肉黄油",
+                "type": "standard"
+            },
+            {
+                "text": "皮蛋",
+                "type": "standard"
+            },
+            {
+                "text": "屁股尾巴如猪尾巴,鸡屁股",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "莲子",
+                "type": "standard"
+            },
+            {
+                "text": "烟熏制品如腊肉",
+                "type": "standard"
+            },
+            {
+                "text": "苦瓜",
+                "type": "standard"
+            },
+            {
+                "text": "头部鸡鸭鱼头等",
+                "type": "standard"
+            },
+            {
+                "text": "非正道获取的食品",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

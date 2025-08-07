@@ -1,0 +1,94 @@
+<!--pages/saved/saved.wxml-->
+<view class="container">
+  <!-- 标签页切换 -->
+  <view class="tabs-container">
+    <view class="tabs">
+      <view 
+        class="tab-item {{activeTab === 'created' ? 'active' : ''}}"
+        data-tab="created"
+        bindtap="onTabChange"
+      >
+        <text class="tab-text">我设计的宾果</text>
+        <view wx:if="{{activeTab === 'created'}}" class="tab-indicator"></view>
+      </view>
+      <view 
+        class="tab-item {{activeTab === 'completed' ? 'active' : ''}}"
+        data-tab="completed"
+        bindtap="onTabChange"
+      >
+        <text class="tab-text">我填写的宾果</text>
+        <view wx:if="{{activeTab === 'completed'}}" class="tab-indicator"></view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 内容区域 -->
+  <view class="content">
+    <!-- 有数据时显示宾果列表 -->
+    <view wx:if="{{currentBingos.length > 0}}" class="bingo-grid">
+      <view 
+        class="bingo-card"
+        wx:for="{{currentBingos}}" 
+        wx:key="id"
+        data-bingo="{{item}}"
+        bindtap="onBingoClick"
+      >
+        <!-- 宾果标题 -->
+        <view class="bingo-header">
+          <text class="bingo-title">{{item.title}}</text>
+          <text wx:if="{{item.creator}}" class="bingo-creator">制作人：{{item.creator}}</text>
+        </view>
+
+        <!-- 宾果网格缩略图 -->
+        <view class="bingo-thumbnail">
+          <view 
+            class="thumbnail-grid"
+            style="grid-template-columns: repeat({{item.gridSize.cols}}, 1fr); grid-template-rows: repeat({{item.gridSize.rows}}, 1fr);"
+          >
+            <view 
+              class="thumbnail-cell {{activeTab === 'completed' && cell.selected ? 'selected' : ''}}"
+              wx:for="{{item.cells}}" 
+              wx:for-item="cell"
+              wx:for-index="cellIndex"
+              wx:key="cellIndex"
+            >
+              <text class="cell-text">{{cell.text.length > 6 ? cell.text.slice(0, 4) + '...' : cell.text}}</text>
+            </view>
+          </view>
+        </view>
+
+        <!-- 元数据 -->
+        <view class="bingo-meta">
+          <text class="grid-size">{{item.gridSize.rows}}×{{item.gridSize.cols}}</text>
+          <text class="date-info">
+            {{activeTab === 'completed' && item.completedAt ? '完成于 ' + item.completedAt : '创建于 ' + item.createdAt}}
+          </text>
+        </view>
+
+        <!-- 完成统计（仅在已填写标签页显示） -->
+        <view wx:if="{{activeTab === 'completed'}}" class="completion-stats">
+          <text class="stats-text">已选择 {{item.selectedCount}}/{{item.totalCount}} 个</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 无数据时显示空状态 -->
+    <view wx:else class="empty-state">
+      <view class="empty-icon">
+        <view class="empty-grid">
+          <view 
+            class="empty-cell"
+            wx:for="{{emptyGridCells}}" 
+            wx:key="index"
+          ></view>
+        </view>
+      </view>
+      <text class="empty-title">
+        {{activeTab === 'created' ? '还没有创建任何宾果' : '还没有完成任何宾果'}}
+      </text>
+      <text class="empty-desc">
+        {{activeTab === 'created' ? '快去创建你的第一个宾果吧！' : '快去探索有趣的宾果游戏吧！'}}
+      </text>
+    </view>
+  </view>
+</view>

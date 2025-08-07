@@ -1,0 +1,17 @@
+{
+    "bingoId": "healthy_human_bingo",
+    "title": "健康人类宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你是人类样本",
+    "gridSize": {"rows": 5, "cols": 5},
+    "gridContent": [
+        [{"text": "晨起一杯水", "type": "standard"}, {"text": "每日万步走", "type": "standard"}, {"text": "12点前睡", "type": "standard"}, {"text": "戒糖三个月", "type": "standard"}, {"text": "BMI标准值", "type": "standard"}],
+        [{"text": "健身打卡党", "type": "standard"}, {"text": "蔬菜占半盘", "type": "standard"}, {"text": "年度体检户", "type": "standard"}, {"text": "冥想十分钟", "type": "standard"}, {"text": "喝水八杯整", "type": "standard"}],
+        [{"text": "零食只吃果", "type": "standard"}, {"text": "不喝碳酸饮", "type": "standard"}, {"text": "烟酒不沾边", "type": "standard"}, {"text": "防晒全年涂", "type": "standard"}, {"text": "情绪稳定剂", "type": "standard"}],
+        [{"text": "坐姿端正派", "type": "standard"}, {"text": "眼保健操者", "type": "standard"}, {"text": "定期牙医访", "type": "standard"}, {"text": "手机不躺刷", "type": "standard"}, {"text": "姨妈期忌口", "type": "standard"}],
+        [{"text": "便当自带族", "type": "standard"}, {"text": "电梯改爬楼", "type": "standard"}, {"text": "泡脚养生党", "type": "standard"}, {"text": "维D按时补", "type": "standard"}, {"text": "焦虑能自愈", "type": "standard"}]
+    ],
+    "category": "健康",
+    "tags": ["养生", "自律"],
+    "createdAt": ""
+}

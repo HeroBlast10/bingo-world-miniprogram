@@ -1,0 +1,50 @@
+{
+    "bingoId": "jiaolv",
+    "title": "焦虑宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你的焦虑值已爆表",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "凌晨三点查百度症状", "type": "standard"},
+            {"text": "同时担心五件未发生的事", "type": "standard"},
+            {"text": "反复检查门锁", "type": "standard"},
+            {"text": "把消息提示音当催命符", "type": "standard"},
+            {"text": "对未接电话恐慌", "type": "standard"}
+        ],
+        [
+            {"text": "心跳加速时测脉搏", "type": "standard"},
+            {"text": "收藏从未打开的冥想教程", "type": "standard"},
+            {"text": "觉得休息是犯罪", "type": "standard"},
+            {"text": "把小事灾难化", "type": "standard"},
+            {"text": "备忘录列满待办事项", "type": "standard"}
+        ],
+        [
+            {"text": "反复修改已发送的消息", "type": "standard"},
+            {"text": "担心手机没电像世界末日", "type": "standard"},
+            {"text": "预定心理咨询要排三个月", "type": "standard"},
+            {"text": "对未读红点焦虑", "type": "standard"},
+            {"text": "觉得别人都在进步", "type": "standard"}
+        ],
+        [
+            {"text": "身体无原因疼痛", "type": "standard"},
+            {"text": "下载又删除五个时间管理APP", "type": "standard"},
+            {"text": "在朋友圈假装岁月静好", "type": "standard"},
+            {"text": "睡前大脑自动回放尴尬场面", "type": "standard"},
+            {"text": "对未知行程恐惧", "type": "standard"}
+        ],
+        [
+            {"text": "囤积未拆封的减压玩具", "type": "standard"},
+            {"text": "把天气预报当重要参考", "type": "standard"},
+            {"text": "担心地球明天毁灭", "type": "standard"},
+            {"text": "对选择困难到瘫痪", "type": "standard"},
+            {"text": "查星座运势做决策", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

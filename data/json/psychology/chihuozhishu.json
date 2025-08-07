@@ -1,0 +1,50 @@
+{
+    "bingoId": "chihuozhishu",
+    "title": "吃货指数宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线, 证明你是个纯正的吃货！",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "手机相册里美食多于自拍", "type": "standard"},
+            {"text": "为了吃可以排长队", "type": "standard"},
+            {"text": "知道三家以上的外卖神店", "type": "standard"},
+            {"text": "吃饭前必先拍照", "type": "standard"},
+            {"text": "深夜发美食图'放毒'", "type": "standard"}
+        ],
+        [
+            {"text": "能分辨不同产地的同一种水果", "type": "standard"},
+            {"text": "旅行的意义在于吃", "type": "standard"},
+            {"text": "对'限定'二字没有抵抗力", "type": "standard"},
+            {"text": "不开心就想吃东西", "type": "standard"},
+            {"text": "有第二个胃装甜点", "type": "standard"}
+        ],
+        [
+            {"text": "看美食视频会流口水", "type": "standard"},
+            {"text": "熟悉各种酱料的搭配", "type": "standard"},
+            {"text": "Free Space (自由发挥)", "type": "standard"},
+            {"text": "冰箱里永远有存货", "type": "standard"},
+            {"text": "能说出每种食物的最佳吃法", "type": "standard"}
+        ],
+        [
+            {"text": "为吃一家餐厅专程跑很远", "type": "standard"},
+            {"text": "朋友聚会负责找餐厅", "type": "standard"},
+            {"text": "吃自助餐有自己的策略", "type": "standard"},
+            {"text": "尝过奇怪的食物组合", "type": "standard"},
+            {"text": "对食物有独特的仪式感", "type": "standard"}
+        ],
+        [
+            {"text": "喜欢逛菜市场/超市", "type": "standard"},
+            {"text": "收藏了很多餐厅/菜谱", "type": "standard"},
+            {"text": "点单时什么都想吃", "type": "standard"},
+            {"text": "看别人吃饭都觉得香", "type": "standard"},
+            {"text": "能接受香菜/榴莲/臭豆腐", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

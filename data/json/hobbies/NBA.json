@@ -1,0 +1,50 @@
+{
+    "bingoId": "nba",
+    "title": "NBA宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你已是篮球百科全书",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "背得出选秀顺位", "type": "standard"},
+            {"text": "收藏球星卡", "type": "standard"},
+            {"text": "分得清所有球队队徽", "type": "standard"},
+            {"text": "用球星当微信名", "type": "standard"},
+            {"text": "觉得远古篮球更纯粹", "type": "standard"}
+        ],
+        [
+            {"text": "买过复刻球衣", "type": "standard"},
+            {"text": "为球队吵过架", "type": "standard"},
+            {"text": "凌晨定闹钟看球", "type": "standard"},
+            {"text": "收藏比赛录像", "type": "standard"},
+            {"text": "能分析战术板", "type": "standard"}
+        ],
+        [
+            {"text": "房间贴满海报", "type": "standard"},
+            {"text": "用篮球术语聊天", "type": "standard"},
+            {"text": "追球星超十年", "type": "standard"},
+            {"text": "买过签名篮球", "type": "standard"},
+            {"text": "觉得现场比直播燃", "type": "standard"}
+        ],
+        [
+            {"text": "分析球员数据", "type": "standard"},
+            {"text": "为绝杀尖叫", "type": "standard"},
+            {"text": "收藏各代球鞋", "type": "standard"},
+            {"text": "会模仿球星动作", "type": "standard"},
+            {"text": "嫌弃裁判眼瞎", "type": "standard"}
+        ],
+        [
+            {"text": "用2K游戏练战术", "type": "standard"},
+            {"text": "知道更衣室八卦", "type": "standard"},
+            {"text": "买过总决赛门票", "type": "standard"},
+            {"text": "在虎扑对线", "type": "standard"},
+            {"text": "觉得乔丹是GOAT", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

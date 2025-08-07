@@ -1,0 +1,125 @@
+{
+    "bingoId": "ribendonghua",
+    "title": "日本动画宅宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你就是日本动画宅",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "蹲点等动画更新并第一时间观看",
+                "type": "standard"
+            },
+            {
+                "text": "会提前了解新番咨询",
+                "type": "standard"
+            },
+            {
+                "text": "去外网看过动画讨论",
+                "type": "standard"
+            },
+            {
+                "text": "看过十部及以上原创动画",
+                "type": "standard"
+            },
+            {
+                "text": "能听出五个及以上声优",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "搞过同人(包括不限于画/文/歌/剪辑等任何二创)",
+                "type": "standard"
+            },
+            {
+                "text": "参与讨论过追更的动画",
+                "type": "standard"
+            },
+            {
+                "text": "会唱几句动画ost",
+                "type": "standard"
+            },
+            {
+                "text": "知道五个及以上动画制作公司",
+                "type": "standard"
+            },
+            {
+                "text": "看过动画衍生(舞台剧/小说等)",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "临摹过动画作品",
+                "type": "standard"
+            },
+            {
+                "text": "有专门为动画建的歌单",
+                "type": "standard"
+            },
+            {
+                "text": "在电视上看过国语动画",
+                "type": "standard"
+            },
+            {
+                "text": "啃过生肉",
+                "type": "standard"
+            },
+            {
+                "text": "因为动画而去补了原作漫画/轻小说/游戏",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "参加过萌战(日萌/世萌/b萌)投票",
+                "type": "standard"
+            },
+            {
+                "text": "知道五个及以上动画监督",
+                "type": "standard"
+            },
+            {
+                "text": "看过至少一部长篇动画不少于300集",
+                "type": "standard"
+            },
+            {
+                "text": "追过动画直播",
+                "type": "standard"
+            },
+            {
+                "text": "完整看过至少一部大众评价极低的动画(如兽娘2、迷家梦幻岛2)",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "知道五个及以上字幕组",
+                "type": "standard"
+            },
+            {
+                "text": "买过动画官方周边",
+                "type": "standard"
+            },
+            {
+                "text": "为了看懂生肉去学了日语",
+                "type": "standard"
+            },
+            {
+                "text": "去影院看过至少一部原创动画电影",
+                "type": "standard"
+            },
+            {
+                "text": "现在仍在继续看动画",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "爱好",
+    "tags": ["日本动画"],
+    "createdAt": ""
+}

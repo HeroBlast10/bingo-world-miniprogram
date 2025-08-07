@@ -1,0 +1,125 @@
+{
+    "bingoId": "shushu",
+    "title": "鼠鼠宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线,那么你是一只鼠鼠",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "晚上比白天更有精力",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢囤东西吃",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢被rua脑袋",
+                "type": "standard"
+            },
+            {
+                "text": "擅长迅速找到角落",
+                "type": "standard"
+            },
+            {
+                "text": "会自己洗脸",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "喜欢吃零食",
+                "type": "standard"
+            },
+            {
+                "text": "会自己用厕所",
+                "type": "standard"
+            },
+            {
+                "text": "讨厌太阳",
+                "type": "standard"
+            },
+            {
+                "text": "经常缩成一团",
+                "type": "standard"
+            },
+            {
+                "text": "毛茸茸的",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "对喜欢的人露出肚皮",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢黑黑的地方",
+                "type": "standard"
+            },
+            {
+                "text": "牙齿尖尖的",
+                "type": "standard"
+            },
+            {
+                "text": "总是打哈欠",
+                "type": "standard"
+            },
+            {
+                "text": "什么都吃一点",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "喜欢到处啃啃啃",
+                "type": "standard"
+            },
+            {
+                "text": "很喜欢跑步",
+                "type": "standard"
+            },
+            {
+                "text": "白天总是很困",
+                "type": "standard"
+            },
+            {
+                "text": "很善于布置自己的窝",
+                "type": "standard"
+            },
+            {
+                "text": "讨厌很热",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "讨厌身上湿哒哒的",
+                "type": "standard"
+            },
+            {
+                "text": "爱干净",
+                "type": "standard"
+            },
+            {
+                "text": "吃东西很快",
+                "type": "standard"
+            },
+            {
+                "text": "会舔喜欢的人的手",
+                "type": "standard"
+            },
+            {
+                "text": "吃两只手捧着吃东西",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

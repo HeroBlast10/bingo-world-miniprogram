@@ -1,0 +1,129 @@
+{
+    "bingoId": "aigou",
+    "title": "爱狗宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你是名副其实的狗狗迷！",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "家里养了狗",
+                "type": "standard"
+            },
+            {
+                "text": "能认出10种以上的犬种",
+                "type": "standard"
+            },
+            {
+                "text": "刷狗狗视频能笑一小时",
+                "type": "standard"
+            },
+            {
+                "text": "每天遛狗超过30分钟",
+                "type": "standard"
+            },
+            {
+                "text": "会给狗狗过生日",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "给狗狗买衣服",
+                "type": "standard"
+            },
+            {
+                "text": "了解狗狗常见疾病",
+                "type": "standard"
+            },
+            {
+                "text": "关注多个狗狗博主",
+                "type": "standard"
+            },
+            {
+                "text": "知道狗狗不能吃巧克力",
+                "type": "standard"
+            },
+            {
+                "text": "给狗狗取了人名",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "狗狗是你的手机壁纸",
+                "type": "standard"
+            },
+            {
+                "text": "愿意带狗狗旅行",
+                "type": "standard"
+            },
+            {
+                "text": "见到狗就想摸",
+                "type": "standard"
+            },
+            {
+                "text": "知道柯基不是小短腿的全部",
+                "type": "standard"
+            },
+            {
+                "text": "懂狗狗情绪语言",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "在狗狗面前说“宝宝最乖”",
+                "type": "standard"
+            },
+            {
+                "text": "曾在狗展驻足超30分钟",
+                "type": "standard"
+            },
+            {
+                "text": "懂狗粮营养成分",
+                "type": "standard"
+            },
+            {
+                "text": "狗狗打喷嚏都觉得可爱",
+                "type": "standard"
+            },
+            {
+                "text": "愿意为狗狗放弃社交",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "为狗狗建小窝",
+                "type": "standard"
+            },
+            {
+                "text": "狗狗舔你就原地融化",
+                "type": "standard"
+            },
+            {
+                "text": "狗比人睡得好都嫉妒",
+                "type": "standard"
+            },
+            {
+                "text": "被狗狗叫醒也不生气",
+                "type": "standard"
+            },
+            {
+                "text": "觉得狗比人好懂",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "兴趣类",
+    "tags": [
+        "狗狗",
+        "宠物",
+        "萌物"
+    ],
+    "createdAt": ""
+}

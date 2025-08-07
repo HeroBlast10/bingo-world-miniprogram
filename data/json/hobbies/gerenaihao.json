@@ -1,0 +1,50 @@
+{
+    "bingoId": "personal_hobbies",
+    "title": "个人爱好宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你有丰富多彩的兴趣生活",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "收集特定物品", "type": "standard"},
+            {"text": "会演奏乐器", "type": "standard"},
+            {"text": "定期手作DIY", "type": "standard"},
+            {"text": "养盆栽/多肉", "type": "standard"},
+            {"text": "玩桌游", "type": "standard"}
+        ],
+        [
+            {"text": "烘焙/烹饪", "type": "standard"},
+            {"text": "练习书法", "type": "standard"},
+            {"text": "观星/天文", "type": "standard"},
+            {"text": "模型制作", "type": "standard"},
+            {"text": "徒步旅行", "type": "standard"}
+        ],
+        [
+            {"text": "摄影修图", "type": "standard"},
+            {"text": "咖啡/茶道", "type": "standard"},
+            {"text": "练习瑜伽", "type": "standard"},
+            {"text": "收集邮票/钱币", "type": "standard"},
+            {"text": "写日记/手账", "type": "standard"}
+        ],
+        [
+            {"text": "观鸟", "type": "standard"},
+            {"text": "潜水/浮潜", "type": "standard"},
+            {"text": "拼图/乐高", "type": "standard"},
+            {"text": "参加读书会", "type": "standard"},
+            {"text": "学习外语", "type": "standard"}
+        ],
+        [
+            {"text": "绘画/涂鸦", "type": "standard"},
+            {"text": "钓鱼", "type": "standard"},
+            {"text": "跳蚤市场淘宝", "type": "standard"},
+            {"text": "参观博物馆", "type": "standard"},
+            {"text": "种植香草", "type": "standard"}
+        ]
+    ],
+    "category": "生活",
+    "tags": ["爱好", "兴趣"],
+    "createdAt": ""
+}

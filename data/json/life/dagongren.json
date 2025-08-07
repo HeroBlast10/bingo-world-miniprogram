@@ -1,0 +1,50 @@
+{
+  "bingoId": "dagongren_bingo",
+  "title": "打工人宾果",
+  "creator": "请手动填写",
+  "description": "五个连成一线，你就是典型社畜，摸鱼大师或过劳斗士",
+  "gridSize": {
+    "rows": 5,
+    "cols": 5
+  },
+  "gridContent": [
+    [
+      { "text": "每天都在盯打卡时间", "type": "standard" },
+      { "text": "设置了10个以上闹钟起床", "type": "standard" },
+      { "text": "上班前喝咖啡续命", "type": "standard" },
+      { "text": "会议上只说“收到”", "type": "standard" },
+      { "text": "早上起来不想动", "type": "standard" }
+    ],
+    [
+      { "text": "工位抽屉塞满零食", "type": "standard" },
+      { "text": "摸鱼工具收藏夹爆满", "type": "standard" },
+      { "text": "不想加班但还是加了", "type": "standard" },
+      { "text": "梦想退休但刚入职3年", "type": "standard" },
+      { "text": "午休靠颈枕续命", "type": "standard" }
+    ],
+    [
+      { "text": "老板一说话就紧张", "type": "standard" },
+      { "text": "最怕的是“咱开个会吧”", "type": "standard" },
+      { "text": "加班餐比晚饭还丰盛", "type": "standard" },
+      { "text": "觉得周一比鬼还可怕", "type": "standard" },
+      { "text": "经常对着屏幕发呆", "type": "standard" }
+    ],
+    [
+      { "text": "听到“团建”就想请假", "type": "standard" },
+      { "text": "假装忙其实在逛咸鱼", "type": "standard" },
+      { "text": "excel玩得比QQ还溜", "type": "standard" },
+      { "text": "常在厕所里待20分钟", "type": "standard" },
+      { "text": "说“这就好”其实还没开始", "type": "standard" }
+    ],
+    [
+      { "text": "节假日还在回复消息", "type": "standard" },
+      { "text": "工作日过得比周末还快", "type": "standard" },
+      { "text": "最怕的是“领导@我”", "type": "standard" },
+      { "text": "办公桌像个小仓库", "type": "standard" },
+      { "text": "随时能写辞职信但从没点发送", "type": "standard" }
+    ]
+  ],
+  "category": "职场类",
+  "tags": ["打工人", "社畜", "摸鱼"],
+  "createdAt": ""
+}

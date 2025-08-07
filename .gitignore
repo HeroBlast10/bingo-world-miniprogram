@@ -1,0 +1,72 @@
+# 微信小程序项目 .gitignore
+
+# Node.js 依赖
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 开发工具和脚本（不应上传到小程序）
+scripts/
+test/
+*.test.js
+
+# 文档文件
+README.md
+*.md
+!app.md
+
+# 配置文件
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 编辑器配置
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 临时文件
+*.tmp
+*.temp
+*.log
+
+# Python 文件（如果有）
+*.py
+*.pyc
+__pycache__/
+
+# 其他开发文件
+package.json
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# 私有配置
+project.private.config.json
+
+# 构建输出
+dist/
+build/
+
+# 备份文件
+*.bak
+*.backup
+
+# CSV 和敏感数据文件
+*.csv
+SecretKey.csv
+
+# HTML 测试文件
+*.html
+!pages/**/*.html

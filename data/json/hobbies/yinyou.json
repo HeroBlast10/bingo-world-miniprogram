@@ -1,0 +1,50 @@
+{
+    "bingoId": "rhythmgamer",
+    "title": "音游玩家宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你是节奏大师",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "全连EX难度", "type": "standard"},
+            {"text": "多指操作", "type": "standard"},
+            {"text": "收藏音游设备", "type": "standard"},
+            {"text": "参加线下比赛", "type": "standard"},
+            {"text": "自制谱面", "type": "standard"}
+        ],
+        [
+            {"text": "AP过魔王曲", "type": "standard"},
+            {"text": "玩过街机音游", "type": "standard"},
+            {"text": "熟悉BPM变化", "type": "standard"},
+            {"text": "研究手元视频", "type": "standard"},
+            {"text": "能读高密度谱", "type": "standard"}
+        ],
+        [
+            {"text": "全系列制霸", "type": "standard"},
+            {"text": "调整偏移值", "type": "standard"},
+            {"text": "记住曲师名字", "type": "standard"},
+            {"text": "练习特定技巧", "type": "standard"},
+            {"text": "分析谱面结构", "type": "standard"}
+        ],
+        [
+            {"text": "FC过LV14+", "type": "standard"},
+            {"text": "使用专业耳机", "type": "standard"},
+            {"text": "收藏实体CD", "type": "standard"},
+            {"text": "参加线上活动", "type": "standard"},
+            {"text": "能打交互段", "type": "standard"}
+        ],
+        [
+            {"text": "研究判定机制", "type": "standard"},
+            {"text": "多平台玩家", "type": "standard"},
+            {"text": "制作教程视频", "type": "standard"},
+            {"text": "挑战手速极限", "type": "standard"},
+            {"text": "记住所有曲目", "type": "standard"}
+        ]
+    ],
+    "category": "游戏",
+    "tags": ["音乐游戏", "节奏"],
+    "createdAt": ""
+}

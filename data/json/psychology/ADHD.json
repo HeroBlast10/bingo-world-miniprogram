@@ -1,0 +1,50 @@
+{
+    "bingoId": "adhd_traits",
+    "title": "ADHD特征宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你可能有ADHD倾向",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "经常丢三落四", "type": "standard"},
+            {"text": "难以开始任务", "type": "standard"},
+            {"text": "时间感知偏差", "type": "standard"},
+            {"text": "同时做多件事", "type": "standard"},
+            {"text": "打断别人说话", "type": "standard"}
+        ],
+        [
+            {"text": "坐立不安", "type": "standard"},
+            {"text": "超专注特定事", "type": "standard"},
+            {"text": "忘记约定", "type": "standard"},
+            {"text": "冲动消费", "type": "standard"},
+            {"text": "整理困难", "type": "standard"}
+        ],
+        [
+            {"text": "常迟到", "type": "standard"},
+            {"text": "思绪跳跃", "type": "standard"},
+            {"text": "拖延严重", "type": "standard"},
+            {"text": "情绪波动大", "type": "standard"},
+            {"text": "寻求刺激", "type": "standard"}
+        ],
+        [
+            {"text": "话多且快", "type": "standard"},
+            {"text": "容易分心", "type": "standard"},
+            {"text": "回避冗长任务", "type": "standard"},
+            {"text": "常丢钥匙手机", "type": "standard"},
+            {"text": "睡眠问题", "type": "standard"}
+        ],
+        [
+            {"text": "打断自己思路", "type": "standard"},
+            {"text": "健忘", "type": "standard"},
+            {"text": "过度分享", "type": "standard"},
+            {"text": "回避社交场合", "type": "standard"},
+            {"text": "常换兴趣爱好", "type": "standard"}
+        ]
+    ],
+    "category": "心理学",
+    "tags": ["ADHD", "神经多样性"],
+    "createdAt": ""
+}

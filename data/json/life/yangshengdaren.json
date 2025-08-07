@@ -1,0 +1,50 @@
+{
+    "bingoId": "yangshengdaren",
+    "title": "养生达人宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你是健康生活专家",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "晨起空腹喝水", "type": "standard"},
+            {"text": "每日泡脚", "type": "standard"},
+            {"text": "23点前入睡", "type": "standard"},
+            {"text": "喝养生茶", "type": "standard"},
+            {"text": "拒绝冰饮", "type": "standard"}
+        ],
+        [
+            {"text": "穴位按摩", "type": "standard"},
+            {"text": "记录生理周期", "type": "standard"},
+            {"text": "自己做饭带餐", "type": "standard"},
+            {"text": "定期艾灸", "type": "standard"},
+            {"text": "站立办公", "type": "standard"}
+        ],
+        [
+            {"text": "八段锦/太极拳", "type": "standard"},
+            {"text": "食用超级食物", "type": "standard"},
+            {"text": "午休30分钟", "type": "standard"},
+            {"text": "喝够8杯水", "type": "standard"},
+            {"text": "定期体检", "type": "standard"}
+        ],
+        [
+            {"text": "控糖饮食", "type": "standard"},
+            {"text": "晨间冥想", "type": "standard"},
+            {"text": "使用药膳", "type": "standard"},
+            {"text": "工间拉伸", "type": "standard"},
+            {"text": "穴位贴敷", "type": "standard"}
+        ],
+        [
+            {"text": "拒绝反式脂肪", "type": "standard"},
+            {"text": "使用草本洗发", "type": "standard"},
+            {"text": "足部反射疗法", "type": "standard"},
+            {"text": "记录睡眠质量", "type": "standard"},
+            {"text": "四季不同养生", "type": "standard"}
+        ]
+    ],
+    "category": "健康",
+    "tags": [],
+    "createdAt": ""
+}

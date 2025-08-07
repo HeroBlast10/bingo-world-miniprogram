@@ -1,0 +1,50 @@
+{
+  "bingoId": "mental_state",
+  "title": "精神状态宾果",
+  "creator": "请手动填写",
+  "description": "五个连成一线，是时候关心自己的心理健康了",
+  "gridSize": {
+    "rows": 5,
+    "cols": 5
+  },
+  "gridContent": [
+    [
+      { "text": "不明原因情绪低落", "type": "standard" },
+      { "text": "常常感觉自己没意义", "type": "standard" },
+      { "text": "失眠/入睡困难", "type": "standard" },
+      { "text": "社交后极度疲惫", "type": "standard" },
+      { "text": "一整天都提不起劲", "type": "standard" }
+    ],
+    [
+      { "text": "工作/学习注意力难集中", "type": "standard" },
+      { "text": "对爱好也提不起兴趣", "type": "standard" },
+      { "text": "常常想一个人躲起来", "type": "standard" },
+      { "text": "明明没事却想哭", "type": "standard" },
+      { "text": "需要靠剧/游戏麻痹自己", "type": "standard" }
+    ],
+    [
+      { "text": "觉得朋友其实不喜欢自己", "type": "standard" },
+      { "text": "害怕面对未来", "type": "standard" },
+      { "text": "反复怀疑自己", "type": "standard" },
+      { "text": "觉得自己是负担", "type": "standard" },
+      { "text": "感受到压力但说不出来", "type": "standard" }
+    ],
+    [
+      { "text": "容易爆发小情绪", "type": "standard" },
+      { "text": "长时间无所事事", "type": "standard" },
+      { "text": "过度使用社交媒体逃避", "type": "standard" },
+      { "text": "对身体症状过度焦虑", "type": "standard" },
+      { "text": "觉得世界灰暗", "type": "standard" }
+    ],
+    [
+      { "text": "生活节奏完全混乱", "type": "standard" },
+      { "text": "自我贬低成日常", "type": "standard" },
+      { "text": "过度思考别人的话", "type": "standard" },
+      { "text": "拒绝求助或倾诉", "type": "standard" },
+      { "text": "意识到问题但不知从哪开始", "type": "standard" }
+    ]
+  ],
+  "category": "心理类",
+  "tags": ["心理健康", "情绪状态"],
+  "createdAt": ""
+}

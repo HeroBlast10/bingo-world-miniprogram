@@ -1,0 +1,50 @@
+{
+    "bingoId": "guoman",
+    "title": "国漫爱好者宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你已是国漫复兴见证者",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "记得《大闹天宫》原画", "type": "standard"},
+            {"text": "收藏水墨动画DVD", "type": "standard"},
+            {"text": "分得清上美影风格", "type": "standard"},
+            {"text": "用哪吒当头像", "type": "standard"},
+            {"text": "觉得老动画更有韵味", "type": "standard"}
+        ],
+        [
+            {"text": "买过《雾山五行》周边", "type": "standard"},
+            {"text": "为《罗小黑》二刷", "type": "standard"},
+            {"text": "追《一人之下》漫画", "type": "standard"},
+            {"text": "收藏《大圣归来》手办", "type": "standard"},
+            {"text": "能画国风分镜", "type": "standard"}
+        ],
+        [
+            {"text": "手机存百张场景图", "type": "standard"},
+            {"text": "用动画梗玩谐音", "type": "standard"},
+            {"text": "追《时光代理人》更新", "type": "standard"},
+            {"text": "买过《魔道祖师》画集", "type": "standard"},
+            {"text": "觉得3D不如2D", "type": "standard"}
+        ],
+        [
+            {"text": "分析传统文化元素", "type": "standard"},
+            {"text": "为《中国奇谭》落泪", "type": "standard"},
+            {"text": "收藏《天书奇谭》修复版", "type": "standard"},
+            {"text": "会临摹水墨风格", "type": "standard"},
+            {"text": "嫌弃日漫化严重", "type": "standard"}
+        ],
+        [
+            {"text": "用国漫学历史", "type": "standard"},
+            {"text": "知道制作组八卦", "type": "standard"},
+            {"text": "买过动画电影票", "type": "standard"},
+            {"text": "在B站发弹幕护体", "type": "standard"},
+            {"text": "觉得国漫正在崛起", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

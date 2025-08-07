@@ -1,0 +1,50 @@
+{
+    "bingoId": "shanghairen",
+    "title": "上海人宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，侬是正宗上海宁",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "垃圾分类小能手", "type": "standard"},
+            {"text": "讲价用上海话威力加倍", "type": "standard"},
+            {"text": "有弄堂童年记忆", "type": "standard"},
+            {"text": "觉得浦东浦西是两个世界", "type": "standard"},
+            {"text": "早餐必有四大金刚", "type": "standard"}
+        ],
+        [
+            {"text": "用精致饭盒带午饭", "type": "standard"},
+            {"text": "分得清洋房和新里", "type": "standard"},
+            {"text": "喝咖啡要配咸淇淋", "type": "standard"},
+            {"text": "觉得苏州是后花园", "type": "standard"},
+            {"text": "雨天也要发型精致", "type": "standard"}
+        ],
+        [
+            {"text": "拥有多条真丝围巾", "type": "standard"},
+            {"text": "能指出小笼包不正宗", "type": "standard"},
+            {"text": "用\"侬晓得伐\"开场", "type": "standard"},
+            {"text": "有国际饭店蝴蝶酥购买攻略", "type": "standard"},
+            {"text": "觉得全国菜都太油腻", "type": "standard"}
+        ],
+        [
+            {"text": "在武康路拍过照", "type": "standard"},
+            {"text": "家里存着老克勒唱片", "type": "standard"},
+            {"text": "用英文词夹上海话", "type": "standard"},
+            {"text": "知道哪家生煎底部最脆", "type": "standard"},
+            {"text": "把\"腔调\"当人生准则", "type": "standard"}
+        ],
+        [
+            {"text": "梅雨季囤十双鞋", "type": "standard"},
+            {"text": "会三句以上沪剧", "type": "standard"},
+            {"text": "觉得普通话不够婉转", "type": "standard"},
+            {"text": "用湿纸巾擦公共座椅", "type": "standard"},
+            {"text": "把\"麻烦\"当口头禅", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

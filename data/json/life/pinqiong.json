@@ -1,0 +1,17 @@
+{
+    "bingoId": "poverty_bingo",
+    "title": "贫穷宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你深谙生存之道",
+    "gridSize": {"rows": 5, "cols": 5},
+    "gridContent": [
+        [{"text": "精打细算", "type": "standard"}, {"text": "拼多多常客", "type": "standard"}, {"text": "自带水瓶", "type": "standard"}, {"text": "公交卡达人", "type": "standard"}, {"text": "二手市场淘", "type": "standard"}],
+        [{"text": "记账本常开", "type": "standard"}, {"text": "蹭公司水电", "type": "standard"}, {"text": "囤积塑料袋", "type": "standard"}, {"text": "自己修电器", "type": "standard"}, {"text": "关注打折区", "type": "standard"}],
+        [{"text": "衣服反季买", "type": "standard"}, {"text": "走路省车费", "type": "standard"}, {"text": "薅羊毛专家", "type": "standard"}, {"text": "肥皂用到底", "type": "standard"}, {"text": "手机用五年", "type": "standard"}],
+        [{"text": "拒绝聚餐邀", "type": "standard"}, {"text": "牙膏挤干净", "type": "standard"}, {"text": "超市试吃饱", "type": "standard"}, {"text": "租房选郊外", "type": "standard"}, {"text": "自己剪头发", "type": "standard"}],
+        [{"text": "外卖凑满减", "type": "standard"}, {"text": "饮料瓶回收", "type": "standard"}, {"text": "袜子补洞穿", "type": "standard"}, {"text": "生日不过节", "type": "standard"}, {"text": "流量省着用", "type": "standard"}]
+    ],
+    "category": "生活",
+    "tags": ["生存智慧", "消费降级"],
+    "createdAt": ""
+}

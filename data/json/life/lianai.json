@@ -1,0 +1,103 @@
+{
+    "bingoId": "lianai",
+    "title": "恋爱甜死谁宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你们想甜死谁！",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "早上起来和睡前最后一个联系的都是ta",
+                "type": "standard"
+            },
+            {
+                "text": "一起吃饭",
+                "type": "standard"
+            },
+            {
+                "text": "一起看电影",
+                "type": "standard"
+            },
+            {
+                "text": "一起去旅游/游玩",
+                "type": "standard"
+            },
+            {
+                "text": "给对方过生日",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "过年给对方红包",
+                "type": "standard"
+            },
+            {
+                "text": "和对方一起打游戏",
+                "type": "standard"
+            },
+            {
+                "text": "和对方一起学习阅读",
+                "type": "standard"
+            },
+            {
+                "text": "一起逛超市",
+                "type": "standard"
+            },
+            {
+                "text": "在公众场合做亲密动作",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "咬对方",
+                "type": "standard"
+            },
+            {
+                "text": "争吵过",
+                "type": "standard"
+            },
+            {
+                "text": "分手又复合了",
+                "type": "standard"
+            },
+            {
+                "text": "是自己的初恋",
+                "type": "standard"
+            },
+            {
+                "text": "是对方的初恋",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "为对方买衣服",
+                "type": "standard"
+            },
+            {
+                "text": "好朋友知道ta的存在",
+                "type": "standard"
+            },
+            {
+                "text": "带ta见过朋友",
+                "type": "standard"
+            },
+            {
+                "text": "使用亲昵的称呼如宝宝",
+                "type": "standard"
+            },
+            {
+                "text": "聊天背景或桌面壁纸用对方的照片",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

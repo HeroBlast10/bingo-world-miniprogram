@@ -1,0 +1,129 @@
+{
+    "bingoId": "nintendo_bingo",
+    "title": "任天堂宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你是NS全家桶玩家认证！",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "玩过动森",
+                "type": "standard"
+            },
+            {
+                "text": "抓过宝可梦",
+                "type": "standard"
+            },
+            {
+                "text": "塞尔达传说通关",
+                "type": "standard"
+            },
+            {
+                "text": "有amiibo",
+                "type": "standard"
+            },
+            {
+                "text": "体验过健身环",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "Switch买了不止一个Joy-Con",
+                "type": "standard"
+            },
+            {
+                "text": "动森里岛建得像景区",
+                "type": "standard"
+            },
+            {
+                "text": "NS电量红过",
+                "type": "standard"
+            },
+            {
+                "text": "有自己的eShop账号",
+                "type": "standard"
+            },
+            {
+                "text": "为游戏通宵",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "玩过马里奥赛车",
+                "type": "standard"
+            },
+            {
+                "text": "塞尔达爬塔爬疯了",
+                "type": "standard"
+            },
+            {
+                "text": "有Switch外壳装饰",
+                "type": "standard"
+            },
+            {
+                "text": "和朋友打过NS大乱斗",
+                "type": "standard"
+            },
+            {
+                "text": "花钱买了DLC",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "对老任情怀深厚",
+                "type": "standard"
+            },
+            {
+                "text": "玩过任天堂掌机",
+                "type": "standard"
+            },
+            {
+                "text": "关注任天堂直面会",
+                "type": "standard"
+            },
+            {
+                "text": "看得懂“塞尔达+林克”的梗",
+                "type": "standard"
+            },
+            {
+                "text": "收藏周边公仔",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "朋友说你“真任豚”",
+                "type": "standard"
+            },
+            {
+                "text": "通关游戏截图打卡",
+                "type": "standard"
+            },
+            {
+                "text": "NS连着显示器玩",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢马里奥工坊",
+                "type": "standard"
+            },
+            {
+                "text": "计划入手Switch2",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "兴趣类",
+    "tags": [
+        "任天堂",
+        "游戏",
+        "Switch"
+    ],
+    "createdAt": ""
+}

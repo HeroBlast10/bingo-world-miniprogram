@@ -1,0 +1,50 @@
+{
+    "bingoId": "zhexuesibian",
+    "title": "哲学思辨宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你善于哲学思考",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "理解苏格拉底问答法", "type": "standard"},
+            {"text": "知道儒家核心思想", "type": "standard"},
+            {"text": "了解存在主义主张", "type": "standard"},
+            {"text": "熟悉辩证法原理", "type": "standard"},
+            {"text": "能解释唯心唯物", "type": "standard"}
+        ],
+        [
+            {"text": "理解柏拉图理念论", "type": "standard"},
+            {"text": "知道道家主要观点", "type": "standard"},
+            {"text": "了解实用主义哲学", "type": "standard"},
+            {"text": "熟悉认识论问题", "type": "standard"},
+            {"text": "能分析自由意志", "type": "standard"}
+        ],
+        [
+            {"text": "理解亚里士多德四因说", "type": "standard"},
+            {"text": "知道墨家兼爱思想", "type": "standard"},
+            {"text": "了解结构主义理论", "type": "standard"},
+            {"text": "熟悉伦理学范畴", "type": "standard"},
+            {"text": "能解释形而上学", "type": "standard"}
+        ],
+        [
+            {"text": "理解康德三大批判", "type": "standard"},
+            {"text": "知道法家治国理念", "type": "standard"},
+            {"text": "了解后现代哲学", "type": "standard"},
+            {"text": "熟悉美学基本问题", "type": "standard"},
+            {"text": "能分析功利主义", "type": "standard"}
+        ],
+        [
+            {"text": "理解尼采超人哲学", "type": "standard"},
+            {"text": "知道理学心学区别", "type": "standard"},
+            {"text": "了解现象学方法", "type": "standard"},
+            {"text": "熟悉逻辑学基础", "type": "standard"},
+            {"text": "能解释决定论", "type": "standard"}
+        ]
+    ],
+    "category": "哲学",
+    "tags": ["知识", "思辨"],
+    "createdAt": ""
+}

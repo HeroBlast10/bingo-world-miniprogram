@@ -1,0 +1,50 @@
+{
+    "bingoId": "fujianren",
+    "title": "福建人宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，汝系正宗福建郎",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "泡茶用迷你茶杯", "type": "standard"},
+            {"text": "被问\"广东人好吃吗\"就笑", "type": "standard"},
+            {"text": "有海外亲戚", "type": "standard"},
+            {"text": "拜妈祖比拜佛勤", "type": "standard"},
+            {"text": "觉得台风天是日常", "type": "standard"}
+        ],
+        [
+            {"text": "会说三种闽方言", "type": "standard"},
+            {"text": "家里供关公像", "type": "standard"},
+            {"text": "结婚金镯挂满手臂", "type": "standard"},
+            {"text": "觉得沙县小吃不正宗", "type": "standard"},
+            {"text": "把台湾当后花园", "type": "standard"}
+        ],
+        [
+            {"text": "元宵游神必参加", "type": "standard"},
+            {"text": "吃土笋冻面不改色", "type": "standard"},
+            {"text": "有红木家具情结", "type": "standard"},
+            {"text": "觉得佛跳墙是家常菜", "type": "standard"},
+            {"text": "管老板叫\"头家\"", "type": "standard"}
+        ],
+        [
+            {"text": "祖宅是骑楼", "type": "standard"},
+            {"text": "会唱爱拼才会赢", "type": "standard"},
+            {"text": "把紫菜当零食", "type": "standard"},
+            {"text": "觉得福建以外都是北方", "type": "standard"},
+            {"text": "拖鞋过四季", "type": "standard"}
+        ],
+        [
+            {"text": "家里有茶叶山", "type": "standard"},
+            {"text": "用\"哇嘎哩共\"开场", "type": "standard"},
+            {"text": "春节发橘不苹果", "type": "standard"},
+            {"text": "觉得莆田鞋最舒服", "type": "standard"},
+            {"text": "把祠堂当精神寄托", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

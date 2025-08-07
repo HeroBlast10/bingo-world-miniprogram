@@ -1,0 +1,50 @@
+{
+    "bingoId": "xuanzekunnan",
+    "title": "选择困难症宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线, 你是不是什么都想要？",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "点外卖超过20分钟", "type": "standard"},
+            {"text": "经常说'随便'", "type": "standard"},
+            {"text": "让朋友/店员推荐", "type": "standard"},
+            {"text": "买东西喜欢买两个颜色", "type": "standard"},
+            {"text": "出门前换好几套衣服", "type": "standard"}
+        ],
+        [
+            {"text": "看菜单从头看到尾", "type": "standard"},
+            {"text": "用抛硬币/转盘做决定", "type": "standard"},
+            {"text": "最后选了第一个看中的", "type": "standard"},
+            {"text": "因为选错而后悔一天", "type": "standard"},
+            {"text": "淘宝购物车里超过50件商品", "type": "standard"}
+        ],
+        [
+            {"text": "吃饭时想尝尝别人点的", "type": "standard"},
+            {"text": "买完东西还在看同类商品", "type": "standard"},
+            {"text": "Free Space (自由发挥)", "type": "standard"},
+            {"text": "害怕做重大决定", "type": "standard"},
+            {"text": "在超市里来回踱步", "type": "standard"}
+        ],
+        [
+            {"text": "问遍所有朋友的意见", "type": "standard"},
+            {"text": "如果可以, 希望'全都要'", "type": "standard"},
+            {"text": "A和B都好, 那就选C", "type": "standard"},
+            {"text": "看电影选座位要很久", "type": "standard"},
+            {"text": "经常搜索'XX和XX哪个好'", "type": "standard"}
+        ],
+        [
+            {"text": "剪头发前纠结很久", "type": "standard"},
+            {"text": "旅游做攻略做到想放弃", "type": "standard"},
+            {"text": "需要别人帮你做决定", "type": "standard"},
+            {"text": "口头禅是'让我想想'", "type": "standard"},
+            {"text": "套餐是你的救星", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

@@ -1,0 +1,129 @@
+    {
+        "bingoId": "science_trivia",
+        "title": "科学冷知识宾果",
+        "creator": "请手动填写",
+        "description": "五个连成一线，说明你是冷知识百科全书",
+        "gridSize": {
+            "rows": 5,
+            "cols": 5
+        },
+        "gridContent": [
+            [
+                {
+                    "text": "章鱼有三颗心脏",
+                    "type": "standard"
+                },
+                {
+                    "text": "光年是距离单位",
+                    "type": "standard"
+                },
+                {
+                    "text": "蜂蜜永不腐坏",
+                    "type": "standard"
+                },
+                {
+                    "text": "火星有四季变化",
+                    "type": "standard"
+                },
+                {
+                    "text": "电可以在真空中传播",
+                    "type": "standard"
+                }
+            ],
+            [
+                {
+                    "text": "企鹅有膝盖",
+                    "type": "standard"
+                },
+                {
+                    "text": "香蕉是草本植物",
+                    "type": "standard"
+                },
+                {
+                    "text": "声音在水中传播更快",
+                    "type": "standard"
+                },
+                {
+                    "text": "黑洞也会蒸发",
+                    "type": "standard"
+                },
+                {
+                    "text": "光有质量",
+                    "type": "standard"
+                }
+            ],
+            [
+                {
+                    "text": "人类DNA有98%与黑猩猩相同",
+                    "type": "standard"
+                },
+                {
+                    "text": "火焰在太空中是球形",
+                    "type": "standard"
+                },
+                {
+                    "text": "闪电比太阳热",
+                    "type": "standard"
+                },
+                {
+                    "text": "冥王星曾是行星",
+                    "type": "standard"
+                },
+                {
+                    "text": "鲸鱼能“唱歌”交流",
+                    "type": "standard"
+                }
+            ],
+            [
+                {
+                    "text": "水可在常温下沸腾",
+                    "type": "standard"
+                },
+                {
+                    "text": "蜗牛有数千颗牙齿",
+                    "type": "standard"
+                },
+                {
+                    "text": "金属在太空会焊接在一起",
+                    "type": "standard"
+                },
+                {
+                    "text": "人体可制造维生素D",
+                    "type": "standard"
+                },
+                {
+                    "text": "宇宙在膨胀",
+                    "type": "standard"
+                }
+            ],
+            [
+                {
+                    "text": "章鱼会更换颜色伪装",
+                    "type": "standard"
+                },
+                {
+                    "text": "水熊虫能在真空中生存",
+                    "type": "standard"
+                },
+                {
+                    "text": "月球正在远离地球",
+                    "type": "standard"
+                },
+                {
+                    "text": "木星是太阳系最大行星",
+                    "type": "standard"
+                },
+                {
+                    "text": "磁场能影响动物迁徙",
+                    "type": "standard"
+                }
+            ]
+        ],
+        "category": "知识类",
+        "tags": [
+            "冷知识",
+            "科学",
+            "自然"
+        ],
+        "createdAt": ""
+    }

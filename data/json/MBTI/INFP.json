@@ -1,0 +1,50 @@
+{
+    "bingoId": "mbti-infp",
+    "title": "INFP宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，那么你可能是人间小蝴蝶",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "为流浪云朵写十四行诗", "type": "standard"},
+            {"text": "收藏落叶当书签", "type": "standard"},
+            {"text": "和咖啡拉花说早安", "type": "standard"},
+            {"text": "觉得路灯在讲故事", "type": "standard"},
+            {"text": "给文具起名字", "type": "standard"}
+        ],
+        [
+            {"text": "看催泪弹广告会哭", "type": "standard"},
+            {"text": "备忘录全是梦境记录", "type": "standard"},
+            {"text": "认为蒲公英是自由信使", "type": "standard"},
+            {"text": "给手机天气配心情注释", "type": "standard"},
+            {"text": "觉得WiFi信号在跳舞", "type": "standard"}
+        ],
+        [
+            {"text": "把树洞当战略合作伙伴", "type": "standard"},
+            {"text": "给外卖小哥画感谢小卡", "type": "standard"},
+            {"text": "坚信玩具有夜生活", "type": "standard"},
+            {"text": "用彩虹颜色规划一周", "type": "standard"},
+            {"text": "认为奶茶配料需要共情", "type": "standard"}
+        ],
+        [
+            {"text": "把阴天当天空在emo", "type": "standard"},
+            {"text": "给洗衣机唱鼓励歌", "type": "standard"},
+            {"text": "觉得数据线在拥抱", "type": "standard"},
+            {"text": "用童话逻辑解释物理", "type": "standard"},
+            {"text": "认为番茄需要赞美才变红", "type": "standard"}
+        ],
+        [
+            {"text": "给自动门说谢谢", "type": "standard"},
+            {"text": "觉得月亮在跟踪自己", "type": "standard"},
+            {"text": "给WiFi改诗意名称", "type": "standard"},
+            {"text": "坚信玩偶夜间开派对", "type": "standard"},
+            {"text": "认为雨声是天空密语", "type": "standard"}
+        ]
+    ],
+    "category": "MBTI",
+    "tags": ["人格测试", "心理学"],
+    "createdAt": ""
+}

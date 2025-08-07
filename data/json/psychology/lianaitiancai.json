@@ -1,0 +1,50 @@
+{
+  "bingoId": "love_master",
+  "title": "恋爱小天才宾果",
+  "creator": "请手动填写",
+  "description": "五个连成一线，你的恋爱智商值得羡慕！",
+  "gridSize": {
+    "rows": 5,
+    "cols": 5
+  },
+  "gridContent": [
+    [
+      { "text": "谈恋爱不emo", "type": "standard" },
+      { "text": "擅长表达情绪", "type": "standard" },
+      { "text": "知道怎么给对方安全感", "type": "standard" },
+      { "text": "会为关系制定共同目标", "type": "standard" },
+      { "text": "分寸感极强", "type": "standard" }
+    ],
+    [
+      { "text": "不翻旧账", "type": "standard" },
+      { "text": "冷静沟通不冷暴力", "type": "standard" },
+      { "text": "尊重彼此空间", "type": "standard" },
+      { "text": "主动制造小惊喜", "type": "standard" },
+      { "text": "感情稳定不作", "type": "standard" }
+    ],
+    [
+      { "text": "遇到问题及时沟通", "type": "standard" },
+      { "text": "不会轻易说分手", "type": "standard" },
+      { "text": "不强求对方改变", "type": "standard" },
+      { "text": "会主动道歉", "type": "standard" },
+      { "text": "和对方的朋友相处融洽", "type": "standard" }
+    ],
+    [
+      { "text": "懂得共情与聆听", "type": "standard" },
+      { "text": "保持独立也懂依赖", "type": "standard" },
+      { "text": "恋爱时也会照顾好自己", "type": "standard" },
+      { "text": "不会把情绪强加于人", "type": "standard" },
+      { "text": "不会偷窥对方手机", "type": "standard" }
+    ],
+    [
+      { "text": "遇到分歧会找折中方案", "type": "standard" },
+      { "text": "能坦诚说出自己的需求", "type": "standard" },
+      { "text": "遇到挫折会共同面对", "type": "standard" },
+      { "text": "喜欢也不失自我", "type": "standard" },
+      { "text": "知道什么时候需要边界", "type": "standard" }
+    ]
+  ],
+  "category": "情感类",
+  "tags": ["恋爱技巧", "情感智慧"],
+  "createdAt": ""
+}

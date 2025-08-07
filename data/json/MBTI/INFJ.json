@@ -1,0 +1,50 @@
+{
+    "bingoId": "mbti-infj",
+    "title": "INFJ宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，那么你可能是温柔预言家",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "看透谎言但假装不知道", "type": "standard"},
+            {"text": "深夜编辑千字安慰信息", "type": "standard"},
+            {"text": "在聚会角落当心灵护士", "type": "standard"},
+            {"text": "对他人情绪变化雷达预警", "type": "standard"},
+            {"text": "备忘录存着陌生人故事", "type": "standard"}
+        ],
+        [
+            {"text": "预言朋友分手被当巫术", "type": "standard"},
+            {"text": "用隐喻说话像在出谜题", "type": "standard"},
+            {"text": "给垃圾桶分类写感谢信", "type": "standard"},
+            {"text": "觉得电梯按钮需要安抚", "type": "standard"},
+            {"text": "把咖啡渍解读成星座", "type": "standard"}
+        ],
+        [
+            {"text": "在超市感应商品情绪", "type": "standard"},
+            {"text": "给植物播放古典乐", "type": "standard"},
+            {"text": "认为乌云需要心理咨询", "type": "standard"},
+            {"text": "用塔罗牌决定午餐", "type": "standard"},
+            {"text": "给扫地机器人让路鞠躬", "type": "standard"}
+        ],
+        [
+            {"text": "觉得wifi信号有孤独感", "type": "standard"},
+            {"text": "给打印机加油打气", "type": "standard"},
+            {"text": "认为橡皮擦在自我牺牲", "type": "standard"},
+            {"text": "对自动门说'辛苦了'", "type": "standard"},
+            {"text": "给过期食品办告别仪式", "type": "standard"}
+        ],
+        [
+            {"text": "觉得月亮是夜间监视器", "type": "standard"},
+            {"text": "给手机充电线编友谊手链", "type": "standard"},
+            {"text": "认为闹钟在报复社会", "type": "standard"},
+            {"text": "给外卖APP写情诗", "type": "standard"},
+            {"text": "觉得电梯数字需要疗愈", "type": "standard"}
+        ]
+    ],
+    "category": "MBTI",
+    "tags": ["人格测试", "心理学"],
+    "createdAt": ""
+}

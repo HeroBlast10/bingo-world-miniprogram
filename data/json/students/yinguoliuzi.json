@@ -1,0 +1,50 @@
+{
+    "bingoId": "yingguoliuzi",
+    "title": "英国留子宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，恭喜解锁伦敦生存专家成就",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "学会用英式假笑", "type": "standard"},
+            {"text": "吐槽过炸鱼薯条", "type": "standard"},
+            {"text": "在摄政街被鸽子袭击", "type": "standard"},
+            {"text": "遭遇过罢工取消行程", "type": "standard"},
+            {"text": "把中超当精神家园", "type": "standard"}
+        ],
+        [
+            {"text": "练成雨天不打伞神功", "type": "standard"},
+            {"text": "分得清各种口音鄙视链", "type": "standard"},
+            {"text": "在图书馆抢不到座位", "type": "standard"},
+            {"text": "被英国水质逼到秃头", "type": "standard"},
+            {"text": "有Tesco会员卡", "type": "standard"}
+        ],
+        [
+            {"text": "参加过于无聊的pub聚会", "type": "standard"},
+            {"text": "学会吐槽天气开场白", "type": "standard"},
+            {"text": "被火车延误坑过", "type": "standard"},
+            {"text": "在博物馆打过地铺", "type": "standard"},
+            {"text": "买过天价教材", "type": "standard"}
+        ],
+        [
+            {"text": "被误认为日韩游客", "type": "standard"},
+            {"text": "在康沃尔冻成狗", "type": "standard"},
+            {"text": "学会用\"Cheers\"代替谢谢", "type": "standard"},
+            {"text": "被英国菜逼成大厨", "type": "standard"},
+            {"text": "在巨石阵拍过游客照", "type": "standard"}
+        ],
+        [
+            {"text": "参加哈利波特巡礼", "type": "standard"},
+            {"text": "有英超球队周边", "type": "standard"},
+            {"text": "在公寓防火演习中冻醒", "type": "standard"},
+            {"text": "学会优雅排队", "type": "standard"},
+            {"text": "把\"Sorry\"当口头禅", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

@@ -1,0 +1,47 @@
+{
+    "bingoId": "mbti-istp",
+    "title": "ISTP宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，那么你可能是机械师",
+    "gridSize": {"rows":5,"cols":5},
+    "gridContent": [
+        [
+            {"text": "拆家电当冥想", "type":"standard"},
+            {"text": "认为说明书是剧透", "type":"standard"},
+            {"text": "把团建视为刑期", "type":"standard"},
+            {"text": "手机存着零件3D图", "type":"standard"},
+            {"text": "给咖啡机做外科手术", "type":"standard"}
+        ],
+        [
+            {"text": "看爱情片在研究打光", "type":"standard"},
+            {"text": "觉得社交是耗电行为", "type":"standard"},
+            {"text": "用扳手开红酒瓶", "type":"standard"},
+            {"text": "备忘录记着材料参数", "type":"standard"},
+            {"text": "认为彩虹需要光谱分析", "type":"standard"}
+        ],
+        [
+            {"text": "超市排队研究货架结构", "type":"standard"},
+            {"text": "把多肉当机械养护", "type":"standard"},
+            {"text": "认为感情需要调试", "type":"standard"},
+            {"text": "给遥控器装涡轮增压", "type":"standard"},
+            {"text": "觉得云层是故障代码", "type":"standard"}
+        ],
+        [
+            {"text": "电梯故障反而兴奋", "type":"standard"},
+            {"text": "用焊接技术修眼镜", "type":"standard"},
+            {"text": "把生日蛋糕当工程", "type":"standard"},
+            {"text": "认为植物需要校准", "type":"standard"},
+            {"text": "给WiFi信号画电路图", "type":"standard"}
+        ],
+        [
+            {"text": "看雨滴计算落点", "type":"standard"},
+            {"text": "觉得拥抱是接口对接", "type":"standard"},
+            {"text": "给手机装液压支架", "type":"standard"},
+            {"text": "认为彩虹是光学bug", "type":"standard"},
+            {"text": "把沉默当系统待机", "type":"standard"}
+        ]
+    ],
+    "category": "MBTI",
+    "tags": ["人格测试","心理学"],
+    "createdAt": ""
+}

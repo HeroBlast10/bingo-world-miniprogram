@@ -1,0 +1,125 @@
+{
+    "bingoId": "shijian",
+    "title": "视奸宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你还是放不下ta?",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "有专门的文档储存ta的相关信息",
+                "type": "standard"
+            },
+            {
+                "text": "视奸没有被ta本人发现过",
+                "type": "standard"
+            },
+            {
+                "text": "日记里有大篇幅对ta的记录",
+                "type": "standard"
+            },
+            {
+                "text": "被ta讨厌",
+                "type": "standard"
+            },
+            {
+                "text": "几乎掌握了ta主流平台的所有账号",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "有专门用来视奸的小号",
+                "type": "standard"
+            },
+            {
+                "text": "保存过ta使用过的物品",
+                "type": "standard"
+            },
+            {
+                "text": "被视奸对象发现过你在视奸ta",
+                "type": "standard"
+            },
+            {
+                "text": "在ta不知情的情况下使用过ta的东西",
+                "type": "standard"
+            },
+            {
+                "text": "了解ta的大部分喜好与厌恶",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "有时候很偏执",
+                "type": "standard"
+            },
+            {
+                "text": "ta对自己印象很好",
+                "type": "standard"
+            },
+            {
+                "text": "这种行为持续了1个月以_上",
+                "type": "standard"
+            },
+            {
+                "text": "在深夜对着ta的聊天框(只是)发呆",
+                "type": "standard"
+            },
+            {
+                "text": "被ta的朋友知道你在视奸ta",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "摸清ta的生活规律",
+                "type": "standard"
+            },
+            {
+                "text": "为了更好地视奸ta而去做一些自己并不感兴趣的事",
+                "type": "standard"
+            },
+            {
+                "text": "偷偷拍过ta的照片独自欣赏",
+                "type": "standard"
+            },
+            {
+                "text": "有时候会觉得自己很过分但很快就原谅自己了",
+                "type": "standard"
+            },
+            {
+                "text": "只是觉得好玩才选择视奸",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "在ta必经之路上装作偶遇",
+                "type": "standard"
+            },
+            {
+                "text": "曾经给ta寄过/塞过匿名书信/ ta的大部分朋礼物",
+                "type": "standard"
+            },
+            {
+                "text": "认识(知道)ta的朋友",
+                "type": "standard"
+            },
+            {
+                "text": "受到ta的信赖",
+                "type": "standard"
+            },
+            {
+                "text": " 厌恶在ta周围 出现的太多数人",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

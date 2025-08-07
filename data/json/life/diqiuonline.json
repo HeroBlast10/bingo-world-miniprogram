@@ -1,0 +1,125 @@
+{
+    "bingoId": "diqiuonline",
+    "title": "地球online宾果",
+    "creator": "请手动填写",
+    "description": "不管勾了几个反正恭喜你又活一天",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "按时吃了早餐",
+                "type": "standard"
+            },
+            {
+                "text": "散步",
+                "type": "standard"
+            },
+            {
+                "text": "给植物浇水",
+                "type": "standard"
+            },
+            {
+                "text": "没有熬夜",
+                "type": "standard"
+            },
+            {
+                "text": "看电影",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "骂学校或工作",
+                "type": "standard"
+            },
+            {
+                "text": "作息时间规律正常",
+                "type": "standard"
+            },
+            {
+                "text": "和朋友约定聚餐",
+                "type": "standard"
+            },
+            {
+                "text": "按时吃了晚餐",
+                "type": "standard"
+            },
+            {
+                "text": "听歌",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "看书",
+                "type": "standard"
+            },
+            {
+                "text": "做自己喜欢事",
+                "type": "standard"
+            },
+            {
+                "text": "把自己的感受放在第一位",
+                "type": "standard"
+            },
+            {
+                "text": "打扫了房间卫生",
+                "type": "standard"
+            },
+            {
+                "text": "摸了狗或者猫",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "出门游玩",
+                "type": "standard"
+            },
+            {
+                "text": "对别人的否定说去他妈的",
+                "type": "standard"
+            },
+            {
+                "text": "完成了今日工作",
+                "type": "standard"
+            },
+            {
+                "text": "没有吃垃圾食品",
+                "type": "standard"
+            },
+            {
+                "text": "坚持没有精神崩溃",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "扔垃圾",
+                "type": "standard"
+            },
+            {
+                "text": "按时吃了午餐",
+                "type": "standard"
+            },
+            {
+                "text": "保持身体健康",
+                "type": "standard"
+            },
+            {
+                "text": "接受自己的缺点",
+                "type": "standard"
+            },
+            {
+                "text": "按时起床",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

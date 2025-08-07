@@ -1,0 +1,50 @@
+{
+    "bingoId": "honkaistarrail",
+    "title": "崩坏：星穹铁道宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你是资深开拓者",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "全角色收集", "type": "standard"},
+            {"text": "通关模拟宇宙6", "type": "standard"},
+            {"text": "记住星神名字", "type": "standard"},
+            {"text": "满星忘却之庭", "type": "standard"},
+            {"text": "研究命途系统", "type": "standard"}
+        ],
+        [
+            {"text": "有专属配队", "type": "standard"},
+            {"text": "分析角色技能", "type": "standard"},
+            {"text": "收集光锥图鉴", "type": "standard"},
+            {"text": "参加社区活动", "type": "standard"},
+            {"text": "制作二创内容", "type": "standard"}
+        ],
+        [
+            {"text": "研究遗器搭配", "type": "standard"},
+            {"text": "关注开发组通讯", "type": "standard"},
+            {"text": "记住列车组成员", "type": "standard"},
+            {"text": "完成所有成就", "type": "standard"},
+            {"text": "分析剧情伏笔", "type": "standard"}
+        ],
+        [
+            {"text": "参与版本测试", "type": "standard"},
+            {"text": "计算伤害公式", "type": "standard"},
+            {"text": "收藏周边商品", "type": "standard"},
+            {"text": "研究星轨地图", "type": "standard"},
+            {"text": "制作攻略指南", "type": "standard"}
+        ],
+        [
+            {"text": "满命角色", "type": "standard"},
+            {"text": "研究元素弱点", "type": "standard"},
+            {"text": "分析角色背景", "type": "standard"},
+            {"text": "参与剧情讨论", "type": "standard"},
+            {"text": "记住所有台词", "type": "standard"}
+        ]
+    ],
+    "category": "游戏",
+    "tags": ["崩坏：星穹铁道", "米哈游"],
+    "createdAt": ""
+}

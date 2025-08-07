@@ -1,0 +1,50 @@
+{
+    "bingoId": "valorant_player",
+    "title": "打瓦玩家宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你是资深Valorant玩家",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "天梯段位钻石+", "type": "standard"},
+            {"text": "背下所有地图点位", "type": "standard"},
+            {"text": "精通3种以上角色", "type": "standard"},
+            {"text": "会各种技巧跳跃", "type": "standard"},
+            {"text": "购买限定皮肤", "type": "standard"}
+        ],
+        [
+            {"text": "能报精确点位", "type": "standard"},
+            {"text": "会各种穿射技巧", "type": "standard"},
+            {"text": "熟悉经济系统", "type": "standard"},
+            {"text": "研究过道具轨迹", "type": "standard"},
+            {"text": "有固定车队", "type": "standard"}
+        ],
+        [
+            {"text": "观看职业比赛", "type": "standard"},
+            {"text": "会假拆骗技能", "type": "standard"},
+            {"text": "掌握瞬狙技巧", "type": "standard"},
+            {"text": "研究过脚步声", "type": "standard"},
+            {"text": "定制准星设置", "type": "standard"}
+        ],
+        [
+            {"text": "分析过战术录像", "type": "standard"},
+            {"text": "会配合队友技能", "type": "standard"},
+            {"text": "掌握不同枪械弹道", "type": "standard"},
+            {"text": "熟悉地图更新", "type": "standard"},
+            {"text": "有专属外设配置", "type": "standard"}
+        ],
+        [
+            {"text": "参加社区赛事", "type": "standard"},
+            {"text": "会预判敌人走位", "type": "standard"},
+            {"text": "研究过角色克制", "type": "standard"},
+            {"text": "制作过攻略视频", "type": "standard"},
+            {"text": "背下技能CD时间", "type": "standard"}
+        ]
+    ],
+    "category": "游戏",
+    "tags": ["Valorant", "射击游戏"],
+    "createdAt": ""
+}

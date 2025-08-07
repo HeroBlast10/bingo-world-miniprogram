@@ -1,0 +1,82 @@
+<!--pages/create/create.wxml-->
+<view class="container">
+  <!-- 页面标题 -->
+  <view class="page-header">
+    <text class="page-title">创建宾果游戏</text>
+    <text class="page-desc">设计属于你的宾果游戏</text>
+  </view>
+
+  <!-- 表单 -->
+  <form bindsubmit="onFormSubmit" class="create-form">
+    <!-- 基本信息 -->
+    <view class="form-section">
+      <view class="section-title">基本信息</view>
+      
+      <!-- 宾果标题 -->
+      <view class="form-item">
+        <text class="form-label">宾果标题</text>
+        <input 
+          class="form-input" 
+          name="title" 
+          placeholder="请输入宾果游戏标题"
+          maxlength="50"
+        />
+      </view>
+
+      <!-- 宾果描述 -->
+      <view class="form-item">
+        <text class="form-label">宾果描述</text>
+        <textarea 
+          class="form-textarea" 
+          name="description" 
+          placeholder="请输入宾果游戏描述"
+          maxlength="200"
+          auto-height
+        />
+      </view>
+    </view>
+
+    <!-- 网格内容 -->
+    <view class="form-section">
+      <view class="section-title">网格内容</view>
+      <text class="section-desc">填写5x5网格的内容，中心格子为免费格子</text>
+      
+      <!-- 5x5 网格 -->
+      <view class="grid-container">
+        <view 
+          class="grid-row" 
+          wx:for="{{gridRows}}" 
+          wx:for-index="rowIndex" 
+          wx:key="rowIndex"
+        >
+          <view 
+            class="grid-cell {{rowIndex === 2 && colIndex === 2 ? 'free-cell' : ''}}"
+            wx:for="{{gridCols}}" 
+            wx:for-index="colIndex" 
+            wx:key="colIndex"
+          >
+            <textarea 
+              class="cell-input {{rowIndex === 2 && colIndex === 2 ? 'free-input' : ''}}"
+              name="cell-{{rowIndex}}-{{colIndex}}"
+              placeholder="{{rowIndex === 2 && colIndex === 2 ? '免费格子' : '输入内容'}}"
+              maxlength="20"
+              disabled="{{rowIndex === 2 && colIndex === 2}}"
+              value="{{rowIndex === 2 && colIndex === 2 ? '免费格子' : ''}}"
+            />
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 提交按钮 -->
+    <view class="form-actions">
+      <button 
+        class="submit-btn" 
+        form-type="submit" 
+        type="primary"
+      >
+        完成创建
+      </button>
+    </view>
+  </form>
+</view>

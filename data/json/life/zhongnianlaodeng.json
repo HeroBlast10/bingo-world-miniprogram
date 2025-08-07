@@ -1,0 +1,125 @@
+{
+    "bingoId": "zhongnianlaodeng",
+    "title": "中年老登宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线你就是纯种老登! ",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "海鲜市场",
+                "type": "standard"
+            },
+            {
+                "text": "电脑硬件",
+                "type": "standard"
+            },
+            {
+                "text": "玩机",
+                "type": "standard"
+            },
+            {
+                "text": "服务器",
+                "type": "standard"
+            },
+            {
+                "text": "软路由",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "音响",
+                "type": "standard"
+            },
+            {
+                "text": "功放",
+                "type": "standard"
+            },
+            {
+                "text": "HIFI耳机",
+                "type": "standard"
+            },
+            {
+                "text": "玉石/文玩",
+                "type": "standard"
+            },
+            {
+                "text": "汽车,枪械",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "摄影",
+                "type": "standard"
+            },
+            {
+                "text": "电源",
+                "type": "standard"
+            },
+            {
+                "text": "打火机",
+                "type": "standard"
+            },
+            {
+                "text": "烟酒",
+                "type": "standard"
+            },
+            {
+                "text": "手办/航模",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "五金工具",
+                "type": "standard"
+            },
+            {
+                "text": "激光",
+                "type": "standard"
+            },
+            {
+                "text": "刀具",
+                "type": "standard"
+            },
+            {
+                "text": "普洱茶",
+                "type": "standard"
+            },
+            {
+                "text": "花鸟",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "钓鱼",
+                "type": "standard"
+            },
+            {
+                "text": "手电筒",
+                "type": "standard"
+            },
+            {
+                "text": "露营",
+                "type": "standard"
+            },
+            {
+                "text": "登山",
+                "type": "standard"
+            },
+            {
+                "text": "骑行",
+                "type": "standard"
+            }
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

@@ -1,0 +1,50 @@
+{
+    "bingoId": "dongbeiren",
+    "title": "东北人宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你是个纯纯的东北银",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "洗澡带搓澡巾", "type": "standard"},
+            {"text": "把\"嘎哈\"当问候", "type": "standard"},
+            {"text": "家里囤百斤白菜", "type": "standard"},
+            {"text": "有赵本山情结", "type": "standard"},
+            {"text": "觉得锅包肉是信仰", "type": "standard"}
+        ],
+        [
+            {"text": "冬天舔铁栏杆", "type": "standard"},
+            {"text": "能喝一斤白酒", "type": "standard"},
+            {"text": "家里有貂", "type": "standard"},
+            {"text": "说话像说相声", "type": "standard"},
+            {"text": "觉得东北菜是第九大菜系", "type": "standard"}
+        ],
+        [
+            {"text": "在炕上吃冻梨", "type": "standard"},
+            {"text": "用笤帚打孩子", "type": "standard"},
+            {"text": "有下岗记忆", "type": "standard"},
+            {"text": "把烧烤当夜宵", "type": "standard"},
+            {"text": "觉得东北话最传染", "type": "standard"}
+        ],
+        [
+            {"text": "家里腌酸菜", "type": "standard"},
+            {"text": "扭秧歌无师自通", "type": "standard"},
+            {"text": "管所有人叫\"老铁\"", "type": "standard"},
+            {"text": "在洗浴中心过夜", "type": "standard"},
+            {"text": "觉得海南是东北第四省", "type": "standard"}
+        ],
+        [
+            {"text": "早餐吃豆腐脑配油条", "type": "standard"},
+            {"text": "把\"哎呀妈呀\"当感叹", "type": "standard"},
+            {"text": "有亲戚在海南", "type": "standard"},
+            {"text": "觉得内蒙是酒友", "type": "standard"},
+            {"text": "用热情吓跑南方人", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

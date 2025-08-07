@@ -1,0 +1,135 @@
+{
+    "bingoId": "qingchun",
+    "title": "热烈的青春宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你有过很热烈难忘的青春",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {
+                "text": "和同学一起逛商场",
+                "type": "standard"
+            },
+            {
+                "text": "去过同学家玩",
+                "type": "standard"
+            },
+            {
+                "text": "在校运会上取得好成绩",
+                "type": "standard"
+            },
+            {
+                "text": "代表班级/学校拿奖",
+                "type": "standard"
+            },
+            {
+                "text": "成绩稳在前十",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "用学校大屏打游戏/放视频/音乐",
+                "type": "standard"
+            },
+            {
+                "text": "和好朋友一起过过生日",
+                "type": "standard"
+            },
+            {
+                "text": "没被同学背刺过",
+                "type": "standard"
+            },
+            {
+                "text": "拿过学校的处分",
+                "type": "standard"
+            },
+            {
+                "text": "和朋友在一起干一些没头没脑的傻事",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "和朋友一起畅聊过人生",
+                "type": "standard"
+            },
+            {
+                "text": "有过喜欢的人",
+                "type": "standard"
+            },
+            {
+                "text": "和同桌前后桌关系很好",
+                "type": "standard"
+            },
+            {
+                "text": "和同学一起上课聊天/分享零食",
+                "type": "standard"
+            },
+            {
+                "text": "当过课代表",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "和同学去过KTV",
+                "type": "standard"
+            },
+            {
+                "text": "吃过学校附近地摊/小店",
+                "type": "standard"
+            },
+            {
+                "text": "在年级乃至学校都很有名",
+                "type": "standard"
+            },
+            {
+                "text": "代表年级/班级发表演讲/做主持人",
+                "type": "standard"
+            },
+            {
+                "text": "举报过如培优班之类的补课",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "有个组乐队的想法",
+                "type": "standard"
+            },
+            {
+                "text": "和朋友是游戏好友并一起开黑",
+                "type": "standard"
+            },
+            {
+                "text": "在学校有同好",
+                "type": "standard"
+            },
+            {
+                "text": "有自己的精神寄托",
+                "type": "standard"
+            },
+            {
+                "text": "热爱创作(画作/诗歌/小说等)",
+                "type": "standard"
+            }
+        ],
+        [
+            {
+                "text": "宾果ID:1062 来目务",
+                "type": "standard"
+            },
+            {},
+            {},
+            {},
+            {}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

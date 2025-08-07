@@ -1,0 +1,50 @@
+{
+    "bingoId": "qingxulengmo",
+    "title": "情绪冷漠宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，你的情绪已进入节能模式",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "对节日毫无感觉", "type": "standard"},
+            {"text": "被说\"你好冷漠\"也不解释", "type": "standard"},
+            {"text": "觉得恋爱麻烦", "type": "standard"},
+            {"text": "对他人痛苦共情失败", "type": "standard"},
+            {"text": "取消所有生日提醒", "type": "standard"}
+        ],
+        [
+            {"text": "看悲剧电影吃爆米花", "type": "standard"},
+            {"text": "用\"哦\"结束对话", "type": "standard"},
+            {"text": "对八卦毫无兴趣", "type": "standard"},
+            {"text": "觉得庆祝仪式多余", "type": "standard"},
+            {"text": "收到礼物毫无波澜", "type": "standard"}
+        ],
+        [
+            {"text": "对别人告白说\"谢谢\"", "type": "standard"},
+            {"text": "把表情包当情绪代餐", "type": "standard"},
+            {"text": "拒绝深度聊天", "type": "standard"},
+            {"text": "对工作表扬无感", "type": "standard"},
+            {"text": "觉得宠物比人可爱", "type": "standard"}
+        ],
+        [
+            {"text": "十年没哭过", "type": "standard"},
+            {"text": "把\"随便\"当口头禅", "type": "standard"},
+            {"text": "对惊喜感到负担", "type": "standard"},
+            {"text": "认为热情是消耗品", "type": "standard"},
+            {"text": "对别人冷战毫无察觉", "type": "standard"}
+        ],
+        [
+            {"text": "朋友圈三年没更新", "type": "standard"},
+            {"text": "觉得表情符号虚伪", "type": "standard"},
+            {"text": "对离别不说再见", "type": "standard"},
+            {"text": "用AI写祝福语", "type": "standard"},
+            {"text": "理想状态是植物", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}
