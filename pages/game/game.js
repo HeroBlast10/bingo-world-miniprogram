@@ -128,9 +128,8 @@ Page({
     for (let row = 0; row < gridSize.rows; row++) {
       selectedCells[row] = [];
       for (let col = 0; col < gridSize.cols; col++) {
-        // 检查是否是中心免费格子（5x5网格的中心位置）
-        const isFreeCell = gridSize.rows === 5 && gridSize.cols === 5 && row === 2 && col === 2;
-        selectedCells[row][col] = isFreeCell; // 免费格子默认选中，其他为false
+        // 所有格子初始状态都为未选中
+        selectedCells[row][col] = false;
       }
     }
     return selectedCells;
@@ -153,15 +152,7 @@ Page({
       return;
     }
 
-    // 检查是否是免费格子（5x5网格的中心位置）
-    const gridSize = this.data.game.gridSize;
-    const isFreeCell = gridSize.rows === 5 && gridSize.cols === 5 && rowIndex === 2 && colIndex === 2;
-
-    // 免费格子不能取消选择
-    if (isFreeCell) {
-      console.log('免费格子不能取消选择');
-      return;
-    }
+    // 所有格子都可以自由点击选择或取消选择
 
     // 获取当前选中状态
     const currentSelectedCells = this.data.selectedCells;

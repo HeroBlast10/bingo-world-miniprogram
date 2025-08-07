@@ -50,7 +50,7 @@ export default function BingoGamePage({ params }: { params: { id: string } }) {
     sampleBingoData.cells.map((text, index) => ({
       id: index,
       text,
-      selected: index === 12, // Center cell (free space) is pre-selected
+      selected: false, // All cells start unselected
     })),
   )
 
@@ -59,9 +59,7 @@ export default function BingoGamePage({ params }: { params: { id: string } }) {
   }
 
   const toggleCell = (cellId: number) => {
-    // Don't allow toggling the center free space
-    if (cellId === 12) return
-
+    // All cells can be toggled freely
     setBingoGrid((prev) => prev.map((cell) => (cell.id === cellId ? { ...cell, selected: !cell.selected } : cell)))
   }
 
@@ -108,17 +106,15 @@ export default function BingoGamePage({ params }: { params: { id: string } }) {
                 key={cell.id}
                 onClick={() => toggleCell(cell.id)}
                 className={`
-                  aspect-square p-2 rounded-lg border text-xs font-medium transition-all duration-200 active:scale-95
+                  aspect-square p-2 rounded-lg border text-xs font-medium transition-all duration-200 active:scale-95 cursor-pointer
                   ${
                     cell.selected
                       ? "bg-coral-500 text-white border-coral-500 shadow-md"
                       : "bg-white text-gray-700 border-gray-200 hover:border-coral-300"
                   }
-                  ${cell.id === 12 ? "cursor-default" : "cursor-pointer"}
                 `}
-                disabled={cell.id === 12}
               >
-                <span className="leading-tight">{cell.id === 12 ? "免费格子" : cell.text}</span>
+                <span className="leading-tight">{cell.text}</span>
               </button>
             ))}
           </div>
