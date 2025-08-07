@@ -127,6 +127,37 @@ page {
   border-color: #ff6b6b;
 }
 
+/* 不同颜色主题的选中样式 */
+.cell.selected-coral {
+  background-color: #ff6b6b;
+  border-color: #ff6b6b;
+}
+
+.cell.selected-blue {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.cell.selected-purple {
+  background-color: #8b5cf6;
+  border-color: #8b5cf6;
+}
+
+.cell.selected-green {
+  background-color: #10b981;
+  border-color: #10b981;
+}
+
+.cell.selected-pink {
+  background-color: #ec4899;
+  border-color: #ec4899;
+}
+
+.cell.selected-orange {
+  background-color: #f59e0b;
+  border-color: #f59e0b;
+}
+
 .cell.selected .cell-text {
   color: #ffffff;
   font-weight: 600;

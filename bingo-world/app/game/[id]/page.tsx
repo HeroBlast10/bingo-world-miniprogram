@@ -2,7 +2,7 @@
 
 import { ArrowLeft, Bookmark, Download, Share } from "lucide-react"
 import { useRouter } from "next/navigation"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 interface BingoCell {
   id: number
@@ -44,8 +44,43 @@ const sampleBingoData = {
   ],
 }
 
+// Color mapping for different themes
+const colorMap = {
+  coral: {
+    bg: "bg-coral-500",
+    border: "border-coral-500",
+    text: "text-white",
+  },
+  blue: {
+    bg: "bg-blue-500",
+    border: "border-blue-500",
+    text: "text-white",
+  },
+  purple: {
+    bg: "bg-purple-500",
+    border: "border-purple-500",
+    text: "text-white",
+  },
+  green: {
+    bg: "bg-green-500",
+    border: "border-green-500",
+    text: "text-white",
+  },
+  pink: {
+    bg: "bg-pink-500",
+    border: "border-pink-500",
+    text: "text-white",
+  },
+  orange: {
+    bg: "bg-orange-500",
+    border: "border-orange-500",
+    text: "text-white",
+  },
+}
+
 export default function BingoGamePage({ params }: { params: { id: string } }) {
   const router = useRouter()
+  const [selectedColor, setSelectedColor] = useState("coral")
   const [bingoGrid, setBingoGrid] = useState<BingoCell[]>(
     sampleBingoData.cells.map((text, index) => ({
       id: index,
@@ -53,6 +88,12 @@ export default function BingoGamePage({ params }: { params: { id: string } }) {
       selected: false, // All cells start unselected
     })),
   )
+
+  // Load user's selected color from localStorage
+  useEffect(() => {
+    const savedColor = localStorage.getItem("bingoColor") || "coral"
+    setSelectedColor(savedColor)
+  }, [])
 
   const handleBack = () => {
     router.back()
@@ -101,22 +142,25 @@ export default function BingoGamePage({ params }: { params: { id: string } }) {
         {/* Bingo Grid */}
         <div className="bg-white rounded-2xl p-4 shadow-sm">
           <div className="grid grid-cols-5 gap-2">
-            {bingoGrid.map((cell) => (
-              <button
-                key={cell.id}
-                onClick={() => toggleCell(cell.id)}
-                className={`
-                  aspect-square p-2 rounded-lg border text-xs font-medium transition-all duration-200 active:scale-95 cursor-pointer
-                  ${
-                    cell.selected
-                      ? "bg-coral-500 text-white border-coral-500 shadow-md"
-                      : "bg-white text-gray-700 border-gray-200 hover:border-coral-300"
-                  }
-                `}
-              >
-                <span className="leading-tight">{cell.text}</span>
-              </button>
-            ))}
+            {bingoGrid.map((cell) => {
+              const currentColorMap = colorMap[selectedColor as keyof typeof colorMap] || colorMap.coral
+              return (
+                <button
+                  key={cell.id}
+                  onClick={() => toggleCell(cell.id)}
+                  className={`
+                    aspect-square p-2 rounded-lg border text-xs font-medium transition-all duration-200 active:scale-95 cursor-pointer
+                    ${
+                      cell.selected
+                        ? `${currentColorMap.bg} ${currentColorMap.text} ${currentColorMap.border} shadow-md`
+                        : "bg-white text-gray-700 border-gray-200 hover:border-gray-300"
+                    }
+                  `}
+                >
+                  <span className="leading-tight">{cell.text}</span>
+                </button>
+              )
+            })}
           </div>
         </div>
 

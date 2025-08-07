@@ -8,7 +8,16 @@ Page({
   data: {
     game: null,
     selectedCells: [],
-    isLoading: true
+    isLoading: true,
+    selectedColor: 'coral', // 用户选择的颜色主题
+    colorMap: {
+      'coral': '#ff6b6b',
+      'blue': '#3b82f6',
+      'purple': '#8b5cf6',
+      'green': '#10b981',
+      'pink': '#ec4899',
+      'orange': '#f59e0b'
+    }
   },
 
   /**
@@ -16,6 +25,9 @@ Page({
    */
   onLoad(options) {
     console.log('游戏页面加载，参数:', options);
+
+    // 加载用户选择的颜色
+    this.loadUserColor();
 
     if (options.id) {
       // 通过 options.id 获取游戏ID
@@ -33,6 +45,21 @@ Page({
       setTimeout(() => {
         wx.navigateBack();
       }, 1500);
+    }
+  },
+
+  /**
+   * 加载用户选择的颜色
+   */
+  loadUserColor() {
+    try {
+      const selectedColor = wx.getStorageSync('bingoColor') || 'coral';
+      this.setData({
+        selectedColor: selectedColor
+      });
+      console.log('加载用户颜色:', selectedColor);
+    } catch (error) {
+      console.error('加载用户颜色失败:', error);
     }
   },
 
@@ -423,7 +450,8 @@ Page({
 
         // 绘制格子背景
         if (isSelected) {
-          ctx.setFillStyle('#ff6b6b');
+          const selectedColorHex = this.data.colorMap[this.data.selectedColor] || '#ff6b6b';
+          ctx.setFillStyle(selectedColorHex);
         } else {
           ctx.setFillStyle('#ffffff');
         }
@@ -605,6 +633,13 @@ Page({
         }
       }
     });
+  },
+
+  /**
+   * 页面显示时重新加载颜色设置
+   */
+  onShow() {
+    this.loadUserColor();
   },
 
   /**

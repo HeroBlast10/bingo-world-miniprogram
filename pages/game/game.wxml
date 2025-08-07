@@ -31,7 +31,7 @@
         >
           <!-- 内层为 colIndex -->
           <view
-            class="cell {{selectedCells[rowIndex][colIndex] ? 'selected' : ''}}"
+            class="cell {{selectedCells[rowIndex][colIndex] ? 'selected selected-' + selectedColor : ''}}"
             wx:for="{{item}}"
             wx:for-index="colIndex"
             wx:key="colIndex"

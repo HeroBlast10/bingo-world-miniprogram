@@ -2,7 +2,7 @@
 
 import { ArrowLeft, Check } from "lucide-react"
 import { useRouter } from "next/navigation"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 interface ColorOption {
   id: string
@@ -62,6 +62,12 @@ export default function SettingsPage() {
   const [selectedColor, setSelectedColor] = useState("coral")
   const [notifications, setNotifications] = useState(true)
   const [autoSave, setAutoSave] = useState(true)
+
+  // Load settings from localStorage on component mount
+  useEffect(() => {
+    const savedColor = localStorage.getItem("bingoColor") || "coral"
+    setSelectedColor(savedColor)
+  }, [])
 
   const handleBack = () => {
     router.back()
