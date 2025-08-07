@@ -96,7 +96,7 @@ Page({
    */
   onShareAppMessage() {
     return {
-      title: '宾果世界 - 发现有趣的宾果游戏',
+      title: '小程序@宾了个果 - 发现有趣的宾果游戏',
       path: '/pages/index/index'
     };
   }

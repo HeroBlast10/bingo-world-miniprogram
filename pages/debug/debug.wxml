@@ -2,6 +2,7 @@
 <view class="container">
   <view class="header">
     <text class="title">宾果数据调试</text>
+    <button class="clear-btn" bindtap="clearAllData">清除保存数据</button>
   </view>
   
   <view class="debug-content">

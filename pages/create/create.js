@@ -48,9 +48,6 @@ Page({
     let emptyCells = 0;
     for (let row = 0; row < 5; row++) {
       for (let col = 0; col < 5; col++) {
-        // 跳过中心免费格子
-        if (row === 2 && col === 2) continue;
-        
         const cellKey = `cell-${row}-${col}`;
         const cellValue = formData[cellKey];
         
@@ -87,22 +84,13 @@ Page({
     for (let row = 0; row < 5; row++) {
       gridContent[row] = [];
       for (let col = 0; col < 5; col++) {
-        let cellText = '';
-        let cellType = 'standard';
-        
-        if (row === 2 && col === 2) {
-          // 中心免费格子
-          cellText = '免费格子';
-          cellType = 'free';
-        } else {
-          // 从表单数据中获取内容
-          const cellKey = `cell-${row}-${col}`;
-          cellText = formData[cellKey] || '';
-        }
+        // 从表单数据中获取内容
+        const cellKey = `cell-${row}-${col}`;
+        const cellText = formData[cellKey] || '';
         
         gridContent[row][col] = {
           text: cellText,
-          type: cellType
+          type: 'standard'
         };
       }
     }
@@ -176,7 +164,7 @@ Page({
    */
   onShareAppMessage() {
     return {
-      title: '宾果世界 - 创建你的专属宾果游戏',
+      title: '小程序@宾了个果 - 创建你的专属宾果游戏',
       path: '/pages/create/create'
     };
   }

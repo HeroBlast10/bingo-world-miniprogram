@@ -23,7 +23,7 @@
   </view>
 
   <!-- 内容区域 -->
-  <view class="content">
+  <view class="content" data-tab="{{activeTab}}">
     <!-- 有数据时显示宾果列表 -->
     <view wx:if="{{currentBingos.length > 0}}" class="bingo-grid">
       <view 
@@ -52,7 +52,7 @@
               wx:for-index="cellIndex"
               wx:key="cellIndex"
             >
-              <text class="cell-text">{{cell.text.length > 6 ? cell.text.slice(0, 4) + '...' : cell.text}}</text>
+              <text class="cell-text">{{cell.text && cell.text.length > 6 ? cell.text.slice(0, 4) + '...' : (cell.text || '')}}</text>
             </view>
           </view>
         </view>

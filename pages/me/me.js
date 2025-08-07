@@ -99,9 +99,9 @@ Page({
 
       this.setData({
         stats: {
-          completed: completedGames.length || 12, // 默认显示12
-          created: createdGames.length || 5,      // 默认显示5
-          saved: savedGames.length || 28          // 默认显示28
+          completed: completedGames.length || 0, // 默认显示12
+          created: createdGames.length || 0,     // 默认显示5
+          saved: savedGames.length || 0         // 默认显示28
         }
       });
     } catch (error) {
@@ -160,7 +160,7 @@ Page({
    */
   onShareAppMessage() {
     return {
-      title: '宾果世界 - 发现有趣的宾果游戏',
+      title: '小程序@宾了个果 - 发现有趣的宾果游戏',
       path: '/pages/index/index'
     };
   }

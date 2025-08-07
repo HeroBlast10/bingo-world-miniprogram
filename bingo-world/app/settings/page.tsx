@@ -92,44 +92,26 @@ export default function SettingsPage() {
 
       <div className="px-4 py-6 space-y-6">
         {/* Bingo Color Section */}
-        <div className="bg-white rounded-2xl p-6 shadow-sm">
+        <div className="bg-white rounded-2xl p-6 shadow-sm w-full">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">宾果颜色</h3>
           <p className="text-sm text-gray-500 mb-6">选择你喜欢的宾果选中颜色</p>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4 w-full">
             {colorOptions.map((option) => (
               <button
                 key={option.id}
                 onClick={() => handleColorSelect(option.id)}
-                className={`relative p-4 rounded-xl border-2 transition-all ${
+                className={`relative p-4 rounded-xl border-2 transition-all w-full min-h-[80px] flex items-center ${
                   selectedColor === option.id
                     ? `${option.borderColor} bg-gray-50`
                     : "border-gray-200 hover:border-gray-300"
                 }`}
               >
-                <div className="flex items-center space-x-3">
-                  <div className={`w-8 h-8 rounded-full ${option.bgColor} flex items-center justify-center`}>
+                <div className="flex items-center space-x-3 w-full">
+                  <div className={`w-8 h-8 rounded-full ${option.bgColor} flex items-center justify-center flex-shrink-0`}>
                     {selectedColor === option.id && <Check className="h-4 w-4 text-white" />}
                   </div>
-                  <span className="font-medium text-gray-900">{option.name}</span>
-                </div>
-
-                {/* Preview Grid */}
-                <div className="mt-3 grid grid-cols-3 gap-1">
-                  {Array(9)
-                    .fill(null)
-                    .map((_, i) => (
-                      <div
-                        key={i}
-                        className={`aspect-square rounded text-xs flex items-center justify-center ${
-                          i === 1 || i === 4 || i === 7
-                            ? `${option.bgColor} ${option.color}`
-                            : "bg-gray-100 text-gray-400"
-                        }`}
-                      >
-                        {i === 4 ? "✓" : ""}
-                      </div>
-                    ))}
+                  <span className="font-medium text-gray-900 text-left">{option.name}</span>
                 </div>
               </button>
             ))}
@@ -137,7 +119,7 @@ export default function SettingsPage() {
         </div>
 
         {/* Other Settings */}
-        <div className="bg-white rounded-2xl p-6 shadow-sm space-y-6">
+        <div className="bg-white rounded-2xl p-6 shadow-sm space-y-6 w-full">
           <h3 className="text-lg font-semibold text-gray-900">通用设置</h3>
 
           {/* Notifications Toggle */}
@@ -182,16 +164,16 @@ export default function SettingsPage() {
         </div>
 
         {/* About Section */}
-        <div className="bg-white rounded-2xl p-6 shadow-sm">
+        <div className="bg-white rounded-2xl p-6 shadow-sm w-full">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">关于</h3>
           <div className="space-y-3 text-sm text-gray-600">
             <div className="flex justify-between">
               <span>版本</span>
-              <span>1.0.0</span>
+              <span>1.0.1</span>
             </div>
             <div className="flex justify-between">
               <span>开发者</span>
-              <span>宾果世界团队</span>
+              <span>宾了个果团队</span>
             </div>
             <div className="flex justify-between">
               <span>反馈</span>

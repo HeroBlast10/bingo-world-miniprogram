@@ -106,6 +106,12 @@ Page({
       // 调用 findGameById 获取游戏数据
       let game = findGameById(gameId);
       console.log('获取到的游戏数据:', game);
+      
+      // 详细检查游戏数据结构
+      if (game && game.gridContent) {
+        console.log('游戏网格大小:', game.gridSize);
+        console.log('网格内容样例:', game.gridContent[0] ? game.gridContent[0][0] : 'undefined');
+      }
 
       if (!game) {
         wx.showToast({
@@ -121,9 +127,9 @@ Page({
       // 处理游戏数据，为每个格子添加字体大小类
       game = this.processGameData(game);
 
-      // 根据游戏数据的 gridSize 初始化一个全为 false 的二维数组 selectedCells
-      const selectedCells = this.initializeSelectedCells(game.gridSize);
-      console.log('初始化的选中状态:', selectedCells);
+      // 检查是否有保存的填写进度，如果有则恢复，否则初始化为全false
+      const selectedCells = this.loadSavedProgress(gameId, game.gridSize);
+      console.log('加载的选中状态:', selectedCells);
 
       // 使用 this.setData 更新 game 和 selectedCells
       this.setData({
@@ -144,6 +150,48 @@ Page({
         icon: 'none'
       });
       this.setData({ isLoading: false });
+    }
+  },
+
+  /**
+   * 加载保存的填写进度
+   */
+  loadSavedProgress(gameId, gridSize) {
+    try {
+      // 从本地存储获取已完成的游戏列表
+      const completedGames = wx.getStorageSync('completedGames') || [];
+      
+      // 查找当前游戏的保存记录
+      const savedGame = completedGames.find(game => game.bingoId === gameId);
+      
+      if (savedGame && savedGame.cells && savedGame.cells.length > 0) {
+        console.log('找到保存的游戏进度:', savedGame);
+        
+        // 将一维数组转换为二维数组
+        const selectedCells = [];
+        let cellIndex = 0;
+        
+        for (let row = 0; row < gridSize.rows; row++) {
+          selectedCells[row] = [];
+          for (let col = 0; col < gridSize.cols; col++) {
+            if (cellIndex < savedGame.cells.length) {
+              selectedCells[row][col] = savedGame.cells[cellIndex].selected || false;
+            } else {
+              selectedCells[row][col] = false;
+            }
+            cellIndex++;
+          }
+        }
+        
+        console.log('恢复的选中状态:', selectedCells);
+        return selectedCells;
+      } else {
+        console.log('未找到保存的进度，使用初始状态');
+        return this.initializeSelectedCells(gridSize);
+      }
+    } catch (error) {
+      console.error('加载保存进度失败:', error);
+      return this.initializeSelectedCells(gridSize);
     }
   },
 
@@ -258,8 +306,8 @@ Page({
           const isSelected = this.data.selectedCells[row] && this.data.selectedCells[row][col];
 
           gameToSave.cells.push({
-            text: cellData.text,
-            type: cellData.type,
+            text: cellData && cellData.text ? cellData.text : `格子 ${row}-${col}`,
+            type: cellData && cellData.type ? cellData.type : 'standard',
             selected: isSelected || false
           });
         }
@@ -318,9 +366,14 @@ Page({
           const cellData = this.data.game.gridContent[row][col];
           const isSelected = this.data.selectedCells[row] && this.data.selectedCells[row][col];
 
+          // 添加调试信息
+          if (!cellData || !cellData.text) {
+            console.warn(`格子数据异常 [${row}][${col}]:`, cellData);
+          }
+
           gameToSave.cells.push({
-            text: cellData.text,
-            type: cellData.type,
+            text: cellData && cellData.text ? cellData.text : `格子 ${row}-${col}`,
+            type: cellData && cellData.type ? cellData.type : 'standard',
             selected: isSelected || false
           });
         }
@@ -397,7 +450,7 @@ Page({
     ctx.setFillStyle('#9ca3af');
     ctx.setFontSize(24);
     ctx.setTextAlign('center');
-    ctx.fillText('小程序@宾果世界', canvasWidth / 2, 50);
+    ctx.fillText('小程序@宾了个果', canvasWidth / 2, 50);
 
     // 绘制游戏标题
     ctx.setFillStyle('#1f2937');
@@ -423,7 +476,7 @@ Page({
 
     // 计算网格参数
     const gridSize = Math.min(game.gridSize.rows, game.gridSize.cols);
-    const maxGridWidth = 600;
+    const maxGridWidth = 680; // 增加网格宽度，减少左右边距
     const cellSize = maxGridWidth / Math.max(game.gridSize.rows, game.gridSize.cols);
     const gridWidth = cellSize * game.gridSize.cols;
     const gridHeight = cellSize * game.gridSize.rows;
@@ -495,11 +548,11 @@ Page({
     }
 
     // 绘制底部水印
-    const watermarkY = gridStartY + gridHeight + 60;
+    const watermarkY = gridStartY + gridHeight + 45; // 略微减少底部间距
     ctx.setFillStyle('#9ca3af');
     ctx.setFontSize(28);
     ctx.setTextAlign('center');
-    ctx.fillText('小程序@宾果世界', canvasWidth / 2, watermarkY);
+    ctx.fillText('小程序@宾了个果', canvasWidth / 2, watermarkY);
 
     // 绘制完成，生成图片
     ctx.draw(false, () => {
@@ -621,7 +674,7 @@ Page({
           case 2:
             // 复制链接
             wx.setClipboardData({
-              data: `宾果世界 - ${this.data.game.title}`,
+              data: `宾了个果 - ${this.data.game.title}`,
               success: () => {
                 wx.showToast({
                   title: '链接已复制',

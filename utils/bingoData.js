@@ -13128,7 +13128,7 @@ const bingos = {
       "bingoId": "gaozhongweiji",
       "title": "高中违纪宾果",
       "creator": "系统",
-      "description": "五个连成一线,说明你是一个不合格的高中生",
+      "description": "五个连成一线,说明你是不合格的高中生！",
       "gridSize": {
         "rows": 5,
         "cols": 5
@@ -13236,11 +13236,11 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "违规充电/破坏公物使用电器",
+            "text": "违规充电/使用电器",
             "type": "standard"
           },
           {
-            "text": "格子 4-4",
+            "text": "破坏公物",
             "type": "standard"
           }
         ]

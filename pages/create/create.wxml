@@ -39,7 +39,7 @@
     <!-- 网格内容 -->
     <view class="form-section">
       <view class="section-title">网格内容</view>
-      <text class="section-desc">填写5x5网格的内容，中心格子为免费格子</text>
+      <text class="section-desc">填写5x5网格的内容，中心格子默认为免费格子，可自由修改</text>
       
       <!-- 5x5 网格 -->
       <view class="grid-container">
@@ -60,7 +60,6 @@
               name="cell-{{rowIndex}}-{{colIndex}}"
               placeholder="{{rowIndex === 2 && colIndex === 2 ? '免费格子' : '输入内容'}}"
               maxlength="20"
-              disabled="{{rowIndex === 2 && colIndex === 2}}"
               value="{{rowIndex === 2 && colIndex === 2 ? '免费格子' : ''}}"
             />
           </view>

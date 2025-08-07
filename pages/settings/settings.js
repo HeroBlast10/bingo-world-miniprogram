@@ -7,7 +7,6 @@ Page({
     selectedColor: 'coral',
     notifications: true,
     autoSave: true,
-    previewCells: [0, 1, 2, 3, 4, 5, 6, 7, 8], // 用于生成3x3预览网格
     colorOptions: [
       {
         id: 'coral',
@@ -174,7 +173,7 @@ Page({
   onFeedback() {
     wx.showModal({
       title: '联系我们',
-      content: '如有问题或建议，请通过以下方式联系我们：\n\n邮箱：feedback@bingoworld.com\n微信：BingoWorldTeam',
+      content: '如有问题或建议，请通过以下方式联系我们：公众号“宾果世界”\n\n邮箱：feedback@bingoworld.com',
       showCancel: false,
       confirmText: '知道了'
     });
@@ -185,7 +184,7 @@ Page({
    */
   onShareAppMessage() {
     return {
-      title: '宾果世界 - 设置',
+      title: '宾了个果 - 设置',
       path: '/pages/settings/settings'
     };
   }

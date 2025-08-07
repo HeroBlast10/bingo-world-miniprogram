@@ -8,7 +8,7 @@
         <image class="user-avatar" src="{{defaultAvatarUrl}}" mode="aspectFill" />
       </view>
       <view class="login-info">
-        <text class="login-title">欢迎来到宾果世界</text>
+        <text class="login-title">欢迎来到宾了个果</text>
         <text class="login-desc">登录后可保存您的游戏记录</text>
         <button class="login-btn" bindtap="login">微信授权登录</button>
       </view>
@@ -67,6 +67,6 @@
 
   <!-- 版本信息 -->
   <view class="version-section">
-    <text class="version-text">宾果世界 v1.0.0</text>
+    <text class="version-text">宾了个果 v1.0.1</text>
   </view>
 </view>

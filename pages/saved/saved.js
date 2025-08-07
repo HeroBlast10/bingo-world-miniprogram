@@ -91,14 +91,20 @@ Page({
       const completedGames = wx.getStorageSync('completedGames') || [];
       
       return completedGames.map(game => {
-        const selectedCount = game.cells ? game.cells.filter(cell => cell.selected).length : 0;
+        // 确保cells数组中的每个元素都有有效的text属性
+        const safeCells = (game.cells || []).map(cell => ({
+          text: cell && cell.text ? cell.text : '',
+          selected: cell && cell.selected ? cell.selected : false
+        }));
+        
+        const selectedCount = safeCells.filter(cell => cell.selected).length;
         
         return {
           id: game.bingoId,
-          title: game.title,
-          creator: game.creator,
-          gridSize: game.gridSize,
-          cells: game.cells || [],
+          title: game.title || '',
+          creator: game.creator || '',
+          gridSize: game.gridSize || { rows: 5, cols: 5 },
+          cells: safeCells,
           createdAt: this.formatDate(game.createdAt),
           completedAt: this.formatDate(game.completedAt),
           selectedCount: selectedCount,
@@ -116,11 +122,22 @@ Page({
    */
   flattenGridContent(gridContent) {
     const cells = [];
+    if (!gridContent || !Array.isArray(gridContent)) {
+      console.error('无效的网格内容:', gridContent);
+      return cells;
+    }
+    
     for (let row = 0; row < gridContent.length; row++) {
+      if (!gridContent[row] || !Array.isArray(gridContent[row])) {
+        console.error('无效的行数据:', gridContent[row]);
+        continue;
+      }
+      
       for (let col = 0; col < gridContent[row].length; col++) {
+        const cellData = gridContent[row][col];
         cells.push({
-          text: gridContent[row][col].text,
-          selected: gridContent[row][col].selected || false
+          text: cellData && cellData.text ? cellData.text : '',
+          selected: cellData && cellData.selected ? cellData.selected : false
         });
       }
     }

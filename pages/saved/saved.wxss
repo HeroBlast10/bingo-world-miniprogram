@@ -8,18 +8,22 @@
 .tabs-container {
   background-color: #ffffff;
   border-bottom: 1rpx solid #f3f4f6;
+  margin-top: 16rpx; /* 向上移动，减少顶部空白 */
 }
 
 .tabs {
   display: flex;
+  gap: 48rpx; /* 增大两个选项之间的间距 */
+  justify-content: center; /* 居中显示 */
+  padding: 0 32rpx; /* 添加左右padding */
 }
 
 .tab-item {
-  flex: 1;
   position: relative;
-  padding: 32rpx 0;
+  padding: 32rpx 48rpx; /* 增加左右padding，让每个选项更宽 */
   text-align: center;
   transition: all 0.2s ease;
+  flex: none; /* 不再平分宽度，让内容决定宽度 */
 }
 
 .tab-text {
@@ -45,7 +49,7 @@
 
 /* 内容区域 */
 .content {
-  padding: 32rpx 32rpx 160rpx 32rpx; /* 减少顶部padding，底部留出tabBar空间 */
+  padding: 24rpx 32rpx 160rpx 32rpx; /* 进一步减少顶部padding，让内容向上移 */
 }
 
 /* 宾果网格 */
@@ -53,6 +57,12 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 32rpx;
+}
+
+/* 我填写的宾果使用单列布局 */
+.content[data-tab="completed"] .bingo-grid {
+  grid-template-columns: 1fr;
+  gap: 24rpx;
 }
 
 /* 宾果卡片 */

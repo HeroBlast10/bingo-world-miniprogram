@@ -19,18 +19,6 @@
           </view>
           <text class="color-name">{{item.name}}</text>
         </view>
-        
-        <!-- 预览网格 -->
-        <view class="preview-grid">
-          <view 
-            class="preview-cell {{(index === 1 || index === 4 || index === 7) ? item.bgClass + ' selected-cell' : 'default-cell'}}"
-            wx:for="{{previewCells}}" 
-            wx:for-index="index"
-            wx:key="index"
-          >
-            <text wx:if="{{index === 4}}" class="preview-check">✓</text>
-          </view>
-        </view>
       </view>
     </view>
   </view>
@@ -66,12 +54,12 @@
     
     <view class="about-item">
       <text class="about-label">版本</text>
-      <text class="about-value">1.0.0</text>
+      <text class="about-value">1.0.1</text>
     </view>
     
     <view class="about-item">
       <text class="about-label">开发者</text>
-      <text class="about-value">宾果世界团队</text>
+      <text class="about-value">宾了个果团队</text>
     </view>
 
     <view class="about-item">

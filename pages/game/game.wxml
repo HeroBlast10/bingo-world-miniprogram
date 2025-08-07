@@ -10,7 +10,7 @@
     <!-- 游戏头部信息 -->
     <view class="game-header" wx:if="{{game}}">
       <!-- 小程序标识 -->
-      <text class="app-brand">小程序@宾果世界</text>
+      <text class="app-brand">小程序@宾了个果</text>
       <!-- 显示游戏标题和描述 -->
       <text class="game-title">{{game.title}}</text>
       <text class="game-description" wx:if="{{game.description && game.description.trim() !== '' && game.description !== '五个连成一线...'}}">

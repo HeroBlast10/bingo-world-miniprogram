@@ -147,11 +147,11 @@ export default function SavedBingosPage() {
       </div>
 
       {/* Tabs */}
-      <div className="bg-white border-b border-gray-100">
-        <div className="flex">
+      <div className="bg-white border-b border-gray-100 mt-4">
+        <div className="flex justify-center gap-12 px-8">
           <button
             onClick={() => setActiveTab("created")}
-            className={`flex-1 py-4 px-4 text-center font-medium transition-colors relative ${
+            className={`py-4 px-12 text-center font-medium transition-colors relative ${
               activeTab === "created" ? "text-coral-500" : "text-gray-500 hover:text-gray-700"
             }`}
           >
@@ -162,7 +162,7 @@ export default function SavedBingosPage() {
           </button>
           <button
             onClick={() => setActiveTab("completed")}
-            className={`flex-1 py-4 px-4 text-center font-medium transition-colors relative ${
+            className={`py-4 px-12 text-center font-medium transition-colors relative ${
               activeTab === "completed" ? "text-coral-500" : "text-gray-500 hover:text-gray-700"
             }`}
           >
@@ -175,9 +175,9 @@ export default function SavedBingosPage() {
       </div>
 
       {/* Content */}
-      <div className="px-4 py-6">
+      <div className="px-4 py-5">
         {currentBingos.length > 0 ? (
-          <div className="grid grid-cols-2 gap-4">
+          <div className={`grid gap-4 ${activeTab === "completed" ? "grid-cols-1" : "grid-cols-2"}`}>
             {currentBingos.map((bingo) => (
               <div
                 key={bingo.id}
@@ -212,7 +212,7 @@ export default function SavedBingosPage() {
                         `}
                       >
                         <span className="truncate">
-                          {cell.text.length > 6 ? cell.text.slice(0, 4) + "..." : cell.text}
+                          {cell.text && cell.text.length > 6 ? cell.text.slice(0, 4) + "..." : (cell.text || "")}
                         </span>
                       </div>
                     ))}

@@ -55,9 +55,9 @@ export default function CategoryListPage({ params }: { params: { slug: string } 
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 w-full">
       {/* Header */}
-      <div className="bg-white border-b border-gray-100 px-4 py-3 flex items-center">
+      <div className="bg-white border-b border-gray-100 px-4 py-3 flex items-center w-full">
         <button onClick={handleBack} className="p-2 -ml-2 text-gray-600 hover:text-coral-500 transition-colors">
           <ArrowLeft className="h-6 w-6" />
         </button>
@@ -66,25 +66,26 @@ export default function CategoryListPage({ params }: { params: { slug: string } 
       </div>
 
       {/* Game List */}
-      <div className="px-4 py-4">
-        <div className="space-y-3">
+      <div className="px-2 py-4 w-full">
+        <div className="space-y-3 w-full">
           {category.games.map((game, index) => (
-            <div key={game.id}>
+            <div key={game.id} className="w-full mx-0">
               <div
                 onClick={() => handleGameClick(game.id)}
-                className="bg-white rounded-2xl p-4 shadow-sm hover:shadow-md transition-all cursor-pointer active:scale-[0.98]"
+                className="w-full !w-full bg-white rounded-2xl p-4 shadow-sm hover:shadow-md transition-all cursor-pointer active:scale-[0.98] min-h-[80px] flex items-center"
+                style={{ width: '100%', margin: 0 }}
               >
-                <div className="flex items-center justify-between">
-                  <div className="flex-1 min-w-0">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1 truncate">{game.title}</h3>
-                    <div className="flex items-center space-x-4 text-sm text-gray-500">
-                      <span>制作人：{game.creator}</span>
-                      {game.playerCount && <span>{game.playerCount.toLocaleString()} 人玩过</span>}
+                <div className="flex items-center justify-between w-full">
+                  <div className="flex-1 min-w-0 pr-4">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1 break-words leading-tight">{game.title}</h3>
+                    <div className="flex items-center space-x-4 text-sm text-gray-500 flex-wrap">
+                      <span className="break-words">制作人：{game.creator}</span>
+                      {game.playerCount && <span className="whitespace-nowrap">{game.playerCount.toLocaleString()} 人玩过</span>}
                     </div>
                   </div>
 
-                  <div className="flex items-center space-x-2 ml-4">
-                    <button className="bg-coral-500 hover:bg-coral-600 text-white px-4 py-2 rounded-full text-sm font-medium flex items-center space-x-1 transition-colors">
+                  <div className="flex items-center space-x-2 flex-shrink-0">
+                    <button className="bg-coral-500 hover:bg-coral-600 text-white px-4 py-2 rounded-full text-sm font-medium flex items-center space-x-1 transition-colors whitespace-nowrap">
                       <Play className="h-4 w-4" />
                       <span>开始</span>
                     </button>
@@ -94,7 +95,7 @@ export default function CategoryListPage({ params }: { params: { slug: string } 
               </div>
 
               {/* Separator line (except for last item) */}
-              {index < category.games.length - 1 && <div className="h-px bg-gray-100 mx-4 my-3" />}
+              {index < category.games.length - 1 && <div className="h-px bg-gray-100 mx-0 my-3 w-full" />}
             </div>
           ))}
         </div>
