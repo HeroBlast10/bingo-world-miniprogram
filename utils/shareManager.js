@@ -176,7 +176,7 @@ ShareManager.prototype.shareApp = function() {
   return {
     title: '宾了个果 - 有趣的宾果游戏合集',
     path: '/pages/index/index',
-    imageUrl: '/images/app-share.png',
+    imageUrl: '/images/placeholder-logo.png',
     success: function(res) {
       console.log('分享应用成功:', res);
       self.recordShareEvent('app_share', 'main');

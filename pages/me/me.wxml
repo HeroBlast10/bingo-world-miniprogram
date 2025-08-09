@@ -15,20 +15,31 @@
     </view>
 
     <!-- 已登录状态 -->
-    <view wx:else class="user-info-section">
-      <view class="user-avatar-container">
-        <image class="user-avatar" src="{{userInfo.avatarUrl}}" mode="aspectFill" />
-        <view class="online-indicator"></view>
-      </view>
-      <view class="user-info">
-        <view class="user-name-row">
-          <view class="user-name-container" bindtap="editNickName">
-            <text class="user-name">{{userInfo.nickName}}</text>
-            <text class="edit-icon">✏️</text>
-          </view>
-          <text class="logout-btn" bindtap="logout">退出</text>
+    <view wx:else class="logged-in-container">
+      <view class="user-row">
+        <view class="avatar-wrapper" bindlongpress="onAvatarLongPress">
+          <image class="user-avatar" src="{{userInfo.avatarUrl}}" mode="aspectFill" binderror="onAvatarError" />
+          <button class="avatar-chooser" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar" disabled="{{isChoosingAvatar}}"></button>
+          <view class="status-dot"></view>
         </view>
-        <text class="user-desc">宾果世界探索者</text>
+        
+        <view class="user-details">
+                <view class="name-row">
+        <input 
+          class="user-name-input" 
+          type="nickname" 
+          value="{{userInfo.nickName}}" 
+          placeholder="微信用户"
+          bind:blur="onNicknameBlur"
+          maxlength="20"
+        />
+      </view>
+          <text class="user-description">宾果世界探索者</text>
+        </view>
+        
+        <view class="logout-wrapper">
+          <text class="logout-button" bindtap="logout">退出</text>
+        </view>
       </view>
     </view>
   </view>
@@ -74,6 +85,6 @@
 
   <!-- 版本信息 -->
   <view class="version-section">
-    <text class="version-text">宾了个果 v1.0.2</text>
+    <text class="version-text">宾了个果 v1.0.3</text>
   </view>
 </view>

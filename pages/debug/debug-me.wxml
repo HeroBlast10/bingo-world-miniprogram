@@ -1,0 +1,48 @@
+<!--pages/debug/debug-me.wxml-->
+<view class="container">
+  <view class="section">
+    <view class="section-title">用户中心调试信息</view>
+    
+    <view class="debug-item">
+      <text class="debug-label">登录状态:</text>
+      <text class="debug-value">{{debugInfo.isLoggedIn ? '已登录' : '未登录'}}</text>
+    </view>
+    
+    <view wx:if="{{debugInfo.userInfo}}" class="debug-item">
+      <text class="debug-label">用户昵称:</text>
+      <text class="debug-value">{{debugInfo.userInfo.nickName}}</text>
+    </view>
+    
+    <view wx:if="{{debugInfo.userInfo}}" class="debug-item">
+      <text class="debug-label">用户头像:</text>
+      <text class="debug-value">{{debugInfo.userInfo.avatarUrl}}</text>
+    </view>
+    
+    <view class="debug-item">
+      <text class="debug-label">本地存储:</text>
+      <text class="debug-value">{{debugInfo.loginData ? '有数据' : '无数据'}}</text>
+    </view>
+    
+    <view class="debug-item">
+      <text class="debug-label">系统版本:</text>
+      <text class="debug-value">{{debugInfo.systemInfo.version}}</text>
+    </view>
+    
+    <view class="debug-item">
+      <text class="debug-label">基础库版本:</text>
+      <text class="debug-value">{{debugInfo.systemInfo.SDKVersion}}</text>
+    </view>
+  </view>
+  
+  <view class="section">
+    <view class="section-title">测试操作</view>
+    
+    <button class="debug-btn" bindtap="testLogin">测试登录</button>
+    <button class="debug-btn warn" bindtap="clearUserData">清除用户数据</button>
+  </view>
+  
+  <view class="section">
+    <view class="section-title">原始数据</view>
+    <text class="debug-json">{{debugInfo}}</text>
+  </view>
+</view>

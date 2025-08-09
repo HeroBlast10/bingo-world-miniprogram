@@ -173,7 +173,7 @@ Page({
   onFeedback() {
     wx.showModal({
       title: '联系我们',
-      content: '如有问题或建议，请通过以下方式联系我们：公众号“宾果世界”\n\n邮箱：feedback@bingoworld.com',
+      content: '如有问题或建议，请通过以下方式联系我们：公众号“宾果世界”\n\n邮箱：binlegeguo@163.com',
       showCancel: false,
       confirmText: '知道了'
     });

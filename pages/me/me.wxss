@@ -11,10 +11,11 @@
 .user-section {
   background-color: #ffffff;
   border-radius: 24rpx;
-  padding: 48rpx 32rpx;
+  padding: 40rpx 32rpx;
   margin-bottom: 32rpx;
   width: 100%;
   box-sizing: border-box;
+  min-height: 140rpx;
 }
 
 /* 未登录状态 */
@@ -57,85 +58,119 @@
   background-color: #06ad56;
 }
 
-/* 已登录状态 */
-.user-info-section {
-  display: flex;
-  align-items: center;
+/* 已登录状态 - 全新设计 */
+.logged-in-container {
+  width: 100%;
 }
 
-.user-avatar-container {
+/* 使用三列网格，避免重叠：头像 | 详情 | 按钮 */
+.user-row {
+  display: grid;
+  grid-template-columns: 80rpx 1fr auto;
+  column-gap: 24rpx;
+  align-items: start;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* 头像区域 - 固定宽度 */
+.avatar-wrapper {
   position: relative;
-  margin-right: 32rpx;
+  width: 80rpx;
+  height: 80rpx;
+  flex-shrink: 0;
 }
 
+/* 圆形头像本体 */
 .user-avatar {
-  width: 120rpx;
-  height: 120rpx;
+  width: 80rpx;
+  height: 80rpx;
   border-radius: 50%;
-  background-color: #ff6b6b;
+  object-fit: cover;
+  display: block;
+  background-color: #eee;
 }
 
-.online-indicator {
+/* 透明覆盖按钮用于触发 chooseAvatar，不影响形状 */
+.avatar-chooser {
   position: absolute;
-  bottom: 8rpx;
-  right: 8rpx;
-  width: 24rpx;
-  height: 24rpx;
-  background-color: #4ade80;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;           /* 完全透明 */
+  border: none;
+  background: transparent;
+}
+.avatar-chooser::after {
+  border: none;
+}
+
+.status-dot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 16rpx;
+  height: 16rpx;
+  background-color: #10b981;
   border-radius: 50%;
-  border: 4rpx solid #ffffff;
+  border: 2rpx solid #ffffff;
 }
 
-.user-info {
-  flex: 1;
+/* 用户详情区域 - 弹性宽度 */
+.user-details {
+  min-width: 0;
+  margin-right: 0;
+  padding-top: 6rpx;
+  display: flex;
+  flex-direction: column;
 }
 
-.user-name-row {
+.name-row {
   display: flex;
   align-items: center;
-  margin-bottom: 8rpx;
+  margin-bottom: 6rpx;
 }
 
-.user-name-container {
-  display: flex;
-  align-items: center;
-  flex: 1;
-  cursor: pointer;
-  padding: 4rpx 8rpx;
-  border-radius: 8rpx;
-  transition: background-color 0.2s ease;
-}
-
-.user-name-container:active {
-  background-color: #f3f4f6;
-}
-
-.user-name {
-  font-size: 36rpx;
+.user-name-input {
+  font-size: 32rpx;
   font-weight: 600;
   color: #1f2937;
-  margin-right: 8rpx;
+  border: none;
+  background: transparent;
+  padding: 4rpx 0;
+  margin: 0;
+  width: 100%;
+  min-width: 0;
+  line-height: 1.3;
 }
 
-.edit-icon {
+.user-name-input::placeholder {
+  color: #9ca3af;
+  font-weight: normal;
+}
+
+.user-description {
   font-size: 24rpx;
   color: #6b7280;
-  opacity: 0.7;
+  line-height: 1.2;
 }
 
-.logout-btn {
-  font-size: 24rpx;
+/* 退出按钮区域 - 固定宽度 */
+.logout-wrapper {
+  align-self: start;
+  padding-top: 6rpx;
+}
+
+.logout-button {
+  font-size: 22rpx;
   color: #ef4444;
   padding: 8rpx 16rpx;
   border: 1rpx solid #ef4444;
   border-radius: 20rpx;
-  background-color: transparent;
-  margin-left: auto;
-}
-
-.user-desc {
-  font-size: 26rpx;
-  color: #6b7280;
+  background: transparent;
+  white-space: nowrap;
 }
 
 /* 统计数据区域 */

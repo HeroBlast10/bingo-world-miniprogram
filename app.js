@@ -64,37 +64,25 @@ App({
   },
 
   /**
-   * 全局登录方法
+   * 全局登录方法 - 使用最新规范
    */
   async login() {
     try {
-      wx.showLoading({
-        title: '登录中...',
-        mask: true
-      });
-
+      console.log('开始全局登录流程...');
+      
       const result = await userManager.login();
       
       if (result.success) {
         this.globalData.userInfo = result.userInfo;
         this.globalData.isLoggedIn = true;
         
-        wx.hideLoading();
-        wx.showToast({
-          title: '登录成功',
-          icon: 'success'
-        });
-        
+        console.log('全局登录成功:', result);
         return result;
       } else {
         throw new Error(result.message || '登录失败');
       }
     } catch (error) {
-      wx.hideLoading();
-      wx.showToast({
-        title: error.message || '登录失败',
-        icon: 'none'
-      });
+      console.error('全局登录失败:', error);
       throw error;
     }
   },
@@ -130,6 +118,6 @@ App({
   globalData: {
     userInfo: null,
     isLoggedIn: false,
-    version: '1.0.2'
+    version: '1.0.3'
   }
 })

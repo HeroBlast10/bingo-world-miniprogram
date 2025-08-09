@@ -1,5 +1,5 @@
 /**
- * 用户管理工具模块
+ * 用户管理工具模块 - 使用最新微信小程序登录规范
  * 处理用户登录、用户信息管理、会话状态等
  */
 
@@ -12,66 +12,36 @@ function UserManager() {
 }
 
 /**
- * 微信登录流程
+ * 微信登录流程 - 使用最新规范
  * 1. 调用 wx.login 获取 code
- * 2. 调用 wx.getUserProfile 获取用户信息
- * 3. 将 code 和用户信息发送到后端（模拟）
+ * 2. 将 code 发送到后端换取 openid 和 session_key
+ * 3. 生成自定义登录态
  */
 UserManager.prototype.login = function() {
   const self = this;
   return new Promise((resolve, reject) => {
-    // 检查是否在开发工具中
-    const systemInfo = wx.getSystemInfoSync();
-    const isDevTool = systemInfo.platform === 'devtools';
+    console.log('开始微信登录流程...');
     
-    if (isDevTool) {
-      console.log('检测到开发工具环境，使用模拟登录');
-      // 在开发工具中使用模拟登录
-      self.mockLogin()
-        .then((result) => {
-          resolve(result);
-        })
-        .catch((error) => {
-          reject(error);
-        });
-      return;
-    }
-    
-    // 第一步：获取登录凭证
+    // 第一步：获取登录凭证 code
     wx.login({
-      success: (loginRes) => {
+      success: function(loginRes) {
         console.log('wx.login 成功，获取到 code:', loginRes.code);
         
-        // 第二步：获取用户信息
-        wx.getUserProfile({
-          desc: '用于完善会员资料和提供个性化服务',
-          success: (profileRes) => {
-            console.log('wx.getUserProfile 成功:', profileRes);
-            
-            // 第三步：模拟后端登录处理
-            self.processLogin(loginRes.code, profileRes.userInfo)
-              .then((result) => {
-                resolve(result);
-              })
-              .catch((error) => {
-                reject(error);
-              });
-          },
-          fail: (error) => {
-            console.error('wx.getUserProfile 失败:', error);
-            
-            // 如果用户拒绝授权，提供友好的错误信息
-            if (error.errMsg && error.errMsg.includes('cancel')) {
-              reject(new Error('用户取消了授权，请重新尝试登录'));
-            } else if (error.errMsg && error.errMsg.includes('deny')) {
-              reject(new Error('用户拒绝了授权，请在设置中开启授权后重试'));
-            } else {
-              reject(new Error('获取用户信息失败，请检查网络连接后重试'));
-            }
-          }
-        });
+        if (loginRes.code) {
+          // 第二步：将 code 发送到后端（这里模拟后端处理）
+          self.processLogin(loginRes.code)
+            .then(function(result) {
+              resolve(result);
+            })
+            .catch(function(error) {
+              reject(error);
+            });
+        } else {
+          console.error('wx.login 未获取到 code');
+          reject(new Error('登录失败，未获取到登录凭证'));
+        }
       },
-      fail: (error) => {
+      fail: function(error) {
         console.error('wx.login 失败:', error);
         reject(new Error('微信登录失败，请检查网络连接'));
       }
@@ -80,92 +50,59 @@ UserManager.prototype.login = function() {
 };
 
 /**
- * 开发工具模拟登录
- */
-UserManager.prototype.mockLogin = function() {
-  const self = this;
-  return new Promise((resolve, reject) => {
-    console.log('执行模拟登录...');
-    
-    // 显示模拟登录确认框
-    wx.showModal({
-      title: '开发环境模拟登录',
-      content: '检测到您在开发工具中，是否使用模拟用户信息登录？',
-      confirmText: '确定登录',
-      cancelText: '取消',
-      success: (res) => {
-        if (res.confirm) {
-          // 用户确认，使用模拟数据
-          const mockUserInfo = {
-            nickName: '开发测试用户',
-            avatarUrl: '/images/placeholder-user.jpg',
-            gender: 1,
-            country: '中国',
-            province: '北京',
-            city: '北京',
-            language: 'zh_CN'
-          };
-          
-          self.processLogin('mock_code_dev', mockUserInfo)
-            .then((result) => {
-              resolve(result);
-            })
-            .catch((error) => {
-              reject(error);
-            });
-        } else {
-          // 用户取消
-          reject(new Error('用户取消了模拟登录'));
-        }
-      },
-      fail: () => {
-        reject(new Error('模拟登录失败'));
-      }
-    });
-  });
-};
-
-/**
  * 模拟后端登录处理
  * 在实际项目中，这里应该调用你的后端API
+ * 后端会使用 code + appId + appSecret 调用 auth.code2Session 接口
  */
-UserManager.prototype.processLogin = function(code, userInfo) {
+UserManager.prototype.processLogin = function(code) {
   const self = this;
   return new Promise((resolve, reject) => {
+    console.log('处理登录，code:', code);
+    
     // 模拟网络请求延迟
-    setTimeout(() => {
+    setTimeout(function() {
       try {
-        // 模拟后端处理逻辑
-        // 1. 用 code + appId + appSecret 换取 openid 和 session_key
-        // 2. 检查用户是否已存在，不存在则创建
-        // 3. 生成自定义 token
-        
+        // 模拟后端调用 auth.code2Session 接口的结果
+        // 实际项目中，这些数据应该从真实的后端API获取
         const mockOpenId = 'mock_openid_' + Date.now();
+        const mockSessionKey = 'mock_session_key_' + Math.random().toString(36).substr(2, 9);
         const mockToken = 'mock_token_' + Math.random().toString(36).substr(2, 9);
         
-        // 保存用户信息
-        self.userInfo = userInfo;
+        // 保存登录状态
         self.openid = mockOpenId;
+        self.sessionKey = mockSessionKey;
         self.token = mockToken;
         self.isLoggedIn = true;
         
+        // 创建默认用户信息（用户后续可以完善）
+        self.userInfo = {
+          nickName: '微信用户',
+          avatarUrl: '/images/placeholder-user.jpg',
+          gender: 0,
+          country: '',
+          province: '',
+          city: '',
+          language: 'zh_CN'
+        };
+        
         // 保存到本地存储
         const loginData = {
-          userInfo: userInfo,
+          userInfo: self.userInfo,
           openid: mockOpenId,
+          sessionKey: mockSessionKey,
           token: mockToken,
           loginTime: Date.now(),
           isLoggedIn: true
         };
         
         wx.setStorageSync('loginData', loginData);
-        wx.setStorageSync('userInfo', userInfo);
+        wx.setStorageSync('userInfo', self.userInfo);
         
         console.log('登录成功，用户数据已保存:', loginData);
         
         resolve({
           success: true,
-          userInfo: userInfo,
+          userInfo: self.userInfo,
           openid: mockOpenId,
           token: mockToken,
           message: '登录成功'
@@ -175,7 +112,88 @@ UserManager.prototype.processLogin = function(code, userInfo) {
         console.error('登录处理失败:', error);
         reject(new Error('登录处理失败'));
       }
-    }, 1000); // 模拟1秒的网络延迟
+    }, 800); // 模拟网络延迟
+  });
+};
+
+/**
+ * 更新用户头像
+ * 使用新的头像选择能力
+ */
+UserManager.prototype.updateAvatar = function(avatarUrl) {
+  if (!this.isLoggedIn) {
+    return Promise.reject(new Error('用户未登录'));
+  }
+
+  var self = this;
+  return new Promise(function(resolve, reject) {
+    try {
+      var finalUrl = avatarUrl || '/images/placeholder-user.jpg';
+
+      // 立即更新内存中的 userInfo
+      var updatedUserInfo = Object.assign({}, self.userInfo || {}, { avatarUrl: finalUrl });
+      self.userInfo = updatedUserInfo;
+
+      // 同步写入本地缓存
+      var loginData = wx.getStorageSync('loginData') || {};
+      loginData.userInfo = updatedUserInfo;
+      wx.setStorageSync('loginData', loginData);
+      wx.setStorageSync('userInfo', updatedUserInfo);
+
+      console.log('用户头像更新成功, 持久化完成:', finalUrl);
+      resolve({ success: true, avatarUrl: finalUrl, message: '头像更新成功' });
+    } catch (error) {
+      console.error('更新头像失败:', error);
+      reject(new Error('更新头像失败'));
+    }
+  });
+};
+
+/**
+ * 更新用户昵称
+ * 使用新的昵称填写能力
+ */
+UserManager.prototype.updateNickName = function(newNickName) {
+  if (!this.isLoggedIn) {
+    return Promise.reject(new Error('用户未登录'));
+  }
+  
+  if (!newNickName || newNickName.trim() === '') {
+    return Promise.reject(new Error('昵称不能为空'));
+  }
+  
+  // 验证昵称长度和内容
+  const trimmedName = newNickName.trim();
+  if (trimmedName.length > 20) {
+    return Promise.reject(new Error('昵称不能超过20个字符'));
+  }
+  
+  const self = this;
+  return new Promise((resolve, reject) => {
+    // 模拟网络请求更新昵称
+    setTimeout(function() {
+      try {
+        // 更新用户信息
+        const updatedUserInfo = Object.assign({}, self.userInfo, {
+          nickName: trimmedName
+        });
+        
+        const success = self.updateUserInfo(updatedUserInfo);
+        if (success) {
+          console.log('用户昵称更新成功:', trimmedName);
+          resolve({
+            success: true,
+            nickName: trimmedName,
+            message: '昵称修改成功'
+          });
+        } else {
+          reject(new Error('更新用户信息失败'));
+        }
+      } catch (error) {
+        console.error('更新昵称失败:', error);
+        reject(new Error('更新昵称失败'));
+      }
+    }, 500); // 模拟网络延迟
   });
 };
 
@@ -186,14 +204,15 @@ UserManager.prototype.checkLoginStatus = function() {
   try {
     const loginData = wx.getStorageSync('loginData');
     if (loginData && loginData.isLoggedIn) {
-      // 检查登录是否过期（这里设置7天过期）
+      // 检查登录是否过期（这里设置30天过期）
       const loginTime = loginData.loginTime || 0;
       const currentTime = Date.now();
-      const sevenDays = 7 * 24 * 60 * 60 * 1000;
+      const thirtyDays = 30 * 24 * 60 * 60 * 1000;
       
-      if (currentTime - loginTime < sevenDays) {
+      if (currentTime - loginTime < thirtyDays) {
         this.userInfo = loginData.userInfo;
         this.openid = loginData.openid;
+        this.sessionKey = loginData.sessionKey;
         this.token = loginData.token;
         this.isLoggedIn = true;
         return true;
@@ -291,58 +310,18 @@ UserManager.prototype.updateUserInfo = function(newUserInfo) {
 };
 
 /**
- * 更新用户昵称
+ * 检查是否需要完善个人信息
  */
-UserManager.prototype.updateNickName = function(newNickName) {
-  if (!this.isLoggedIn) {
-    return Promise.reject(new Error('用户未登录'));
+UserManager.prototype.needCompleteProfile = function() {
+  if (!this.isLoggedIn || !this.userInfo) {
+    return true;
   }
   
-  if (!newNickName || newNickName.trim() === '') {
-    return Promise.reject(new Error('昵称不能为空'));
-  }
+  // 检查是否使用默认头像和昵称
+  const isDefaultAvatar = this.userInfo.avatarUrl === '/images/placeholder-user.jpg';
+  const isDefaultNickname = this.userInfo.nickName === '微信用户';
   
-  // 验证昵称长度和内容
-  const trimmedName = newNickName.trim();
-  if (trimmedName.length > 20) {
-    return Promise.reject(new Error('昵称不能超过20个字符'));
-  }
-  
-  // 简单的敏感词过滤（可以扩展）
-  const forbiddenWords = ['管理员', 'admin', '客服', '官方'];
-  for (let i = 0; i < forbiddenWords.length; i++) {
-    if (trimmedName.toLowerCase().includes(forbiddenWords[i])) {
-      return Promise.reject(new Error('昵称包含敏感词，请重新输入'));
-    }
-  }
-  
-  const self = this;
-  return new Promise((resolve, reject) => {
-    // 模拟网络请求更新昵称
-    setTimeout(() => {
-      try {
-        // 更新用户信息
-        const updatedUserInfo = Object.assign({}, self.userInfo, {
-          nickName: trimmedName
-        });
-        
-        const success = self.updateUserInfo(updatedUserInfo);
-        if (success) {
-          console.log('用户昵称更新成功:', trimmedName);
-          resolve({
-            success: true,
-            nickName: trimmedName,
-            message: '昵称修改成功'
-          });
-        } else {
-          reject(new Error('更新用户信息失败'));
-        }
-      } catch (error) {
-        console.error('更新昵称失败:', error);
-        reject(new Error('更新昵称失败'));
-      }
-    }, 500); // 模拟网络延迟
-  });
+  return isDefaultAvatar || isDefaultNickname;
 };
 
 // 创建单例实例

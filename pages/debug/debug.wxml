@@ -3,6 +3,7 @@
   <view class="header">
     <text class="title">宾果数据调试</text>
     <button class="clear-btn" bindtap="clearAllData">清除保存数据</button>
+    <navigator url="/pages/debug/debug-me" class="clear-btn">用户中心调试</navigator>
   </view>
   
   <view class="debug-content">

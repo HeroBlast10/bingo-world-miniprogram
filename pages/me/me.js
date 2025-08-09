@@ -46,7 +46,8 @@ Page({
         iconColor: 'icon-gray',
         url: '/pages/settings/settings'
       }
-    ]
+    ],
+    isChoosingAvatar: false
   },
 
   /**
@@ -68,11 +69,28 @@ Page({
     // 检查登录状态
     if (userManager.getLoginStatus()) {
       const userInfo = userManager.getUserInfo();
-      this.setData({
-        userInfo: userInfo,
-        hasUserInfo: true
-      });
       console.log('用户已登录:', userInfo);
+      
+      // 确保userInfo有完整的数据
+      if (userInfo) {
+        this.setData({
+          userInfo: {
+            nickName: userInfo.nickName || '微信用户',
+            avatarUrl: userInfo.avatarUrl || '/images/placeholder-user.jpg',
+            gender: userInfo.gender || 0,
+            country: userInfo.country || '',
+            province: userInfo.province || '',
+            city: userInfo.city || '',
+            language: userInfo.language || 'zh_CN'
+          },
+          hasUserInfo: true
+        });
+      } else {
+        this.setData({
+          userInfo: null,
+          hasUserInfo: false
+        });
+      }
     } else {
       console.log('用户未登录');
       this.setData({
@@ -83,7 +101,7 @@ Page({
   },
 
   /**
-   * 微信授权登录
+   * 微信授权登录 - 使用最新规范
    */
   async login() {
     if (this.data.isLoading) return;
@@ -92,22 +110,72 @@ Page({
     
     try {
       const app = getApp();
-      const result = await app.login();
+      const userManager = app.getUserManager();
+      
+      // 调用新的登录方法
+      const result = await userManager.login();
       
       if (result.success) {
+        // 确保用户信息完整
+        const userInfo = {
+          nickName: result.userInfo.nickName || '微信用户',
+          avatarUrl: result.userInfo.avatarUrl || '/images/placeholder-user.jpg',
+          gender: result.userInfo.gender || 0,
+          country: result.userInfo.country || '',
+          province: result.userInfo.province || '',
+          city: result.userInfo.city || '',
+          language: result.userInfo.language || 'zh_CN'
+        };
+        
         this.setData({
-          userInfo: result.userInfo,
+          userInfo: userInfo,
           hasUserInfo: true,
           isLoading: false
         });
         
         // 重新加载统计数据
         this.loadStats();
+        
+        // 检查是否需要完善个人信息
+        if (userManager.needCompleteProfile()) {
+          setTimeout(() => {
+            this.showCompleteProfileTip();
+          }, 1000);
+        }
       }
     } catch (error) {
       console.error('登录失败:', error);
       this.setData({ isLoading: false });
+      
+      wx.showToast({
+        title: error.message || '登录失败',
+        icon: 'none',
+        duration: 3000
+      });
     }
+  },
+
+  /**
+   * 显示完善个人信息提示
+   */
+  showCompleteProfileTip() {
+    wx.showModal({
+      title: '完善个人信息',
+      content: '建议您完善头像和昵称，获得更好的使用体验',
+      confirmText: '去完善',
+      cancelText: '稍后再说',
+      success: (res) => {
+        if (res.confirm) {
+          // 用户选择完善信息，这里可以引导到个人信息编辑页面
+          // 暂时显示提示
+          wx.showToast({
+            title: '点击头像或昵称即可修改',
+            icon: 'none',
+            duration: 2000
+          });
+        }
+      }
+    });
   },
 
   /**
@@ -138,7 +206,107 @@ Page({
   },
 
   /**
-   * 编辑用户昵称
+   * 选择头像 - 使用新的头像选择能力
+   */
+  async onChooseAvatar(e) {
+    if (this.data.isChoosingAvatar) return;
+    this.setData({ isChoosingAvatar: true });
+
+    try {
+      const avatarUrl = (e && e.detail && e.detail.avatarUrl) ? e.detail.avatarUrl : '';
+      if (!avatarUrl) {
+        throw new Error('未获取到头像临时路径');
+      }
+
+      // 有些开发者工具会在极短时间内清理 tmp，尝试立即持久化到本地
+      // 这里我们直接用临时路径更新 UI，并调用 userManager 持久化
+      await this.updateAvatar(avatarUrl);
+
+    } catch (err) {
+      console.error('选择头像失败:', err);
+      wx.showToast({ title: '选择头像失败，请重试', icon: 'none' });
+    } finally {
+      this.setData({ isChoosingAvatar: false });
+    }
+  },
+
+  /**
+   * 更新用户头像
+   */
+  async updateAvatar(avatarUrl) {
+    wx.showLoading({
+      title: '更新头像中...',
+      mask: true
+    });
+
+    try {
+      const app = getApp();
+      const userManager = app.getUserManager();
+
+      // 调用 userManager 更新（其中会把值写入本地缓存）
+      const result = await userManager.updateAvatar(avatarUrl);
+
+      if (result.success) {
+        const updatedUserInfo = Object.assign({}, this.data.userInfo || {}, {
+          avatarUrl: result.avatarUrl || avatarUrl
+        });
+        this.setData({ userInfo: updatedUserInfo });
+        wx.hideLoading();
+        wx.showToast({ title: '头像已更新', icon: 'success' });
+      } else {
+        throw new Error(result.message || '更新失败');
+      }
+    } catch (error) {
+      wx.hideLoading();
+      console.error('更新头像失败:', error);
+      wx.showToast({ title: '头像更新失败', icon: 'none' });
+    }
+  },
+
+  /**
+   * 头像加载失败兜底
+   */
+  onAvatarError() {
+    const fallback = '/images/placeholder-user.jpg';
+    if (this.data.userInfo && this.data.userInfo.avatarUrl !== fallback) {
+      this.setData({
+        userInfo: Object.assign({}, this.data.userInfo, { avatarUrl: fallback })
+      });
+    }
+  },
+
+  /**
+   * 头像长按兜底：使用 chooseImage 选择图片作为头像
+   */
+  onAvatarLongPress() {
+    const that = this;
+    if (this.data.isChoosingAvatar) return;
+    this.setData({ isChoosingAvatar: true });
+
+    wx.chooseImage({
+      count: 1,
+      sizeType: ['compressed'],
+      sourceType: ['album', 'camera'],
+      success(res) {
+        const path = (res.tempFilePaths && res.tempFilePaths[0]) || '';
+        if (path) {
+          that.updateAvatar(path);
+        } else {
+          wx.showToast({ title: '未选择图片', icon: 'none' });
+        }
+      },
+      fail(err) {
+        console.error('chooseImage 失败:', err);
+        wx.showToast({ title: '选择失败，请重试', icon: 'none' });
+      },
+      complete() {
+        that.setData({ isChoosingAvatar: false });
+      }
+    });
+  },
+
+  /**
+   * 编辑用户昵称 - 使用新的昵称填写能力
    */
   editNickName() {
     if (!this.data.hasUserInfo) {
@@ -149,20 +317,23 @@ Page({
       return;
     }
 
-    const currentNickName = this.data.userInfo.nickName || '';
-    
+    // 不再使用 showModal，而是引导用户使用专门的昵称输入
     wx.showModal({
       title: '修改昵称',
-      placeholderText: '请输入新昵称',
-      editable: true,
-      content: currentNickName,
-      success: (res) => {
-        if (res.confirm) {
-          const newNickName = res.content;
-          this.updateNickName(newNickName);
-        }
-      }
+      content: '请使用下方的昵称输入框来修改您的昵称',
+      showCancel: false,
+      confirmText: '知道了'
     });
+  },
+
+  /**
+   * 昵称输入完成
+   */
+  onNicknameBlur(e) {
+    const newNickName = e.detail.value;
+    if (newNickName && newNickName.trim() !== '' && newNickName !== this.data.userInfo.nickName) {
+      this.updateNickName(newNickName);
+    }
   },
 
   /**
@@ -357,10 +528,8 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage() {
-    return {
-      title: '宾了个果 - 有趣的宾果游戏合集',
-      path: '/pages/index/index',
-      imageUrl: '/images/placeholder-logo.png'
-    };
+    const app = getApp();
+    const shareManager = app.getShareManager();
+    return shareManager.shareApp();
   }
 });

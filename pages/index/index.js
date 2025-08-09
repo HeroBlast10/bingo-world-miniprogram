@@ -95,10 +95,8 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage() {
-    return {
-      title: '宾了个果 - 有趣的宾果游戏合集',
-      path: '/pages/index/index',
-      imageUrl: '/images/placeholder-logo.png'
-    };
+    const app = getApp();
+    const shareManager = app.getShareManager();
+    return shareManager.shareApp();
   }
 });
