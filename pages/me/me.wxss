@@ -96,15 +96,41 @@
   margin-bottom: 8rpx;
 }
 
+.user-name-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  cursor: pointer;
+  padding: 4rpx 8rpx;
+  border-radius: 8rpx;
+  transition: background-color 0.2s ease;
+}
+
+.user-name-container:active {
+  background-color: #f3f4f6;
+}
+
 .user-name {
   font-size: 36rpx;
   font-weight: 600;
   color: #1f2937;
-  margin-right: 16rpx;
+  margin-right: 8rpx;
 }
 
 .edit-icon {
-  font-size: 28rpx;
+  font-size: 24rpx;
+  color: #6b7280;
+  opacity: 0.7;
+}
+
+.logout-btn {
+  font-size: 24rpx;
+  color: #ef4444;
+  padding: 8rpx 16rpx;
+  border: 1rpx solid #ef4444;
+  border-radius: 20rpx;
+  background-color: transparent;
+  margin-left: auto;
 }
 
 .user-desc {
@@ -186,6 +212,10 @@
 
 .icon-blue {
   background-color: #dbeafe;
+}
+
+.icon-green {
+  background-color: #d1fae5;
 }
 
 .icon-gray {

@@ -96,8 +96,9 @@ Page({
    */
   onShareAppMessage() {
     return {
-      title: '小程序@宾了个果 - 发现有趣的宾果游戏',
-      path: '/pages/index/index'
+      title: '宾了个果 - 有趣的宾果游戏合集',
+      path: '/pages/index/index',
+      imageUrl: '/images/placeholder-logo.png'
     };
   }
 });

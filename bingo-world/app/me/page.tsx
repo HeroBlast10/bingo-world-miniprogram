@@ -162,7 +162,7 @@ export default function MePage() {
 
         {/* Additional Info */}
         <div className="mt-6 px-6 text-center">
-          <p className="text-xs text-gray-400">宾了个果 v1.0.1</p>
+          <p className="text-xs text-gray-400">宾了个果 v1.0.2</p>
         </div>
       </div>
 

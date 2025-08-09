@@ -169,7 +169,7 @@ export default function SettingsPage() {
           <div className="space-y-3 text-sm text-gray-600">
             <div className="flex justify-between">
               <span>版本</span>
-              <span>1.0.1</span>
+              <span>1.0.2</span>
             </div>
             <div className="flex justify-between">
               <span>开发者</span>

@@ -657,33 +657,130 @@ Page({
       return;
     }
 
+    const app = getApp();
+    const userManager = app.getUserManager();
+    const isLoggedIn = userManager.getLoginStatus();
+
+    // 计算完成进度
+    const completedCells = this.data.selectedCells.flat().filter(cell => cell).length;
+    const totalCells = 25;
+    const completionRate = Math.round((completedCells / totalCells) * 100);
+
+    let itemList = ['分享给朋友', '复制链接'];
+    
+    // 如果用户已登录且有进度，添加分享进度选项
+    if (isLoggedIn && completedCells > 0) {
+      itemList.splice(1, 0, `分享我的进度 (${completionRate}%)`);
+    }
+
     wx.showActionSheet({
-      itemList: ['分享给朋友', '分享到朋友圈', '复制链接'],
+      itemList: itemList,
       success: (res) => {
         switch (res.tapIndex) {
           case 0:
-            // 分享给朋友 - 触发系统分享
-            this.onShareAppMessage();
+            // 分享给朋友
+            this.shareToFriend();
             break;
           case 1:
-            wx.showToast({
-              title: '朋友圈分享功能开发中',
-              icon: 'none'
-            });
+            if (isLoggedIn && completedCells > 0) {
+              // 分享我的进度
+              this.shareMyProgress();
+            } else {
+              // 复制链接
+              this.copyGameLink();
+            }
             break;
           case 2:
             // 复制链接
-            wx.setClipboardData({
-              data: `宾了个果 - ${this.data.game.title}`,
-              success: () => {
-                wx.showToast({
-                  title: '链接已复制',
-                  icon: 'success'
-                });
-              }
-            });
+            this.copyGameLink();
             break;
         }
+      }
+    });
+  },
+
+  /**
+   * 分享给朋友
+   */
+  shareToFriend() {
+    const app = getApp();
+    const shareManager = app.getShareManager();
+    
+    const gameData = {
+      id: this.data.game.bingoId,
+      title: this.data.game.title,
+      description: this.data.game.description,
+      category: this.data.game.category,
+      creator: this.data.game.creator
+    };
+
+    // 触发微信分享
+    wx.showShareMenu({
+      withShareTicket: true,
+      success: () => {
+        console.log('分享菜单已显示');
+      }
+    });
+
+    // 这里不能直接调用wx.shareAppMessage，需要通过onShareAppMessage返回分享配置
+    wx.showToast({
+      title: '请点击右上角分享',
+      icon: 'none'
+    });
+  },
+
+  /**
+   * 分享我的进度
+   */
+  shareMyProgress() {
+    const app = getApp();
+    const shareManager = app.getShareManager();
+    
+    const completedCells = this.data.selectedCells.flat().filter(cell => cell).length;
+    
+    const gameData = {
+      id: this.data.game.bingoId,
+      title: this.data.game.title,
+      description: this.data.game.description,
+      category: this.data.game.category,
+      creator: this.data.game.creator
+    };
+
+    const shareData = shareManager.shareMyProgress(gameData, completedCells);
+    
+    // 显示分享菜单
+    wx.showShareMenu({
+      withShareTicket: true,
+      success: () => {
+        console.log('分享进度菜单已显示');
+      }
+    });
+
+    wx.showToast({
+      title: '请点击右上角分享',
+      icon: 'none'
+    });
+  },
+
+  /**
+   * 复制游戏链接
+   */
+  copyGameLink() {
+    const linkText = `我在「宾了个果」发现了一个有趣的${this.data.game.category}宾果：${this.data.game.title}，快来一起玩吧！`;
+    
+    wx.setClipboardData({
+      data: linkText,
+      success: () => {
+        wx.showToast({
+          title: '链接已复制',
+          icon: 'success'
+        });
+      },
+      fail: () => {
+        wx.showToast({
+          title: '复制失败',
+          icon: 'none'
+        });
       }
     });
   },
@@ -708,10 +805,175 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage() {
-    return {
-      title: this.data.game ? this.data.game.title : '宾果游戏',
-      path: `/pages/game/game?id=${this.data.game.bingoId}`,
-      imageUrl: '' // 可以设置分享图片
+    if (!this.data.game) {
+      return {
+        title: '宾了个果 - 有趣的宾果游戏',
+        path: '/pages/index/index',
+        imageUrl: '/images/placeholder-logo.png' // 使用默认logo
+      };
+    }
+
+    // 检查用户是否有进度
+    const completedCells = this.data.selectedCells.flat().filter(cell => cell).length;
+    
+    // 生成分享用的宾果截图
+    this.generateShareImage().then((imageUrl) => {
+      console.log('分享图片生成成功:', imageUrl);
+    }).catch((error) => {
+      console.error('分享图片生成失败:', error);
+    });
+
+    const gameData = {
+      id: this.data.game.bingoId,
+      title: this.data.game.title,
+      description: this.data.game.description,
+      category: this.data.game.category,
+      creator: this.data.game.creator
     };
+
+    let shareConfig;
+    if (completedCells > 0) {
+      // 如果有进度，分享进度
+      const completionRate = Math.round((completedCells / 25) * 100);
+      shareConfig = {
+        title: `🏆 我在「${this.data.game.title}」中完成了${completionRate}%`,
+        path: `/pages/game/${this.data.game.bingoId}?from=progress`,
+        imageUrl: '' // 将在generateShareImage中设置
+      };
+    } else {
+      // 否则分享游戏本身
+      shareConfig = {
+        title: `📋 ${this.data.game.title}`,
+        path: `/pages/game/${this.data.game.bingoId}`,
+        imageUrl: '' // 将在generateShareImage中设置
+      };
+    }
+
+    // 尝试使用生成的截图，如果失败则使用默认图片
+    const cachedShareImage = wx.getStorageSync(`shareImage_${this.data.game.bingoId}`);
+    if (cachedShareImage) {
+      shareConfig.imageUrl = cachedShareImage;
+    } else {
+      shareConfig.imageUrl = '/images/placeholder-logo.png';
+    }
+
+    return shareConfig;
+  },
+
+  /**
+   * 生成分享用的宾果截图
+   */
+  async generateShareImage() {
+    return new Promise((resolve, reject) => {
+      try {
+        const ctx = wx.createCanvasContext('shareCanvas');
+        
+        // 设置画布尺寸（适合分享的尺寸）
+        const canvasWidth = 400;
+        const canvasHeight = 400;
+        
+        // 设置背景
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(0, 0, canvasWidth, canvasHeight);
+        
+        // 绘制宾果网格
+        const gridSize = 320;
+        const cellSize = gridSize / 5;
+        const startX = (canvasWidth - gridSize) / 2;
+        const startY = (canvasHeight - gridSize) / 2;
+        
+        // 绘制网格和内容
+        for (let row = 0; row < 5; row++) {
+          for (let col = 0; col < 5; col++) {
+            const x = startX + col * cellSize;
+            const y = startY + row * cellSize;
+            
+            // 检查是否被选中
+            const isSelected = this.data.selectedCells[row] && this.data.selectedCells[row][col];
+            
+            // 设置单元格背景色
+            if (isSelected) {
+              ctx.fillStyle = this.data.colorMap[this.data.selectedColor] || '#ff6b6b';
+            } else {
+              ctx.fillStyle = '#f8f9fa';
+            }
+            ctx.fillRect(x, y, cellSize, cellSize);
+            
+            // 绘制边框
+            ctx.strokeStyle = '#e9ecef';
+            ctx.lineWidth = 1;
+            ctx.strokeRect(x, y, cellSize, cellSize);
+            
+            // 绘制文字
+            const cellData = this.data.game.gridContent[row][col];
+            if (cellData && cellData.text) {
+              ctx.fillStyle = isSelected ? '#ffffff' : '#333333';
+              ctx.font = '12px PingFang SC';
+              ctx.textAlign = 'center';
+              ctx.textBaseline = 'middle';
+              
+              // 文字换行处理
+              const text = cellData.text;
+              const maxWidth = cellSize - 8;
+              const lines = this.wrapText(ctx, text, maxWidth);
+              const lineHeight = 14;
+              const totalHeight = lines.length * lineHeight;
+              const startTextY = y + cellSize / 2 - totalHeight / 2 + lineHeight / 2;
+              
+              lines.forEach((line, index) => {
+                ctx.fillText(line, x + cellSize / 2, startTextY + index * lineHeight);
+              });
+            }
+          }
+        }
+        
+        // 绘制完成后保存图片
+        ctx.draw(false, () => {
+          wx.canvasToTempFilePath({
+            canvasId: 'shareCanvas',
+            success: (res) => {
+              const tempFilePath = res.tempFilePath;
+              console.log('分享图片生成成功:', tempFilePath);
+              
+              // 缓存图片路径
+              wx.setStorageSync(`shareImage_${this.data.game.bingoId}`, tempFilePath);
+              resolve(tempFilePath);
+            },
+            fail: (error) => {
+              console.error('生成分享图片失败:', error);
+              reject(error);
+            }
+          });
+        });
+        
+      } catch (error) {
+        console.error('generateShareImage 异常:', error);
+        reject(error);
+      }
+    });
+  },
+
+  /**
+   * 文字换行处理
+   */
+  wrapText(ctx, text, maxWidth) {
+    const words = text.split('');
+    const lines = [];
+    let currentLine = '';
+    
+    for (let i = 0; i < words.length; i++) {
+      const testLine = currentLine + words[i];
+      const metrics = ctx.measureText(testLine);
+      const testWidth = metrics.width;
+      
+      if (testWidth > maxWidth && currentLine !== '') {
+        lines.push(currentLine);
+        currentLine = words[i];
+      } else {
+        currentLine = testLine;
+      }
+    }
+    lines.push(currentLine);
+    return lines.length > 2 ? lines.slice(0, 2) : lines; // 最多显示2行
   }
 });

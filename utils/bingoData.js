@@ -4518,7 +4518,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "女权主义者",
+            "text": "免费格子",
             "type": "standard"
           },
           {
@@ -4571,28 +4571,6 @@ const bingos = {
           },
           {
             "text": "平时脾气很好,比较温和真诚,待人礼貌",
-            "type": "standard"
-          }
-        ],
-        [
-          {
-            "text": "格子 5-0",
-            "type": "standard"
-          },
-          {
-            "text": "格子 5-1",
-            "type": "standard"
-          },
-          {
-            "text": "格子 5-2",
-            "type": "standard"
-          },
-          {
-            "text": "格子 5-3",
-            "type": "standard"
-          },
-          {
-            "text": "格子 5-4",
             "type": "standard"
           }
         ]
@@ -5247,7 +5225,7 @@ const bingos = {
       "gridContent": [
         [
           {
-            "text": "当过男角色的爱情梦",
+            "text": "当过男角色的爱情梦女",
             "type": "standard"
           },
           {
@@ -5335,19 +5313,19 @@ const bingos = {
         ],
         [
           {
-            "text": "向tag",
+            "text": "有自己的梦向tag",
             "type": "standard"
           },
           {
-            "text": "嫁",
+            "text": "不拒同担/同嫁",
             "type": "standard"
           },
           {
-            "text": "塑",
+            "text": "有cp的动物塑",
             "type": "standard"
           },
           {
-            "text": "龄固定",
+            "text": "梦角梦设年龄固定",
             "type": "standard"
           },
           {
@@ -6429,7 +6407,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "让哈维嬈蜀犧多钱",
+            "text": "让哈维赚到很多钱",
             "type": "standard"
           },
           {
@@ -6437,7 +6415,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "被假人模特I 吓到",
+            "text": "被假人模特吓到",
             "type": "standard"
           },
           {
@@ -6455,7 +6433,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "小猫叫味增 ”",
+            "text": "小猫叫味噌",
             "type": "standard"
           },
           {
@@ -6469,7 +6447,7 @@ const bingos = {
         ],
         [
           {
-            "text": "看别人玩1.6羡慕得流☐水",
+            "text": "看别人玩1.6羡慕得流口水",
             "type": "standard"
           },
           {
@@ -9015,23 +8993,23 @@ const bingos = {
         ],
         [
           {
-            "text": "格子 4-0",
+            "text": "用一副耳机听歌",
             "type": "standard"
           },
           {
-            "text": "格子 4-1",
+            "text": "在一起1年以上",
             "type": "standard"
           },
           {
-            "text": "格子 4-2",
+            "text": "每天都会语音/视频聊天",
             "type": "standard"
           },
           {
-            "text": "格子 4-3",
+            "text": "有共同爱好",
             "type": "standard"
           },
           {
-            "text": "格子 4-4",
+            "text": "线下时间大于线上时间",
             "type": "standard"
           }
         ]
@@ -9915,28 +9893,6 @@ const bingos = {
             "text": "坐过救护车",
             "type": "standard"
           }
-        ],
-        [
-          {
-            "text": "格子 5-0",
-            "type": "standard"
-          },
-          {
-            "text": "格子 5-1",
-            "type": "standard"
-          },
-          {
-            "text": "格子 5-2",
-            "type": "standard"
-          },
-          {
-            "text": "格子 5-3",
-            "type": "standard"
-          },
-          {
-            "text": "格子 5-4",
-            "type": "standard"
-          }
         ]
       ],
       "category": "生活",
@@ -10565,28 +10521,6 @@ const bingos = {
             "text": "看6时",
             "type": "standard"
           }
-        ],
-        [
-          {
-            "text": "格子 5-0",
-            "type": "standard"
-          },
-          {
-            "text": "格子 5-1",
-            "type": "standard"
-          },
-          {
-            "text": "格子 5-2",
-            "type": "standard"
-          },
-          {
-            "text": "格子 5-3",
-            "type": "standard"
-          },
-          {
-            "text": "格子 5-4",
-            "type": "standard"
-          }
         ]
       ],
       "category": "生活",
@@ -10853,7 +10787,7 @@ const bingos = {
   "心理": {
     "adhd_traits": {
       "bingoId": "adhd_traits",
-      "title": "DHD特征宾果",
+      "title": "ADHD特征宾果",
       "creator": "系统",
       "description": "五个连成一线，说明你可能有ADHD倾向",
       "gridSize": {
@@ -11079,7 +11013,7 @@ const bingos = {
         ],
         [
           {
-            "text": "需要帮助时不会主动开☐",
+            "text": "需要帮助时不会主动开口",
             "type": "standard"
           },
           {
@@ -11259,7 +11193,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "经常模仿台词/文章/对话的一 部分",
+            "text": "经常模仿台词/文章/对话的一部分",
             "type": "standard"
           }
         ],
@@ -11331,15 +11265,15 @@ const bingos = {
         ],
         [
           {
-            "text": "有一些需要遵守的个人规则(比如打招呼的脚本/吃同样的食物)",
+            "text": "有一些需要遵守的个人规则",
             "type": "standard"
           },
           {
-            "text": "非常挑食(无法忍受某 些食物的质地 或气味)",
+            "text": "非常挑食(无法忍受某些食物)",
             "type": "standard"
           },
           {
-            "text": "述情障碍(难以识别和描述自己的情绪)",
+            "text": "述情障碍(难以识别和描述情绪)",
             "type": "standard"
           },
           {
@@ -11347,7 +11281,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "对话时注视对方的眉毛/鼻子1脖子以下",
+            "text": "对话时注视对方的眉毛/鼻子以下",
             "type": "standard"
           }
         ]
@@ -12415,7 +12349,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "在ta不知情的情况下使用过ta的东西",
+            "text": "ta不知情的情况下使用过ta的东西",
             "type": "standard"
           },
           {
@@ -12433,7 +12367,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "这种行为持续了1个月以_上",
+            "text": "这种行为持续了1个月以上",
             "type": "standard"
           },
           {
@@ -12451,7 +12385,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "为了更好地视奸ta而去做一些自己并不感兴趣的事",
+            "text": "为了视奸ta而做一些不感兴趣的事",
             "type": "standard"
           },
           {
@@ -12459,7 +12393,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "有时候会觉得自己很过分但很快就原谅自己了",
+            "text": "有时觉得自己很过分但很快就原谅自己",
             "type": "standard"
           },
           {
@@ -12473,7 +12407,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "曾经给ta寄过/塞过匿名书信/ ta的大部分朋礼物",
+            "text": "曾经给ta寄过/塞过匿名书信",
             "type": "standard"
           },
           {
@@ -12485,7 +12419,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "厌恶在ta周围 出现的太多数人",
+            "text": "厌恶在ta周围出现的太多数人",
             "type": "standard"
           }
         ]
@@ -13287,7 +13221,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "每个学龄阶段都有联系到现在的朋友",
+            "text": "每个阶段都有联系到现在的朋友",
             "type": "standard"
           },
           {
@@ -13313,7 +13247,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "不讨厌自己,离开电子产品能坦然和自己独处",
+            "text": "离开电子产品能坦然和自己独处",
             "type": "standard"
           },
           {
@@ -13327,7 +13261,7 @@ const bingos = {
         ],
         [
           {
-            "text": "初中及更早能相对自由使用电子产品",
+            "text": "初中以前就能自由使用电子产品",
             "type": "standard"
           },
           {
@@ -13357,7 +13291,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "没有寄宿学校/托教部/夏令营等强制集体生活经历",
+            "text": "没有寄宿学校等强制集体生活经历",
             "type": "standard"
           },
           {
@@ -13365,7 +13299,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "即使以上都 不符合几条也不会失落难过小1",
+            "text": "即使以上都不符合也不会失落难过",
             "type": "standard"
           }
         ]
