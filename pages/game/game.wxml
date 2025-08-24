@@ -91,7 +91,7 @@
     <canvas
       canvas-id="shareCanvas"
       class="hidden-canvas"
-      style="width: 400px; height: 400px; position: absolute; left: -9999px; top: -9999px;"
+      style="width: 400px; height: 480px; position: absolute; left: -9999px; top: -9999px;"
     ></canvas>
   </view>
 </view>

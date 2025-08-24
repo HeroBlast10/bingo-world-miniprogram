@@ -1100,19 +1100,19 @@ Page({
       try {
         const ctx = wx.createCanvasContext('shareCanvas');
         
-        // 设置画布尺寸（适合分享的尺寸）
+        // 设置画布尺寸（增加底部空间容纳二维码和文字）
         const canvasWidth = 400;
-        const canvasHeight = 400;
+        const canvasHeight = 480; // 增加80px高度
         
         // 设置背景
         ctx.setFillStyle('#ffffff');
         ctx.fillRect(0, 0, canvasWidth, canvasHeight);
         
-        // 绘制宾果网格
-        const gridSize = 320;
+        // 绘制宾果网格（向上移动一些）
+        const gridSize = 300; // 稍微缩小网格
         const cellSize = gridSize / 5;
         const startX = (canvasWidth - gridSize) / 2;
-        const startY = (canvasHeight - gridSize) / 2;
+        const startY = 20; // 从顶部开始，留出空间给底部内容
         
         // 绘制网格和内容
         for (let row = 0; row < 5; row++) {
@@ -1178,22 +1178,25 @@ Page({
           }
         }
         
-        // 绘制完成后保存图片
-        ctx.draw(false, () => {
-          wx.canvasToTempFilePath({
-            canvasId: 'shareCanvas',
-            success: (res) => {
-              const tempFilePath = res.tempFilePath;
-              console.log('分享图片生成成功:', tempFilePath);
-              
-              // 缓存图片路径
-              wx.setStorageSync(`shareImage_${this.data.game.bingoId}`, tempFilePath);
-              resolve(tempFilePath);
-            },
-            fail: (error) => {
-              console.error('生成分享图片失败:', error);
-              reject(error);
-            }
+        // 绘制底部内容
+        this.drawBottomContent(ctx, canvasWidth, canvasHeight, () => {
+          // 绘制完成后保存图片
+          ctx.draw(false, () => {
+            wx.canvasToTempFilePath({
+              canvasId: 'shareCanvas',
+              success: (res) => {
+                const tempFilePath = res.tempFilePath;
+                console.log('分享图片生成成功:', tempFilePath);
+                
+                // 缓存图片路径
+                wx.setStorageSync(`shareImage_${this.data.game.bingoId}`, tempFilePath);
+                resolve(tempFilePath);
+              },
+              fail: (error) => {
+                console.error('生成分享图片失败:', error);
+                reject(error);
+              }
+            });
           });
         });
         
@@ -1202,6 +1205,78 @@ Page({
         reject(error);
       }
     });
+  },
+
+  /**
+   * 绘制分享图底部内容（二维码和推广文字）
+   */
+  drawBottomContent(ctx, canvasWidth, canvasHeight, callback) {
+    try {
+      // 底部内容区域
+      const bottomHeight = 80;
+      const bottomY = canvasHeight - bottomHeight;
+      
+      // 绘制分隔线
+      ctx.setStrokeStyle('#e9ecef');
+      ctx.setLineWidth(1);
+      ctx.beginPath();
+      ctx.moveTo(20, bottomY + 10);
+      ctx.lineTo(canvasWidth - 20, bottomY + 10);
+      ctx.stroke();
+      
+      // 二维码参数
+      const qrSize = 50; // 二维码大小
+      const qrX = 20; // 左下角位置
+      const qrY = bottomY + 20;
+      
+      // 加载并绘制二维码
+      wx.getImageInfo({
+        src: '/images/qrcode.jpg',
+        success: (qrRes) => {
+          ctx.drawImage(qrRes.path, qrX, qrY, qrSize, qrSize);
+          
+          // 绘制推广文字
+          const textX = canvasWidth - 20; // 右下角
+          const textY = qrY + 15; // 与二维码对齐
+          
+          ctx.setFillStyle('#666666');
+          ctx.setFontSize(12);
+          ctx.setTextAlign('right');
+          
+          // 第一行文字
+          ctx.fillText('更多好玩的宾果游戏！', textX, textY);
+          
+          // 第二行文字
+          ctx.setFillStyle('#999999');
+          ctx.setFontSize(10);
+          ctx.fillText('小程序@宾了个果', textX, textY + 20);
+          
+          // 调用回调函数继续后续处理
+          callback();
+        },
+        fail: (error) => {
+          console.error('加载二维码图片失败:', error);
+          // 即使二维码加载失败，也要绘制文字
+          const textX = canvasWidth - 20;
+          const textY = qrY + 15;
+          
+          ctx.setFillStyle('#666666');
+          ctx.setFontSize(12);
+          ctx.setTextAlign('right');
+          ctx.fillText('更多好玩的宾果游戏！', textX, textY);
+          
+          ctx.setFillStyle('#999999');
+          ctx.setFontSize(10);
+          ctx.fillText('小程序@宾了个果', textX, textY + 20);
+          
+          callback();
+        }
+      });
+      
+    } catch (error) {
+      console.error('绘制底部内容失败:', error);
+      callback(); // 确保即使出错也要继续
+    }
   },
 
   /**
