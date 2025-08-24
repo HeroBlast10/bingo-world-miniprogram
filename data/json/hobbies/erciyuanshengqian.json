@@ -1,8 +1,8 @@
 {
-    "bingoId": "chuantongwenxue",
-    "title": "传统文学宾果",
+    "bingoId": "erciyuanshengqian",
+    "title": "二次元省钱宾果",
     "creator": "请手动填写",
-    "description": "五个连成一线，你就是传统文学爱好者",
+    "description": "五个连成一线，不是说二次元不花钱吗？",
     "gridSize": {
         "rows": 6,
         "cols": 5
@@ -10,111 +10,111 @@
     "gridContent": [
         [
             {
-                "text": "反感别人一上来就说喜欢东野圭吾",
+                "text": "吃国外IP的官谷",
                 "type": "standard"
             },
             {
-                "text": "喜欢看侦探、刑侦小说",
+                "text": "玩cos并有多件cos服",
                 "type": "standard"
             },
             {
-                "text": "写过书评文章",
+                "text": "吃国内IP的官谷",
                 "type": "standard"
             },
             {
-                "text": "会把喜欢的段落摘抄下来",
+                "text": "购入官方手办",
                 "type": "standard"
             },
             {
-                "text": "会关注出版社最新出版的实体书",
+                "text": "吃同人谷",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "有特别喜欢的作家",
+                "text": "单个游戏氪金超过2000",
                 "type": "standard"
             },
             {
-                "text": "看书时不掠过前言",
+                "text": "玩cos并花钱约妆",
                 "type": "standard"
             },
             {
-                "text": "衣着朴素大方",
+                "text": "自己贴钱制作同人谷",
                 "type": "standard"
             },
             {
-                "text": "喜欢准确无误的表达",
+                "text": "养bjd并花钱约头发",
                 "type": "standard"
             },
             {
-                "text": "戴眼镜,外表斯文,但内心狂野",
+                "text": "拼高达",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "会写文学作品",
+                "text": "购买买断卡带游戏",
                 "type": "standard"
             },
             {
-                "text": "被别人说“书呆子”不生气",
+                "text": "玩cos并花钱约毛",
                 "type": "standard"
             },
             {
-                "text": "女权主义者",
+                "text": "给oc约稿",
                 "type": "standard"
             },
             {
-                "text": "身边没有能够聊书籍内容的人",
+                "text": "一年去过多次漫展",
                 "type": "standard"
             },
             {
-                "text": "随身携带Kindle",
+                "text": "约过线下cos委托",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "不喜欢朋友聚会,甚至反感",
+                "text": "拥有自己的游戏主机",
                 "type": "standard"
             },
             {
-                "text": "参加过线下书展活动",
+                "text": "玩cos并花钱约摄影",
                 "type": "standard"
             },
             {
-                "text": "会看各种文学奖获奖作品",
+                "text": "约同人稿",
                 "type": "standard"
             },
             {
-                "text": "会阅读作家的日记访谈录",
+                "text": "超正常量购入周边",
                 "type": "standard"
             },
             {
-                "text": "不喜欢网络小说",
+                "text": "搞特摄",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "关注了很多读书博主的wb/gz号等",
+                "text": "购买全套实体谷",
                 "type": "standard"
             },
             {
-                "text": "爱买特别的文创帆布袋",
+                "text": "玩cos并花钱约道具",
                 "type": "standard"
             },
             {
-                "text": "很享受下雨天在被窝里看书",
+                "text": "定制oc实体周边",
                 "type": "standard"
             },
             {
-                "text": "吃过一些出版社的瓜",
+                "text": "养bjd并花钱约妆",
                 "type": "standard"
             },
             {
-                "text": "平时脾气很好,比较温和真诚,待人礼貌",
+                "text": "为娃娃购入复数衣服",
                 "type": "standard"
             }
         ]

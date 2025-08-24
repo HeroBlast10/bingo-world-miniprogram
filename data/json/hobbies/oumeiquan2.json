@@ -1,8 +1,8 @@
 {
-    "bingoId": "chuantongwenxue",
-    "title": "传统文学宾果",
+    "bingoId": "oumeiquan2",
+    "title": "欧美圈宾果2",
     "creator": "请手动填写",
-    "description": "五个连成一线，你就是传统文学爱好者",
+    "description": "五个连成一线，你就是欧美圈超级影迷",
     "gridSize": {
         "rows": 6,
         "cols": 5
@@ -10,111 +10,111 @@
     "gridContent": [
         [
             {
-                "text": "反感别人一上来就说喜欢东野圭吾",
+                "text": "不存在的大侦探福尔摩斯3",
                 "type": "standard"
             },
             {
-                "text": "喜欢看侦探、刑侦小说",
+                "text": "社交网络",
                 "type": "standard"
             },
             {
-                "text": "写过书评文章",
+                "text": "伦敦生活",
                 "type": "standard"
             },
             {
-                "text": "会把喜欢的段落摘抄下来",
+                "text": "好兆头 CA",
                 "type": "standard"
             },
             {
-                "text": "会关注出版社最新出版的实体书",
+                "text": "指环王 AL",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "有特别喜欢的作家",
+                "text": "蝙蝠侠",
                 "type": "standard"
             },
             {
-                "text": "看书时不掠过前言",
+                "text": "哈利波特 GGAD",
                 "type": "standard"
             },
             {
-                "text": "衣着朴素大方",
+                "text": "Logan 金刚狼3",
                 "type": "standard"
             },
             {
-                "text": "喜欢准确无误的表达",
+                "text": "X战警/万磁王/X教授",
                 "type": "standard"
             },
             {
-                "text": "戴眼镜,外表斯文,但内心狂野",
+                "text": "神夏福华",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "会写文学作品",
+                "text": "漫威还我眼泪",
                 "type": "standard"
             },
             {
-                "text": "被别人说“书呆子”不生气",
+                "text": "哈利波特斯教",
                 "type": "standard"
             },
             {
-                "text": "女权主义者",
+                "text": "在电影院哭完一包纸巾",
                 "type": "standard"
             },
             {
-                "text": "身边没有能够聊书籍内容的人",
+                "text": "神秘博士",
                 "type": "standard"
             },
             {
-                "text": "随身携带Kindle",
+                "text": "疑犯追踪RF",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "不喜欢朋友聚会,甚至反感",
+                "text": "Star Trek   Kirk/Spock",
                 "type": "standard"
             },
             {
-                "text": "参加过线下书展活动",
+                "text": "邪恶力量",
                 "type": "standard"
             },
             {
-                "text": "会看各种文学奖获奖作品",
+                "text": "复联3 锤基",
                 "type": "standard"
             },
             {
-                "text": "会阅读作家的日记访谈录",
+                "text": "汉尼拔",
                 "type": "standard"
             },
             {
-                "text": "不喜欢网络小说",
+                "text": "星球大战3 师徒",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "关注了很多读书博主的wb/gz号等",
+                "text": "断背山",
                 "type": "standard"
             },
             {
-                "text": "爱买特别的文创帆布袋",
+                "text": "毒液",
                 "type": "standard"
             },
             {
-                "text": "很享受下雨天在被窝里看书",
+                "text": "钢铁侠",
                 "type": "standard"
             },
             {
-                "text": "吃过一些出版社的瓜",
+                "text": "权力的游戏",
                 "type": "standard"
             },
             {
-                "text": "平时脾气很好,比较温和真诚,待人礼貌",
+                "text": "梅林传奇 亚梅",
                 "type": "standard"
             }
         ]

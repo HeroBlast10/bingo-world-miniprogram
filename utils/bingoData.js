@@ -14,6 +14,20 @@ function getUserCreatedGames() {
   }
 }
 
+/**
+ * 保存用户创建的游戏列表
+ * @param {Array} games - 游戏数组
+ */
+function saveUserCreatedGames(games) {
+  try {
+    wx.setStorageSync('user_bingos', games);
+    console.log('用户创建的游戏已保存:', games.length, '个');
+  } catch (error) {
+    console.error('保存用户创建的游戏失败:', error);
+    throw error;
+  }
+}
+
 // 宾果游戏数据
 const bingos = {
   "MBTI": {
@@ -2200,7 +2214,7 @@ const bingos = {
       "bingoId": "chanshiguan",
       "title": "铲屎官宾果",
       "creator": "系统",
-      "description": "五个连成一线，你已经是铲屎官资深代表",
+      "description": "五个连成一线，你就是铲屎官资深代表",
       "gridSize": {
         "rows": 5,
         "cols": 5
@@ -2949,6 +2963,56 @@ const bingos = {
       "category": "动物",
       "tags": [],
       "createdAt": "2025-07-29T01:14:01.557Z"
+    },
+    "haita": {
+      "bingoId": "haita",
+      "title": "海獭宾果",
+      "creator": "系统",
+      "description": "五个连成一线，那么你可能是一只小小的海獭",
+      "gridSize": {
+        "rows": 5,
+        "cols": 5
+      },
+      "gridContent": [
+        [
+          {"text": "喜欢手牵手", "type": "standard"},
+          {"text": "摔烂过手机", "type": "standard"},
+          {"text": "会用工具开壳", "type": "standard"},
+          {"text": "害怕被鲨鱼追", "type": "standard"},
+          {"text": "咬人很疼", "type": "standard"}
+        ],
+        [
+          {"text": "睡觉要盖肚肚", "type": "standard"},
+          {"text": "擅长游泳", "type": "standard"},
+          {"text": "大鼻子", "type": "standard"},
+          {"text": "讨厌蔬菜", "type": "standard"},
+          {"text": "害怕弄丢喜欢的人", "type": "standard"}
+        ],
+        [
+          {"text": "喜欢去海边", "type": "standard"},
+          {"text": "喜欢海鲜刺身", "type": "standard"},
+          {"text": "社恐", "type": "standard"},
+          {"text": "妈妈，獭生是海洋", "type": "standard"},
+          {"text": "躺着看天空发呆", "type": "standard"}
+        ],
+        [
+          {"text": "认为人类很危险", "type": "standard"},
+          {"text": "向往流浪", "type": "standard"},
+          {"text": "有点呆", "type": "standard"},
+          {"text": "牙口好", "type": "standard"},
+          {"text": "耐冻但怕热", "type": "standard"}
+        ],
+        [
+          {"text": "喜欢嚼冰块的感觉", "type": "standard"},
+          {"text": "揉！脸！", "type": "standard"},
+          {"text": "在兜里装零食", "type": "standard"},
+          {"text": "24/7想着待会吃什么", "type": "standard"},
+          {"text": "喜欢在沙滩上挖洞", "type": "standard"}
+        ]
+      ],
+      "category": "动物",
+      "tags": ["海獭", "动物", "可爱"],
+      "createdAt": "2025-01-21T10:11:00.000Z"
     }
   },
   "地理": {
@@ -4967,7 +5031,7 @@ const bingos = {
       "bingoId": "guoman",
       "title": "国漫爱好者宾果",
       "creator": "系统",
-      "description": "五个连成一线，你已是国漫复兴见证者",
+      "description": "五个连成一线，你就是国漫复兴见证者",
       "gridSize": {
         "rows": 5,
         "cols": 5
@@ -5092,7 +5156,7 @@ const bingos = {
       "bingoId": "kpop",
       "title": "KPOP宾果",
       "creator": "系统",
-      "description": "五个连成一线，你已是韩流十级学者",
+      "description": "五个连成一线，你就是韩流十级学者",
       "gridSize": {
         "rows": 5,
         "cols": 5
@@ -5340,9 +5404,9 @@ const bingos = {
     },
     "nba": {
       "bingoId": "nba",
-      "title": "NB宾果",
+      "title": "NBA宾果",
       "creator": "系统",
-      "description": "五个连成一线，你已是篮球百科全书",
+      "description": "五个连成一线，你就是篮球百科全书",
       "gridSize": {
         "rows": 5,
         "cols": 5
@@ -6101,7 +6165,7 @@ const bingos = {
       "bingoId": "wangqiu",
       "title": "网球爱好者宾果",
       "creator": "系统",
-      "description": "五个连成一线，你已是网坛活字典",
+      "description": "五个连成一线，你就是网坛活字典",
       "gridSize": {
         "rows": 5,
         "cols": 5
@@ -6226,7 +6290,7 @@ const bingos = {
       "bingoId": "wangwen",
       "title": "网文爱好者宾果",
       "creator": "系统",
-      "description": "五个连成一线，你已是文学城城主",
+      "description": "五个连成一线，你就是文学城城主",
       "gridSize": {
         "rows": 5,
         "cols": 5
@@ -7115,7 +7179,7 @@ const bingos = {
       "bingoId": "zuqiu",
       "title": "足球爱好者宾果",
       "creator": "系统",
-      "description": "五个连成一线，你已是绿茵场百事通",
+      "description": "五个连成一线，你就是绿茵场百事通",
       "gridSize": {
         "rows": 5,
         "cols": 5
@@ -7235,6 +7299,531 @@ const bingos = {
       "category": "爱好",
       "tags": [],
       "createdAt": "2025-07-29T01:14:01.566Z"
+    },
+    "wenshou": {
+      "bingoId": "wenshou",
+      "title": "文手成就宾果",
+      "creator": "系统",
+      "description": "五个连成一线，你就是超级文手",
+      "gridSize": {
+        "rows": 6,
+        "cols": 5
+      },
+      "gridContent": [
+        [
+          {
+            "text": "能正确使用的得地且错别字不多",
+            "type": "standard"
+          },
+          {
+            "text": "能正确使用标点符号并恰当地进行分段",
+            "type": "standard"
+          },
+          {
+            "text": "文字没有被网络用语侵蚀",
+            "type": "standard"
+          },
+          {
+            "text": "有阅读文学出版物的习惯",
+            "type": "standard"
+          },
+          {
+            "text": "写文前会写大纲或草稿",
+            "type": "standard"
+          }
+        ],
+        [
+          {
+            "text": "写文时会有一个核心",
+            "type": "standard"
+          },
+          {
+            "text": "不常为取标题而烦恼",
+            "type": "standard"
+          },
+          {
+            "text": "明白自己每一篇文想表达什么",
+            "type": "standard"
+          },
+          {
+            "text": "喜欢准确无误的表达",
+            "type": "standard"
+          },
+          {
+            "text": "总是明白自己创作的母题",
+            "type": "standard"
+          }
+        ],
+        [
+          {
+            "text": "有明确的行文风格",
+            "type": "standard"
+          },
+          {
+            "text": "闲的时候忙的时候都会思考创作",
+            "type": "standard"
+          },
+          {
+            "text": "不论热度高低都不会停止创作",
+            "type": "standard"
+          },
+          {
+            "text": "一段时间不写文很痛苦",
+            "type": "standard"
+          },
+          {
+            "text": "为自己的作品感到骄傲",
+            "type": "standard"
+          }
+        ],
+        [
+          {
+            "text": "不会因为口嗨而影响正文的创作",
+            "type": "standard"
+          },
+          {
+            "text": "无法心安理得地坑掉任何一篇文",
+            "type": "standard"
+          },
+          {
+            "text": "因为写作而辗转难眠",
+            "type": "standard"
+          },
+          {
+            "text": "从自己尊敬的人那里得到过认可",
+            "type": "standard"
+          },
+          {
+            "text": "有自己固定的写作习惯",
+            "type": "standard"
+          }
+        ],
+        [
+          {
+            "text": "有自己鲜明的语言风格",
+            "type": "standard"
+          },
+          {
+            "text": "有时会因为写作而感到焦虑",
+            "type": "standard"
+          },
+          {
+            "text": "享受写作带来的成就感",
+            "type": "standard"
+          },
+          {
+            "text": "和别人讨论写作时会感到兴奋",
+            "type": "standard"
+          },
+          {
+            "text": "每天都会写点东西",
+            "type": "standard"
+          }
+        ]
+      ],
+      "category": "爱好",
+      "tags": ["写作", "文学"],
+      "createdAt": "2025-01-21T10:00:00.000Z"
+    },
+    "oumeiquan": {
+      "bingoId": "oumeiquan",
+      "title": "欧美圈宾果1",
+      "creator": "系统",
+      "description": "五个连成一线，你就是欧美圈超级影迷",
+      "gridSize": {
+        "rows": 6,
+        "cols": 5
+      },
+      "gridContent": [
+        [
+          {
+            "text": "深刻理解盖里奇不会数数",
+            "type": "standard"
+          },
+          {
+            "text": "此生无悔入漫威",
+            "type": "standard"
+          },
+          {
+            "text": "今天你擦甲板了吗?",
+            "type": "standard"
+          },
+          {
+            "text": "两个月的意乱情迷一个世纪的不可言说",
+            "type": "standard"
+          },
+          {
+            "text": "山谷里再也不会有枪声了",
+            "type": "standard"
+          }
+        ],
+        [
+          {
+            "text": "'I love you.' 'lt will pass.'",
+            "type": "standard"
+          },
+          {
+            "text": "'你正在被做成表' '你给了我份工作'",
+            "type": "standard"
+          },
+          {
+            "text": "曾经沧海难为水，我为EC...",
+            "type": "standard"
+          },
+          {
+            "text": "白金汉宫的烟灰缸",
+            "type": "standard"
+          },
+          {
+            "text": "白树开花中土永存",
+            "type": "standard"
+          }
+        ],
+        [
+          {
+            "text": "公费恋爱六千年 'l forgive you'",
+            "type": "standard"
+          },
+          {
+            "text": "After all this time?Always.",
+            "type": "standard"
+          },
+          {
+            "text": "在电影院哭完一包纸巾",
+            "type": "standard"
+          },
+          {
+            "text": "Allons-y！ Geronimo! Laugh hard! Run fast!",
+            "type": "standard"
+          },
+          {
+            "text": "民风淳朴哥谭市，人才辈出阿卡姆",
+            "type": "standard"
+          }
+        ],
+        [
+          {
+            "text": "I have been,and always shall be, your friend",
+            "type": "standard"
+          },
+          {
+            "text": "You were my brother,Anakin!I loved you!",
+            "type": "standard"
+          },
+          {
+            "text": "Brother,the sun wil shine on us again",
+            "type": "standard"
+          },
+          {
+            "text": "凛冬将至北境永不忘",
+            "type": "standard"
+          },
+          {
+            "text": "如果我能每天见到你，我也会记得这一次，直至永恒，Will",
+            "type": "standard"
+          }
+        ],
+        [
+          {
+            "text": "Dean Winchester I love you.",
+            "type": "standard"
+          },
+          {
+            "text": "君埋泉下泥销骨,我寄人间雪满头",
+            "type": "standard"
+          },
+          {
+            "text": "I wish l knew how to quit you.",
+            "type": "standard"
+          },
+          {
+            "text": "We are Venom!",
+            "type": "standard"
+          },
+          {
+            "text": "llove you three thousand",
+            "type": "standard"
+          }
+        ]
+      ],
+      "category": "爱好",
+      "tags": ["欧美", "影视", "粉圈"],
+      "createdAt": "2025-01-21T10:01:00.000Z"
+    },
+    "oumeiquan2": {
+      "bingoId": "oumeiquan2",
+      "title": "欧美圈宾果2",
+      "creator": "系统",
+      "description": "五个连成一线，你就是欧美圈超级影迷",
+      "gridSize": {
+        "rows": 6,
+        "cols": 5
+      },
+      "gridContent": [
+        [
+          {
+            "text": "不存在的大侦探福尔摩斯3",
+            "type": "standard"
+          },
+          {
+            "text": "社交网络",
+            "type": "standard"
+          },
+          {
+            "text": "伦敦生活",
+            "type": "standard"
+          },
+          {
+            "text": "好兆头 CA",
+            "type": "standard"
+          },
+          {
+            "text": "指环王 AL",
+            "type": "standard"
+          }
+        ],
+        [
+          {
+            "text": "蝙蝠侠",
+            "type": "standard"
+          },
+          {
+            "text": "哈利波特 GGAD",
+            "type": "standard"
+          },
+          {
+            "text": "Logan 金刚狼3",
+            "type": "standard"
+          },
+          {
+            "text": "X战警/万磁王/X教授",
+            "type": "standard"
+          },
+          {
+            "text": "神夏福华",
+            "type": "standard"
+          }
+        ],
+        [
+          {
+            "text": "漫威还我眼泪",
+            "type": "standard"
+          },
+          {
+            "text": "哈利波特斯教",
+            "type": "standard"
+          },
+          {
+            "text": "在电影院哭完一包纸巾",
+            "type": "standard"
+          },
+          {
+            "text": "神秘博士",
+            "type": "standard"
+          },
+          {
+            "text": "疑犯追踪RF",
+            "type": "standard"
+          }
+        ],
+        [
+          {
+            "text": "Star Trek   Kirk/Spock",
+            "type": "standard"
+          },
+          {
+            "text": "邪恶力量",
+            "type": "standard"
+          },
+          {
+            "text": "复联3 锤基",
+            "type": "standard"
+          },
+          {
+            "text": "汉尼拔",
+            "type": "standard"
+          },
+          {
+            "text": "星球大战3 师徒",
+            "type": "standard"
+          }
+        ],
+        [
+          {
+            "text": "断背山",
+            "type": "standard"
+          },
+          {
+            "text": "毒液",
+            "type": "standard"
+          },
+          {
+            "text": "钢铁侠",
+            "type": "standard"
+          },
+          {
+            "text": "权力的游戏",
+            "type": "standard"
+          },
+          {
+            "text": "梅林传奇 亚梅",
+            "type": "standard"
+          }
+        ]
+      ],
+      "category": "爱好",
+      "tags": ["欧美", "影视", "粉圈"],
+      "createdAt": "2025-01-21T10:02:00.000Z"
+    },
+    "houxiandai": {
+      "bingoId": "houxiandai",
+      "title": "后现代身份认同",
+      "creator": "系统",
+      "description": "五个连成一线，你就是神金中的神金",
+      "gridSize": {
+        "rows": 6,
+        "cols": 5
+      },
+      "gridContent": [
+        [
+          {"text": "小红书关注了#审美积累", "type": "standard"},
+          {"text": "二次元", "type": "standard"},
+          {"text": "摄影", "type": "standard"},
+          {"text": "自认为抽象", "type": "standard"},
+          {"text": "非二元", "type": "standard"}
+        ],
+        [
+          {"text": "键政", "type": "standard"},
+          {"text": "'原生家庭'", "type": "standard"},
+          {"text": "SM", "type": "standard"},
+          {"text": "键哲", "type": "standard"},
+          {"text": "实验音乐", "type": "standard"}
+        ],
+        [
+          {"text": "女权", "type": "standard"},
+          {"text": "传统文学", "type": "standard"},
+          {"text": "爱看后现代艺术展", "type": "standard"},
+          {"text": "看意识流类作品", "type": "standard"},
+          {"text": "乐器", "type": "standard"}
+        ],
+        [
+          {"text": "摇滚", "type": "standard"},
+          {"text": "有穿孔/纹身", "type": "standard"},
+          {"text": "ADHD/Asperger", "type": "standard"},
+          {"text": "艺术生", "type": "standard"},
+          {"text": "MBTI", "type": "standard"}
+        ],
+        [
+          {"text": "犬儒主义", "type": "standard"},
+          {"text": "Alcoholic", "type": "standard"},
+          {"text": "认为自己有玉玉/焦虑症", "type": "standard"},
+          {"text": "买了一堆奇怪的书但从来没看", "type": "standard"},
+          {"text": "毕加索", "type": "standard"}
+        ]
+      ],
+      "category": "爱好",
+      "tags": ["艺术", "哲学", "文化"],
+      "createdAt": "2025-01-21T10:03:00.000Z"
+    },
+    "wenyibi": {
+      "bingoId": "wenyibi",
+      "title": "文艺逼宾果",
+      "creator": "系统",
+      "description": "五个连成一线，你就是文艺青年",
+      "gridSize": {
+        "rows": 6,
+        "cols": 5
+      },
+      "gridContent": [
+        [
+          {"text": "用过加缪当头像", "type": "standard"},
+          {"text": "朋友圈签名是电影台词", "type": "standard"},
+          {"text": "黑白摄影", "type": "standard"},
+          {"text": "弹吉他", "type": "standard"},
+          {"text": "打钉", "type": "standard"}
+        ],
+        [
+          {"text": "认为自己孤独", "type": "standard"},
+          {"text": "独自喝酒", "type": "standard"},
+          {"text": "留长发或想留长发", "type": "standard"},
+          {"text": "前卫摇滚", "type": "standard"},
+          {"text": "曾经喜欢过大冰", "type": "standard"}
+        ],
+        [
+          {"text": "会感觉自己抑郁症", "type": "standard"},
+          {"text": "读博尔赫斯", "type": "standard"},
+          {"text": "渴望sex", "type": "standard"},
+          {"text": "借酒消愁", "type": "standard"},
+          {"text": "无病呻吟", "type": "standard"}
+        ],
+        [
+          {"text": "网左", "type": "standard"},
+          {"text": "读弗洛伊德", "type": "standard"},
+          {"text": "亚比穿搭", "type": "standard"},
+          {"text": "读尼采", "type": "standard"},
+          {"text": "批判主流审美", "type": "standard"}
+        ],
+        [
+          {"text": "读太宰治", "type": "standard"},
+          {"text": "墙上贴海报", "type": "standard"},
+          {"text": "边骂边用豆瓣", "type": "standard"},
+          {"text": "吃咖啡不加糖不加奶", "type": "standard"},
+          {"text": "一个人看文艺片", "type": "standard"}
+        ]
+      ],
+      "category": "爱好",
+      "tags": ["文艺", "文学", "摄影"],
+      "createdAt": "2025-01-21T10:04:00.000Z"
+    },
+    "erciyuanshengqian": {
+      "bingoId": "erciyuanshengqian",
+      "title": "二次元省钱宾果",
+      "creator": "系统",
+      "description": "五个连成一线，不是说二次元不花钱吗？",
+      "gridSize": {
+        "rows": 6,
+        "cols": 5
+      },
+      "gridContent": [
+        [
+          {"text": "吃国外IP的官谷", "type": "standard"},
+          {"text": "玩cos并有多件cos服", "type": "standard"},
+          {"text": "吃国内IP的官谷", "type": "standard"},
+          {"text": "购入官方手办", "type": "standard"},
+          {"text": "吃同人谷", "type": "standard"}
+        ],
+        [
+          {"text": "单个游戏氪金超过2000", "type": "standard"},
+          {"text": "玩cos并花钱约妆", "type": "standard"},
+          {"text": "自己贴钱制作同人谷", "type": "standard"},
+          {"text": "养bjd并花钱约头发", "type": "standard"},
+          {"text": "拼高达", "type": "standard"}
+        ],
+        [
+          {"text": "购买买断卡带游戏", "type": "standard"},
+          {"text": "玩cos并花钱约毛", "type": "standard"},
+          {"text": "给oc约稿", "type": "standard"},
+          {"text": "一年去过多次漫展", "type": "standard"},
+          {"text": "约过线下cos委托", "type": "standard"}
+        ],
+        [
+          {"text": "拥有自己的游戏主机", "type": "standard"},
+          {"text": "玩cos并花钱约摄影", "type": "standard"},
+          {"text": "约同人稿", "type": "standard"},
+          {"text": "超正常量购入周边", "type": "standard"},
+          {"text": "搞特摄", "type": "standard"}
+        ],
+        [
+          {"text": "购买全套实体谷", "type": "standard"},
+          {"text": "玩cos并花钱约道具", "type": "standard"},
+          {"text": "定制oc实体周边", "type": "standard"},
+          {"text": "养bjd并花钱约妆", "type": "standard"},
+          {"text": "为娃娃购入复数衣服", "type": "standard"}
+        ]
+      ],
+      "category": "爱好",
+      "tags": ["二次元", "动漫", "游戏"],
+      "createdAt": "2025-01-21T10:05:00.000Z"
     }
   },
   "知识": {
@@ -9270,7 +9859,7 @@ const bingos = {
     },
     "poverty_bingo": {
       "bingoId": "poverty_bingo",
-      "title": "贫穷宾果",
+      "title": "穷鬼宾果",
       "creator": "系统",
       "description": "五个连成一线，说明你深谙生存之道",
       "gridSize": {
@@ -9280,29 +9869,29 @@ const bingos = {
       "gridContent": [
         [
           {
-            "text": "精打细算",
+            "text": "不开软件会员",
             "type": "standard"
           },
           {
-            "text": "拼多多常客",
+            "text": "PDD常客",
             "type": "standard"
           },
           {
-            "text": "自带水瓶",
+            "text": "加过很多捡漏群拼单群",
             "type": "standard"
           },
           {
-            "text": "公交卡达人",
+            "text": "一年内没去外地旅游过",
             "type": "standard"
           },
           {
-            "text": "二手市场淘",
+            "text": "经常在二手市场淘东西",
             "type": "standard"
           }
         ],
         [
           {
-            "text": "记账本常开",
+            "text": "吃自助餐一定要吃回本",
             "type": "standard"
           },
           {
@@ -9310,7 +9899,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "囤积塑料袋",
+            "text": "喜欢超市试吃",
             "type": "standard"
           },
           {
@@ -9318,7 +9907,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "关注打折区",
+            "text": "关注超市打折区",
             "type": "standard"
           }
         ],
@@ -9332,11 +9921,11 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "薅羊毛专家",
+            "text": "学生",
             "type": "standard"
           },
           {
-            "text": "肥皂用到底",
+            "text": "沐浴露/洗发水兑水",
             "type": "standard"
           },
           {
@@ -9346,19 +9935,19 @@ const bingos = {
         ],
         [
           {
-            "text": "拒绝聚餐邀",
+            "text": "复制疯狂星期四文案但从不买",
             "type": "standard"
           },
           {
-            "text": "牙膏挤干净",
+            "text": "牙膏用力挤干净",
             "type": "standard"
           },
           {
-            "text": "超市试吃饱",
+            "text": "出门自带干粮",
             "type": "standard"
           },
           {
-            "text": "租房选郊外",
+            "text": "熟练使用steam退款",
             "type": "standard"
           },
           {
@@ -9368,23 +9957,23 @@ const bingos = {
         ],
         [
           {
-            "text": "外卖凑满减",
+            "text": "外卖花10分钟凑满减",
             "type": "standard"
           },
           {
-            "text": "饮料瓶回收",
+            "text": "买周边后会肉疼",
             "type": "standard"
           },
           {
-            "text": "袜子补洞穿",
+            "text": "没有谈恋爱的打算",
             "type": "standard"
           },
           {
-            "text": "生日不过节",
+            "text": "打游戏从不氪金",
             "type": "standard"
           },
           {
-            "text": "流量省着用",
+            "text": "手机流量省着用",
             "type": "standard"
           }
         ]
@@ -10782,6 +11371,206 @@ const bingos = {
       "category": "生活",
       "tags": [],
       "createdAt": "2025-07-29T01:14:01.574Z"
+    },
+    "xiaozhenzuotijia": {
+      "bingoId": "xiaozhenzuotijia",
+      "title": "小镇做题家宾果",
+      "creator": "系统",
+      "description": "五个连成一线，你就是小镇做题家",
+      "gridSize": {
+        "rows": 5,
+        "cols": 5
+      },
+      "gridContent": [
+        [
+          {"text": "英语口语普通", "type": "standard"},
+          {"text": "很难向上社交", "type": "standard"},
+          {"text": "多次做家教", "type": "standard"},
+          {"text": "特长少", "type": "standard"},
+          {"text": "家乡距离(新)一线城市>200km", "type": "standard"}
+        ],
+        [
+          {"text": "家族同辈中第一个考入985、211", "type": "standard"},
+          {"text": "相信越努力越幸运", "type": "standard"},
+          {"text": "父母无法提供有效帮助", "type": "standard"},
+          {"text": "经常感到不自信", "type": "standard"},
+          {"text": "高中前从未出省", "type": "standard"}
+        ],
+        [
+          {"text": "无职业规划", "type": "standard"},
+          {"text": "高中有课程全班第一", "type": "standard"},
+          {"text": "高考是人生高光时刻", "type": "standard"},
+          {"text": "非常礼貌", "type": "standard"},
+          {"text": "对未来感到焦虑", "type": "standard"}
+        ],
+        [
+          {"text": "很少依赖他人", "type": "standard"},
+          {"text": "父母亲人对你寄予厚望", "type": "standard"},
+          {"text": "慕强", "type": "standard"},
+          {"text": "不敢承担风险", "type": "standard"},
+          {"text": "与同学朋友交往避免透露家境", "type": "standard"}
+        ],
+        [
+          {"text": "中学保持年级前十", "type": "standard"},
+          {"text": "独立自律", "type": "standard"},
+          {"text": "坚韧，抗压能力强", "type": "standard"},
+          {"text": "身上最贵的是手机", "type": "standard"},
+          {"text": "喜欢简单的快乐但无法安心享乐", "type": "standard"}
+        ]
+      ],
+      "category": "生活",
+      "tags": ["教育", "社会", "成长"],
+      "createdAt": "2025-01-21T10:07:00.000Z"
+    },
+    "tongxinweimin": {
+      "bingoId": "tongxinweimin",
+      "title": "童心未泯宾果",
+      "creator": "系统",
+      "description": "五个连成一线，你的心里依然住着一个小孩",
+      "gridSize": {
+        "rows": 5,
+        "cols": 5
+      },
+      "gridContent": [
+        [
+          {"text": "喜欢跳起来摸高", "type": "standard"},
+          {"text": "喜欢吹蒲公英", "type": "standard"},
+          {"text": "喜欢折纸飞机、千纸鹤等等", "type": "standard"},
+          {"text": "喜欢玩沙子/泥巴", "type": "standard"},
+          {"text": "对着电风扇说话", "type": "standard"}
+        ],
+        [
+          {"text": "给生活用品起名字", "type": "standard"},
+          {"text": "玩转椅自转到头晕", "type": "standard"},
+          {"text": "把东西顶在头上保持平衡", "type": "standard"},
+          {"text": "洗澡的时候玩泡泡", "type": "standard"},
+          {"text": "用笔在手上画纹身", "type": "standard"}
+        ],
+        [
+          {"text": "喜欢比手影踩影子", "type": "standard"},
+          {"text": "把手插进米缸", "type": "standard"},
+          {"text": "喜欢捏泡泡纸", "type": "standard"},
+          {"text": "把食物摆成各种形状/文字", "type": "standard"},
+          {"text": "(想)吃儿童套餐/穿童装", "type": "standard"}
+        ],
+        [
+          {"text": "睡觉要抱着东西睡才舒服", "type": "standard"},
+          {"text": "吃辣条棒棒糖等童年零食", "type": "standard"},
+          {"text": "走路不踩地砖缝/沿着地砖缝走", "type": "standard"},
+          {"text": "和动物/植物说话", "type": "standard"},
+          {"text": "随地捡木棍", "type": "standard"}
+        ],
+        [
+          {"text": "喜欢观察小动物", "type": "standard"},
+          {"text": "喜欢荡秋千", "type": "standard"},
+          {"text": "喜欢观察云思考它们像什么形状", "type": "standard"},
+          {"text": "在沾满水雾的玻璃上写字画画", "type": "standard"},
+          {"text": "收集贴纸/包装标签等", "type": "standard"}
+        ]
+      ],
+      "category": "生活",
+      "tags": ["童心", "纯真", "生活乐趣"],
+      "createdAt": "2025-01-21T10:08:00.000Z"
+    },
+    "tegongshenghuo": {
+      "bingoId": "tegongshenghuo",
+      "title": "特工生活宾果",
+      "creator": "系统",
+      "description": "五个连成一线，你就是特工生活爱好者! ",
+      "gridSize": {
+        "rows": 5,
+        "cols": 5
+      },
+      "gridContent": [
+        [
+          {"text": "不会把这张Bingo图发到朋友圈", "type": "standard"},
+          {"text": "又是幻想自己在飞檐走壁", "type": "standard"},
+          {"text": "熟悉枪械", "type": "standard"},
+          {"text": "洗澡会听fall out boy等摇滚乐", "type": "standard"},
+          {"text": "经常被噩梦惊醒", "type": "standard"}
+        ],
+        [
+          {"text": "搜集信息的能力很强", "type": "standard"},
+          {"text": "朋友少", "type": "standard"},
+          {"text": "外人对自己评价是神秘", "type": "standard"},
+          {"text": "中二病", "type": "standard"},
+          {"text": "外卖头像和名字都是假的", "type": "standard"}
+        ],
+        [
+          {"text": "饮食健康", "type": "standard"},
+          {"text": "有各种黑衣服", "type": "standard"},
+          {"text": "会开车", "type": "standard"},
+          {"text": "身手敏捷", "type": "standard"},
+          {"text": "身材匀称", "type": "standard"}
+        ],
+        [
+          {"text": "有敌人/关系不好的人", "type": "standard"},
+          {"text": "感恩帮助过自己的人", "type": "standard"},
+          {"text": "有自己常用的AI助手", "type": "standard"},
+          {"text": "懂一些急救技能", "type": "standard"},
+          {"text": "有想要保护的人或动物", "type": "standard"}
+        ],
+        [
+          {"text": "有特别多秘密", "type": "standard"},
+          {"text": "翻过学校的墙", "type": "standard"},
+          {"text": "擅长做饭", "type": "standard"},
+          {"text": "善于运用电脑", "type": "standard"},
+          {"text": "会品酒", "type": "standard"}
+        ]
+      ],
+      "category": "生活",
+      "tags": ["特工", "神秘", "中二"],
+      "createdAt": "2025-01-21T10:09:00.000Z"
+    },
+    "xingfumoment": {
+      "bingoId": "xingfumoment",
+      "title": "幸福Moment宾果",
+      "creator": "系统",
+      "description": "五个连成一线，你有生活中的幸福Moment吗？",
+      "gridSize": {
+        "rows": 5,
+        "cols": 5
+      },
+      "gridContent": [
+        [
+          {"text": "被路边猫咪蹭腿", "type": "standard"},
+          {"text": "踩碎路边的落叶", "type": "standard"},
+          {"text": "点到好吃的外卖", "type": "standard"},
+          {"text": "一个人在公交车戴耳机听歌", "type": "standard"},
+          {"text": "掰橘子瓣摆成小花", "type": "standard"}
+        ],
+        [
+          {"text": "在备忘录/日记写下心愿", "type": "standard"},
+          {"text": "在衣服口袋里发现钱", "type": "standard"},
+          {"text": "发呆", "type": "standard"},
+          {"text": "和喜欢的人一起看日出", "type": "standard"},
+          {"text": "和朋友一起逛公园", "type": "standard"}
+        ],
+        [
+          {"text": "过一个完美周末", "type": "standard"},
+          {"text": "晒过的被子上有阳光的味道", "type": "standard"},
+          {"text": "免费格子", "type": "standard"},
+          {"text": "在超市里选零食", "type": "standard"},
+          {"text": "在书店里看书", "type": "standard"}
+        ],
+        [
+          {"text": "音乐软件随机播到喜欢的歌", "type": "standard"},
+          {"text": "把脸埋进被子蹭来蹭去", "type": "standard"},
+          {"text": "晚上十点的泡面/火鸡面", "type": "standard"},
+          {"text": "黄昏时分漫无目的地散步", "type": "standard"},
+          {"text": "吃到刚出炉的面包/薯条", "type": "standard"}
+        ],
+        [
+          {"text": "偶然发现一个宝藏小店", "type": "standard"},
+          {"text": "不定闹钟睡到阳光照进房间", "type": "standard"},
+          {"text": "洗澡的时候播放喜欢的歌", "type": "standard"},
+          {"text": "临睡前把枕头拍松", "type": "standard"},
+          {"text": "相信自己总会拥抱幸福", "type": "standard"}
+        ]
+      ],
+      "category": "生活",
+      "tags": ["幸福", "生活", "美好"],
+      "createdAt": "2025-01-21T10:10:00.000Z"
     }
   },
   "心理": {
@@ -10819,33 +11608,33 @@ const bingos = {
         ],
         [
           {
-            "text": "坐立不安",
+            "text": "经常坐立不安",
             "type": "standard"
           },
           {
-            "text": "超专注特定事",
+            "text": "工作5分钟玩手机1小时",
             "type": "standard"
           },
           {
-            "text": "忘记约定",
+            "text": "经常忘记约定",
             "type": "standard"
           },
           {
-            "text": "冲动消费",
+            "text": "经常冲动消费",
             "type": "standard"
           },
           {
-            "text": "整理困难",
+            "text": "房间、桌面乱糟糟",
             "type": "standard"
           }
         ],
         [
           {
-            "text": "常迟到",
+            "text": "经常迟到",
             "type": "standard"
           },
           {
-            "text": "思绪跳跃",
+            "text": "手里有小动作/撕手皮/咬指甲",
             "type": "standard"
           },
           {
@@ -10857,17 +11646,17 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "寻求刺激",
+            "text": "摔烂过手机/其他东西",
             "type": "standard"
           }
         ],
         [
           {
-            "text": "话多且快",
+            "text": "话多且语速快",
             "type": "standard"
           },
           {
-            "text": "容易分心",
+            "text": "聊天话题调得太快",
             "type": "standard"
           },
           {
@@ -10875,17 +11664,17 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "常丢钥匙手机",
+            "text": "常丢/忘带钥匙手机",
             "type": "standard"
           },
           {
-            "text": "睡眠问题",
+            "text": "有睡眠问题",
             "type": "standard"
           }
         ],
         [
           {
-            "text": "打断自己思路",
+            "text": "所有计划都坚持不下来",
             "type": "standard"
           },
           {
@@ -10893,7 +11682,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "过度分享",
+            "text": "或许有成瘾问题",
             "type": "standard"
           },
           {
@@ -12065,7 +12854,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "不喜欢轰趴,ktv",
+            "text": "不喜欢轰趴, KTV",
             "type": "standard"
           },
           {
@@ -12678,127 +13467,6 @@ const bingos = {
       "tags": [],
       "createdAt": "2025-07-29T01:14:01.577Z"
     },
-    "desireless_bingo": {
-      "bingoId": "desireless_bingo",
-      "title": "无欲则刚宾果",
-      "creator": "系统",
-      "description": "五个连成一线，说明你已超凡脱俗",
-      "gridSize": {
-        "rows": 5,
-        "cols": 5
-      },
-      "gridContent": [
-        [
-          {
-            "text": "购物车长草",
-            "type": "standard"
-          },
-          {
-            "text": "拒收节日礼",
-            "type": "standard"
-          },
-          {
-            "text": "工资卡不动",
-            "type": "standard"
-          },
-          {
-            "text": "清心寡欲脸",
-            "type": "standard"
-          },
-          {
-            "text": "断舍离大师",
-            "type": "standard"
-          }
-        ],
-        [
-          {
-            "text": "美食无诱惑",
-            "type": "standard"
-          },
-          {
-            "text": "关闭朋友圈",
-            "type": "standard"
-          },
-          {
-            "text": "佛系工作者",
-            "type": "standard"
-          },
-          {
-            "text": "旧衣穿十年",
-            "type": "standard"
-          },
-          {
-            "text": "不羡鸳鸯仙",
-            "type": "standard"
-          }
-        ],
-        [
-          {
-            "text": "手机用古董",
-            "type": "standard"
-          },
-          {
-            "text": "拒绝升职加",
-            "type": "standard"
-          },
-          {
-            "text": "旅游嫌麻烦",
-            "type": "standard"
-          },
-          {
-            "text": "生日忘庆祝",
-            "type": "standard"
-          },
-          {
-            "text": "无物欲境界",
-            "type": "standard"
-          }
-        ],
-        [
-          {
-            "text": "美食当燃料",
-            "type": "standard"
-          },
-          {
-            "text": "红包懒得抢",
-            "type": "standard"
-          },
-          {
-            "text": "赞美无波澜",
-            "type": "standard"
-          },
-          {
-            "text": "批评如清风",
-            "type": "standard"
-          },
-          {
-            "text": "双十一旁观",
-            "type": "standard"
-          }
-        ],
-        [
-          {
-            "text": "家居极简风",
-            "type": "standard"
-          },
-          {
-            "text": "社交零需求",
-            "type": "standard"
-          },
-          {
-            "text": "成功学免疫",
-            "type": "standard"
-          },
-          {
-            "text": "节日无感症",
-            "type": "standard"
-          },
-          {
-            "text": "情绪无波动",
-            "type": "standard"
-          }
-        ]
-      ],
       "category": "心理",
       "tags": [
         "极简主义",
@@ -12930,8 +13598,7 @@ const bingos = {
       "category": "心理",
       "tags": [],
       "createdAt": "2025-07-29T01:14:01.577Z"
-    }
-  },
+    },
   "学生": {
     "dubo": {
       "bingoId": "dubo",
@@ -14197,7 +14864,7 @@ const bingos = {
       "gridContent": [
         [
           {
-            "text": "书包永远整齐",
+            "text": "有喜欢的异性",
             "type": "standard"
           },
           {
@@ -14205,33 +14872,33 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "校服一尘不染",
+            "text": "考过全班第一",
             "type": "standard"
           },
           {
-            "text": "上课笔记五色分区",
+            "text": "上课笔记彩色分区",
             "type": "standard"
           },
           {
-            "text": "课桌像陈列馆",
+            "text": "有特别厉害的科目",
             "type": "standard"
           }
         ],
         [
           {
-            "text": "月考稳居年级前十",
+            "text": "经常被老师在全班表扬",
             "type": "standard"
           },
           {
-            "text": "老师提问必举手",
+            "text": "单科考过满分",
             "type": "standard"
           },
           {
-            "text": "错题本厚过教材",
+            "text": "和喜欢的人在一起了",
             "type": "standard"
           },
           {
-            "text": "书包里有计划本",
+            "text": "被异性表白过",
             "type": "standard"
           },
           {
@@ -14241,67 +14908,67 @@ const bingos = {
         ],
         [
           {
-            "text": "同时是班长+课代表",
+            "text": "当过班长",
             "type": "standard"
           },
           {
-            "text": "运动会报名三项",
+            "text": "运动会获得过奖牌/奖状",
             "type": "standard"
           },
           {
-            "text": "艺术节独奏表演",
+            "text": "艺术节上台表演",
             "type": "standard"
           },
           {
-            "text": "假期参加学科竞赛",
+            "text": "当过课代表",
             "type": "standard"
           },
           {
-            "text": "给同学无偿补课",
+            "text": "和好友开过黑",
             "type": "standard"
           }
         ],
         [
           {
-            "text": "六点起床背单词",
+            "text": "有特别要好的朋友",
             "type": "standard"
           },
           {
-            "text": "手机用老人机",
+            "text": "没有特别差的科目",
             "type": "standard"
           },
           {
-            "text": "书包装养生茶",
+            "text": "有拿手的体育项目",
             "type": "standard"
           },
           {
-            "text": "给老师准备润喉糖",
+            "text": "其他年级有很多人认识你",
             "type": "standard"
           },
           {
-            "text": "放学直接去自习室",
+            "text": "放学后有社团/娱乐活动",
             "type": "standard"
           }
         ],
         [
           {
-            "text": "家长会父母被围观",
+            "text": "在学校大会上发言",
             "type": "standard"
           },
           {
-            "text": "有专属奖学金",
+            "text": "班里有和自己相关的梗",
             "type": "standard"
           },
           {
-            "text": "拒绝玩手游",
+            "text": "经常去同学家玩",
             "type": "standard"
           },
           {
-            "text": "寒暑假预习下学期",
+            "text": "过生日有朋友送礼物",
             "type": "standard"
           },
           {
-            "text": "梦想是清北",
+            "text": "帮老师改过作业/试卷",
             "type": "standard"
           }
         ]
@@ -14572,15 +15239,15 @@ const bingos = {
       "gridContent": [
         [
           {
-            "text": "对着镜子练邪笑",
+            "text": "对着镜子练邪魅一笑",
             "type": "standard"
           },
           {
-            "text": "给文具起中二名",
+            "text": "觉得自己有点阴暗",
             "type": "standard"
           },
           {
-            "text": "相信自己是转世",
+            "text": "总有假想敌",
             "type": "standard"
           },
           {
@@ -14588,25 +15255,25 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "暗念奇怪咒语",
+            "text": "有时暗念奇怪咒语",
             "type": "standard"
           }
         ],
         [
           {
-            "text": "用外套蒙头装刺客",
+            "text": "看剧时会把自己代入角色",
             "type": "standard"
           },
           {
-            "text": "觉得左眼在封印力量",
+            "text": "梦想征服天下称霸世界",
             "type": "standard"
           },
           {
-            "text": "写羞耻日记称\"圣典\"",
+            "text": "学过忍者跑",
             "type": "standard"
           },
           {
-            "text": "走路刻意带风",
+            "text": "哈利波特分院帽测试",
             "type": "standard"
           },
           {
@@ -14616,23 +15283,23 @@ const bingos = {
         ],
         [
           {
-            "text": "给技能取超长名字",
+            "text": "给技能取过超长名字",
             "type": "standard"
           },
           {
-            "text": "坚信有魔法阵",
+            "text": "觉得自己独一无二",
             "type": "standard"
           },
           {
-            "text": "摆pose自觉很帅",
+            "text": "内心嘲笑哪些不懂自己的人",
             "type": "standard"
           },
           {
-            "text": "收藏塑料宝石当神器",
+            "text": "日常会给自己一个人设",
             "type": "standard"
           },
           {
-            "text": "对黑红色有执念",
+            "text": "“今天的风儿甚是喧嚣”",
             "type": "standard"
           }
         ],
@@ -14642,7 +15309,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "用\"凡人\"称呼普通人",
+            "text": "习惯性假装自己很正常",
             "type": "standard"
           },
           {
@@ -14654,7 +15321,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "自称\"孤王\"",
+            "text": "男人/女人只会影响我拔剑的速度",
             "type": "standard"
           }
         ],
@@ -14664,19 +15331,19 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "给宠物封神兽职位",
+            "text": "“错的不是我，是这个世界”",
             "type": "standard"
           },
           {
-            "text": "认为眼镜是伪装",
+            "text": "背包的时候会往肩上一甩",
             "type": "standard"
           },
           {
-            "text": "上课突然握拳低吼",
+            "text": "上课突然自言自语",
             "type": "standard"
           },
           {
-            "text": "觉得校服是战袍",
+            "text": "爱猫人士",
             "type": "standard"
           }
         ]
@@ -14809,6 +15476,56 @@ const bingos = {
       "category": "学生",
       "tags": [],
       "createdAt": "2025-07-29T01:14:01.581Z"
+    },
+    "keyanren": {
+      "bingoId": "keyanren",
+      "title": "科研人宾果",
+      "creator": "系统",
+      "description": "五个连成一线,你是一个苦逼科研人",
+      "gridSize": {
+        "rows": 5,
+        "cols": 5
+      },
+      "gridContent": [
+        [
+          {"text": "腰椎肩颈的各种疾病", "type": "standard"},
+          {"text": "生命在于咖啡", "type": "standard"},
+          {"text": "不刷社交媒体", "type": "standard"},
+          {"text": "睡眠不足", "type": "standard"},
+          {"text": "还在靠父母救济", "type": "standard"}
+        ],
+        [
+          {"text": "拒信收藏家", "type": "standard"},
+          {"text": "自我抄袭专家", "type": "standard"},
+          {"text": "把各个期刊的名字挂在嘴边", "type": "standard"},
+          {"text": "每天读文献", "type": "standard"},
+          {"text": "资深短话长说专家", "type": "standard"}
+        ],
+        [
+          {"text": "没有稳定的作息", "type": "standard"},
+          {"text": "邮箱里有800封未读邮件", "type": "standard"},
+          {"text": "收藏了一大堆文献(但都没看)", "type": "standard"},
+          {"text": "很难保持健身习惯", "type": "standard"},
+          {"text": "很少参加社交活动", "type": "standard"}
+        ],
+        [
+          {"text": "讲课前一天光速生成课程大纲", "type": "standard"},
+          {"text": "觉得实验室/办公室是第二个家", "type": "standard"},
+          {"text": "没有时间陪家人", "type": "standard"},
+          {"text": "休息日能不出门就不出门", "type": "standard"},
+          {"text": "'好的老师'", "type": "standard"}
+        ],
+        [
+          {"text": "随地大小睡", "type": "standard"},
+          {"text": "不喜欢聚会/团建", "type": "standard"},
+          {"text": "梦到过paper被accept", "type": "standard"},
+          {"text": "不会花时间打扮", "type": "standard"},
+          {"text": "曾经在实验室过夜", "type": "standard"}
+        ]
+      ],
+      "category": "学生",
+      "tags": ["科研", "学术"],
+      "createdAt": "2025-01-21T10:06:00.000Z"
     }
   }
 };
@@ -14951,5 +15668,6 @@ module.exports = {
   getAllGames,
   searchGames,
   getUserCreatedGames,
+  saveUserCreatedGames,
   bingos
 };

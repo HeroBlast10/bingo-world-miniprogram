@@ -1,120 +1,120 @@
 {
-    "bingoId": "chuantongwenxue",
-    "title": "传统文学宾果",
+    "bingoId": "tegongshenghuo",
+    "title": "特工生活宾果",
     "creator": "请手动填写",
-    "description": "五个连成一线，你就是传统文学爱好者",
+    "description": "五个连成一线，你就是特工生活爱好者! ",
     "gridSize": {
-        "rows": 6,
+        "rows": 5,
         "cols": 5
     },
     "gridContent": [
         [
             {
-                "text": "反感别人一上来就说喜欢东野圭吾",
+                "text": "不会把这张Bingo图发到朋友圈",
                 "type": "standard"
             },
             {
-                "text": "喜欢看侦探、刑侦小说",
+                "text": "又是幻想自己在飞檐走壁",
                 "type": "standard"
             },
             {
-                "text": "写过书评文章",
+                "text": "熟悉枪械",
                 "type": "standard"
             },
             {
-                "text": "会把喜欢的段落摘抄下来",
+                "text": "洗澡会听fall out boy等摇滚乐",
                 "type": "standard"
             },
             {
-                "text": "会关注出版社最新出版的实体书",
+                "text": "经常被噩梦惊醒",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "有特别喜欢的作家",
+                "text": "搜集信息的能力很强",
                 "type": "standard"
             },
             {
-                "text": "看书时不掠过前言",
+                "text": "朋友少",
                 "type": "standard"
             },
             {
-                "text": "衣着朴素大方",
+                "text": "外人对自己评价是“神秘”",
                 "type": "standard"
             },
             {
-                "text": "喜欢准确无误的表达",
+                "text": "中二病",
                 "type": "standard"
             },
             {
-                "text": "戴眼镜,外表斯文,但内心狂野",
+                "text": "外卖头像和名字都是假的",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "会写文学作品",
+                "text": "饮食健康",
                 "type": "standard"
             },
             {
-                "text": "被别人说“书呆子”不生气",
+                "text": "有各种黑衣服",
                 "type": "standard"
             },
             {
-                "text": "女权主义者",
+                "text": "会开车",
                 "type": "standard"
             },
             {
-                "text": "身边没有能够聊书籍内容的人",
+                "text": "身手敏捷",
                 "type": "standard"
             },
             {
-                "text": "随身携带Kindle",
+                "text": "身材匀称",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "不喜欢朋友聚会,甚至反感",
+                "text": "有敌人/关系不好的人",
                 "type": "standard"
             },
             {
-                "text": "参加过线下书展活动",
+                "text": "感恩帮助过自己的人",
                 "type": "standard"
             },
             {
-                "text": "会看各种文学奖获奖作品",
+                "text": "有自己常用的AI助手",
                 "type": "standard"
             },
             {
-                "text": "会阅读作家的日记访谈录",
+                "text": "懂一些急救技能",
                 "type": "standard"
             },
             {
-                "text": "不喜欢网络小说",
+                "text": "有想要保护的人或动物",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "关注了很多读书博主的wb/gz号等",
+                "text": "有特别多秘密",
                 "type": "standard"
             },
             {
-                "text": "爱买特别的文创帆布袋",
+                "text": "翻过学校的墙",
                 "type": "standard"
             },
             {
-                "text": "很享受下雨天在被窝里看书",
+                "text": "擅长做饭",
                 "type": "standard"
             },
             {
-                "text": "吃过一些出版社的瓜",
+                "text": "善于运用电脑",
                 "type": "standard"
             },
             {
-                "text": "平时脾气很好,比较温和真诚,待人礼貌",
+                "text": "会品酒",
                 "type": "standard"
             }
         ]

@@ -9,6 +9,8 @@ Page({
     game: null,
     selectedCells: [],
     isLoading: true,
+    isEditMode: false, // 编辑模式状态
+    originalGame: null, // 保存原始游戏数据，用于取消编辑时恢复
     selectedColor: 'coral', // 用户选择的颜色主题
     colorMap: {
       'coral': '#ff6b6b',
@@ -458,9 +460,25 @@ Page({
     ctx.setTextAlign('center');
     ctx.fillText(game.title, canvasWidth / 2, 100);
 
-    // 绘制游戏描述（如果有）
-    let startY = 140;
+    // 计算网格参数（先计算网格位置）
+    const gridSize = Math.min(game.gridSize.rows, game.gridSize.cols);
+    const maxGridWidth = 680; // 增加网格宽度，减少左右边距
+    const cellSize = maxGridWidth / Math.max(game.gridSize.rows, game.gridSize.cols);
+    const gridWidth = cellSize * game.gridSize.cols;
+    const gridHeight = cellSize * game.gridSize.rows;
+    const gridStartX = (canvasWidth - gridWidth) / 2;
+    
+    // 为网格预留空间，描述文字将放在标题和网格之间的中间位置
+    const reservedGridSpace = gridHeight + 100; // 网格高度 + 额外边距
+    const gridStartY = canvasHeight - reservedGridSpace;
+
+    // 绘制游戏描述（如果有）- 放在标题和网格之间的中间位置
+    let descriptionY = 140;
     if (game.description && game.description.trim() !== '' && game.description !== '五个连成一线...') {
+      // 计算标题和网格之间的中间位置
+      const spaceBetween = gridStartY - 140; // 标题下方到网格上方的空间
+      const descriptionCenterY = 140 + spaceBetween / 2; // 中间位置
+      
       ctx.setFillStyle('#6b7280');
       ctx.setFontSize(24);
       ctx.setTextAlign('center');
@@ -468,20 +486,15 @@ Page({
       // 处理长文本换行
       const maxWidth = 600;
       const lines = this.wrapText(ctx, game.description, maxWidth);
+      
+      // 从中间位置向上偏移半个文本高度，使文本在中间位置居中
+      const totalTextHeight = lines.length * 30;
+      const startTextY = descriptionCenterY - totalTextHeight / 2;
+      
       lines.forEach((line, index) => {
-        ctx.fillText(line, canvasWidth / 2, startY + (index * 30));
+        ctx.fillText(line, canvasWidth / 2, startTextY + (index * 30));
       });
-      startY += lines.length * 30 + 20;
     }
-
-    // 计算网格参数
-    const gridSize = Math.min(game.gridSize.rows, game.gridSize.cols);
-    const maxGridWidth = 680; // 增加网格宽度，减少左右边距
-    const cellSize = maxGridWidth / Math.max(game.gridSize.rows, game.gridSize.cols);
-    const gridWidth = cellSize * game.gridSize.cols;
-    const gridHeight = cellSize * game.gridSize.rows;
-    const gridStartX = (canvasWidth - gridWidth) / 2;
-    const gridStartY = startY + 20;
 
     // 绘制网格背景
     ctx.setFillStyle('#ffffff');
@@ -518,28 +531,33 @@ Page({
         // 绘制文字
         ctx.setFillStyle(isSelected ? '#ffffff' : '#374151');
 
-        // 根据文字长度调整字体大小
+        // 根据文字长度调整字体大小，与CSS保持一致
         let fontSize;
         const textLength = cellData.text.length;
         if (textLength <= 6) {
-          fontSize = Math.min(cellSize / 5, 22);
+          fontSize = 22; // 对应CSS的22rpx
         } else if (textLength <= 10) {
-          fontSize = Math.min(cellSize / 5.5, 20);
+          fontSize = 20; // 对应CSS的20rpx  
         } else if (textLength <= 15) {
-          fontSize = Math.min(cellSize / 6, 18);
+          fontSize = 18; // 对应CSS的18rpx
         } else {
-          fontSize = Math.min(cellSize / 6.5, 16);
+          fontSize = 16; // 对应CSS的16rpx
         }
 
+        // 先设置字体，确保measureText正确工作
         ctx.setFontSize(fontSize);
         ctx.setTextAlign('center');
 
-        // 处理文字换行
-        const maxTextWidth = cellSize - 10;
+        // 处理文字换行（在设置字体后调用）
+        const maxTextWidth = cellSize - 16; // 与CSS padding保持一致
         const lines = this.wrapText(ctx, cellData.text, maxTextWidth);
-        const lineHeight = fontSize + 2;
+        const lineHeight = fontSize * 1.3; // 与CSS line-height: 1.3保持一致
         const totalTextHeight = lines.length * lineHeight;
-        const textStartY = y + (cellSize - totalTextHeight) / 2 + lineHeight / 2;
+        
+        // 修正垂直居中计算（微信小程序Canvas不支持textBaseline设置）
+        const centerY = y + cellSize / 2;
+        // 手动计算文本起始位置，使其在格子中垂直居中
+        const textStartY = centerY - (totalTextHeight / 2) + (lineHeight / 2);
 
         lines.forEach((line, index) => {
           ctx.fillText(line, x + cellSize / 2, textStartY + (index * lineHeight));
@@ -793,6 +811,123 @@ Page({
   },
 
   /**
+   * 进入编辑模式
+   */
+  onEditGame() {
+    if (this.data.game.creator !== '我') {
+      wx.showToast({
+        title: '只能编辑自己创建的宾果',
+        icon: 'none'
+      });
+      return;
+    }
+
+    // 保存原始游戏数据
+    this.setData({
+      originalGame: JSON.parse(JSON.stringify(this.data.game)),
+      isEditMode: true
+    });
+
+    wx.showToast({
+      title: '进入编辑模式',
+      icon: 'none'
+    });
+  },
+
+  /**
+   * 完成编辑
+   */
+  onCompleteEdit() {
+    // 保存编辑后的游戏
+    this.saveEditedGame();
+    
+    this.setData({
+      isEditMode: false,
+      originalGame: null
+    });
+
+    wx.showToast({
+      title: '修改完成',
+      icon: 'success'
+    });
+  },
+
+  /**
+   * 处理格子编辑点击
+   */
+  handleCellEdit(e) {
+    const rowIndex = parseInt(e.currentTarget.dataset.rowIndex);
+    const colIndex = parseInt(e.currentTarget.dataset.colIndex);
+
+    if (rowIndex === undefined || colIndex === undefined) {
+      console.error('无法获取格子位置');
+      return;
+    }
+
+    // 显示输入框让用户编辑内容
+    const currentText = this.data.game.gridContent[rowIndex][colIndex].text;
+    
+    wx.showModal({
+      title: '编辑格子内容',
+      content: currentText,
+      editable: true,
+      placeholderText: '请输入新的内容',
+      success: (res) => {
+        if (res.confirm && res.content.trim()) {
+          this.updateCellContent(rowIndex, colIndex, res.content.trim());
+        }
+      }
+    });
+  },
+
+  /**
+   * 更新格子内容
+   */
+  updateCellContent(rowIndex, colIndex, newText) {
+    const game = this.data.game;
+    const newGame = JSON.parse(JSON.stringify(game));
+    
+    // 更新文本内容
+    newGame.gridContent[rowIndex][colIndex].text = newText;
+    
+    // 重新计算文本大小类
+    newGame.gridContent[rowIndex][colIndex].textSizeClass = this.getTextSizeClass(newText);
+    
+    this.setData({
+      game: newGame
+    });
+  },
+
+  /**
+   * 保存编辑后的游戏
+   */
+  saveEditedGame() {
+    try {
+      const { getUserCreatedGames, saveUserCreatedGames } = require('../../utils/bingoData.js');
+      let userGames = getUserCreatedGames();
+      
+      // 查找并更新游戏
+      const gameIndex = userGames.findIndex(g => g.bingoId === this.data.game.bingoId);
+      if (gameIndex !== -1) {
+        userGames[gameIndex] = {
+          ...userGames[gameIndex],
+          gridContent: this.data.game.gridContent,
+          updatedAt: new Date().toISOString()
+        };
+        
+        saveUserCreatedGames(userGames);
+        console.log('游戏修改已保存');
+      }
+    } catch (error) {
+      console.error('保存编辑失败:', error);
+      wx.showToast({
+        title: '保存失败',
+        icon: 'none'
+      });
+    }
+  },
+
+  /**
    * 页面卸载时清理定时器
    */
   onUnload() {
@@ -837,14 +972,14 @@ Page({
       const completionRate = Math.round((completedCells / 25) * 100);
       shareConfig = {
         title: `🏆 我在「${this.data.game.title}」中完成了${completionRate}%`,
-        path: `/pages/game/${this.data.game.bingoId}?from=progress`,
+        path: `/pages/game/game?id=${this.data.game.bingoId}&from=progress`,
         imageUrl: '' // 将在generateShareImage中设置
       };
     } else {
       // 否则分享游戏本身
       shareConfig = {
         title: `📋 ${this.data.game.title}`,
-        path: `/pages/game/${this.data.game.bingoId}`,
+        path: `/pages/game/game?id=${this.data.game.bingoId}`,
         imageUrl: '' // 将在generateShareImage中设置
       };
     }
@@ -873,7 +1008,7 @@ Page({
         const canvasHeight = 400;
         
         // 设置背景
-        ctx.fillStyle = '#ffffff';
+        ctx.setFillStyle('#ffffff');
         ctx.fillRect(0, 0, canvasWidth, canvasHeight);
         
         // 绘制宾果网格
@@ -893,32 +1028,50 @@ Page({
             
             // 设置单元格背景色
             if (isSelected) {
-              ctx.fillStyle = this.data.colorMap[this.data.selectedColor] || '#ff6b6b';
+              ctx.setFillStyle(this.data.colorMap[this.data.selectedColor] || '#ff6b6b');
             } else {
-              ctx.fillStyle = '#f8f9fa';
+              ctx.setFillStyle('#f8f9fa');
             }
             ctx.fillRect(x, y, cellSize, cellSize);
             
             // 绘制边框
-            ctx.strokeStyle = '#e9ecef';
-            ctx.lineWidth = 1;
+            ctx.setStrokeStyle('#e9ecef');
+            ctx.setLineWidth(1);
             ctx.strokeRect(x, y, cellSize, cellSize);
             
             // 绘制文字
             const cellData = this.data.game.gridContent[row][col];
             if (cellData && cellData.text) {
-              ctx.fillStyle = isSelected ? '#ffffff' : '#333333';
-              ctx.font = '12px PingFang SC';
-              ctx.textAlign = 'center';
-              ctx.textBaseline = 'middle';
+              ctx.setFillStyle(isSelected ? '#ffffff' : '#333333');
               
-              // 文字换行处理
+              // 根据文字长度调整字体大小，与主Canvas保持一致
+              let fontSize;
+              const textLength = cellData.text.length;
+              if (textLength <= 6) {
+                fontSize = 14; // 分享图片用稍小的字体
+              } else if (textLength <= 10) {
+                fontSize = 12;
+              } else if (textLength <= 15) {
+                fontSize = 11;
+              } else {
+                fontSize = 10;
+              }
+              
+              // 先设置字体，确保measureText正确工作
+              ctx.setFontSize(fontSize);
+              ctx.setTextAlign('center');
+              
+              // 文字换行处理（在设置字体后调用）
               const text = cellData.text;
-              const maxWidth = cellSize - 8;
+              const maxWidth = cellSize - 12; // 与主Canvas比例一致
               const lines = this.wrapText(ctx, text, maxWidth);
-              const lineHeight = 14;
+              const lineHeight = fontSize * 1.3; // 与CSS line-height: 1.3保持一致
               const totalHeight = lines.length * lineHeight;
-              const startTextY = y + cellSize / 2 - totalHeight / 2 + lineHeight / 2;
+              
+              // 修正垂直居中计算（微信小程序Canvas不支持textBaseline设置）
+              const centerY = y + cellSize / 2;
+              // 手动计算文本起始位置，使其在格子中垂直居中
+              const startTextY = centerY - (totalHeight / 2) + (lineHeight / 2);
               
               lines.forEach((line, index) => {
                 ctx.fillText(line, x + cellSize / 2, startTextY + index * lineHeight);

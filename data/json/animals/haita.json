@@ -1,120 +1,120 @@
 {
-    "bingoId": "chuantongwenxue",
-    "title": "传统文学宾果",
+    "bingoId": "haita",
+    "title": "海獭宾果",
     "creator": "请手动填写",
-    "description": "五个连成一线，你就是传统文学爱好者",
+    "description": "五个连成一线，那么你可能是一只小小的海獭",
     "gridSize": {
-        "rows": 6,
+        "rows": 5,
         "cols": 5
     },
     "gridContent": [
         [
             {
-                "text": "反感别人一上来就说喜欢东野圭吾",
+                "text": "喜欢手牵手",
                 "type": "standard"
             },
             {
-                "text": "喜欢看侦探、刑侦小说",
+                "text": "摔烂过手机",
                 "type": "standard"
             },
             {
-                "text": "写过书评文章",
+                "text": "会用工具开壳",
                 "type": "standard"
             },
             {
-                "text": "会把喜欢的段落摘抄下来",
+                "text": "害怕被鲨鱼追",
                 "type": "standard"
             },
             {
-                "text": "会关注出版社最新出版的实体书",
+                "text": "咬人很疼",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "有特别喜欢的作家",
+                "text": "睡觉要盖肚肚",
                 "type": "standard"
             },
             {
-                "text": "看书时不掠过前言",
+                "text": "擅长游泳",
                 "type": "standard"
             },
             {
-                "text": "衣着朴素大方",
+                "text": "大鼻子",
                 "type": "standard"
             },
             {
-                "text": "喜欢准确无误的表达",
+                "text": "讨厌蔬菜",
                 "type": "standard"
             },
             {
-                "text": "戴眼镜,外表斯文,但内心狂野",
+                "text": "害怕弄丢喜欢的人",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "会写文学作品",
+                "text": "喜欢去海边",
                 "type": "standard"
             },
             {
-                "text": "被别人说“书呆子”不生气",
+                "text": "喜欢海鲜刺身",
                 "type": "standard"
             },
             {
-                "text": "女权主义者",
+                "text": "社恐",
                 "type": "standard"
             },
             {
-                "text": "身边没有能够聊书籍内容的人",
+                "text": "“妈妈，獭生是海洋”",
                 "type": "standard"
             },
             {
-                "text": "随身携带Kindle",
+                "text": "躺着看天空发呆",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "不喜欢朋友聚会,甚至反感",
+                "text": "认为人类很危险",
                 "type": "standard"
             },
             {
-                "text": "参加过线下书展活动",
+                "text": "向往流浪",
                 "type": "standard"
             },
             {
-                "text": "会看各种文学奖获奖作品",
+                "text": "有点呆",
                 "type": "standard"
             },
             {
-                "text": "会阅读作家的日记访谈录",
+                "text": "牙口好",
                 "type": "standard"
             },
             {
-                "text": "不喜欢网络小说",
+                "text": "耐冻但怕热",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "关注了很多读书博主的wb/gz号等",
+                "text": "喜欢嚼冰块的感觉",
                 "type": "standard"
             },
             {
-                "text": "爱买特别的文创帆布袋",
+                "text": "揉！脸！",
                 "type": "standard"
             },
             {
-                "text": "很享受下雨天在被窝里看书",
+                "text": "在兜里装零食",
                 "type": "standard"
             },
             {
-                "text": "吃过一些出版社的瓜",
+                "text": "24/7想着待会吃什么",
                 "type": "standard"
             },
             {
-                "text": "平时脾气很好,比较温和真诚,待人礼貌",
+                "text": "喜欢在沙滩上挖洞",
                 "type": "standard"
             }
         ]

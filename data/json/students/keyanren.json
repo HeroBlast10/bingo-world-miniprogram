@@ -1,125 +1,125 @@
 {
-    "bingoId": "chuantongwenxue",
-    "title": "传统文学宾果",
+    "bingoId": "keyanren",
+    "title": "科研人宾果",
     "creator": "请手动填写",
-    "description": "五个连成一线，你就是传统文学爱好者",
+    "description": "五个连成一线,你是一个苦逼科研人",
     "gridSize": {
-        "rows": 6,
+        "rows": 5,
         "cols": 5
     },
     "gridContent": [
         [
             {
-                "text": "反感别人一上来就说喜欢东野圭吾",
+                "text": "腰椎肩颈的各种疾病",
                 "type": "standard"
             },
             {
-                "text": "喜欢看侦探、刑侦小说",
+                "text": "生命在于咖啡",
                 "type": "standard"
             },
             {
-                "text": "写过书评文章",
+                "text": "不刷社交媒体",
                 "type": "standard"
             },
             {
-                "text": "会把喜欢的段落摘抄下来",
+                "text": "睡眠不足",
                 "type": "standard"
             },
             {
-                "text": "会关注出版社最新出版的实体书",
+                "text": "还在靠父母救济",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "有特别喜欢的作家",
+                "text": "拒信收藏家",
                 "type": "standard"
             },
             {
-                "text": "看书时不掠过前言",
+                "text": "自我抄袭专家",
                 "type": "standard"
             },
             {
-                "text": "衣着朴素大方",
+                "text": "把各个期刊的名字挂在嘴边",
                 "type": "standard"
             },
             {
-                "text": "喜欢准确无误的表达",
+                "text": "每天读文献",
                 "type": "standard"
             },
             {
-                "text": "戴眼镜,外表斯文,但内心狂野",
+                "text": "资深短话长说专家",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "会写文学作品",
+                "text": "没有稳定的作息",
                 "type": "standard"
             },
             {
-                "text": "被别人说“书呆子”不生气",
+                "text": "邮箱里有800封未读邮件",
                 "type": "standard"
             },
             {
-                "text": "女权主义者",
+                "text": "收藏了一大堆文献(但都没看)",
                 "type": "standard"
             },
             {
-                "text": "身边没有能够聊书籍内容的人",
+                "text": "很难保持健身习惯",
                 "type": "standard"
             },
             {
-                "text": "随身携带Kindle",
+                "text": "很少参加社交活动",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "不喜欢朋友聚会,甚至反感",
+                "text": "讲课前一天光速生成课程大纲",
                 "type": "standard"
             },
             {
-                "text": "参加过线下书展活动",
+                "text": "觉得实验室/办公室是第二个家",
                 "type": "standard"
             },
             {
-                "text": "会看各种文学奖获奖作品",
+                "text": "没有时间陪家人",
                 "type": "standard"
             },
             {
-                "text": "会阅读作家的日记访谈录",
+                "text": "休息日能不出门就不出门",
                 "type": "standard"
             },
             {
-                "text": "不喜欢网络小说",
+                "text": "“好的老师”",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "关注了很多读书博主的wb/gz号等",
+                "text": "随地大小睡",
                 "type": "standard"
             },
             {
-                "text": "爱买特别的文创帆布袋",
+                "text": "不喜欢聚会/团建",
                 "type": "standard"
             },
             {
-                "text": "很享受下雨天在被窝里看书",
+                "text": "梦到过paper被accept",
                 "type": "standard"
             },
             {
-                "text": "吃过一些出版社的瓜",
+                "text": "不会花时间打扮",
                 "type": "standard"
             },
             {
-                "text": "平时脾气很好,比较温和真诚,待人礼貌",
+                "text": "曾经在实验室过夜",
                 "type": "standard"
             }
         ]
     ],
-    "category": "待分类",
+    "category": "学生",
     "tags": [],
     "createdAt": ""
 }

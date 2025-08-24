@@ -11,8 +11,24 @@
     <view class="game-header" wx:if="{{game}}">
       <!-- 小程序标识 -->
       <text class="app-brand">小程序@宾了个果</text>
-      <!-- 显示游戏标题和描述 -->
-      <text class="game-title">{{game.title}}</text>
+      <!-- 显示游戏标题和描述，以及修改按钮（用户创建的宾果才显示） -->
+      <view class="title-row">
+        <text class="game-title">{{game.title}}</text>
+        <button 
+          class="edit-button" 
+          wx:if="{{game.creator === '我' && !isEditMode}}"
+          bindtap="onEditGame"
+          size="mini"
+          type="primary"
+        >修改</button>
+        <button 
+          class="edit-button complete-button" 
+          wx:if="{{game.creator === '我' && isEditMode}}"
+          bindtap="onCompleteEdit"
+          size="mini"
+          type="default"
+        >完成</button>
+      </view>
       <text class="game-description" wx:if="{{game.description && game.description.trim() !== '' && game.description !== '五个连成一线...'}}">
         {{game.description}}
       </text>
@@ -31,16 +47,18 @@
         >
           <!-- 内层为 colIndex -->
           <view
-            class="cell {{selectedCells[rowIndex][colIndex] ? 'selected selected-' + selectedColor : ''}}"
+            class="cell {{selectedCells[rowIndex][colIndex] ? 'selected selected-' + selectedColor : ''}} {{isEditMode ? 'edit-mode' : ''}}"
             wx:for="{{item}}"
             wx:for-index="colIndex"
             wx:key="colIndex"
             data-row-index="{{rowIndex}}"
             data-col-index="{{colIndex}}"
-            bindtap="handleCellClick"
+            bindtap="{{isEditMode ? 'handleCellEdit' : 'handleCellClick'}}"
           >
             <!-- 显示单元格文本 -->
             <text class="cell-text {{item.textSizeClass}}">{{item.text}}</text>
+            <!-- 编辑模式下显示编辑图标 -->
+            <view class="edit-icon" wx:if="{{isEditMode}}">✏️</view>
           </view>
         </view>
       </view>

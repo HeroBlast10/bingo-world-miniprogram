@@ -1,120 +1,120 @@
 {
-    "bingoId": "chuantongwenxue",
-    "title": "传统文学宾果",
+    "bingoId": "xingfumoment",
+    "title": "幸福Moment宾果",
     "creator": "请手动填写",
-    "description": "五个连成一线，你就是传统文学爱好者",
+    "description": "五个连成一线，你有生活中的幸福Moment吗？",
     "gridSize": {
-        "rows": 6,
+        "rows": 5,
         "cols": 5
     },
     "gridContent": [
         [
             {
-                "text": "反感别人一上来就说喜欢东野圭吾",
+                "text": "被路边猫咪蹭腿",
                 "type": "standard"
             },
             {
-                "text": "喜欢看侦探、刑侦小说",
+                "text": "踩碎路边的落叶",
                 "type": "standard"
             },
             {
-                "text": "写过书评文章",
+                "text": "点到好吃的外卖",
                 "type": "standard"
             },
             {
-                "text": "会把喜欢的段落摘抄下来",
+                "text": "一个人在公交车戴耳机听歌",
                 "type": "standard"
             },
             {
-                "text": "会关注出版社最新出版的实体书",
+                "text": "掰橘子瓣摆成小花",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "有特别喜欢的作家",
+                "text": "在备忘录/日记写下心愿",
                 "type": "standard"
             },
             {
-                "text": "看书时不掠过前言",
+                "text": "在衣服口袋里发现钱",
                 "type": "standard"
             },
             {
-                "text": "衣着朴素大方",
+                "text": "发呆",
                 "type": "standard"
             },
             {
-                "text": "喜欢准确无误的表达",
+                "text": "和喜欢的人一起看日出",
                 "type": "standard"
             },
             {
-                "text": "戴眼镜,外表斯文,但内心狂野",
+                "text": "和朋友一起逛公园",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "会写文学作品",
+                "text": "过一个完美周末",
                 "type": "standard"
             },
             {
-                "text": "被别人说“书呆子”不生气",
+                "text": "晒过的被子上有阳光的味道",
                 "type": "standard"
             },
             {
-                "text": "女权主义者",
+                "text": "免费格子",
                 "type": "standard"
             },
             {
-                "text": "身边没有能够聊书籍内容的人",
+                "text": "在超市里选零食",
                 "type": "standard"
             },
             {
-                "text": "随身携带Kindle",
+                "text": "在书店里看书",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "不喜欢朋友聚会,甚至反感",
+                "text": "音乐软件随机播到喜欢的歌",
                 "type": "standard"
             },
             {
-                "text": "参加过线下书展活动",
+                "text": "把脸埋进被子蹭来蹭去",
                 "type": "standard"
             },
             {
-                "text": "会看各种文学奖获奖作品",
+                "text": "晚上十点的泡面/火鸡面",
                 "type": "standard"
             },
             {
-                "text": "会阅读作家的日记访谈录",
+                "text": "黄昏时分漫无目的地散步",
                 "type": "standard"
             },
             {
-                "text": "不喜欢网络小说",
+                "text": "吃到刚出炉的面包/薯条",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "关注了很多读书博主的wb/gz号等",
+                "text": "偶然发现一个宝藏小店",
                 "type": "standard"
             },
             {
-                "text": "爱买特别的文创帆布袋",
+                "text": "不定闹钟睡到阳光照进房间",
                 "type": "standard"
             },
             {
-                "text": "很享受下雨天在被窝里看书",
+                "text": "洗澡的时候播放喜欢的歌",
                 "type": "standard"
             },
             {
-                "text": "吃过一些出版社的瓜",
+                "text": "临睡前把枕头拍松",
                 "type": "standard"
             },
             {
-                "text": "平时脾气很好,比较温和真诚,待人礼貌",
+                "text": "相信自己总会拥抱幸福",
                 "type": "standard"
             }
         ]

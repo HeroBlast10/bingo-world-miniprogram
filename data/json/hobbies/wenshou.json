@@ -1,8 +1,8 @@
 {
-    "bingoId": "chuantongwenxue",
-    "title": "传统文学宾果",
+    "bingoId": "wenshou",
+    "title": "文手成就宾果",
     "creator": "请手动填写",
-    "description": "五个连成一线，你就是传统文学爱好者",
+    "description": "五个连成一线，你就是超级文手",
     "gridSize": {
         "rows": 6,
         "cols": 5
@@ -10,37 +10,37 @@
     "gridContent": [
         [
             {
-                "text": "反感别人一上来就说喜欢东野圭吾",
+                "text": "能正确使用的得地且错别字不多",
                 "type": "standard"
             },
             {
-                "text": "喜欢看侦探、刑侦小说",
+                "text": "能正确使用标点符号并恰当地进行分段",
                 "type": "standard"
             },
             {
-                "text": "写过书评文章",
+                "text": "文字没有被网络用语侵蚀",
                 "type": "standard"
             },
             {
-                "text": "会把喜欢的段落摘抄下来",
+                "text": "有阅读文学出版物的习惯",
                 "type": "standard"
             },
             {
-                "text": "会关注出版社最新出版的实体书",
+                "text": "写文前会写大纲或草稿",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "有特别喜欢的作家",
+                "text": "写文时会有一个核心",
                 "type": "standard"
             },
             {
-                "text": "看书时不掠过前言",
+                "text": "不常为取标题而烦恼",
                 "type": "standard"
             },
             {
-                "text": "衣着朴素大方",
+                "text": "明白自己每一篇文想表达什么",
                 "type": "standard"
             },
             {
@@ -48,73 +48,73 @@
                 "type": "standard"
             },
             {
-                "text": "戴眼镜,外表斯文,但内心狂野",
+                "text": "总是明白自己创作的母题",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "会写文学作品",
+                "text": "有明确的行文风格",
                 "type": "standard"
             },
             {
-                "text": "被别人说“书呆子”不生气",
+                "text": "闲的时候忙的时候都会思考创作",
                 "type": "standard"
             },
             {
-                "text": "女权主义者",
+                "text": "不论热度高低都不会停止创作",
                 "type": "standard"
             },
             {
-                "text": "身边没有能够聊书籍内容的人",
+                "text": "一段时间不写文很痛苦",
                 "type": "standard"
             },
             {
-                "text": "随身携带Kindle",
+                "text": "为自己的作品感到骄傲",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "不喜欢朋友聚会,甚至反感",
+                "text": "不会因为口嗨而影响正文的创作",
                 "type": "standard"
             },
             {
-                "text": "参加过线下书展活动",
+                "text": "无法心安理得地坑掉任何一篇文",
                 "type": "standard"
             },
             {
-                "text": "会看各种文学奖获奖作品",
+                "text": "因为写作而辗转难眠",
                 "type": "standard"
             },
             {
-                "text": "会阅读作家的日记访谈录",
+                "text": "从自己尊敬的人那里得到过认可",
                 "type": "standard"
             },
             {
-                "text": "不喜欢网络小说",
+                "text": "有自己固定的写作习惯",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "关注了很多读书博主的wb/gz号等",
+                "text": "有自己鲜明的语言风格",
                 "type": "standard"
             },
             {
-                "text": "爱买特别的文创帆布袋",
+                "text": "有时会因为写作而感到焦虑",
                 "type": "standard"
             },
             {
-                "text": "很享受下雨天在被窝里看书",
+                "text": "享受写作带来的成就感",
                 "type": "standard"
             },
             {
-                "text": "吃过一些出版社的瓜",
+                "text": "和别人讨论写作时会感到兴奋",
                 "type": "standard"
             },
             {
-                "text": "平时脾气很好,比较温和真诚,待人礼貌",
+                "text": "每天都会写点东西",
                 "type": "standard"
             }
         ]

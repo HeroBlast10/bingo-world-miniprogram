@@ -47,25 +47,25 @@ ShareManager.prototype.generateShareData = function(gameData, shareType) {
     case 'friend':
       title = '📋 ' + baseTitle;
       desc = baseDesc + ' - 来自宾了个果';
-      path = '/pages/game/' + gameData.id;
+      path = '/pages/game/game?id=' + gameData.id;
       break;
       
     case 'timeline':
       title = '我在「宾了个果」发现了一个有趣的' + gameData.category + '宾果：' + baseTitle;
       desc = baseDesc;
-      path = '/pages/game/' + gameData.id + '?from=timeline';
+      path = '/pages/game/game?id=' + gameData.id + '&from=timeline';
       break;
       
     case 'group':
       title = '🎯 一起来玩「' + baseTitle + '」宾果游戏';
       desc = baseDesc + ' 快来挑战吧！';
-      path = '/pages/game/' + gameData.id + '?from=group';
+      path = '/pages/game/game?id=' + gameData.id + '&from=group';
       break;
       
     default:
       title = baseTitle;
       desc = baseDesc;
-      path = '/pages/game/' + gameData.id;
+      path = '/pages/game/game?id=' + gameData.id;
   }
 
   // 如果有自定义分享图片，使用自定义图片，否则使用默认图片
@@ -131,7 +131,7 @@ ShareManager.prototype.shareMyCreation = function(gameData) {
   const self = this;
   const shareData = {
     title: '🎨 我创建了一个「' + gameData.title + '」宾果游戏',
-    path: '/pages/game/' + gameData.id + '?from=creator&creator=' + gameData.creator,
+    path: '/pages/game/game?id=' + gameData.id + '&from=creator&creator=' + gameData.creator,
     imageUrl: gameData.shareImage || '/images/share-creation.png',
     success: function(res) {
       console.log('分享我的创作成功:', res);
@@ -154,7 +154,7 @@ ShareManager.prototype.shareMyProgress = function(gameData, completedCells) {
   
   const shareData = {
     title: '🏆 我在「' + gameData.title + '」中完成了' + completionRate + '%',
-    path: '/pages/game/' + gameData.id + '?from=progress',
+    path: '/pages/game/game?id=' + gameData.id + '&from=progress',
     imageUrl: gameData.progressImage || '/images/share-progress.png',
     success: function(res) {
       console.log('分享游戏进度成功:', res);

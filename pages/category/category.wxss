@@ -2,12 +2,10 @@
 .container {
   min-height: 100vh;
   background-color: #f9fafb;
-  padding-bottom: 160rpx; /* 为底部tabBar留出空间 */
+  padding: 0 0 160rpx 0; /* 完全移除顶部padding，只保留底部padding为tabBar留空间 */
   width: 100vw; /* 使用视口宽度确保占满屏幕 */
   box-sizing: border-box;
   margin: 0;
-  padding-left: 0;
-  padding-right: 0;
 }
 
 /* 加载状态 */
@@ -50,7 +48,7 @@
 
 /* 游戏列表 */
 .games-list {
-  padding: 24rpx 0 160rpx 0; /* 完全移除左右padding */
+  padding: 12rpx 0 0 0; /* 大幅减少顶部padding，移除底部padding（已在容器中设置） */
   width: 100vw; /* 使用视口宽度 */
   box-sizing: border-box;
   margin: 0;

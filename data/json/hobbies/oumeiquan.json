@@ -1,8 +1,8 @@
 {
-    "bingoId": "chuantongwenxue",
-    "title": "传统文学宾果",
+    "bingoId": "oumeiquan",
+    "title": "欧美圈宾果1",
     "creator": "请手动填写",
-    "description": "五个连成一线，你就是传统文学爱好者",
+    "description": "五个连成一线，你就是欧美圈超级影迷",
     "gridSize": {
         "rows": 6,
         "cols": 5
@@ -10,111 +10,111 @@
     "gridContent": [
         [
             {
-                "text": "反感别人一上来就说喜欢东野圭吾",
+                "text": "深刻理解盖里奇不会数数",
                 "type": "standard"
             },
             {
-                "text": "喜欢看侦探、刑侦小说",
+                "text": "此生无悔入漫威",
                 "type": "standard"
             },
             {
-                "text": "写过书评文章",
+                "text": "今天你擦甲板了吗?",
                 "type": "standard"
             },
             {
-                "text": "会把喜欢的段落摘抄下来",
+                "text": "两个月的意乱情迷一个世纪的不可言说",
                 "type": "standard"
             },
             {
-                "text": "会关注出版社最新出版的实体书",
+                "text": "山谷里再也不会有枪声了",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "有特别喜欢的作家",
+                "text": "“I love you.”“lt will pass.”",
                 "type": "standard"
             },
             {
-                "text": "看书时不掠过前言",
+                "text": "“你正在被做成表”“你给了我份工作”",
                 "type": "standard"
             },
             {
-                "text": "衣着朴素大方",
+                "text": "曾经沧海难为水，我为EC...",
                 "type": "standard"
             },
             {
-                "text": "喜欢准确无误的表达",
+                "text": "白金汉宫的烟灰缸",
                 "type": "standard"
             },
             {
-                "text": "戴眼镜,外表斯文,但内心狂野",
+                "text": "白树开花中土永存",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "会写文学作品",
+                "text": "公费恋爱六千年 “l forgive you”",
                 "type": "standard"
             },
             {
-                "text": "被别人说“书呆子”不生气",
+                "text": "After all this time?Always.",
                 "type": "standard"
             },
             {
-                "text": "女权主义者",
+                "text": "在电影院哭完一包纸巾",
                 "type": "standard"
             },
             {
-                "text": "身边没有能够聊书籍内容的人",
+                "text": "Allons-y！ Geronimo! Laugh hard! Run fast!",
                 "type": "standard"
             },
             {
-                "text": "随身携带Kindle",
+                "text": "民风淳朴哥谭市，人才辈出阿卡姆",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "不喜欢朋友聚会,甚至反感",
+                "text": "I have been,and always shall be, your friend",
                 "type": "standard"
             },
             {
-                "text": "参加过线下书展活动",
+                "text": "You were my brother,Anakin!I loved you!",
                 "type": "standard"
             },
             {
-                "text": "会看各种文学奖获奖作品",
+                "text": "Brother,the sun wil shine on us again",
                 "type": "standard"
             },
             {
-                "text": "会阅读作家的日记访谈录",
+                "text": "凛冬将至北境永不忘",
                 "type": "standard"
             },
             {
-                "text": "不喜欢网络小说",
+                "text": "如果我能每天见到你，我也会记得这一次，直至永恒，Will",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "关注了很多读书博主的wb/gz号等",
+                "text": "Dean Winchester I love you.",
                 "type": "standard"
             },
             {
-                "text": "爱买特别的文创帆布袋",
+                "text": "君埋泉下泥销骨,我寄人间雪满头",
                 "type": "standard"
             },
             {
-                "text": "很享受下雨天在被窝里看书",
+                "text": "I wish l knew how to quit you.",
                 "type": "standard"
             },
             {
-                "text": "吃过一些出版社的瓜",
+                "text": "We are Venom!",
                 "type": "standard"
             },
             {
-                "text": "平时脾气很好,比较温和真诚,待人礼貌",
+                "text": "llove you three thousand",
                 "type": "standard"
             }
         ]

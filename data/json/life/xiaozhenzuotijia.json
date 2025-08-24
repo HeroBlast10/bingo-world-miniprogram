@@ -1,0 +1,50 @@
+{
+  "bingoId": "xiaozhenzuotijia",
+  "title": "小镇做题家宾果",
+  "creator": "请手动填写",
+  "description": "五个连成一线，你就是小镇做题家",
+  "gridSize": {
+    "rows": 5,
+    "cols": 5
+  },
+  "gridContent": [
+    [
+      { "text": "英语口语普通", "type": "standard" },
+      { "text": "很难向上社交", "type": "standard" },
+      { "text": "多次做家教", "type": "standard" },
+      { "text": "特长少", "type": "standard" },
+      { "text": "家乡距离(新)一线城市>200km", "type": "standard" }
+    ],
+    [
+      { "text": "家族同辈中第一个考入985、211", "type": "standard" },
+      { "text": "相信越努力越幸运", "type": "standard" },
+      { "text": "父母无法提供有效帮助", "type": "standard" },
+      { "text": "经常感到不自信", "type": "standard" },
+      { "text": "高中前从未出省", "type": "standard" }
+    ],
+    [
+      { "text": "无职业规划", "type": "standard" },
+      { "text": "高中有课程全班第一", "type": "standard" },
+      { "text": "高考是人生高光时刻", "type": "standard" },
+      { "text": "非常礼貌", "type": "standard" },
+      { "text": "对未来感到焦虑", "type": "standard" }
+    ],
+    [
+      { "text": "很少依赖他人", "type": "standard" },
+      { "text": "父母亲人对你寄予厚望", "type": "standard" },
+      { "text": "慕强", "type": "standard" },
+      { "text": "不敢承担风险", "type": "standard" },
+      { "text": "与同学朋友交往避免透露家境", "type": "standard" }
+    ],
+    [
+      { "text": "中学保持年级前十", "type": "standard" },
+      { "text": "独立自律", "type": "standard" },
+      { "text": "坚韧，抗压能力强", "type": "standard" },
+      { "text": "身上最贵的是手机", "type": "standard" },
+      { "text": "喜欢简单的快乐但无法安心享乐", "type": "standard" }
+    ]
+  ],
+  "category": "职场类",
+  "tags": ["打工人", "社畜", "摸鱼"],
+  "createdAt": ""
+}

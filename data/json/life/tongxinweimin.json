@@ -1,0 +1,50 @@
+{
+  "bingoId": "tongxinweimin",
+  "title": "童心未泯宾果",
+  "creator": "请手动填写",
+  "description": "五个连成一线，你的心里依然住着一个小孩",
+  "gridSize": {
+    "rows": 5,
+    "cols": 5
+  },
+  "gridContent": [
+    [
+      { "text": "喜欢跳起来摸高", "type": "standard" },
+      { "text": "喜欢吹蒲公英", "type": "standard" },
+      { "text": "喜欢折纸飞机、千纸鹤等等", "type": "standard" },
+      { "text": "喜欢玩沙子/泥巴”", "type": "standard" },
+      { "text": "对着电风扇说话", "type": "standard" }
+    ],
+    [
+      { "text": "给生活用品起名字", "type": "standard" },
+      { "text": "玩转椅自转到头晕", "type": "standard" },
+      { "text": "把东西顶在头上保持平衡", "type": "standard" },
+      { "text": "洗澡的时候玩泡泡", "type": "standard" },
+      { "text": "用笔在手上画“纹身”", "type": "standard" }
+    ],
+    [
+      { "text": "喜欢比手影踩影子", "type": "standard" },
+      { "text": "把手插进米缸", "type": "standard" },
+      { "text": "喜欢捏泡泡纸", "type": "standard" },
+      { "text": "把食物摆成各种形状/文字", "type": "standard" },
+      { "text": "(想)吃儿童套餐/穿童装", "type": "standard" }
+    ],
+    [
+      { "text": "睡觉要抱着东西睡才舒服", "type": "standard" },
+      { "text": "吃辣条棒棒糖等童年零食", "type": "standard" },
+      { "text": "走路不踩地砖缝/沿着地砖缝走", "type": "standard" },
+      { "text": "和动物/植物说话", "type": "standard" },
+      { "text": "随地捡木棍", "type": "standard" }
+    ],
+    [
+      { "text": "喜欢观察小动物", "type": "standard" },
+      { "text": "喜欢荡秋千", "type": "standard" },
+      { "text": "喜欢观察云思考它们像什么形状", "type": "standard" },
+      { "text": "在沾满水雾的玻璃上写字画画", "type": "standard" },
+      { "text": "收集贴纸/包装标签等", "type": "standard" }
+    ]
+  ],
+  "category": "职场类",
+  "tags": ["打工人", "社畜", "摸鱼"],
+  "createdAt": ""
+}

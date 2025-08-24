@@ -1,8 +1,8 @@
 {
-    "bingoId": "chuantongwenxue",
-    "title": "传统文学宾果",
+    "bingoId": "wenyibi",
+    "title": "文艺逼宾果",
     "creator": "请手动填写",
-    "description": "五个连成一线，你就是传统文学爱好者",
+    "description": "五个连成一线，你就是文艺青年",
     "gridSize": {
         "rows": 6,
         "cols": 5
@@ -10,111 +10,111 @@
     "gridContent": [
         [
             {
-                "text": "反感别人一上来就说喜欢东野圭吾",
+                "text": "用过加缪当头像",
                 "type": "standard"
             },
             {
-                "text": "喜欢看侦探、刑侦小说",
+                "text": "朋友圈签名是电影台词",
                 "type": "standard"
             },
             {
-                "text": "写过书评文章",
+                "text": "黑白摄影",
                 "type": "standard"
             },
             {
-                "text": "会把喜欢的段落摘抄下来",
+                "text": "弹吉他",
                 "type": "standard"
             },
             {
-                "text": "会关注出版社最新出版的实体书",
+                "text": "打钉",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "有特别喜欢的作家",
+                "text": "认为自己孤独",
                 "type": "standard"
             },
             {
-                "text": "看书时不掠过前言",
+                "text": "独自喝酒",
                 "type": "standard"
             },
             {
-                "text": "衣着朴素大方",
+                "text": "留长发或想留长发",
                 "type": "standard"
             },
             {
-                "text": "喜欢准确无误的表达",
+                "text": "前卫摇滚",
                 "type": "standard"
             },
             {
-                "text": "戴眼镜,外表斯文,但内心狂野",
+                "text": "曾经喜欢过大冰",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "会写文学作品",
+                "text": "会感觉自己抑郁症",
                 "type": "standard"
             },
             {
-                "text": "被别人说“书呆子”不生气",
+                "text": "读博尔赫斯",
                 "type": "standard"
             },
             {
-                "text": "女权主义者",
+                "text": "渴望sex",
                 "type": "standard"
             },
             {
-                "text": "身边没有能够聊书籍内容的人",
+                "text": "借酒消愁",
                 "type": "standard"
             },
             {
-                "text": "随身携带Kindle",
+                "text": "无病呻吟",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "不喜欢朋友聚会,甚至反感",
+                "text": "网左",
                 "type": "standard"
             },
             {
-                "text": "参加过线下书展活动",
+                "text": "读弗洛伊德",
                 "type": "standard"
             },
             {
-                "text": "会看各种文学奖获奖作品",
+                "text": "亚比穿搭",
                 "type": "standard"
             },
             {
-                "text": "会阅读作家的日记访谈录",
+                "text": "读尼采",
                 "type": "standard"
             },
             {
-                "text": "不喜欢网络小说",
+                "text": "批判主流审美",
                 "type": "standard"
             }
         ],
         [
             {
-                "text": "关注了很多读书博主的wb/gz号等",
+                "text": "读太宰治",
                 "type": "standard"
             },
             {
-                "text": "爱买特别的文创帆布袋",
+                "text": "墙上贴海报",
                 "type": "standard"
             },
             {
-                "text": "很享受下雨天在被窝里看书",
+                "text": "边骂边用豆瓣",
                 "type": "standard"
             },
             {
-                "text": "吃过一些出版社的瓜",
+                "text": "吃咖啡不加糖不加奶",
                 "type": "standard"
             },
             {
-                "text": "平时脾气很好,比较温和真诚,待人礼貌",
+                "text": "一个人看文艺片",
                 "type": "standard"
             }
         ]
