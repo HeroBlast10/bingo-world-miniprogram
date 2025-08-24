@@ -31,6 +31,20 @@ Page({
     // 加载用户选择的颜色
     this.loadUserColor();
 
+    // 检查是否有分享的游戏数据
+    if (options.gameData) {
+      try {
+        // 从URL参数中解析游戏数据
+        const gameData = JSON.parse(decodeURIComponent(options.gameData));
+        console.log('从分享链接获取到的游戏数据:', gameData);
+        this.loadSharedGameData(gameData);
+        return;
+      } catch (error) {
+        console.error('解析分享的游戏数据失败:', error);
+        // 如果解析失败，继续使用ID方式加载
+      }
+    }
+
     if (options.id) {
       // 通过 options.id 获取游戏ID
       const gameId = options.id;
@@ -99,6 +113,44 @@ Page({
   },
 
   /**
+   * 加载分享的游戏数据
+   */
+  loadSharedGameData(gameData) {
+    this.setData({ isLoading: true });
+
+    try {
+      console.log('加载分享的游戏数据:', gameData);
+
+      // 处理游戏数据，为每个格子添加字体大小类
+      const game = this.processGameData(gameData);
+
+      // 初始化选中状态为全false（新用户开始游戏）
+      const selectedCells = this.initializeSelectedCells(game.gridSize);
+      console.log('初始化选中状态:', selectedCells);
+
+      // 更新页面数据
+      this.setData({
+        game: game,
+        selectedCells: selectedCells,
+        isLoading: false
+      });
+
+      // 设置导航栏标题
+      wx.setNavigationBarTitle({
+        title: game.title || '宾果游戏'
+      });
+
+    } catch (error) {
+      console.error('加载分享游戏数据失败:', error);
+      wx.showToast({
+        title: '加载失败',
+        icon: 'none'
+      });
+      this.setData({ isLoading: false });
+    }
+  },
+
+  /**
    * 加载游戏数据
    */
   loadGameData(gameId) {
@@ -153,6 +205,20 @@ Page({
       });
       this.setData({ isLoading: false });
     }
+  },
+
+  /**
+   * 初始化选中状态数组
+   */
+  initializeSelectedCells(gridSize) {
+    const selectedCells = [];
+    for (let row = 0; row < gridSize.rows; row++) {
+      selectedCells[row] = [];
+      for (let col = 0; col < gridSize.cols; col++) {
+        selectedCells[row][col] = false;
+      }
+    }
+    return selectedCells;
   },
 
   /**
@@ -550,7 +616,8 @@ Page({
 
         // 处理文字换行（在设置字体后调用）
         const maxTextWidth = cellSize - 16; // 与CSS padding保持一致
-        const lines = this.wrapText(ctx, cellData.text, maxTextWidth);
+        const allLines = this.wrapText(ctx, cellData.text, maxTextWidth);
+        const lines = allLines.length > 4 ? allLines.slice(0, 4) : allLines; // 最多显示4行
         const lineHeight = fontSize * 1.3; // 与CSS line-height: 1.3保持一致
         const totalTextHeight = lines.length * lineHeight;
         
@@ -958,30 +1025,60 @@ Page({
       console.error('分享图片生成失败:', error);
     });
 
-    const gameData = {
-      id: this.data.game.bingoId,
-      title: this.data.game.title,
-      description: this.data.game.description,
-      category: this.data.game.category,
-      creator: this.data.game.creator
-    };
-
     let shareConfig;
-    if (completedCells > 0) {
-      // 如果有进度，分享进度
-      const completionRate = Math.round((completedCells / 25) * 100);
-      shareConfig = {
-        title: `🏆 我在「${this.data.game.title}」中完成了${completionRate}%`,
-        path: `/pages/game/game?id=${this.data.game.bingoId}&from=progress`,
-        imageUrl: '' // 将在generateShareImage中设置
+    
+    // 检查是否是用户创建的宾果
+    if (this.data.game.creator === '我') {
+      // 用户创建的宾果需要传递完整数据
+      const gameDataForShare = {
+        bingoId: this.data.game.bingoId,
+        title: this.data.game.title,
+        description: this.data.game.description,
+        creator: this.data.game.creator,
+        gridSize: this.data.game.gridSize,
+        gridContent: this.data.game.gridContent,
+        category: this.data.game.category || '自定义',
+        tags: this.data.game.tags || [],
+        createdAt: this.data.game.createdAt || new Date().toISOString()
       };
+
+      // 将游戏数据编码为URL参数
+      const encodedGameData = encodeURIComponent(JSON.stringify(gameDataForShare));
+      
+      if (completedCells > 0) {
+        // 如果有进度，分享进度
+        const completionRate = Math.round((completedCells / 25) * 100);
+        shareConfig = {
+          title: `🏆 我在「${this.data.game.title}」中完成了${completionRate}%`,
+          path: `/pages/game/game?gameData=${encodedGameData}&from=progress`,
+          imageUrl: '' // 将在generateShareImage中设置
+        };
+      } else {
+        // 否则分享游戏本身
+        shareConfig = {
+          title: `📋 ${this.data.game.title}`,
+          path: `/pages/game/game?gameData=${encodedGameData}`,
+          imageUrl: '' // 将在generateShareImage中设置
+        };
+      }
     } else {
-      // 否则分享游戏本身
-      shareConfig = {
-        title: `📋 ${this.data.game.title}`,
-        path: `/pages/game/game?id=${this.data.game.bingoId}`,
-        imageUrl: '' // 将在generateShareImage中设置
-      };
+      // 系统内置的宾果，使用原来的方式
+      if (completedCells > 0) {
+        // 如果有进度，分享进度
+        const completionRate = Math.round((completedCells / 25) * 100);
+        shareConfig = {
+          title: `🏆 我在「${this.data.game.title}」中完成了${completionRate}%`,
+          path: `/pages/game/game?id=${this.data.game.bingoId}&from=progress`,
+          imageUrl: '' // 将在generateShareImage中设置
+        };
+      } else {
+        // 否则分享游戏本身
+        shareConfig = {
+          title: `📋 ${this.data.game.title}`,
+          path: `/pages/game/game?id=${this.data.game.bingoId}`,
+          imageUrl: '' // 将在generateShareImage中设置
+        };
+      }
     }
 
     // 尝试使用生成的截图，如果失败则使用默认图片
@@ -1064,7 +1161,8 @@ Page({
               // 文字换行处理（在设置字体后调用）
               const text = cellData.text;
               const maxWidth = cellSize - 12; // 与主Canvas比例一致
-              const lines = this.wrapText(ctx, text, maxWidth);
+              const allLines = this.wrapText(ctx, text, maxWidth);
+              const lines = allLines.length > 4 ? allLines.slice(0, 4) : allLines; // 最多显示4行
               const lineHeight = fontSize * 1.3; // 与CSS line-height: 1.3保持一致
               const totalHeight = lines.length * lineHeight;
               
@@ -1127,6 +1225,6 @@ Page({
       }
     }
     lines.push(currentLine);
-    return lines.length > 2 ? lines.slice(0, 2) : lines; // 最多显示2行
+    return lines.length > 4 ? lines.slice(0, 4) : lines; // 最多显示4行
   }
 });
