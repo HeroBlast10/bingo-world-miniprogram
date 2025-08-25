@@ -4524,7 +4524,7 @@ const bingos = {
       "creator": "系统",
       "description": "五个连成一线，你就是传统文学爱好者",
       "gridSize": {
-        "rows": 6,
+        "rows": 5,
         "cols": 5
       },
       "gridContent": [
@@ -7306,7 +7306,7 @@ const bingos = {
       "creator": "系统",
       "description": "五个连成一线，你就是超级文手",
       "gridSize": {
-        "rows": 6,
+        "rows": 5,
         "cols": 5
       },
       "gridContent": [
@@ -7681,7 +7681,7 @@ const bingos = {
       "creator": "系统",
       "description": "五个连成一线，你就是神金中的神金",
       "gridSize": {
-        "rows": 6,
+        "rows": 5,
         "cols": 5
       },
       "gridContent": [
@@ -7731,7 +7731,7 @@ const bingos = {
       "creator": "系统",
       "description": "五个连成一线，你就是文艺青年",
       "gridSize": {
-        "rows": 6,
+        "rows": 5,
         "cols": 5
       },
       "gridContent": [
@@ -7781,7 +7781,7 @@ const bingos = {
       "creator": "系统",
       "description": "五个连成一线，不是说二次元不花钱吗？",
       "gridSize": {
-        "rows": 6,
+        "rows": 5,
         "cols": 5
       },
       "gridContent": [
@@ -10369,7 +10369,7 @@ const bingos = {
       "creator": "系统",
       "description": "五个连成一线成为病神",
       "gridSize": {
-        "rows": 6,
+        "rows": 5,
         "cols": 5
       },
       "gridContent": [
@@ -10997,7 +10997,7 @@ const bingos = {
       "creator": "系统",
       "description": "五个连成一线,你这辈子就彻彻底底完完全全地有了",
       "gridSize": {
-        "rows": 6,
+        "rows": 5,
         "cols": 5
       },
       "gridContent": [
