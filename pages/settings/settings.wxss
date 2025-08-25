@@ -36,22 +36,21 @@
   line-height: 1.5;
 }
 
-/* 颜色选择网格 */
+/* 颜色选择网格 - 强制两列布局 */
 .color-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 24rpx;
   width: 100%;
 }
 
 .color-option {
-  width: calc(50% - 12rpx);
   border: 4rpx solid #e5e7eb;
   border-radius: 24rpx;
-  padding: 32rpx 24rpx; /* 调整内边距 */
+  padding: 32rpx 24rpx;
   transition: all 0.2s ease;
   box-sizing: border-box;
-  min-height: 120rpx; /* 设置最小高度保证一致性 */
+  min-height: 120rpx;
   display: flex;
   align-items: center;
 }
@@ -209,13 +208,24 @@
   color: #ff6b6b !important;
 }
 
-/* 响应式调整 */
+/* 响应式调整 - 保持两列布局 */
 @media (max-width: 750rpx) {
-  .color-option {
-    width: 100%;
+  .color-grid {
+    gap: 16rpx; /* 在小屏幕上减少间距 */
   }
   
-  .color-grid {
-    flex-direction: column;
+  .color-option {
+    padding: 24rpx 16rpx; /* 在小屏幕上减少内边距 */
+    min-height: 100rpx; /* 在小屏幕上减少高度 */
+  }
+  
+  .color-circle {
+    width: 48rpx;
+    height: 48rpx;
+    margin-right: 16rpx;
+  }
+  
+  .color-name {
+    font-size: 24rpx;
   }
 }

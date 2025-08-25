@@ -7431,7 +7431,7 @@ const bingos = {
       "creator": "系统",
       "description": "五个连成一线，你就是欧美圈超级影迷",
       "gridSize": {
-        "rows": 6,
+        "rows": 5,
         "cols": 5
       },
       "gridContent": [
@@ -7556,7 +7556,7 @@ const bingos = {
       "creator": "系统",
       "description": "五个连成一线，你就是欧美圈超级影迷",
       "gridSize": {
-        "rows": 6,
+        "rows": 5,
         "cols": 5
       },
       "gridContent": [
@@ -13467,13 +13467,6 @@ const bingos = {
       "tags": [],
       "createdAt": "2025-07-29T01:14:01.577Z"
     },
-      "category": "心理",
-      "tags": [
-        "极简主义",
-        "精神修行"
-      ],
-      "createdAt": "2025-07-29T01:14:01.577Z"
-    },
     "xuanzekunnan": {
       "bingoId": "xuanzekunnan",
       "title": "选择困难症宾果",
@@ -13598,7 +13591,8 @@ const bingos = {
       "category": "心理",
       "tags": [],
       "createdAt": "2025-07-29T01:14:01.577Z"
-    },
+    }
+  },
   "学生": {
     "dubo": {
       "bingoId": "dubo",

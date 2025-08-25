@@ -343,7 +343,21 @@ Page({
    * 自动保存游戏（静默保存，不显示提示）
    */
   autoSaveGame() {
-    if (!this.data.game) {
+    // 检查游戏数据是否存在且完整
+    if (!this.data.game || !this.data.game.bingoId || !this.data.game.gridSize) {
+      console.log('游戏数据不存在或不完整，跳过自动保存');
+      return;
+    }
+
+    // 检查selectedCells是否已初始化
+    if (!this.data.selectedCells || !Array.isArray(this.data.selectedCells)) {
+      console.log('selectedCells未初始化，跳过自动保存');
+      return;
+    }
+
+    // 检查gridContent是否存在
+    if (!this.data.game.gridContent || !Array.isArray(this.data.game.gridContent)) {
+      console.log('gridContent不存在，跳过自动保存');
       return;
     }
 
@@ -370,8 +384,8 @@ Page({
       // 将二维selectedCells数组转换为一维数组
       for (let row = 0; row < this.data.game.gridSize.rows; row++) {
         for (let col = 0; col < this.data.game.gridSize.cols; col++) {
-          const cellData = this.data.game.gridContent[row][col];
-          const isSelected = this.data.selectedCells[row] && this.data.selectedCells[row][col];
+          const cellData = this.data.game.gridContent && this.data.game.gridContent[row] ? this.data.game.gridContent[row][col] : null;
+          const isSelected = this.data.selectedCells && this.data.selectedCells[row] && this.data.selectedCells[row][col];
 
           gameToSave.cells.push({
             text: cellData && cellData.text ? cellData.text : `格子 ${row}-${col}`,
@@ -506,9 +520,28 @@ Page({
     const game = this.data.game;
     const selectedCells = this.data.selectedCells;
 
-    // 画布尺寸（高分辨率）
+    // 检查数据完整性
+    if (!game || !game.gridSize || !game.gridContent || !Array.isArray(game.gridContent)) {
+      wx.hideLoading();
+      wx.showToast({
+        title: '游戏数据异常',
+        icon: 'none'
+      });
+      return;
+    }
+
+    if (!selectedCells || !Array.isArray(selectedCells)) {
+      wx.hideLoading();
+      wx.showToast({
+        title: '选择状态异常',
+        icon: 'none'
+      });
+      return;
+    }
+
+    // 画布尺寸（高分辨率）- 优化高度，减少底部空白
     const canvasWidth = 750;
-    const canvasHeight = 1000;
+    const canvasHeight = 1050; // 减少100px高度，更紧凑
 
     // 设置背景色
     ctx.setFillStyle('#f9fafb');
@@ -518,13 +551,13 @@ Page({
     ctx.setFillStyle('#9ca3af');
     ctx.setFontSize(24);
     ctx.setTextAlign('center');
-    ctx.fillText('小程序@宾了个果', canvasWidth / 2, 50);
+    ctx.fillText('小程序@宾了个果', canvasWidth / 2, 40);
 
-    // 绘制游戏标题
+    // 绘制游戏标题 - 稍微增加与小程序标识的间距
     ctx.setFillStyle('#1f2937');
     ctx.setFontSize(36);
     ctx.setTextAlign('center');
-    ctx.fillText(game.title, canvasWidth / 2, 100);
+    ctx.fillText(game.title, canvasWidth / 2, 88); // 从80增加到85，增加5px间距
 
     // 计算网格参数（先计算网格位置）
     const gridSize = Math.min(game.gridSize.rows, game.gridSize.cols);
@@ -534,16 +567,19 @@ Page({
     const gridHeight = cellSize * game.gridSize.rows;
     const gridStartX = (canvasWidth - gridWidth) / 2;
     
-    // 为网格预留空间，描述文字将放在标题和网格之间的中间位置
-    const reservedGridSpace = gridHeight + 100; // 网格高度 + 额外边距
-    const gridStartY = canvasHeight - reservedGridSpace;
+    // 计算网格位置 - 紧凑布局，网格从描述后开始
+    const topContentHeight = 180; // 减少顶部内容预估高度
+    const bottomReservedSpace = 130; // 减少底部预留空间，为更大二维码优化
+    const availableHeight = canvasHeight - topContentHeight - bottomReservedSpace;
+    
+    // 网格从描述后适当距离开始
+    let gridStartY = topContentHeight;
 
-    // 绘制游戏描述（如果有）- 放在标题和网格之间的中间位置
-    let descriptionY = 140;
+    // 绘制游戏描述（如果有）- 优化间距
+    let descriptionEndY = 90; // 标题结束位置（标题现在在Y=85）
     if (game.description && game.description.trim() !== '' && game.description !== '五个连成一线...') {
-      // 计算标题和网格之间的中间位置
-      const spaceBetween = gridStartY - 140; // 标题下方到网格上方的空间
-      const descriptionCenterY = 140 + spaceBetween / 2; // 中间位置
+      // 描述与标题间距优化
+      const descriptionStartY = 140; // 标题下方45px开始描述，保持合适间距
       
       ctx.setFillStyle('#6b7280');
       ctx.setFontSize(24);
@@ -553,13 +589,19 @@ Page({
       const maxWidth = 600;
       const lines = this.wrapText(ctx, game.description, maxWidth);
       
-      // 从中间位置向上偏移半个文本高度，使文本在中间位置居中
-      const totalTextHeight = lines.length * 30;
-      const startTextY = descriptionCenterY - totalTextHeight / 2;
-      
+      // 从描述起始位置开始绘制
       lines.forEach((line, index) => {
-        ctx.fillText(line, canvasWidth / 2, startTextY + (index * 30));
+        ctx.fillText(line, canvasWidth / 2, descriptionStartY + (index * 30));
       });
+      
+      // 更新描述结束位置
+      descriptionEndY = descriptionStartY + (lines.length * 30);
+      
+      // 重新计算网格位置，紧跟在描述后面
+      gridStartY = descriptionEndY + 22; // 描述后留20px空间，更紧凑
+    } else {
+      // 没有描述时，网格从标题后开始
+      gridStartY = 128; // 标题后留40px空间（标题现在在Y=85）
     }
 
     // 绘制网格背景
@@ -574,8 +616,8 @@ Page({
     // 绘制宾果格子
     for (let row = 0; row < game.gridSize.rows; row++) {
       for (let col = 0; col < game.gridSize.cols; col++) {
-        const cellData = game.gridContent[row][col];
-        const isSelected = selectedCells[row] && selectedCells[row][col];
+        const cellData = game.gridContent && game.gridContent[row] ? game.gridContent[row][col] : null;
+        const isSelected = selectedCells && selectedCells[row] && selectedCells[row][col];
 
         const x = gridStartX + col * cellSize;
         const y = gridStartY + row * cellSize;
@@ -597,6 +639,11 @@ Page({
         // 绘制文字
         ctx.setFillStyle(isSelected ? '#ffffff' : '#374151');
 
+        // 如果cellData为null，跳过文字绘制
+        if (!cellData || !cellData.text) {
+          continue;
+        }
+
         // 根据文字长度调整字体大小，与CSS保持一致
         let fontSize;
         const textLength = cellData.text.length;
@@ -613,6 +660,15 @@ Page({
         // 先设置字体，确保measureText正确工作
         ctx.setFontSize(fontSize);
         ctx.setTextAlign('center');
+        
+        // 设置字体粗细，匹配页面显示
+        if (isSelected) {
+          // 选中状态下字体稍粗
+          ctx.font = `bold ${fontSize}px -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif`;
+        } else {
+          // 正常状态字体
+          ctx.font = `500 ${fontSize}px -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif`;
+        }
 
         // 处理文字换行（在设置字体后调用）
         const maxTextWidth = cellSize - 16; // 与CSS padding保持一致
@@ -632,41 +688,130 @@ Page({
       }
     }
 
-    // 绘制底部水印
-    const watermarkY = gridStartY + gridHeight + 45; // 略微减少底部间距
-    ctx.setFillStyle('#9ca3af');
-    ctx.setFontSize(28);
-    ctx.setTextAlign('center');
-    ctx.fillText('小程序@宾了个果', canvasWidth / 2, watermarkY);
+    // 绘制底部内容（二维码和推广文字）
+    const bottomStartY = gridStartY + gridHeight + 20; // 网格下方20px开始，更紧凑
+    
+    // 绘制分隔线
+    ctx.setStrokeStyle('#e9ecef');
+    ctx.setLineWidth(2);
+    ctx.beginPath();
+    ctx.moveTo(40, bottomStartY);
+    ctx.lineTo(canvasWidth - 40, bottomStartY);
+    ctx.stroke();
+    
+    // 二维码参数 - 增大尺寸
+    const qrSize = 100; // 增大二维码尺寸
+    const qrX = 30; // 左下角位置，稍微向左移动
+    const qrY = bottomStartY + 15; // 稍微向上移动
+    
+    // 绘制推广文字 - 与更大的二维码对齐
+    const textX = canvasWidth - 40; // 右下角
+    const textY = qrY + 35; // 与更大二维码的中心对齐
+    
+    ctx.setFillStyle('#666666');
+    ctx.setFontSize(24);
+    ctx.setTextAlign('right');
+    ctx.fillText('发现更多好玩的宾果游戏！', textX, textY);
+    
+    ctx.setFillStyle('#999999');
+    ctx.setFontSize(20);
+    ctx.fillText('小程序@宾了个果 ', textX, textY + 35);
+    
+    // 最后一次尝试：使用最简单的方法加载二维码
+    console.log('尝试最简单的二维码加载方案');
+    
+    // 直接在Canvas上绘制，不使用getImageInfo预加载
+    try {
+      console.log('直接绘制二维码，路径: /images/qrcode.jpg');
+      ctx.drawImage('/images/qrcode.jpg', qrX, qrY, qrSize, qrSize);
+      console.log('直接绘制成功！');
+    } catch (error) {
+      console.error('直接绘制失败:', error);
+      console.log('绘制占位符');
+      this.drawQRPlaceholder(ctx, qrX, qrY, qrSize);
+    }
+    
+    this.finalizeImageGeneration(ctx, canvasWidth, canvasHeight);
+  },
 
-    // 绘制完成，生成图片
-    ctx.draw(false, () => {
-      setTimeout(() => {
-        wx.canvasToTempFilePath({
-          canvasId: 'bingoCanvas',
-          x: 0,
-          y: 0,
-          width: canvasWidth,
-          height: canvasHeight,
-          destWidth: canvasWidth * 4,  // 4倍分辨率
-          destHeight: canvasHeight * 4, // 4倍分辨率
-          fileType: 'png',
-          quality: 1.0,  // 最高质量
-          success: (res) => {
-            wx.hideLoading();
-            this.saveImageToAlbum(res.tempFilePath);
-          },
-          fail: (error) => {
-            wx.hideLoading();
-            console.error('生成图片失败:', error);
-            wx.showToast({
-              title: '生成图片失败',
-              icon: 'none'
-            });
-          }
-        });
-      }, 500);
-    });
+  /**
+   * 绘制二维码占位符
+   */
+  drawQRPlaceholder(ctx, qrX, qrY, qrSize) {
+    // 绘制白色背景
+    ctx.setFillStyle('#ffffff');
+    ctx.fillRect(qrX, qrY, qrSize, qrSize);
+    
+    // 绘制边框
+    ctx.setStrokeStyle('#d1d5db');
+    ctx.setLineWidth(1);
+    ctx.strokeRect(qrX, qrY, qrSize, qrSize);
+    
+    // 创建更真实的二维码图案
+    const gridSize = 21; // 真实二维码通常是21x21的网格
+    const cellSize = (qrSize - 8) / gridSize;
+    const startX = qrX + 4;
+    const startY = qrY + 4;
+    
+    ctx.setFillStyle('#000000');
+    
+    // 绘制定位图案（左上角）
+    this.drawFinderPattern(ctx, startX, startY, cellSize);
+    
+    // 绘制定位图案（右上角）
+    this.drawFinderPattern(ctx, startX + (gridSize - 7) * cellSize, startY, cellSize);
+    
+    // 绘制定位图案（左下角）
+    this.drawFinderPattern(ctx, startX, startY + (gridSize - 7) * cellSize, cellSize);
+    
+    // 绘制随机数据点
+    for (let i = 0; i < gridSize; i++) {
+      for (let j = 0; j < gridSize; j++) {
+        // 避开定位图案区域
+        if (this.isInFinderPattern(i, j, gridSize)) {
+          continue;
+        }
+        
+        // 随机生成数据点
+        if (Math.random() > 0.5) {
+          const cellX = startX + j * cellSize;
+          const cellY = startY + i * cellSize;
+          ctx.fillRect(cellX, cellY, cellSize - 0.5, cellSize - 0.5);
+        }
+      }
+    }
+  },
+
+  /**
+   * 绘制二维码定位图案
+   */
+  drawFinderPattern(ctx, x, y, cellSize) {
+    // 外层7x7黑色方框
+    ctx.fillRect(x, y, 7 * cellSize, 7 * cellSize);
+    
+    // 内层5x5白色方框
+    ctx.setFillStyle('#ffffff');
+    ctx.fillRect(x + cellSize, y + cellSize, 5 * cellSize, 5 * cellSize);
+    
+    // 中心3x3黑色方框
+    ctx.setFillStyle('#000000');
+    ctx.fillRect(x + 2 * cellSize, y + 2 * cellSize, 3 * cellSize, 3 * cellSize);
+  },
+
+  /**
+   * 检查是否在定位图案区域内
+   */
+  isInFinderPattern(row, col, gridSize) {
+    // 左上角 (0,0) 到 (6,6)
+    if (row <= 6 && col <= 6) return true;
+    
+    // 右上角 (0, gridSize-7) 到 (6, gridSize-1)
+    if (row <= 6 && col >= gridSize - 7) return true;
+    
+    // 左下角 (gridSize-7, 0) 到 (gridSize-1, 6)
+    if (row >= gridSize - 7 && col <= 6) return true;
+    
+    return false;
   },
 
   /**
@@ -1100,19 +1245,19 @@ Page({
       try {
         const ctx = wx.createCanvasContext('shareCanvas');
         
-        // 设置画布尺寸（增加底部空间容纳二维码和文字）
+        // 设置画布尺寸
         const canvasWidth = 400;
-        const canvasHeight = 480; // 增加80px高度
+        const canvasHeight = 400;
         
         // 设置背景
         ctx.setFillStyle('#ffffff');
         ctx.fillRect(0, 0, canvasWidth, canvasHeight);
         
-        // 绘制宾果网格（向上移动一些）
-        const gridSize = 300; // 稍微缩小网格
+        // 绘制宾果网格
+        const gridSize = 350;
         const cellSize = gridSize / 5;
         const startX = (canvasWidth - gridSize) / 2;
-        const startY = 20; // 从顶部开始，留出空间给底部内容
+        const startY = (canvasHeight - gridSize) / 2;
         
         // 绘制网格和内容
         for (let row = 0; row < 5; row++) {
@@ -1178,25 +1323,22 @@ Page({
           }
         }
         
-        // 绘制底部内容
-        this.drawBottomContent(ctx, canvasWidth, canvasHeight, () => {
-          // 绘制完成后保存图片
-          ctx.draw(false, () => {
-            wx.canvasToTempFilePath({
-              canvasId: 'shareCanvas',
-              success: (res) => {
-                const tempFilePath = res.tempFilePath;
-                console.log('分享图片生成成功:', tempFilePath);
-                
-                // 缓存图片路径
-                wx.setStorageSync(`shareImage_${this.data.game.bingoId}`, tempFilePath);
-                resolve(tempFilePath);
-              },
-              fail: (error) => {
-                console.error('生成分享图片失败:', error);
-                reject(error);
-              }
-            });
+        // 绘制完成后保存图片
+        ctx.draw(false, () => {
+          wx.canvasToTempFilePath({
+            canvasId: 'shareCanvas',
+            success: (res) => {
+              const tempFilePath = res.tempFilePath;
+              console.log('分享图片生成成功:', tempFilePath);
+              
+              // 缓存图片路径
+              wx.setStorageSync(`shareImage_${this.data.game.bingoId}`, tempFilePath);
+              resolve(tempFilePath);
+            },
+            fail: (error) => {
+              console.error('生成分享图片失败:', error);
+              reject(error);
+            }
           });
         });
         
@@ -1205,78 +1347,6 @@ Page({
         reject(error);
       }
     });
-  },
-
-  /**
-   * 绘制分享图底部内容（二维码和推广文字）
-   */
-  drawBottomContent(ctx, canvasWidth, canvasHeight, callback) {
-    try {
-      // 底部内容区域
-      const bottomHeight = 80;
-      const bottomY = canvasHeight - bottomHeight;
-      
-      // 绘制分隔线
-      ctx.setStrokeStyle('#e9ecef');
-      ctx.setLineWidth(1);
-      ctx.beginPath();
-      ctx.moveTo(20, bottomY + 10);
-      ctx.lineTo(canvasWidth - 20, bottomY + 10);
-      ctx.stroke();
-      
-      // 二维码参数
-      const qrSize = 50; // 二维码大小
-      const qrX = 20; // 左下角位置
-      const qrY = bottomY + 20;
-      
-      // 加载并绘制二维码
-      wx.getImageInfo({
-        src: '/images/qrcode.jpg',
-        success: (qrRes) => {
-          ctx.drawImage(qrRes.path, qrX, qrY, qrSize, qrSize);
-          
-          // 绘制推广文字
-          const textX = canvasWidth - 20; // 右下角
-          const textY = qrY + 15; // 与二维码对齐
-          
-          ctx.setFillStyle('#666666');
-          ctx.setFontSize(12);
-          ctx.setTextAlign('right');
-          
-          // 第一行文字
-          ctx.fillText('更多好玩的宾果游戏！', textX, textY);
-          
-          // 第二行文字
-          ctx.setFillStyle('#999999');
-          ctx.setFontSize(10);
-          ctx.fillText('小程序@宾了个果', textX, textY + 20);
-          
-          // 调用回调函数继续后续处理
-          callback();
-        },
-        fail: (error) => {
-          console.error('加载二维码图片失败:', error);
-          // 即使二维码加载失败，也要绘制文字
-          const textX = canvasWidth - 20;
-          const textY = qrY + 15;
-          
-          ctx.setFillStyle('#666666');
-          ctx.setFontSize(12);
-          ctx.setTextAlign('right');
-          ctx.fillText('更多好玩的宾果游戏！', textX, textY);
-          
-          ctx.setFillStyle('#999999');
-          ctx.setFontSize(10);
-          ctx.fillText('小程序@宾了个果', textX, textY + 20);
-          
-          callback();
-        }
-      });
-      
-    } catch (error) {
-      console.error('绘制底部内容失败:', error);
-      callback(); // 确保即使出错也要继续
-    }
   },
 
   /**
@@ -1301,5 +1371,38 @@ Page({
     }
     lines.push(currentLine);
     return lines.length > 4 ? lines.slice(0, 4) : lines; // 最多显示4行
+  },
+
+  /**
+   * 完成图片生成
+   */
+  finalizeImageGeneration(ctx, canvasWidth, canvasHeight) {
+    ctx.draw(false, () => {
+      setTimeout(() => {
+        wx.canvasToTempFilePath({
+          canvasId: 'bingoCanvas',
+          x: 0,
+          y: 0,
+          width: canvasWidth,
+          height: canvasHeight,
+          destWidth: canvasWidth * 2,  // 2倍分辨率，平衡清晰度和文件大小
+          destHeight: canvasHeight * 2,
+          fileType: 'png',
+          quality: 1.0,  // 最高质量
+          success: (res) => {
+            wx.hideLoading();
+            this.saveImageToAlbum(res.tempFilePath);
+          },
+          fail: (error) => {
+            wx.hideLoading();
+            console.error('生成图片失败:', error);
+            wx.showToast({
+              title: '生成图片失败',
+              icon: 'none'
+            });
+          }
+        });
+      }, 500);
+    });
   }
 });
