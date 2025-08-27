@@ -9,6 +9,7 @@ Page({
     userInfo: null,
     hasUserInfo: false,
     isLoading: false,
+    isAnonymous: true,
     // 使用 placeholder-user.jpg 作为默认头像
     defaultAvatarUrl: '/images/placeholder-user.jpg',
     stats: {
@@ -65,17 +66,18 @@ Page({
   initUserInfo() {
     const app = getApp();
     const userManager = app.getUserManager();
-    
+
     // 检查登录状态
     if (userManager.getLoginStatus()) {
       const userInfo = userManager.getUserInfo();
-      console.log('用户已登录:', userInfo);
-      
+      const isAnonymous = userManager.isAnonymousUser();
+      console.log('用户已登录:', userInfo, '匿名用户:', isAnonymous);
+
       // 确保userInfo有完整的数据
       if (userInfo) {
         this.setData({
           userInfo: {
-            nickName: userInfo.nickName || '微信用户',
+            nickName: userInfo.nickName || (isAnonymous ? '游客用户' : '微信用户'),
             avatarUrl: userInfo.avatarUrl || '/images/placeholder-user.jpg',
             gender: userInfo.gender || 0,
             country: userInfo.country || '',
@@ -83,19 +85,22 @@ Page({
             city: userInfo.city || '',
             language: userInfo.language || 'zh_CN'
           },
-          hasUserInfo: true
+          hasUserInfo: true,
+          isAnonymous: isAnonymous
         });
       } else {
         this.setData({
           userInfo: null,
-          hasUserInfo: false
+          hasUserInfo: false,
+          isAnonymous: true
         });
       }
     } else {
       console.log('用户未登录');
       this.setData({
         userInfo: null,
-        hasUserInfo: false
+        hasUserInfo: false,
+        isAnonymous: true
       });
     }
   },
@@ -105,20 +110,20 @@ Page({
    */
   async login() {
     if (this.data.isLoading) return;
-    
+
     this.setData({ isLoading: true });
-    
+
     try {
       const app = getApp();
       const userManager = app.getUserManager();
-      
+
       // 调用新的登录方法
       const result = await userManager.login();
-      
+
       if (result.success) {
         // 确保用户信息完整
         const userInfo = {
-          nickName: result.userInfo.nickName || '微信用户',
+          nickName: result.userInfo.nickName || (result.isAnonymous ? '游客用户' : '微信用户'),
           avatarUrl: result.userInfo.avatarUrl || '/images/placeholder-user.jpg',
           gender: result.userInfo.gender || 0,
           country: result.userInfo.country || '',
@@ -126,27 +131,35 @@ Page({
           city: result.userInfo.city || '',
           language: result.userInfo.language || 'zh_CN'
         };
-        
+
         this.setData({
           userInfo: userInfo,
           hasUserInfo: true,
-          isLoading: false
+          isLoading: false,
+          isAnonymous: result.isAnonymous || false
         });
-        
+
         // 重新加载统计数据
         this.loadStats();
-        
+
+        // 显示登录结果
+        wx.showToast({
+          title: '登录成功',
+          icon: 'success',
+          duration: 2000
+        });
+
         // 检查是否需要完善个人信息
         if (userManager.needCompleteProfile()) {
           setTimeout(() => {
             this.showCompleteProfileTip();
-          }, 1000);
+          }, 2500);
         }
       }
     } catch (error) {
       console.error('登录失败:', error);
       this.setData({ isLoading: false });
-      
+
       wx.showToast({
         title: error.message || '登录失败',
         icon: 'none',
@@ -177,6 +190,52 @@ Page({
       }
     });
   },
+
+
+
+  /**
+   * 选择头像 - 使用新规范
+   */
+  onChooseAvatar(e) {
+    const { avatarUrl } = e.detail;
+    console.log('选择头像:', avatarUrl);
+
+    const app = getApp();
+    const userManager = app.getUserManager();
+
+    if (!userManager.getLoginStatus()) {
+      wx.showToast({
+        title: '请先登录',
+        icon: 'none'
+      });
+      return;
+    }
+
+    // 更新头像
+    userManager.updateAvatar(avatarUrl)
+      .then((result) => {
+        if (result.success) {
+          // 更新页面显示
+          this.setData({
+            'userInfo.avatarUrl': result.avatarUrl
+          });
+
+          wx.showToast({
+            title: result.message,
+            icon: 'success'
+          });
+        }
+      })
+      .catch((error) => {
+        console.error('更新头像失败:', error);
+        wx.showToast({
+          title: error.message || '更新头像失败',
+          icon: 'none'
+        });
+      });
+  },
+
+
 
   /**
    * 退出登录
@@ -531,5 +590,16 @@ Page({
     const app = getApp();
     const shareManager = app.getShareManager();
     return shareManager.shareApp();
+  },
+
+  /**
+   * 用户分享到朋友圈
+   */
+  onShareTimeline() {
+    return {
+      title: '宾了个果 - 有趣的宾果游戏合集，快来挑战各种有趣的宾果！',
+      query: '',
+      imageUrl: '/images/placeholder-logo.png'
+    };
   }
 });

@@ -81,17 +81,22 @@ Page({
 
   /**
    * 根据文本长度获取字体大小类名
+   * 优化后的分级策略，提升可读性
    */
   getTextSizeClass(text) {
     const length = text.length;
-    if (length <= 6) {
-      return 'text-short';
-    } else if (length <= 10) {
-      return 'text-medium';
-    } else if (length <= 15) {
-      return 'text-long';
+    if (length <= 4) {
+      return 'text-extra-short'; // 超短文本，使用最大字体
+    } else if (length <= 8) {
+      return 'text-short'; // 短文本
+    } else if (length <= 12) {
+      return 'text-medium'; // 中等文本，适当增大字体
+    } else if (length <= 18) {
+      return 'text-long'; // 长文本，使用4行显示
+    } else if (length <= 25) {
+      return 'text-very-long'; // 很长文本，使用4行显示
     } else {
-      return 'text-very-long';
+      return 'text-extremely-long'; // 极长文本，使用更小字体但保持4行
     }
   },
 
@@ -539,9 +544,9 @@ Page({
       return;
     }
 
-    // 画布尺寸（高分辨率）- 优化高度，减少底部空白
+    // 画布尺寸（高分辨率）- 增加高度确保底部文字完整显示
     const canvasWidth = 750;
-    const canvasHeight = 1050; // 减少100px高度，更紧凑
+    const canvasHeight = 1050; // 增加高度确保底部推广文字完整显示
 
     // 设置背景色
     ctx.setFillStyle('#f9fafb');
@@ -569,7 +574,7 @@ Page({
     
     // 计算网格位置 - 紧凑布局，网格从描述后开始
     const topContentHeight = 180; // 减少顶部内容预估高度
-    const bottomReservedSpace = 130; // 减少底部预留空间，为更大二维码优化
+    const bottomReservedSpace = 180; // 增加底部预留空间，确保推广文字完整显示
     const availableHeight = canvasHeight - topContentHeight - bottomReservedSpace;
     
     // 网格从描述后适当距离开始
@@ -644,17 +649,21 @@ Page({
           continue;
         }
 
-        // 根据文字长度调整字体大小，与CSS保持一致
+        // 根据文字长度调整字体大小，优化字体尺寸使其更大更清晰
         let fontSize;
         const textLength = cellData.text.length;
-        if (textLength <= 6) {
-          fontSize = 22; // 对应CSS的22rpx
-        } else if (textLength <= 10) {
-          fontSize = 20; // 对应CSS的20rpx  
-        } else if (textLength <= 15) {
-          fontSize = 18; // 对应CSS的18rpx
+        if (textLength <= 4) {
+          fontSize = 30; // 增大超短文本字体
+        } else if (textLength <= 8) {
+          fontSize = 26; // 增大短文本字体
+        } else if (textLength <= 12) {
+          fontSize = 24; // 增大中等文本字体
+        } else if (textLength <= 18) {
+          fontSize = 22; // 增大长文本字体
+        } else if (textLength <= 25) {
+          fontSize = 20; // 增大很长文本字体
         } else {
-          fontSize = 16; // 对应CSS的16rpx
+          fontSize = 18; // 增大极长文本字体
         }
 
         // 先设置字体，确保measureText正确工作
@@ -671,16 +680,17 @@ Page({
         }
 
         // 处理文字换行（在设置字体后调用）
-        const maxTextWidth = cellSize - 16; // 与CSS padding保持一致
+        const maxTextWidth = cellSize - 20; // 增加padding，给文字更多空间
         const allLines = this.wrapText(ctx, cellData.text, maxTextWidth);
         const lines = allLines.length > 4 ? allLines.slice(0, 4) : allLines; // 最多显示4行
-        const lineHeight = fontSize * 1.3; // 与CSS line-height: 1.3保持一致
+        const lineHeight = fontSize * 1.2; // 稍微减少行高，使文字更紧凑
         const totalTextHeight = lines.length * lineHeight;
-        
-        // 修正垂直居中计算（微信小程序Canvas不支持textBaseline设置）
+
+        // 修正垂直居中计算（微信小程序Canvas文字绘制的基线问题）
         const centerY = y + cellSize / 2;
-        // 手动计算文本起始位置，使其在格子中垂直居中
-        const textStartY = centerY - (totalTextHeight / 2) + (lineHeight / 2);
+        // 计算文本块的起始Y位置，考虑到微信Canvas的文字绘制特性
+        // 微信Canvas的fillText是以文字的基线为准，需要向上偏移一些
+        const textStartY = centerY - (totalTextHeight / 2) + (fontSize * 0.7);
 
         lines.forEach((line, index) => {
           ctx.fillText(line, x + cellSize / 2, textStartY + (index * lineHeight));
@@ -688,131 +698,40 @@ Page({
       }
     }
 
-    // 绘制底部内容（二维码和推广文字）
-    const bottomStartY = gridStartY + gridHeight + 20; // 网格下方20px开始，更紧凑
-    
+    // 绘制底部推广文字（居中显示）
+    const bottomStartY = gridStartY + gridHeight + 40; // 网格下方40px开始，增加间距
+
     // 绘制分隔线
     ctx.setStrokeStyle('#e9ecef');
     ctx.setLineWidth(2);
     ctx.beginPath();
-    ctx.moveTo(40, bottomStartY);
-    ctx.lineTo(canvasWidth - 40, bottomStartY);
+    ctx.moveTo(60, bottomStartY);
+    ctx.lineTo(canvasWidth - 60, bottomStartY);
     ctx.stroke();
-    
-    // 二维码参数 - 增大尺寸
-    const qrSize = 100; // 增大二维码尺寸
-    const qrX = 30; // 左下角位置，稍微向左移动
-    const qrY = bottomStartY + 15; // 稍微向上移动
-    
-    // 绘制推广文字 - 与更大的二维码对齐
-    const textX = canvasWidth - 40; // 右下角
-    const textY = qrY + 35; // 与更大二维码的中心对齐
-    
-    ctx.setFillStyle('#666666');
-    ctx.setFontSize(24);
-    ctx.setTextAlign('right');
-    ctx.fillText('发现更多好玩的宾果游戏！', textX, textY);
-    
-    ctx.setFillStyle('#999999');
-    ctx.setFontSize(20);
-    ctx.fillText('小程序@宾了个果 ', textX, textY + 35);
-    
-    // 最后一次尝试：使用最简单的方法加载二维码
-    console.log('尝试最简单的二维码加载方案');
-    
-    // 直接在Canvas上绘制，不使用getImageInfo预加载
-    try {
-      console.log('直接绘制二维码，路径: /images/qrcode.jpg');
-      ctx.drawImage('/images/qrcode.jpg', qrX, qrY, qrSize, qrSize);
-      console.log('直接绘制成功！');
-    } catch (error) {
-      console.error('直接绘制失败:', error);
-      console.log('绘制占位符');
-      this.drawQRPlaceholder(ctx, qrX, qrY, qrSize);
-    }
+
+    // 居中绘制推广文字
+    const centerX = canvasWidth / 2; // 画布中心
+    const textStartY = bottomStartY + 60; // 分隔线下方60px开始，增加间距
+
+    // 第一行文字：发现更多好玩的宾果游戏！
+    ctx.setFillStyle('#555555');
+    ctx.setFontSize(32); // 增大字体
+    ctx.setTextAlign('center');
+    ctx.fillText('发现更多好玩的宾果游戏！', centerX, textStartY);
+
+    // 空行间距
+    const lineSpacing = 50; // 增加行间距
+
+    // 第二行文字：小程序@宾了个果
+    ctx.setFillStyle('#777777');
+    ctx.setFontSize(28); // 增大字体
+    ctx.setTextAlign('center');
+    ctx.fillText('小程序@宾了个果', centerX, textStartY + lineSpacing);
     
     this.finalizeImageGeneration(ctx, canvasWidth, canvasHeight);
   },
 
-  /**
-   * 绘制二维码占位符
-   */
-  drawQRPlaceholder(ctx, qrX, qrY, qrSize) {
-    // 绘制白色背景
-    ctx.setFillStyle('#ffffff');
-    ctx.fillRect(qrX, qrY, qrSize, qrSize);
-    
-    // 绘制边框
-    ctx.setStrokeStyle('#d1d5db');
-    ctx.setLineWidth(1);
-    ctx.strokeRect(qrX, qrY, qrSize, qrSize);
-    
-    // 创建更真实的二维码图案
-    const gridSize = 21; // 真实二维码通常是21x21的网格
-    const cellSize = (qrSize - 8) / gridSize;
-    const startX = qrX + 4;
-    const startY = qrY + 4;
-    
-    ctx.setFillStyle('#000000');
-    
-    // 绘制定位图案（左上角）
-    this.drawFinderPattern(ctx, startX, startY, cellSize);
-    
-    // 绘制定位图案（右上角）
-    this.drawFinderPattern(ctx, startX + (gridSize - 7) * cellSize, startY, cellSize);
-    
-    // 绘制定位图案（左下角）
-    this.drawFinderPattern(ctx, startX, startY + (gridSize - 7) * cellSize, cellSize);
-    
-    // 绘制随机数据点
-    for (let i = 0; i < gridSize; i++) {
-      for (let j = 0; j < gridSize; j++) {
-        // 避开定位图案区域
-        if (this.isInFinderPattern(i, j, gridSize)) {
-          continue;
-        }
-        
-        // 随机生成数据点
-        if (Math.random() > 0.5) {
-          const cellX = startX + j * cellSize;
-          const cellY = startY + i * cellSize;
-          ctx.fillRect(cellX, cellY, cellSize - 0.5, cellSize - 0.5);
-        }
-      }
-    }
-  },
 
-  /**
-   * 绘制二维码定位图案
-   */
-  drawFinderPattern(ctx, x, y, cellSize) {
-    // 外层7x7黑色方框
-    ctx.fillRect(x, y, 7 * cellSize, 7 * cellSize);
-    
-    // 内层5x5白色方框
-    ctx.setFillStyle('#ffffff');
-    ctx.fillRect(x + cellSize, y + cellSize, 5 * cellSize, 5 * cellSize);
-    
-    // 中心3x3黑色方框
-    ctx.setFillStyle('#000000');
-    ctx.fillRect(x + 2 * cellSize, y + 2 * cellSize, 3 * cellSize, 3 * cellSize);
-  },
-
-  /**
-   * 检查是否在定位图案区域内
-   */
-  isInFinderPattern(row, col, gridSize) {
-    // 左上角 (0,0) 到 (6,6)
-    if (row <= 6 && col <= 6) return true;
-    
-    // 右上角 (0, gridSize-7) 到 (6, gridSize-1)
-    if (row <= 6 && col >= gridSize - 7) return true;
-    
-    // 左下角 (gridSize-7, 0) 到 (gridSize-1, 6)
-    if (row >= gridSize - 7 && col <= 6) return true;
-    
-    return false;
-  },
 
   /**
    * 文字换行处理
@@ -1162,7 +1081,7 @@ Page({
 
     // 检查用户是否有进度
     const completedCells = this.data.selectedCells.flat().filter(cell => cell).length;
-    
+
     // 生成分享用的宾果截图
     this.generateShareImage().then((imageUrl) => {
       console.log('分享图片生成成功:', imageUrl);
@@ -1171,7 +1090,7 @@ Page({
     });
 
     let shareConfig;
-    
+
     // 检查是否是用户创建的宾果
     if (this.data.game.creator === '我') {
       // 用户创建的宾果需要传递完整数据
@@ -1189,7 +1108,7 @@ Page({
 
       // 将游戏数据编码为URL参数
       const encodedGameData = encodeURIComponent(JSON.stringify(gameDataForShare));
-      
+
       if (completedCells > 0) {
         // 如果有进度，分享进度
         const completionRate = Math.round((completedCells / 25) * 100);
@@ -1235,6 +1154,84 @@ Page({
     }
 
     return shareConfig;
+  },
+
+  /**
+   * 用户分享到朋友圈
+   */
+  onShareTimeline() {
+    if (!this.data.game) {
+      return {
+        title: '宾了个果 - 有趣的宾果游戏合集',
+        query: '',
+        imageUrl: '/images/placeholder-logo.png'
+      };
+    }
+
+    // 检查用户是否有进度
+    const completedCells = this.data.selectedCells.flat().filter(cell => cell).length;
+    const completionRate = Math.round((completedCells / 25) * 100);
+
+    let title, query;
+
+    // 检查是否是用户创建的宾果
+    if (this.data.game.creator === '我') {
+      // 用户创建的宾果需要传递完整数据
+      const gameDataForShare = {
+        bingoId: this.data.game.bingoId,
+        title: this.data.game.title,
+        description: this.data.game.description,
+        creator: this.data.game.creator,
+        gridSize: this.data.game.gridSize,
+        gridContent: this.data.game.gridContent,
+        category: this.data.game.category || '自定义',
+        tags: this.data.game.tags || [],
+        createdAt: this.data.game.createdAt || new Date().toISOString()
+      };
+
+      // 将游戏数据编码为URL参数
+      const encodedGameData = encodeURIComponent(JSON.stringify(gameDataForShare));
+
+      if (completedCells > 0) {
+        // 如果有进度，分享进度到朋友圈
+        title = `我在「宾了个果」完成了${completionRate}%的「${this.data.game.title}」宾果挑战！`;
+        query = `gameData=${encodedGameData}&from=timeline_progress`;
+      } else {
+        // 否则分享游戏本身到朋友圈
+        title = `我在「宾了个果」发现了一个有趣的${this.data.game.category}宾果：${this.data.game.title}`;
+        query = `gameData=${encodedGameData}&from=timeline`;
+      }
+    } else {
+      // 系统内置的宾果
+      if (completedCells > 0) {
+        // 如果有进度，分享进度到朋友圈
+        title = `我在「宾了个果」完成了${completionRate}%的「${this.data.game.title}」宾果挑战！`;
+        query = `id=${this.data.game.bingoId}&from=timeline_progress`;
+      } else {
+        // 否则分享游戏本身到朋友圈
+        title = `我在「宾了个果」发现了一个有趣的${this.data.game.category}宾果：${this.data.game.title}`;
+        query = `id=${this.data.game.bingoId}&from=timeline`;
+      }
+    }
+
+    // 尝试使用生成的截图，如果失败则使用默认图片
+    const cachedShareImage = wx.getStorageSync(`shareImage_${this.data.game.bingoId}`);
+    let imageUrl = '/images/placeholder-logo.png';
+
+    if (cachedShareImage) {
+      imageUrl = cachedShareImage;
+    } else {
+      // 异步生成分享图片，下次分享时使用
+      this.generateShareImage().catch((error) => {
+        console.error('生成朋友圈分享图片失败:', error);
+      });
+    }
+
+    return {
+      title: title,
+      query: query,
+      imageUrl: imageUrl
+    };
   },
 
   /**
@@ -1289,14 +1286,18 @@ Page({
               // 根据文字长度调整字体大小，与主Canvas保持一致
               let fontSize;
               const textLength = cellData.text.length;
-              if (textLength <= 6) {
-                fontSize = 14; // 分享图片用稍小的字体
-              } else if (textLength <= 10) {
-                fontSize = 12;
-              } else if (textLength <= 15) {
-                fontSize = 11;
+              if (textLength <= 4) {
+                fontSize = 16; // 分享图片用稍小的字体 - 超短文本
+              } else if (textLength <= 8) {
+                fontSize = 14; // 短文本
+              } else if (textLength <= 12) {
+                fontSize = 12; // 中等文本
+              } else if (textLength <= 18) {
+                fontSize = 11; // 长文本
+              } else if (textLength <= 25) {
+                fontSize = 10; // 很长文本
               } else {
-                fontSize = 10;
+                fontSize = 9; // 极长文本
               }
               
               // 先设置字体，确保measureText正确工作
@@ -1305,17 +1306,17 @@ Page({
               
               // 文字换行处理（在设置字体后调用）
               const text = cellData.text;
-              const maxWidth = cellSize - 12; // 与主Canvas比例一致
+              const maxWidth = cellSize - 16; // 与主Canvas保持一致
               const allLines = this.wrapText(ctx, text, maxWidth);
               const lines = allLines.length > 4 ? allLines.slice(0, 4) : allLines; // 最多显示4行
-              const lineHeight = fontSize * 1.3; // 与CSS line-height: 1.3保持一致
+              const lineHeight = fontSize * 1.2; // 与主Canvas保持一致
               const totalHeight = lines.length * lineHeight;
-              
-              // 修正垂直居中计算（微信小程序Canvas不支持textBaseline设置）
+
+              // 修正垂直居中计算（与主Canvas保持一致）
               const centerY = y + cellSize / 2;
               // 手动计算文本起始位置，使其在格子中垂直居中
-              const startTextY = centerY - (totalHeight / 2) + (lineHeight / 2);
-              
+              const startTextY = centerY - (totalHeight / 2) + (fontSize * 0.7);
+
               lines.forEach((line, index) => {
                 ctx.fillText(line, x + cellSize / 2, startTextY + index * lineHeight);
               });

@@ -145,12 +145,82 @@ Page({
    * 关注公众号
    */
   onFollowWechat() {
-    // 直接跳转到webview页面显示公众号链接
     const url = 'https://mp.weixin.qq.com/s/70aqUQcqzGGnJj5r93jSuQ';
     const title = '宾果世界';
-    
+
+    // 显示选择对话框
+    wx.showModal({
+      title: '关注公众号',
+      content: '即将跳转到"宾果世界"公众号页面\n\n如果无法正常打开，可以选择复制链接',
+      confirmText: '立即跳转',
+      cancelText: '复制链接',
+      success: (res) => {
+        if (res.confirm) {
+          // 用户选择跳转
+          this.openWebView(url, title);
+        } else {
+          // 用户选择复制链接
+          this.copyLinkToClipboard(url);
+        }
+      }
+    });
+  },
+
+  /**
+   * 打开WebView页面
+   */
+  openWebView(url, title) {
     wx.navigateTo({
-      url: `/pages/webview/webview?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`
+      url: `/pages/webview/webview?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`,
+      fail: (error) => {
+        console.error('跳转WebView失败:', error);
+        // 跳转失败时，提供复制链接的选项
+        wx.showModal({
+          title: '跳转失败',
+          content: '无法打开页面，是否复制链接到剪贴板？',
+          confirmText: '复制链接',
+          cancelText: '取消',
+          success: (res) => {
+            if (res.confirm) {
+              this.copyLinkToClipboard(url);
+            }
+          }
+        });
+      }
+    });
+  },
+
+  /**
+   * 复制链接到剪贴板
+   */
+  copyLinkToClipboard(url) {
+    wx.setClipboardData({
+      data: url,
+      success: () => {
+        wx.showToast({
+          title: '链接已复制',
+          icon: 'success',
+          duration: 2000
+        });
+
+        // 显示使用提示
+        setTimeout(() => {
+          wx.showModal({
+            title: '使用提示',
+            content: '链接已复制到剪贴板\n\n请在浏览器中粘贴打开，或在微信中搜索"宾果世界"公众号',
+            showCancel: false,
+            confirmText: '知道了'
+          });
+        }, 2200);
+      },
+      fail: (error) => {
+        console.error('复制失败:', error);
+        wx.showToast({
+          title: '复制失败',
+          icon: 'none',
+          duration: 2000
+        });
+      }
     });
   },
 
@@ -173,6 +243,17 @@ Page({
     return {
       title: '宾了个果 - 设置',
       path: '/pages/settings/settings'
+    };
+  },
+
+  /**
+   * 用户分享到朋友圈
+   */
+  onShareTimeline() {
+    return {
+      title: '宾了个果 - 有趣的宾果游戏合集，快来挑战各种有趣的宾果！',
+      query: '',
+      imageUrl: '/images/placeholder-logo.png'
     };
   }
 });

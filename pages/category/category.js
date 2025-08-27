@@ -180,5 +180,16 @@ Page({
       title: `宾果世界 - ${this.data.categoryName}`,
       path: `/pages/category/category?slug=${this.data.categorySlug}`
     };
+  },
+
+  /**
+   * 用户分享到朋友圈
+   */
+  onShareTimeline() {
+    return {
+      title: `我在「宾了个果」发现了很多有趣的${this.data.categoryName}宾果游戏！`,
+      query: `slug=${this.data.categorySlug}`,
+      imageUrl: '/images/placeholder-logo.png'
+    };
   }
 });

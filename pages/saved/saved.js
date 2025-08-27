@@ -206,5 +206,16 @@ Page({
       title: '宾果世界 - 我的宾果收藏',
       path: '/pages/saved/saved'
     };
+  },
+
+  /**
+   * 用户分享到朋友圈
+   */
+  onShareTimeline() {
+    return {
+      title: '我在「宾了个果」收藏了很多有趣的宾果游戏！',
+      query: '',
+      imageUrl: '/images/placeholder-logo.png'
+    };
   }
 });

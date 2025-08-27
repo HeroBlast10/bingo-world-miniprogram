@@ -2,15 +2,28 @@
 <view class="container">
   <!-- 用户信息区域 -->
   <view class="user-section">
-    <!-- 未登录状态 -->
+    <!-- 未登录状态 - 优化后的设计 -->
     <view wx:if="{{!hasUserInfo}}" class="login-section">
-      <view class="user-avatar-container">
-        <image class="user-avatar" src="{{defaultAvatarUrl}}" mode="aspectFill" />
+      <view class="login-header">
+        <view class="login-avatar-container">
+          <image class="login-avatar" src="{{defaultAvatarUrl}}" mode="aspectFill" />
+          <view class="login-avatar-overlay">
+            <text class="login-avatar-icon">👋</text>
+          </view>
+        </view>
+        <view class="login-welcome">
+          <text class="login-title">欢迎来到宾了个果</text>
+          <text class="login-subtitle">发现有趣的宾果世界</text>
+        </view>
       </view>
-      <view class="login-info">
-        <text class="login-title">欢迎来到宾了个果</text>
-        <text class="login-desc">登录后可保存您的游戏记录</text>
-        <button class="login-btn" bindtap="login">微信授权登录</button>
+
+      <view class="login-content">
+        <view class="login-actions">
+          <button class="login-btn primary" bindtap="login" loading="{{isLoading}}">
+            <text class="login-btn-icon">🚀</text>
+            <text class="login-btn-text">{{isLoading ? '登录中...' : '微信授权登录'}}</text>
+          </button>
+        </view>
       </view>
     </view>
 

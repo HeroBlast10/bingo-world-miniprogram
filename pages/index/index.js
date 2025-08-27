@@ -98,5 +98,16 @@ Page({
     const app = getApp();
     const shareManager = app.getShareManager();
     return shareManager.shareApp();
+  },
+
+  /**
+   * 用户分享到朋友圈
+   */
+  onShareTimeline() {
+    return {
+      title: '宾了个果 - 有趣的宾果游戏合集，快来挑战各种有趣的宾果！',
+      query: '',
+      imageUrl: '/images/placeholder-logo.png'
+    };
   }
 });

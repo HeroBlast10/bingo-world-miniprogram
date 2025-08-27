@@ -102,19 +102,16 @@ ShareManager.prototype.shareToFriend = function(shareData) {
 };
 
 /**
- * 分享到朋友圈（小程序暂不支持直接分享到朋友圈，这里预留接口）
+ * 分享到朋友圈
  */
 ShareManager.prototype.shareToTimeline = function(shareData) {
-  // 微信小程序目前不支持直接分享到朋友圈
-  // 可以引导用户通过右上角菜单分享
-  wx.showModal({
-    title: '分享提示',
-    content: '请点击右上角的"..."按钮，选择"分享给朋友"来分享这个宾果游戏',
-    showCancel: false,
-    confirmText: '我知道了'
-  });
-  
-  return null;
+  return {
+    title: shareData.title,
+    query: shareData.path.split('?')[1] || '', // 提取query参数
+    imageUrl: shareData.imageUrl,
+    success: shareData.success,
+    fail: shareData.fail
+  };
 };
 
 /**
@@ -183,6 +180,25 @@ ShareManager.prototype.shareApp = function() {
     },
     fail: function(err) {
       console.error('分享应用失败:', err);
+    }
+  };
+};
+
+/**
+ * 分享应用到朋友圈
+ */
+ShareManager.prototype.shareAppToTimeline = function() {
+  const self = this;
+  return {
+    title: '宾了个果 - 有趣的宾果游戏合集，快来挑战各种有趣的宾果！',
+    query: '',
+    imageUrl: '/images/placeholder-logo.png',
+    success: function(res) {
+      console.log('分享应用到朋友圈成功:', res);
+      self.recordShareEvent('app_timeline_share', 'main');
+    },
+    fail: function(err) {
+      console.error('分享应用到朋友圈失败:', err);
     }
   };
 };

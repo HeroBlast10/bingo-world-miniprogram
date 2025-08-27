@@ -167,5 +167,16 @@ Page({
       title: '小程序@宾了个果 - 创建你的专属宾果游戏',
       path: '/pages/create/create'
     };
+  },
+
+  /**
+   * 用户分享到朋友圈
+   */
+  onShareTimeline() {
+    return {
+      title: '我在「宾了个果」创建了专属的宾果游戏，快来试试吧！',
+      query: '',
+      imageUrl: '/images/placeholder-logo.png'
+    };
   }
 });
