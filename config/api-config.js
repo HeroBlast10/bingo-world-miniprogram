@@ -61,8 +61,8 @@ module.exports = {
     // 注意：这些配置仅用于前端，AppSecret 绝对不能放在这里
     APP_ID: 'your_app_id', // 需要替换为真实的 AppID
     SCOPE: {
-      USER_INFO: 'scope.userInfo',
-      USER_LOCATION: 'scope.userLocation'
+      USER_INFO: 'scope.userInfo'
+      // 移除了 USER_LOCATION，因为宾果游戏不需要位置信息
     }
   },
   

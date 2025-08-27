@@ -43,9 +43,6 @@
       "desc": "保存宾果图片到相册"
     }
   },
-  "requiredPrivateInfos": [
-    "chooseLocation"
-  ],
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
