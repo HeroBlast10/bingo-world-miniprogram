@@ -1,47 +1,125 @@
 {
-    "bingoId": "mbti-esfp",
+    "bingoId": "esfp",
     "title": "ESFP宾果",
     "creator": "请手动填写",
-    "description": "五个连成一线，那么你可能是派对动物",
-    "gridSize": {"rows":5,"cols":5},
+    "description": "五个连成一条线，你就是一只沙锤姐",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
     "gridContent": [
         [
-            {"text": "超市购物车当舞蹈道具", "type":"standard"},
-            {"text": "电梯里开个人演唱会", "type":"standard"},
-            {"text": "认为镜子是最好听众", "type":"standard"},
-            {"text": "把工作会议变脱口秀", "type":"standard"},
-            {"text": "停电时组织影子剧院", "type":"standard"}
+            {
+                "text": "气氛组组长",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢一个人根本藏不住",
+                "type": "standard"
+            },
+            {
+                "text": "喜怒哀乐全写在脸上",
+                "type": "standard"
+            },
+            {
+                "text": "迟到大王",
+                "type": "standard"
+            },
+            {
+                "text": "精力充沛",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "手机相册全是表情包", "type":"standard"},
-            {"text": "觉得沉默是健康隐患", "type":"standard"},
-            {"text": "给外卖小哥编加油歌", "type":"standard"},
-            {"text": "把垃圾分类当打击乐", "type":"standard"},
-            {"text": "认为彩虹需要伴舞", "type":"standard"}
+            {
+                "text": "爱玩爱笑",
+                "type": "standard"
+            },
+            {
+                "text": "爱就要轰轰烈烈",
+                "type": "standard"
+            },
+            {
+                "text": "“少管我”",
+                "type": "standard"
+            },
+            {
+                "text": "害怕无聊",
+                "type": "standard"
+            },
+            {
+                "text": "爱撒娇爱表达是与生俱来的能力",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "备忘录记着笑话库存", "type":"standard"},
-            {"text": "看悲剧片在找笑点", "type":"standard"},
-            {"text": "给咖啡拉花办颁奖礼", "type":"standard"},
-            {"text": "觉得云朵需要美颜", "type":"standard"},
-            {"text": "把数据线当麦克风", "type":"standard"}
+            {
+                "text": "忘性大",
+                "type": "standard"
+            },
+            {
+                "text": "有N种方式逗人开心",
+                "type": "standard"
+            },
+            {
+                "text": "乐于成为焦点",
+                "type": "standard"
+            },
+            {
+                "text": "狂打直球",
+                "type": "standard"
+            },
+            {
+                "text": "纯爱战士",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "排队时教陌生人跳舞", "type":"standard"},
-            {"text": "认为PPT需要灯光秀", "type":"standard"},
-            {"text": "给扫地机器人加油", "type":"standard"},
-            {"text": "手机铃声是自创单曲", "type":"standard"},
-            {"text": "觉得会议记录要押韵", "type":"standard"}
+            {
+                "text": "超强分享欲",
+                "type": "standard"
+            },
+            {
+                "text": "只想活在当下及时行乐",
+                "type": "standard"
+            },
+            {
+                "text": "桃花朵朵开",
+                "type": "standard"
+            },
+            {
+                "text": "笨蛋美人",
+                "type": "standard"
+            },
+            {
+                "text": "享受物质生活",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "给自动门设计出场音效", "type":"standard"},
-            {"text": "把消防演习当蹦迪", "type":"standard"},
-            {"text": "认为苦瓜需要鼓励", "type":"standard"},
-            {"text": "给WiFi起明星名字", "type":"standard"},
-            {"text": "觉得月亮是舞台灯光", "type":"standard"}
+            {
+                "text": "喜欢新鲜刺激的事物",
+                "type": "standard"
+            },
+            {
+                "text": "初次见面我爱你",
+                "type": "standard"
+            },
+            {
+                "text": "求和好会写小作文",
+                "type": "standard"
+            },
+            {
+                "text": "不喜欢充满负能量的人",
+                "type": "standard"
+            },
+            {
+                "text": "颜控",
+                "type": "standard"
+            }
         ]
     ],
-    "category": "MBTI",
-    "tags": ["人格测试","心理学"],
+    "category": "待分类",
+    "tags": [],
     "createdAt": ""
 }

@@ -1,47 +1,125 @@
 {
-    "bingoId": "mbti-enfj",
+    "bingoId": "enfj",
     "title": "ENFJ宾果",
     "creator": "请手动填写",
-    "description": "五个连成一线，那么你可能是灵魂导师",
-    "gridSize": {"rows":5,"cols":5},
+    "description": "五个连成一条线，你就是一只大宝剑",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
     "gridContent": [
         [
-            {"text": "陌生人三分钟倾诉人生", "type":"standard"},
-            {"text": "团建时自动开启激励模式", "type":"standard"},
-            {"text": "认为冷场是个人失职", "type":"standard"},
-            {"text": "给咖啡师写成长建议书", "type":"standard"},
-            {"text": "把朋友圈当心理咨询室", "type":"standard"}
+            {
+                "text": "大难临头先玩一会儿",
+                "type": "standard"
+            },
+            {
+                "text": "想把爱给全世界",
+                "type": "standard"
+            },
+            {
+                "text": "最常用的emoji是大拇指",
+                "type": "standard"
+            },
+            {
+                "text": "共情力化作眼泪溢出来了",
+                "type": "standard"
+            },
+            {
+                "text": "事业疯批",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "手机存着200人的生日提醒", "type":"standard"},
-            {"text": "看到落叶会思考人生意义", "type":"standard"},
-            {"text": "把调解纠纷当精神瑜伽", "type":"standard"},
-            {"text": "认为潜力需要定期挖掘", "type":"standard"},
-            {"text": "给扫地机器人贴鼓励便签", "type":"standard"}
+            {
+                "text": "松弛有度：大事J人小事P人",
+                "type": "standard"
+            },
+            {
+                "text": "难以拒绝别人的请求",
+                "type": "standard"
+            },
+            {
+                "text": "受不了冷战",
+                "type": "standard"
+            },
+            {
+                "text": "极度愉悦：帮助他人后收获的善意和好评",
+                "type": "standard"
+            },
+            {
+                "text": "套话王",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "看新闻像在读亲友日记", "type":"standard"},
-            {"text": "'我懂你'是最高频台词", "type":"standard"},
-            {"text": "把独处称为'充电待机'", "type":"standard"},
-            {"text": "认为彩虹需要情绪解读", "type":"standard"},
-            {"text": "给外卖写500字品尝心得", "type":"standard"}
+            {
+                "text": "“像我爱你一样爱我吧”",
+                "type": "standard"
+            },
+            {
+                "text": "为了别人的感受舍弃自己的体验",
+                "type": "standard"
+            },
+            {
+                "text": "擅长自省",
+                "type": "standard"
+            },
+            {
+                "text": "热心肠",
+                "type": "standard"
+            },
+            {
+                "text": "“我要赚大钱”",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "超市购物像社区调研", "type":"standard"},
-            {"text": "觉得云朵有心理状态", "type":"standard"},
-            {"text": "给植物播放励志TED", "type":"standard"},
-            {"text": "认为点赞是精神氧气", "type":"standard"},
-            {"text": "把电梯等待当社交机会", "type":"standard"}
+            {
+                "text": "爱是要有共鸣的",
+                "type": "standard"
+            },
+            {
+                "text": "温柔且偏爱的犬系",
+                "type": "standard"
+            },
+            {
+                "text": "和不熟的人说话会加语气词",
+                "type": "standard"
+            },
+            {
+                "text": "自带随和能量场",
+                "type": "standard"
+            },
+            {
+                "text": "深度对话时感到非常充实和满足",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "备忘录记着流浪猫名字", "type":"standard"},
-            {"text": "觉得WiFi信号需要关怀", "type":"standard"},
-            {"text": "给手机天气配心情注释", "type":"standard"},
-            {"text": "认为沉默是求助信号", "type":"standard"},
-            {"text": "把数据线打结当拥抱", "type":"standard"}
+            {
+                "text": "喜欢蓝天白云",
+                "type": "standard"
+            },
+            {
+                "text": "皮肤饥渴症：喜欢和爱的人贴贴",
+                "type": "standard"
+            },
+            {
+                "text": "容易被“美强惨”吸引",
+                "type": "standard"
+            },
+            {
+                "text": "正义感爆棚",
+                "type": "standard"
+            },
+            {
+                "text": "细心但不一定是上心",
+                "type": "standard"
+            }
         ]
     ],
-    "category": "MBTI",
-    "tags": ["人格测试","心理学"],
+    "category": "待分类",
+    "tags": [],
     "createdAt": ""
 }

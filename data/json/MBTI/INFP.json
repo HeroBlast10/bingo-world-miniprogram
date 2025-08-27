@@ -1,50 +1,125 @@
 {
-    "bingoId": "mbti-infp",
+    "bingoId": "infp",
     "title": "INFP宾果",
     "creator": "请手动填写",
-    "description": "五个连成一线，那么你可能是人间小蝴蝶",
+    "description": "五个连成一条线，你就是一只小蝴蝶",
     "gridSize": {
         "rows": 5,
         "cols": 5
     },
     "gridContent": [
         [
-            {"text": "为流浪云朵写十四行诗", "type": "standard"},
-            {"text": "收藏落叶当书签", "type": "standard"},
-            {"text": "和咖啡拉花说早安", "type": "standard"},
-            {"text": "觉得路灯在讲故事", "type": "standard"},
-            {"text": "给文具起名字", "type": "standard"}
+            {
+                "text": "日常纠结 选择困难症",
+                "type": "standard"
+            },
+            {
+                "text": "高度理想主义",
+                "type": "standard"
+            },
+            {
+                "text": "爱好冷门知识",
+                "type": "standard"
+            },
+            {
+                "text": "希望有人能读懂自己",
+                "type": "standard"
+            },
+            {
+                "text": "从不麻烦别人",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "看催泪弹广告会哭", "type": "standard"},
-            {"text": "备忘录全是梦境记录", "type": "standard"},
-            {"text": "认为蒲公英是自由信使", "type": "standard"},
-            {"text": "给手机天气配心情注释", "type": "standard"},
-            {"text": "觉得WiFi信号在跳舞", "type": "standard"}
+            {
+                "text": "三分钟热度",
+                "type": "standard"
+            },
+            {
+                "text": "多愁善感",
+                "type": "standard"
+            },
+            {
+                "text": "“我都ok啊”",
+                "type": "standard"
+            },
+            {
+                "text": "走路不紧不慢",
+                "type": "standard"
+            },
+            {
+                "text": "社交恐惧症到偷感很重",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "把树洞当战略合作伙伴", "type": "standard"},
-            {"text": "给外卖小哥画感谢小卡", "type": "standard"},
-            {"text": "坚信玩具有夜生活", "type": "standard"},
-            {"text": "用彩虹颜色规划一周", "type": "standard"},
-            {"text": "认为奶茶配料需要共情", "type": "standard"}
+            {
+                "text": "对艺术有着浓厚兴趣",
+                "type": "standard"
+            },
+            {
+                "text": "鼻炎患者or胃病患者",
+                "type": "standard"
+            },
+            {
+                "text": "浪漫主义者",
+                "type": "standard"
+            },
+            {
+                "text": "热衷探索自我成长的方法",
+                "type": "standard"
+            },
+            {
+                "text": "不喜欢被束缚",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "把阴天当天空在emo", "type": "standard"},
-            {"text": "给洗衣机唱鼓励歌", "type": "standard"},
-            {"text": "觉得数据线在拥抱", "type": "standard"},
-            {"text": "用童话逻辑解释物理", "type": "standard"},
-            {"text": "认为番茄需要赞美才变红", "type": "standard"}
+            {
+                "text": "喜欢自我反省",
+                "type": "standard"
+            },
+            {
+                "text": "恐惧电话铃声",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢种植花草",
+                "type": "standard"
+            },
+            {
+                "text": "比起恋爱更喜欢磕cp",
+                "type": "standard"
+            },
+            {
+                "text": "做事会尽力做到最好",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "给自动门说谢谢", "type": "standard"},
-            {"text": "觉得月亮在跟踪自己", "type": "standard"},
-            {"text": "给WiFi改诗意名称", "type": "standard"},
-            {"text": "坚信玩偶夜间开派对", "type": "standard"},
-            {"text": "认为雨声是天空密语", "type": "standard"}
+            {
+                "text": "精通礼貌用语",
+                "type": "standard"
+            },
+            {
+                "text": "注重细节",
+                "type": "standard"
+            },
+            {
+                "text": "戴上耳机之后自信UpUp",
+                "type": "standard"
+            },
+            {
+                "text": "对小动物爱得深沉",
+                "type": "standard"
+            },
+            {
+                "text": "灵感源源不断",
+                "type": "standard"
+            }
         ]
     ],
-    "category": "MBTI",
-    "tags": ["人格测试", "心理学"],
+    "category": "待分类",
+    "tags": [],
     "createdAt": ""
 }

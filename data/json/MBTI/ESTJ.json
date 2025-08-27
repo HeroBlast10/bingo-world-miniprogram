@@ -1,47 +1,125 @@
 {
-    "bingoId": "mbti-estj",
+    "bingoId": "estj",
     "title": "ESTJ宾果",
     "creator": "请手动填写",
-    "description": "五个连成一线，那么你可能是高效指挥官",
-    "gridSize": {"rows":5,"cols":5},
+    "description": "五个连成一条线，你就是一只教导主任",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
     "gridContent": [
         [
-            {"text": "看到歪斜的标签会立即扶正", "type":"standard"},
-            {"text": "手机闹钟按五分钟间隔排兵布阵", "type":"standard"},
-            {"text": "认为'流程优化'是情话", "type":"standard"},
-            {"text": "团建时自动成为总指挥", "type":"standard"},
-            {"text": "把休闲称为'战略补给时间'", "type":"standard"}
+            {
+                "text": "重视和遵守规则",
+                "type": "standard"
+            },
+            {
+                "text": "被别人认为很可靠",
+                "type": "standard"
+            },
+            {
+                "text": "直面冲突",
+                "type": "standard"
+            },
+            {
+                "text": "I want it，I got it",
+                "type": "standard"
+            },
+            {
+                "text": "说话直接",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "衣柜按色系和季节精确分区", "type":"standard"},
-            {"text": "'差不多'会触发警报系统", "type":"standard"},
-            {"text": "用Excel管理追剧进度", "type":"standard"},
-            {"text": "认为拖延症是文明之敌", "type":"standard"},
-            {"text": "给朋友发聚会流程PDF", "type":"standard"}
+            {
+                "text": "享受解决复杂问题",
+                "type": "standard"
+            },
+            {
+                "text": "得到强者的肯定会很自豪",
+                "type": "standard"
+            },
+            {
+                "text": "计划被打乱后迅速制定PlanB",
+                "type": "standard"
+            },
+            {
+                "text": "性格好但脾气差",
+                "type": "standard"
+            },
+            {
+                "text": "总在反思复盘",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "超市购物像军事演习", "type":"standard"},
-            {"text": "把生日蛋糕切成几何图形", "type":"standard"},
-            {"text": "认为弹性工作时间是阴谋", "type":"standard"},
-            {"text": "手机相册全是流程图截图", "type":"standard"},
-            {"text": "给咖啡机制定操作手册", "type":"standard"}
+            {
+                "text": "稳定可预测的日常生活最棒了",
+                "type": "standard"
+            },
+            {
+                "text": "世界乱套我睡觉",
+                "type": "standard"
+            },
+            {
+                "text": "对拖延感到不耐烦",
+                "type": "standard"
+            },
+            {
+                "text": "经常承担组织者的角色",
+                "type": "standard"
+            },
+            {
+                "text": "护短大王",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "看球赛时自动分析战术漏洞", "type":"standard"},
-            {"text": "把散步称为'地面侦察'", "type":"standard"},
-            {"text": "认为浪漫就是准时赴约", "type":"standard"},
-            {"text": "给多肉植物排值班表", "type":"standard"},
-            {"text": "'让我看看你的计划'是口头禅", "type":"standard"}
+            {
+                "text": "通过行动证明自己",
+                "type": "standard"
+            },
+            {
+                "text": "永远在列计划",
+                "type": "standard"
+            },
+            {
+                "text": "其实还挺会享受生活的",
+                "type": "standard"
+            },
+            {
+                "text": "完美驾驭多任务同时执行",
+                "type": "standard"
+            },
+            {
+                "text": "选择困难症?不存在",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "认为混乱是可控变量", "type":"standard"},
-            {"text": "用甘特图规划周末", "type":"standard"},
-            {"text": "把发呆定义为系统维护", "type":"standard"},
-            {"text": "给遥控器贴使用标签", "type":"standard"},
-            {"text": "觉得弹性是计划的敌人", "type":"standard"}
+            {
+                "text": "追求效率",
+                "type": "standard"
+            },
+            {
+                "text": "吃软不吃硬",
+                "type": "standard"
+            },
+            {
+                "text": "什么都要自己干才放心",
+                "type": "standard"
+            },
+            {
+                "text": "对细节有很高的要求",
+                "type": "standard"
+            },
+            {
+                "text": "结果比过程重要",
+                "type": "standard"
+            }
         ]
     ],
-    "category": "MBTI",
-    "tags": ["人格测试","心理学"],
+    "category": "待分类",
+    "tags": [],
     "createdAt": ""
 }

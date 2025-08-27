@@ -1,47 +1,125 @@
 {
-    "bingoId": "mbti-enfp",
+    "bingoId": "enfp",
     "title": "ENFP宾果",
     "creator": "请手动填写",
-    "description": "五个连成一线，那么你可能是能量火箭",
-    "gridSize": {"rows":5,"cols":5},
+    "description": "五个连成一条线，你就是一只快乐小狗",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
     "gridContent": [
         [
-            {"text": "给外卖小哥人生规划", "type":"standard"},
-            {"text": "觉得云朵需要鼓励", "type":"standard"},
-            {"text": "把会议变成创意风暴", "type":"standard"},
-            {"text": "手机存着500个灵感", "type":"standard"},
-            {"text": "认为彩虹能量不足", "type":"standard"}
+            {
+                "text": "个性签名离不了旷野风、自由",
+                "type": "standard"
+            },
+            {
+                "text": "发消息不带表情包难受",
+                "type": "standard"
+            },
+            {
+                "text": "容易对刚认识的人心动",
+                "type": "standard"
+            },
+            {
+                "text": "超级大雷点：期待已久的约会被放鸽子",
+                "type": "standard"
+            },
+            {
+                "text": "做正事时一边哄自己一边做",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "超市排队认识全家", "type":"standard"},
-            {"text": "给咖啡渣写赞美诗", "type":"standard"},
-            {"text": "觉得沉默是SOS", "type":"standard"},
-            {"text": "把消防演习变嘉年华", "type":"standard"},
-            {"text": "认为植物有梦想", "type":"standard"}
+            {
+                "text": "父母比较自由",
+                "type": "standard"
+            },
+            {
+                "text": "整理房间时必放音乐到最后边唱边跳",
+                "type": "standard"
+            },
+            {
+                "text": "亚比",
+                "type": "standard"
+            },
+            {
+                "text": "擅长捂热i人",
+                "type": "standard"
+            },
+            {
+                "text": "冲动型消费，经常有大支出",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "备忘录记着陌生人梦", "type":"standard"},
-            {"text": "看悲剧片在找希望", "type":"standard"},
-            {"text": "给电梯按钮贴爱心", "type":"standard"},
-            {"text": "觉得WiFi需要陪伴", "type":"standard"},
-            {"text": "把数据线打结转缘", "type":"standard"}
+            {
+                "text": "听歌口味变幻莫测",
+                "type": "standard"
+            },
+            {
+                "text": "经常能看到奇形怪状的云朵",
+                "type": "standard"
+            },
+            {
+                "text": "“他们只喜欢我明媚如小太阳”",
+                "type": "standard"
+            },
+            {
+                "text": "跟猫猫狗狗都能聊得火热",
+                "type": "standard"
+            },
+            {
+                "text": "“我服了”",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "团建时发射彩虹炮弹", "type":"standard"},
-            {"text": "认为说明书限制潜能", "type":"standard"},
-            {"text": "给多肉植物开辅导班", "type":"standard"},
-            {"text": "手机铃声是加油歌", "type":"standard"},
-            {"text": "觉得月亮需要充电", "type":"standard"}
+            {
+                "text": "健忘",
+                "type": "standard"
+            },
+            {
+                "text": "口号养生",
+                "type": "standard"
+            },
+            {
+                "text": "自创一些独特动作并邀请朋友加入",
+                "type": "standard"
+            },
+            {
+                "text": "走路哼歌",
+                "type": "standard"
+            },
+            {
+                "text": "喜新恋旧边回头边往前走",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "给扫地机器人颁奖", "type":"standard"},
-            {"text": "把生日蛋糕当舞台", "type":"standard"},
-            {"text": "认为眼泪是能量源", "type":"standard"},
-            {"text": "给外卖写成长报告", "type":"standard"},
-            {"text": "觉得彩虹是宇宙微笑", "type":"standard"}
+            {
+                "text": "兴趣广泛啥都想干",
+                "type": "standard"
+            },
+            {
+                "text": "感叹号批发商",
+                "type": "standard"
+            },
+            {
+                "text": "讨厌不真诚的人",
+                "type": "standard"
+            },
+            {
+                "text": "人生就是要Passion!",
+                "type": "standard"
+            },
+            {
+                "text": "“谢谢你懂我的奇奇怪怪”",
+                "type": "standard"
+            }
         ]
     ],
-    "category": "MBTI",
-    "tags": ["人格测试","心理学"],
+    "category": "待分类",
+    "tags": [],
     "createdAt": ""
 }

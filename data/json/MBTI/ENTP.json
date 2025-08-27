@@ -1,47 +1,125 @@
 {
-    "bingoId": "mbti-entp",
+    "bingoId": "entp",
     "title": "ENTP宾果",
     "creator": "请手动填写",
-    "description": "五个连成一线，那么你可能是魔鬼辩手",
-    "gridSize": {"rows":5,"cols":5},
+    "description": "五个连成一条线，你就是一只骨折眉毛",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
     "gridContent": [
         [
-            {"text": "把辩论当有氧运动", "type":"standard"},
-            {"text": "认为共识是思维牢笼", "type":"standard"},
-            {"text": "手机存着反常识论文", "type":"standard"},
-            {"text": "给传统节日设计2.0版", "type":"standard"},
-            {"text": "觉得彩虹排序不合理", "type":"standard"}
+            {
+                "text": "对氛围敏感",
+                "type": "standard"
+            },
+            {
+                "text": "恐怖份子社交",
+                "type": "standard"
+            },
+            {
+                "text": "眼神清澈的疯子",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢挑战",
+                "type": "standard"
+            },
+            {
+                "text": "动若脱兔静若烂泥",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "会议中突然推翻议程", "type":"standard"},
-            {"text": "把说明书当靶子", "type":"standard"},
-            {"text": "认为眼泪是逻辑漏洞", "type":"standard"},
-            {"text": "给咖啡机添加区块链", "type":"standard"},
-            {"text": "觉得云朵需要重组", "type":"standard"}
+            {
+                "text": "脑子转得很快但懒得动",
+                "type": "standard"
+            },
+            {
+                "text": "间歇性踌躇满志",
+                "type": "standard"
+            },
+            {
+                "text": "欠欠惹人爱",
+                "type": "standard"
+            },
+            {
+                "text": "追求新鲜感",
+                "type": "standard"
+            },
+            {
+                "text": "“那咋了”",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "看爱情片在解构套路", "type":"standard"},
-            {"text": "把团建变成辩论赛", "type":"standard"},
-            {"text": "认为'不可能'是邀请函", "type":"standard"},
-            {"text": "给扫地机器人编程", "type":"standard"},
-            {"text": "觉得月亮是投影", "type":"standard"}
+            {
+                "text": "仰天大笑出门去，我辈岂是蓬蒿人",
+                "type": "standard"
+            },
+            {
+                "text": "跟谁关系都挺好的独行侠",
+                "type": "standard"
+            },
+            {
+                "text": "惹到某些人生气会很爽",
+                "type": "standard"
+            },
+            {
+                "text": "不喜欢细节讨厌琐碎",
+                "type": "standard"
+            },
+            {
+                "text": "持续发疯直到有人爱上真正的我",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "超市排队颠覆经济学", "type":"standard"},
-            {"text": "把生日蛋糕拓扑变形", "type":"standard"},
-            {"text": "认为感情需要版本号", "type":"standard"},
-            {"text": "给WiFi重写传输协议", "type":"standard"},
-            {"text": "觉得彩虹是光学骗局", "type":"standard"}
+            {
+                "text": "公认的梗王",
+                "type": "standard"
+            },
+            {
+                "text": "鸡贼",
+                "type": "standard"
+            },
+            {
+                "text": "外热内冷",
+                "type": "standard"
+            },
+            {
+                "text": "有点ADHD",
+                "type": "standard"
+            },
+            {
+                "text": "讨坏型人格",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "电梯故障设计新系统", "type":"standard"},
-            {"text": "用哲学吵架外卖迟到", "type":"standard"},
-            {"text": "认为植物有阴谋论", "type":"standard"},
-            {"text": "给沉默加特效音", "type":"standard"},
-            {"text": "把安全手册当笑话集", "type":"standard"}
+            {
+                "text": "热爱辩论乐在其中",
+                "type": "standard"
+            },
+            {
+                "text": "可靠可怕可盐可甜",
+                "type": "standard"
+            },
+            {
+                "text": "玩世不恭",
+                "type": "standard"
+            },
+            {
+                "text": "“我天生皇帝命”",
+                "type": "standard"
+            },
+            {
+                "text": "高攻低防",
+                "type": "standard"
+            }
         ]
     ],
-    "category": "MBTI",
-    "tags": ["人格测试","心理学"],
+    "category": "待分类",
+    "tags": [],
     "createdAt": ""
 }

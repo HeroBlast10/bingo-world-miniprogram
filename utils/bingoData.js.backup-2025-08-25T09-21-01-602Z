@@ -40,118 +40,118 @@ const bingos = {
         "rows": 5,
         "cols": 5
       },
-      "gridContent":[
+      "gridContent": [
         [
-            {
-                "text": "大难临头先玩一会儿",
-                "type": "standard"
-            },
-            {
-                "text": "想把爱给全世界",
-                "type": "standard"
-            },
-            {
-                "text": "最常用的emoji是大拇指",
-                "type": "standard"
-            },
-            {
-                "text": "共情力化作眼泪溢出来了",
-                "type": "standard"
-            },
-            {
-                "text": "事业疯批",
-                "type": "standard"
-            }
+          {
+            "text": "大难临头先玩一会儿",
+            "type": "standard"
+          },
+          {
+            "text": "想把爱给全世界",
+            "type": "standard"
+          },
+          {
+            "text": "最常用的emoji是大拇指",
+            "type": "standard"
+          },
+          {
+            "text": "共情力化作眼泪溢出来了",
+            "type": "standard"
+          },
+          {
+            "text": "事业疯批",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "松弛有度：大事J人小事P人",
-                "type": "standard"
-            },
-            {
-                "text": "难以拒绝别人的请求",
-                "type": "standard"
-            },
-            {
-                "text": "受不了冷战",
-                "type": "standard"
-            },
-            {
-                "text": "极度愉悦：帮助他人后收获的善意和好评",
-                "type": "standard"
-            },
-            {
-                "text": "套话王",
-                "type": "standard"
-            }
+          {
+            "text": "松弛有度：大事J人小事P人",
+            "type": "standard"
+          },
+          {
+            "text": "难以拒绝别人的请求",
+            "type": "standard"
+          },
+          {
+            "text": "受不了冷战",
+            "type": "standard"
+          },
+          {
+            "text": "极度愉悦：帮助他人后收获的善意和好评",
+            "type": "standard"
+          },
+          {
+            "text": "套话王",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "“像我爱你一样爱我吧”",
-                "type": "standard"
-            },
-            {
-                "text": "为了别人的感受舍弃自己的体验",
-                "type": "standard"
-            },
-            {
-                "text": "擅长自省",
-                "type": "standard"
-            },
-            {
-                "text": "热心肠",
-                "type": "standard"
-            },
-            {
-                "text": "“我要赚大钱”",
-                "type": "standard"
-            }
+          {
+            "text": "\"像我爱你一样爱我吧\"",
+            "type": "standard"
+          },
+          {
+            "text": "为了别人的感受舍弃自己的体验",
+            "type": "standard"
+          },
+          {
+            "text": "擅长自省",
+            "type": "standard"
+          },
+          {
+            "text": "热心肠",
+            "type": "standard"
+          },
+          {
+            "text": "\"我要赚大钱\"",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "爱是要有共鸣的",
-                "type": "standard"
-            },
-            {
-                "text": "温柔且偏爱的犬系",
-                "type": "standard"
-            },
-            {
-                "text": "和不熟的人说话会加语气词",
-                "type": "standard"
-            },
-            {
-                "text": "自带随和能量场",
-                "type": "standard"
-            },
-            {
-                "text": "深度对话时感到非常充实和满足",
-                "type": "standard"
-            }
+          {
+            "text": "爱是要有共鸣的",
+            "type": "standard"
+          },
+          {
+            "text": "温柔且偏爱的犬系",
+            "type": "standard"
+          },
+          {
+            "text": "和不熟的人说话会加语气词",
+            "type": "standard"
+          },
+          {
+            "text": "自带随和能量场",
+            "type": "standard"
+          },
+          {
+            "text": "深度对话时感到非常充实和满足",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "喜欢蓝天白云",
-                "type": "standard"
-            },
-            {
-                "text": "皮肤饥渴症：喜欢和爱的人贴贴",
-                "type": "standard"
-            },
-            {
-                "text": "容易被“美强惨”吸引",
-                "type": "standard"
-            },
-            {
-                "text": "正义感爆棚",
-                "type": "standard"
-            },
-            {
-                "text": "细心但不一定是上心",
-                "type": "standard"
-            }
+          {
+            "text": "喜欢蓝天白云",
+            "type": "standard"
+          },
+          {
+            "text": "皮肤饥渴症：喜欢和爱的人贴贴",
+            "type": "standard"
+          },
+          {
+            "text": "容易被\"美强惨\"吸引",
+            "type": "standard"
+          },
+          {
+            "text": "正义感爆棚",
+            "type": "standard"
+          },
+          {
+            "text": "细心但不一定是上心",
+            "type": "standard"
+          }
         ]
-    ],
+      ],
       "category": "MBTI",
       "tags": [
         "人格测试",
@@ -183,7 +183,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "超级大雷点：期待已久的约会被放鸽子",
+            "text": "超级大雷点：约会期待已久的被放鸽子",
             "type": "standard"
           },
           {
@@ -205,7 +205,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "擅长捂热i人",
+            "text": "擅长损炭i人",
             "type": "standard"
           },
           {
@@ -298,116 +298,116 @@ const bingos = {
       },
       "gridContent": [
         [
-            {
-                "text": "感情废物",
-                "type": "standard"
-            },
-            {
-                "text": "爱TA就成为TA",
-                "type": "standard"
-            },
-            {
-                "text": "不开心果然因为还不够强",
-                "type": "standard"
-            },
-            {
-                "text": "容易被温柔且强大的人吸引",
-                "type": "standard"
-            },
-            {
-                "text": "购物遵从长期主义",
-                "type": "standard"
-            }
+          {
+            "text": "团建时自动接管话筒",
+            "type": "standard"
+          },
+          {
+            "text": "把闲聊视为资源浪费",
+            "type": "standard"
+          },
+          {
+            "text": "认为感情需要KPI考核",
+            "type": "standard"
+          },
+          {
+            "text": "手机壁纸是'世界地图作战版'",
+            "type": "standard"
+          },
+          {
+            "text": "安慰人像在做战前动员",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "更高更快更强",
-                "type": "standard"
-            },
-            {
-                "text": "“按计划来”",
-                "type": "standard"
-            },
-            {
-                "text": "莫名其妙胜负欲",
-                "type": "standard"
-            },
-            {
-                "text": "终极目标全面发展",
-                "type": "standard"
-            },
-            {
-                "text": "相册里很多聊天记录截屏",
-                "type": "standard"
-            }
+          {
+            "text": "看爱情片在分析权力结构",
+            "type": "standard"
+          },
+          {
+            "text": "'我建议'其实是命令",
+            "type": "standard"
+          },
+          {
+            "text": "把度假村当临时指挥部",
+            "type": "standard"
+          },
+          {
+            "text": "认为效率是最高美德",
+            "type": "standard"
+          },
+          {
+            "text": "给朋友发人生规划建议书",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "为自己的计划被别人接受而绞尽脑汁",
-                "type": "standard"
-            },
-            {
-                "text": "注重形象",
-                "type": "standard"
-            },
-            {
-                "text": "复盘一下",
-                "type": "standard"
-            },
-            {
-                "text": "“就这么定了”",
-                "type": "standard"
-            },
-            {
-                "text": "一直吃一道菜到吃腻",
-                "type": "standard"
-            }
+          {
+            "text": "谈判时像在占领高地",
+            "type": "standard"
+          },
+          {
+            "text": "手机备忘录标题带'战略'二字",
+            "type": "standard"
+          },
+          {
+            "text": "把宠物当部下训练",
+            "type": "standard"
+          },
+          {
+            "text": "认为犹豫是决策系统漏洞",
+            "type": "standard"
+          },
+          {
+            "text": "健身时像在军事训练",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "大忙人",
-                "type": "standard"
-            },
-            {
-                "text": "最爽时刻是给ToDoList都打上勾",
-                "type": "standard"
-            },
-            {
-                "text": "摆烂也是计划的一环",
-                "type": "standard"
-            },
-            {
-                "text": "不会安慰人",
-                "type": "standard"
-            },
-            {
-                "text": "我一定能做到",
-                "type": "standard"
-            }
+          {
+            "text": "超市购物像物资调配",
+            "type": "standard"
+          },
+          {
+            "text": "'五分钟'是最大时间单位",
+            "type": "standard"
+          },
+          {
+            "text": "把生日派对当项目管理",
+            "type": "standard"
+          },
+          {
+            "text": "认为眼泪是战略失误信号",
+            "type": "standard"
+          },
+          {
+            "text": "给咖啡因摄入做效益分析",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "DDL终结者",
-                "type": "standard"
-            },
-            {
-                "text": "强控制欲",
-                "type": "standard"
-            },
-            {
-                "text": "很讲义气",
-                "type": "standard"
-            },
-            {
-                "text": "没有敌人全是老师",
-                "type": "standard"
-            },
-            {
-                "text": "硬通货是最好的礼物",
-                "type": "standard"
-            }
+          {
+            "text": "看云朵像在看战场态势",
+            "type": "standard"
+          },
+          {
+            "text": "把休闲称为'战术调整'",
+            "type": "standard"
+          },
+          {
+            "text": "认为妥协是阶段性策略",
+            "type": "standard"
+          },
+          {
+            "text": "给植物下达生长指令",
+            "type": "standard"
+          },
+          {
+            "text": "觉得彩虹需要优化色谱",
+            "type": "standard"
+          }
         ]
-    ],
+      ],
       "category": "MBTI",
       "tags": [
         "人格测试",
@@ -426,116 +426,116 @@ const bingos = {
       },
       "gridContent": [
         [
-            {
-                "text": "对氛围敏感",
-                "type": "standard"
-            },
-            {
-                "text": "恐怖份子社交",
-                "type": "standard"
-            },
-            {
-                "text": "眼神清澈的疯子",
-                "type": "standard"
-            },
-            {
-                "text": "喜欢挑战",
-                "type": "standard"
-            },
-            {
-                "text": "动若脱兔静若烂泥",
-                "type": "standard"
-            }
+          {
+            "text": "把辩论当有氧运动",
+            "type": "standard"
+          },
+          {
+            "text": "认为共识是思维牢笼",
+            "type": "standard"
+          },
+          {
+            "text": "手机存着反常识论文",
+            "type": "standard"
+          },
+          {
+            "text": "给传统节日设计2.0版",
+            "type": "standard"
+          },
+          {
+            "text": "觉得彩虹排序不合理",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "脑子转得很快但懒得动",
-                "type": "standard"
-            },
-            {
-                "text": "间歇性踌躇满志",
-                "type": "standard"
-            },
-            {
-                "text": "欠欠惹人爱",
-                "type": "standard"
-            },
-            {
-                "text": "追求新鲜感",
-                "type": "standard"
-            },
-            {
-                "text": "“那咋了”",
-                "type": "standard"
-            }
+          {
+            "text": "会议中突然推翻议程",
+            "type": "standard"
+          },
+          {
+            "text": "把说明书当靶子",
+            "type": "standard"
+          },
+          {
+            "text": "认为眼泪是逻辑漏洞",
+            "type": "standard"
+          },
+          {
+            "text": "给咖啡机添加区块链",
+            "type": "standard"
+          },
+          {
+            "text": "觉得云朵需要重组",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "仰天大笑出门去，我辈岂是蓬蒿人",
-                "type": "standard"
-            },
-            {
-                "text": "跟谁关系都挺好的独行侠",
-                "type": "standard"
-            },
-            {
-                "text": "惹到某些人生气会很爽",
-                "type": "standard"
-            },
-            {
-                "text": "不喜欢细节讨厌琐碎",
-                "type": "standard"
-            },
-            {
-                "text": "持续发疯直到有人爱上真正的我",
-                "type": "standard"
-            }
+          {
+            "text": "看爱情片在解构套路",
+            "type": "standard"
+          },
+          {
+            "text": "把团建变成辩论赛",
+            "type": "standard"
+          },
+          {
+            "text": "认为'不可能'是邀请函",
+            "type": "standard"
+          },
+          {
+            "text": "给扫地机器人编程",
+            "type": "standard"
+          },
+          {
+            "text": "觉得月亮是投影",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "公认的梗王",
-                "type": "standard"
-            },
-            {
-                "text": "鸡贼",
-                "type": "standard"
-            },
-            {
-                "text": "外热内冷",
-                "type": "standard"
-            },
-            {
-                "text": "有点ADHD",
-                "type": "standard"
-            },
-            {
-                "text": "讨坏型人格",
-                "type": "standard"
-            }
+          {
+            "text": "超市排队颠覆经济学",
+            "type": "standard"
+          },
+          {
+            "text": "把生日蛋糕拓扑变形",
+            "type": "standard"
+          },
+          {
+            "text": "认为感情需要版本号",
+            "type": "standard"
+          },
+          {
+            "text": "给WiFi重写传输协议",
+            "type": "standard"
+          },
+          {
+            "text": "觉得彩虹是光学骗局",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "热爱辩论乐在其中",
-                "type": "standard"
-            },
-            {
-                "text": "可靠可怕可盐可甜",
-                "type": "standard"
-            },
-            {
-                "text": "玩世不恭",
-                "type": "standard"
-            },
-            {
-                "text": "“我天生皇帝命”",
-                "type": "standard"
-            },
-            {
-                "text": "高攻低防",
-                "type": "standard"
-            }
+          {
+            "text": "电梯故障设计新系统",
+            "type": "standard"
+          },
+          {
+            "text": "用哲学吵架外卖迟到",
+            "type": "standard"
+          },
+          {
+            "text": "认为植物有阴谋论",
+            "type": "standard"
+          },
+          {
+            "text": "给沉默加特效音",
+            "type": "standard"
+          },
+          {
+            "text": "把安全手册当笑话集",
+            "type": "standard"
+          }
         ]
-    ],
+      ],
       "category": "MBTI",
       "tags": [
         "人格测试",
@@ -554,116 +554,116 @@ const bingos = {
       },
       "gridContent": [
         [
-            {
-                "text": "对别人的评价很敏感",
-                "type": "standard"
-            },
-            {
-                "text": "一切顺利真是太好了",
-                "type": "standard"
-            },
-            {
-                "text": "会替别人感到尴尬",
-                "type": "standard"
-            },
-            {
-                "text": "在宇宙中心呼唤爱",
-                "type": "free_space"
-            },
-            {
-                "text": "容易让人感到信赖",
-                "type": "standard"
-            }
+          {
+            "text": "手机存着82人的饮食禁忌",
+            "type": "standard"
+          },
+          {
+            "text": "聚会时自动成为食物分配员",
+            "type": "standard"
+          },
+          {
+            "text": "认为没回复'收到'是紧急事件",
+            "type": "standard"
+          },
+          {
+            "text": "给邻居家的狗准备生日礼物",
+            "type": "standard"
+          },
+          {
+            "text": "觉得冷场是重大安全事故",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "我的朋友不会有错",
-                "type": "standard"
-            },
-            {
-                "text": "不喜欢被催促",
-                "type": "standard"
-            },
-            {
-                "text": "喜欢组织安排活动",
-                "type": "standard"
-            },
-            {
-                "text": "朋友们的树洞",
-                "type": "standard"
-            },
-            {
-                "text": "擅长解决人际关系问题",
-                "type": "standard"
-            }
+          {
+            "text": "备忘录记着同事小孩名字",
+            "type": "standard"
+          },
+          {
+            "text": "超市买三送一会分给邻居",
+            "type": "standard"
+          },
+          {
+            "text": "把调解纠纷当日常健身",
+            "type": "standard"
+          },
+          {
+            "text": "认为独处需要申请许可证",
+            "type": "standard"
+          },
+          {
+            "text": "给外卖小哥准备感谢卡片",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "身边低气压会想逃离",
-                "type": "standard"
-            },
-            {
-                "text": "也需要获得足够情绪价值",
-                "type": "standard"
-            },
-            {
-                "text": "妈感十足",
-                "type": "standard"
-            },
-            {
-                "text": "很关注家庭氛围的和谐",
-                "type": "standard"
-            },
-            {
-                "text": "被需要时很有成就感",
-                "type": "standard"
-            }
+          {
+            "text": "团建照片按人脸分类归档",
+            "type": "standard"
+          },
+          {
+            "text": "觉得没人夸赞的菜会伤心",
+            "type": "standard"
+          },
+          {
+            "text": "把社区公告当情书阅读",
+            "type": "standard"
+          },
+          {
+            "text": "认为和谐高于事实真相",
+            "type": "standard"
+          },
+          {
+            "text": "给电梯按钮贴暖心标语",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "真心是最宝贵的",
-                "type": "standard"
-            },
-            {
-                "text": "善于资源整合",
-                "type": "standard"
-            },
-            {
-                "text": "牢牢记住朋友的喜好",
-                "type": "standard"
-            },
-            {
-                "text": "对喜欢的人害羞又直球",
-                "type": "standard"
-            },
-            {
-                "text": "对冲突感到不安",
-                "type": "standard"
-            }
+          {
+            "text": "看天气预报像读亲友近况",
+            "type": "standard"
+          },
+          {
+            "text": "'大家都开心吗'是灵魂拷问",
+            "type": "standard"
+          },
+          {
+            "text": "把独处称为'社交待机'",
+            "type": "standard"
+          },
+          {
+            "text": "认为反馈是精神维生素",
+            "type": "standard"
+          },
+          {
+            "text": "给共享单车系蝴蝶结",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "总能把朋友照顾得很周到",
-                "type": "standard"
-            },
-            {
-                "text": "太阳能",
-                "type": "standard"
-            },
-            {
-                "text": "生气时会隐藏聊天对话框",
-                "type": "standard"
-            },
-            {
-                "text": "爱操心劳碌命",
-                "type": "standard"
-            },
-            {
-                "text": "强大的共情能力",
-                "type": "standard"
-            }
+          {
+            "text": "手机电量低于50%就焦虑",
+            "type": "standard"
+          },
+          {
+            "text": "觉得云朵需要社交陪伴",
+            "type": "standard"
+          },
+          {
+            "text": "给植物播放交友广播",
+            "type": "standard"
+          },
+          {
+            "text": "认为点赞是生存必需品",
+            "type": "standard"
+          },
+          {
+            "text": "把垃圾分类当联谊活动",
+            "type": "standard"
+          }
         ]
-    ],
+      ],
       "category": "MBTI",
       "tags": [
         "人格测试",
@@ -682,116 +682,116 @@ const bingos = {
       },
       "gridContent": [
         [
-            {
-                "text": "气氛组组长",
-                "type": "standard"
-            },
-            {
-                "text": "喜欢一个人根本藏不住",
-                "type": "standard"
-            },
-            {
-                "text": "喜怒哀乐全写在脸上",
-                "type": "standard"
-            },
-            {
-                "text": "迟到大王",
-                "type": "standard"
-            },
-            {
-                "text": "精力充沛",
-                "type": "standard"
-            }
+          {
+            "text": "气氛组组长",
+            "type": "standard"
+          },
+          {
+            "text": "喜欢一个人根本藏不住",
+            "type": "standard"
+          },
+          {
+            "text": "认为镜子是最好听众",
+            "type": "standard"
+          },
+          {
+            "text": "把工作会议变脱口秀",
+            "type": "standard"
+          },
+          {
+            "text": "停电时组织影子剧院",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "爱玩爱笑",
-                "type": "standard"
-            },
-            {
-                "text": "爱就要轰轰烈烈",
-                "type": "standard"
-            },
-            {
-                "text": "“少管我”",
-                "type": "standard"
-            },
-            {
-                "text": "害怕无聊",
-                "type": "standard"
-            },
-            {
-                "text": "爱撒娇爱表达是与生俱来的能力",
-                "type": "standard"
-            }
+          {
+            "text": "手机相册全是表情包",
+            "type": "standard"
+          },
+          {
+            "text": "觉得沉默是健康隐患",
+            "type": "standard"
+          },
+          {
+            "text": "给外卖小哥编加油歌",
+            "type": "standard"
+          },
+          {
+            "text": "把垃圾分类当打击乐",
+            "type": "standard"
+          },
+          {
+            "text": "认为彩虹需要伴舞",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "忘性大",
-                "type": "standard"
-            },
-            {
-                "text": "有N种方式逗人开心",
-                "type": "standard"
-            },
-            {
-                "text": "乐于成为焦点",
-                "type": "standard"
-            },
-            {
-                "text": "狂打直球",
-                "type": "standard"
-            },
-            {
-                "text": "纯爱战士",
-                "type": "standard"
-            }
+          {
+            "text": "备忘录记着笑话库存",
+            "type": "standard"
+          },
+          {
+            "text": "看悲剧片在找笑点",
+            "type": "standard"
+          },
+          {
+            "text": "给咖啡拉花办颁奖礼",
+            "type": "standard"
+          },
+          {
+            "text": "觉得云朵需要美颜",
+            "type": "standard"
+          },
+          {
+            "text": "把数据线当麦克风",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "超强分享欲",
-                "type": "standard"
-            },
-            {
-                "text": "只想活在当下及时行乐",
-                "type": "standard"
-            },
-            {
-                "text": "桃花朵朵开",
-                "type": "standard"
-            },
-            {
-                "text": "笨蛋美人",
-                "type": "standard"
-            },
-            {
-                "text": "享受物质生活",
-                "type": "standard"
-            }
+          {
+            "text": "排队时教陌生人跳舞",
+            "type": "standard"
+          },
+          {
+            "text": "认为PPT需要灯光秀",
+            "type": "standard"
+          },
+          {
+            "text": "给扫地机器人加油",
+            "type": "standard"
+          },
+          {
+            "text": "手机铃声是自创单曲",
+            "type": "standard"
+          },
+          {
+            "text": "觉得会议记录要押韵",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "喜欢新鲜刺激的事物",
-                "type": "standard"
-            },
-            {
-                "text": "初次见面我爱你",
-                "type": "standard"
-            },
-            {
-                "text": "求和好会写小作文",
-                "type": "standard"
-            },
-            {
-                "text": "不喜欢充满负能量的人",
-                "type": "standard"
-            },
-            {
-                "text": "颜控",
-                "type": "standard"
-            }
+          {
+            "text": "给自动门设计出场音效",
+            "type": "standard"
+          },
+          {
+            "text": "把消防演习当蹦迪",
+            "type": "standard"
+          },
+          {
+            "text": "认为苦瓜需要鼓励",
+            "type": "standard"
+          },
+          {
+            "text": "给WiFi起明星名字",
+            "type": "standard"
+          },
+          {
+            "text": "觉得月亮是舞台灯光",
+            "type": "standard"
+          }
         ]
-    ],
+      ],
       "category": "MBTI",
       "tags": [
         "人格测试",
@@ -810,116 +810,116 @@ const bingos = {
       },
       "gridContent": [
         [
-            {
-                "text": "重视和遵守规则",
-                "type": "standard"
-            },
-            {
-                "text": "被别人认为很可靠",
-                "type": "standard"
-            },
-            {
-                "text": "直面冲突",
-                "type": "standard"
-            },
-            {
-                "text": "I want it，I got it",
-                "type": "standard"
-            },
-            {
-                "text": "说话直接",
-                "type": "standard"
-            }
+          {
+            "text": "看到歪斜的标签会立即扶正",
+            "type": "standard"
+          },
+          {
+            "text": "手机闹钟按五分钟间隔排兵布阵",
+            "type": "standard"
+          },
+          {
+            "text": "认为'流程优化'是情话",
+            "type": "standard"
+          },
+          {
+            "text": "团建时自动成为总指挥",
+            "type": "standard"
+          },
+          {
+            "text": "把休闲称为'战略补给时间'",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "享受解决复杂问题",
-                "type": "standard"
-            },
-            {
-                "text": "得到强者的肯定会很自豪",
-                "type": "standard"
-            },
-            {
-                "text": "计划被打乱后迅速制定PlanB",
-                "type": "standard"
-            },
-            {
-                "text": "性格好但脾气差",
-                "type": "standard"
-            },
-            {
-                "text": "总在反思复盘",
-                "type": "standard"
-            }
+          {
+            "text": "衣柜按色系和季节精确分区",
+            "type": "standard"
+          },
+          {
+            "text": "'差不多'会触发警报系统",
+            "type": "standard"
+          },
+          {
+            "text": "用Excel管理追剧进度",
+            "type": "standard"
+          },
+          {
+            "text": "认为拖延症是文明之敌",
+            "type": "standard"
+          },
+          {
+            "text": "给朋友发聚会流程PDF",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "稳定可预测的日常生活最棒了",
-                "type": "standard"
-            },
-            {
-                "text": "世界乱套我睡觉",
-                "type": "standard"
-            },
-            {
-                "text": "对拖延感到不耐烦",
-                "type": "standard"
-            },
-            {
-                "text": "经常承担组织者的角色",
-                "type": "standard"
-            },
-            {
-                "text": "护短大王",
-                "type": "standard"
-            }
+          {
+            "text": "超市购物像军事演习",
+            "type": "standard"
+          },
+          {
+            "text": "把生日蛋糕切成几何图形",
+            "type": "standard"
+          },
+          {
+            "text": "认为弹性工作时间是阴谋",
+            "type": "standard"
+          },
+          {
+            "text": "手机相册全是流程图截图",
+            "type": "standard"
+          },
+          {
+            "text": "给咖啡机制定操作手册",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "通过行动证明自己",
-                "type": "standard"
-            },
-            {
-                "text": "永远在列计划",
-                "type": "standard"
-            },
-            {
-                "text": "其实还挺会享受生活的",
-                "type": "standard"
-            },
-            {
-                "text": "完美驾驭多任务同时执行",
-                "type": "standard"
-            },
-            {
-                "text": "选择困难症?不存在",
-                "type": "standard"
-            }
+          {
+            "text": "看球赛时自动分析战术漏洞",
+            "type": "standard"
+          },
+          {
+            "text": "把散步称为'地面侦察'",
+            "type": "standard"
+          },
+          {
+            "text": "认为浪漫就是准时赴约",
+            "type": "standard"
+          },
+          {
+            "text": "给多肉植物排值班表",
+            "type": "standard"
+          },
+          {
+            "text": "'让我看看你的计划'是口头禅",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "追求效率",
-                "type": "standard"
-            },
-            {
-                "text": "吃软不吃硬",
-                "type": "standard"
-            },
-            {
-                "text": "什么都要自己干才放心",
-                "type": "standard"
-            },
-            {
-                "text": "对细节有很高的要求",
-                "type": "standard"
-            },
-            {
-                "text": "结果比过程重要",
-                "type": "standard"
-            }
+          {
+            "text": "认为混乱是可控变量",
+            "type": "standard"
+          },
+          {
+            "text": "用甘特图规划周末",
+            "type": "standard"
+          },
+          {
+            "text": "把发呆定义为系统维护",
+            "type": "standard"
+          },
+          {
+            "text": "给遥控器贴使用标签",
+            "type": "standard"
+          },
+          {
+            "text": "觉得弹性是计划的敌人",
+            "type": "standard"
+          }
         ]
-    ],
+      ],
       "category": "MBTI",
       "tags": [
         "人格测试",
@@ -938,116 +938,116 @@ const bingos = {
       },
       "gridContent": [
         [
-            {
-                "text": "真心实意给人画饼",
-                "type": "standard"
-            },
-            {
-                "text": "不会被工作PUA",
-                "type": "standard"
-            },
-            {
-                "text": "比起努力更擅长靠天赋过得滋润",
-                "type": "standard"
-            },
-            {
-                "text": "“爽就完了”",
-                "type": "standard"
-            },
-            {
-                "text": "不让干什么偏干",
-                "type": "standard"
-            }
+          {
+            "text": "把消防演习当极限运动",
+            "type": "standard"
+          },
+          {
+            "text": "谈判时像在玩德州扑克",
+            "type": "standard"
+          },
+          {
+            "text": "认为安全手册是科幻小说",
+            "type": "standard"
+          },
+          {
+            "text": "电梯故障反而兴奋拍照",
+            "type": "standard"
+          },
+          {
+            "text": "用街舞动作按ATM密码",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "有事没事出去玩",
-                "type": "standard"
-            },
-            {
-                "text": "做事非常大胆",
-                "type": "standard"
-            },
-            {
-                "text": "越神经越开心",
-                "type": "standard"
-            },
-            {
-                "text": "与其内耗自己不如外耗别人",
-                "type": "standard"
-            },
-            {
-                "text": "适应力非常强",
-                "type": "standard"
-            }
+          {
+            "text": "危机时刻肾上腺素狂喜",
+            "type": "standard"
+          },
+          {
+            "text": "把会议室当跑酷场地",
+            "type": "standard"
+          },
+          {
+            "text": "觉得计划是创意枷锁",
+            "type": "standard"
+          },
+          {
+            "text": "迷路时发现新大陆",
+            "type": "standard"
+          },
+          {
+            "text": "用篮球动作扔垃圾",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "爱你就给你花钱",
-                "type": "standard"
-            },
-            {
-                "text": "善于影响别人",
-                "type": "standard"
-            },
-            {
-                "text": "潇洒乐子人",
-                "type": "standard"
-            },
-            {
-                "text": "既热情又冷血",
-                "type": "standard"
-            },
-            {
-                "text": "利己主义",
-                "type": "standard"
-            }
+          {
+            "text": "看说明书是浪费时间",
+            "type": "standard"
+          },
+          {
+            "text": "把团建变成生存挑战",
+            "type": "standard"
+          },
+          {
+            "text": "认为'风险评估'是骂人",
+            "type": "standard"
+          },
+          {
+            "text": "停电时组织烛光派对",
+            "type": "standard"
+          },
+          {
+            "text": "用滑板代步取外卖",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "不同人面前有不同人设",
-                "type": "standard"
-            },
-            {
-                "text": "独处ok社交更开心",
-                "type": "standard"
-            },
-            {
-                "text": "完全没有嫉妒心",
-                "type": "standard"
-            },
-            {
-                "text": "不喜欢磨磨唧唧的人",
-                "type": "standard"
-            },
-            {
-                "text": "遇到问题时只会怀疑自己0.1s",
-                "type": "standard"
-            }
+          {
+            "text": "超市推车玩漂移",
+            "type": "standard"
+          },
+          {
+            "text": "把截止日期当兴奋剂",
+            "type": "standard"
+          },
+          {
+            "text": "觉得安全带影响发挥",
+            "type": "standard"
+          },
+          {
+            "text": "暴雨天出门测试防水",
+            "type": "standard"
+          },
+          {
+            "text": "用攀岩技巧拿高处零食",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "快刀斩乱麻",
-                "type": "standard"
-            },
-            {
-                "text": "2倍速看视频",
-                "type": "standard"
-            },
-            {
-                "text": "选择性共情",
-                "type": "standard"
-            },
-            {
-                "text": "道德感低",
-                "type": "standard"
-            },
-            {
-                "text": "“我就剑”",
-                "type": "standard"
-            }
+          {
+            "text": "把警告牌当挑战书",
+            "type": "standard"
+          },
+          {
+            "text": "认为会议室需要球框",
+            "type": "standard"
+          },
+          {
+            "text": "交通堵塞时表演车技",
+            "type": "standard"
+          },
+          {
+            "text": "给消防演练加特效",
+            "type": "standard"
+          },
+          {
+            "text": "觉得安全网是蹦床",
+            "type": "standard"
+          }
         ]
-    ],
+      ],
       "category": "MBTI",
       "tags": [
         "人格测试",
@@ -1066,116 +1066,116 @@ const bingos = {
       },
       "gridContent": [
         [
-            {
-                "text": "能快速察觉他人的情绪变换",
-                "type": "standard"
-            },
-            {
-                "text": "人生的意义到底是...?",
-                "type": "standard"
-            },
-            {
-                "text": "我想我会一直孤单",
-                "type": "standard"
-            },
-            {
-                "text": "喜欢观察人类",
-                "type": "standard"
-            },
-            {
-                "text": "完美主义，自己Push自己",
-                "type": "standard"
-            }
+          {
+            "text": "看透谎言但假装不知道",
+            "type": "standard"
+          },
+          {
+            "text": "深夜编辑千字安慰信息",
+            "type": "standard"
+          },
+          {
+            "text": "在聚会角落当心灵护士",
+            "type": "standard"
+          },
+          {
+            "text": "对他人情绪变化雷达预警",
+            "type": "standard"
+          },
+          {
+            "text": "备忘录存着陌生人故事",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "心理学玄学爱好者",
-                "type": "standard"
-            },
-            {
-                "text": "外表柔和内心无比坚定",
-                "type": "standard"
-            },
-            {
-                "text": "小组作业呕心沥血的小组长",
-                "type": "standard"
-            },
-            {
-                "text": "相信直觉",
-                "type": "standard"
-            },
-            {
-                "text": "重度内耗",
-                "type": "standard"
-            }
+          {
+            "text": "预言朋友分手被当巫术",
+            "type": "standard"
+          },
+          {
+            "text": "用隐喻说话像在出谜题",
+            "type": "standard"
+          },
+          {
+            "text": "给垃圾桶分类写感谢信",
+            "type": "standard"
+          },
+          {
+            "text": "觉得电梯按钮需要安抚",
+            "type": "standard"
+          },
+          {
+            "text": "把咖啡渍解读成星座",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "注重食物的品质",
-                "type": "standard"
-            },
-            {
-                "text": "精神洁癖",
-                "type": "standard"
-            },
-            {
-                "text": "喜欢文字而不是口头表达",
-                "type": "standard"
-            },
-            {
-                "text": "人生就是活个体验",
-                "type": "standard"
-            },
-            {
-                "text": "池塘里一条鱼也没有的海王",
-                "type": "standard"
-            }
+          {
+            "text": "在超市感应商品情绪",
+            "type": "standard"
+          },
+          {
+            "text": "给植物播放古典乐",
+            "type": "standard"
+          },
+          {
+            "text": "认为乌云需要心理咨询",
+            "type": "standard"
+          },
+          {
+            "text": "用塔罗牌决定午餐",
+            "type": "standard"
+          },
+          {
+            "text": "给扫地机器人让路鞠躬",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "下辈子不想当人了",
-                "type": "standard"
-            },
-            {
-                "text": "擅长解构一切",
-                "type": "standard"
-            },
-            {
-                "text": "对气味敏感",
-                "type": "standard"
-            },
-            {
-                "text": "君子之交淡如水",
-                "type": "standard"
-            },
-            {
-                "text": "自言自语",
-                "type": "standard"
-            }
+          {
+            "text": "觉得wifi信号有孤独感",
+            "type": "standard"
+          },
+          {
+            "text": "给打印机加油打气",
+            "type": "standard"
+          },
+          {
+            "text": "认为橡皮擦在自我牺牲",
+            "type": "standard"
+          },
+          {
+            "text": "对自动门说'辛苦了'",
+            "type": "standard"
+          },
+          {
+            "text": "给过期食品办告别仪式",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "超绝收藏癖",
-                "type": "standard"
-            },
-            {
-                "text": "想搬到山里住",
-                "type": "standard"
-            },
-            {
-                "text": "做事准则：放长线钓大鱼",
-                "type": "standard"
-            },
-            {
-                "text": "有过出家的念头",
-                "type": "standard"
-            },
-            {
-                "text": "讨厌吵架，回避冲突",
-                "type": "standard"
-            }
+          {
+            "text": "觉得月亮是夜间监视器",
+            "type": "standard"
+          },
+          {
+            "text": "给手机充电线编友谊手链",
+            "type": "standard"
+          },
+          {
+            "text": "认为闹钟在报复社会",
+            "type": "standard"
+          },
+          {
+            "text": "给外卖APP写情诗",
+            "type": "standard"
+          },
+          {
+            "text": "觉得电梯数字需要疗愈",
+            "type": "standard"
+          }
         ]
-    ],
+      ],
       "category": "MBTI",
       "tags": [
         "人格测试",
@@ -1194,116 +1194,116 @@ const bingos = {
       },
       "gridContent": [
         [
-            {
-                "text": "日常纠结 选择困难症",
-                "type": "standard"
-            },
-            {
-                "text": "高度理想主义",
-                "type": "standard"
-            },
-            {
-                "text": "爱好冷门知识",
-                "type": "standard"
-            },
-            {
-                "text": "希望有人能读懂自己",
-                "type": "standard"
-            },
-            {
-                "text": "从不麻烦别人",
-                "type": "standard"
-            }
+          {
+            "text": "为流浪云朵写十四行诗",
+            "type": "standard"
+          },
+          {
+            "text": "收藏落叶当书签",
+            "type": "standard"
+          },
+          {
+            "text": "和咖啡拉花说早安",
+            "type": "standard"
+          },
+          {
+            "text": "觉得路灯在讲故事",
+            "type": "standard"
+          },
+          {
+            "text": "给文具起名字",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "三分钟热度",
-                "type": "standard"
-            },
-            {
-                "text": "多愁善感",
-                "type": "standard"
-            },
-            {
-                "text": "“我都ok啊”",
-                "type": "standard"
-            },
-            {
-                "text": "走路不紧不慢",
-                "type": "standard"
-            },
-            {
-                "text": "社交恐惧症到偷感很重",
-                "type": "standard"
-            }
+          {
+            "text": "看催泪弹广告会哭",
+            "type": "standard"
+          },
+          {
+            "text": "备忘录全是梦境记录",
+            "type": "standard"
+          },
+          {
+            "text": "认为蒲公英是自由信使",
+            "type": "standard"
+          },
+          {
+            "text": "给手机天气配心情注释",
+            "type": "standard"
+          },
+          {
+            "text": "觉得WiFi信号在跳舞",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "对艺术有着浓厚兴趣",
-                "type": "standard"
-            },
-            {
-                "text": "鼻炎患者or胃病患者",
-                "type": "standard"
-            },
-            {
-                "text": "浪漫主义者",
-                "type": "standard"
-            },
-            {
-                "text": "热衷探索自我成长的方法",
-                "type": "standard"
-            },
-            {
-                "text": "不喜欢被束缚",
-                "type": "standard"
-            }
+          {
+            "text": "把树洞当战略合作伙伴",
+            "type": "standard"
+          },
+          {
+            "text": "给外卖小哥画感谢小卡",
+            "type": "standard"
+          },
+          {
+            "text": "坚信玩具有夜生活",
+            "type": "standard"
+          },
+          {
+            "text": "用彩虹颜色规划一周",
+            "type": "standard"
+          },
+          {
+            "text": "认为奶茶配料需要共情",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "喜欢自我反省",
-                "type": "standard"
-            },
-            {
-                "text": "恐惧电话铃声",
-                "type": "standard"
-            },
-            {
-                "text": "喜欢种植花草",
-                "type": "standard"
-            },
-            {
-                "text": "比起恋爱更喜欢磕cp",
-                "type": "standard"
-            },
-            {
-                "text": "做事会尽力做到最好",
-                "type": "standard"
-            }
+          {
+            "text": "把阴天当天空在emo",
+            "type": "standard"
+          },
+          {
+            "text": "给洗衣机唱鼓励歌",
+            "type": "standard"
+          },
+          {
+            "text": "觉得数据线在拥抱",
+            "type": "standard"
+          },
+          {
+            "text": "用童话逻辑解释物理",
+            "type": "standard"
+          },
+          {
+            "text": "认为番茄需要赞美才变红",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "精通礼貌用语",
-                "type": "standard"
-            },
-            {
-                "text": "注重细节",
-                "type": "standard"
-            },
-            {
-                "text": "戴上耳机之后自信UpUp",
-                "type": "standard"
-            },
-            {
-                "text": "对小动物爱得深沉",
-                "type": "standard"
-            },
-            {
-                "text": "灵感源源不断",
-                "type": "standard"
-            }
+          {
+            "text": "给自动门说谢谢",
+            "type": "standard"
+          },
+          {
+            "text": "觉得月亮在跟踪自己",
+            "type": "standard"
+          },
+          {
+            "text": "给WiFi改诗意名称",
+            "type": "standard"
+          },
+          {
+            "text": "坚信玩偶夜间开派对",
+            "type": "standard"
+          },
+          {
+            "text": "认为雨声是天空密语",
+            "type": "standard"
+          }
         ]
-    ],
+      ],
       "category": "MBTI",
       "tags": [
         "人格测试",
@@ -1322,116 +1322,116 @@ const bingos = {
       },
       "gridContent": [
         [
-            {
-                "text": "冷静克制",
-                "type": "standard"
-            },
-            {
-                "text": "咖啡和茶纳入医保就好了",
-                "type": "standard"
-            },
-            {
-                "text": "噪音过敏",
-                "type": "standard"
-            },
-            {
-                "text": "面无表情是在节能",
-                "type": "standard"
-            },
-            {
-                "text": "努力合群时有种伪人感",
-                "type": "standard"
-            }
+          {
+            "text": "看到低效方案会瞳孔地震",
+            "type": "standard"
+          },
+          {
+            "text": "人生计划精确到五年后周二",
+            "type": "standard"
+          },
+          {
+            "text": "辩论时像在下一盘大棋",
+            "type": "standard"
+          },
+          {
+            "text": "对'感情用事'这个词过敏",
+            "type": "standard"
+          },
+          {
+            "text": "手机备忘录全是思维导图",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "多层面具",
-                "type": "standard"
-            },
-            {
-                "text": "超多后备Plan",
-                "type": "standard"
-            },
-            {
-                "text": "我没事我就是想安静会儿",
-                "type": "standard"
-            },
-            {
-                "text": "喜欢悬疑题材",
-                "type": "standard"
-            },
-            {
-                "text": "有一些异想天开的梦想",
-                "type": "standard"
-            }
+          {
+            "text": "认为拥抱不如解决方案实在",
+            "type": "standard"
+          },
+          {
+            "text": "深夜思考人类文明存续问题",
+            "type": "standard"
+          },
+          {
+            "text": "把社交称为'能量回收时间'",
+            "type": "standard"
+          },
+          {
+            "text": "衣柜只有黑白灰三色战袍",
+            "type": "standard"
+          },
+          {
+            "text": "被夸'你好有人情味'会愣住",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "细节完美才算整体及格",
-                "type": "standard"
-            },
-            {
-                "text": "平时沉默寡言，发言一针见血",
-                "type": "standard"
-            },
-            {
-                "text": "八卦一听就忘，仇人能记十年",
-                "type": "standard"
-            },
-            {
-                "text": "路上遇见熟人宁愿绕远路",
-                "type": "standard"
-            },
-            {
-                "text": "奇怪的笑点",
-                "type": "standard"
-            }
+          {
+            "text": "看爱情片在分析人物动机",
+            "type": "standard"
+          },
+          {
+            "text": "觉得团建是反人类发明",
+            "type": "standard"
+          },
+          {
+            "text": "书架上尼采旁边放着《君主论》",
+            "type": "standard"
+          },
+          {
+            "text": "用SWOT分析早餐吃什么",
+            "type": "standard"
+          },
+          {
+            "text": "'随便'是最可怕的答案",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "世界的旁观者",
-                "type": "standard"
-            },
-            {
-                "text": "在疯癫和死亡之间心态平和",
-                "type": "standard"
-            },
-            {
-                "text": "随缘恋爱真无所谓",
-                "type": "standard"
-            },
-            {
-                "text": "会断崖式放弃一些人或事",
-                "type": "standard"
-            },
-            {
-                "text": "自虐王者",
-                "type": "standard"
-            }
+          {
+            "text": "电脑桌面整洁得像手术室",
+            "type": "standard"
+          },
+          {
+            "text": "认为眼泪是决策干扰项",
+            "type": "standard"
+          },
+          {
+            "text": "对'你太较真了'感到困惑",
+            "type": "standard"
+          },
+          {
+            "text": "秘密梦想是设计乌托邦",
+            "type": "standard"
+          },
+          {
+            "text": "安慰人时像在写可行性报告",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "蠢而不自知的人请滚",
-                "type": "standard"
-            },
-            {
-                "text": "对边界感很执着",
-                "type": "standard"
-            },
-            {
-                "text": "小动物比人强一万倍",
-                "type": "standard"
-            },
-            {
-                "text": "看起来顺从其实是无视权威",
-                "type": "standard"
-            },
-            {
-                "text": "因为深谙人性所以慢热",
-                "type": "standard"
-            }
+          {
+            "text": "看到漏洞会忍不住修改",
+            "type": "standard"
+          },
+          {
+            "text": "'我觉得'后面必跟数据支撑",
+            "type": "standard"
+          },
+          {
+            "text": "把人生当战略游戏在玩",
+            "type": "standard"
+          },
+          {
+            "text": "认为小丑表情包是最高赞美",
+            "type": "standard"
+          },
+          {
+            "text": "遇到彩虹屁会反向技术拆解",
+            "type": "standard"
+          }
         ]
-    ],
+      ],
       "category": "MBTI",
       "tags": [
         "人格测试",
@@ -1450,116 +1450,116 @@ const bingos = {
       },
       "gridContent": [
         [
-            {
-                "text": "万年寡王",
-                "type": "standard"
-            },
-            {
-                "text": "真理永存",
-                "type": "standard"
-            },
-            {
-                "text": "年少时曾许愿世界和平",
-                "type": "standard"
-            },
-            {
-                "text": "拖延症晚期",
-                "type": "standard"
-            },
-            {
-                "text": "高度独立",
-                "type": "standard"
-            }
+          {
+            "text": "聊天时突然陷入宇宙沉思",
+            "type": "standard"
+          },
+          {
+            "text": "书签栏有47个未读论文",
+            "type": "standard"
+          },
+          {
+            "text": "认为'这不合逻辑'是脏话",
+            "type": "standard"
+          },
+          {
+            "text": "把冰箱当图书馆用",
+            "type": "standard"
+          },
+          {
+            "text": "对冷笑话数据库了如指掌",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "总睡不醒",
-                "type": "standard"
-            },
-            {
-                "text": "智性恋/双性恋",
-                "type": "standard"
-            },
-            {
-                "text": "社会服从性很低，比如不做作业爱迟到",
-                "type": "standard"
-            },
-            {
-                "text": "强烈自尊心",
-                "type": "standard"
-            },
-            {
-                "text": "忠诚但需要空间",
-                "type": "standard"
-            }
+          {
+            "text": "洗澡时发明时间机器",
+            "type": "standard"
+          },
+          {
+            "text": "'稍等'意味着三小时研究",
+            "type": "standard"
+          },
+          {
+            "text": "用数学公式解感情问题",
+            "type": "standard"
+          },
+          {
+            "text": "收藏夹里有黑洞解剖图",
+            "type": "standard"
+          },
+          {
+            "text": "觉得社交礼仪是玄学",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "信息饥渴的杂学家",
-                "type": "standard"
-            },
-            {
-                "text": "眼神涣散，不傻但呆",
-                "type": "standard"
-            },
-            {
-                "text": "没耐心",
-                "type": "standard"
-            },
-            {
-                "text": "“大不了死”",
-                "type": "standard"
-            },
-            {
-                "text": "泰然自若",
-                "type": "standard"
-            }
+          {
+            "text": "定义'收拾'为堆出新形状",
+            "type": "standard"
+          },
+          {
+            "text": "突然验证牙膏挤法最优解",
+            "type": "standard"
+          },
+          {
+            "text": "看说明书比看小说入迷",
+            "type": "standard"
+          },
+          {
+            "text": "认为小狗摇尾巴是混沌理论",
+            "type": "standard"
+          },
+          {
+            "text": "把生日蜡烛当小型实验",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "十万个为什么",
-                "type": "standard"
-            },
-            {
-                "text": "不爱运动",
-                "type": "standard"
-            },
-            {
-                "text": "虚无主义",
-                "type": "standard"
-            },
-            {
-                "text": "你什么东西敢评价我",
-                "type": "standard"
-            },
-            {
-                "text": "需要一点外部刺激才能奋发图强",
-                "type": "standard"
-            }
+          {
+            "text": "聊天记录充满'为什么'",
+            "type": "standard"
+          },
+          {
+            "text": "用编程思维养盆栽",
+            "type": "standard"
+          },
+          {
+            "text": "觉得表情包是信息压缩艺术",
+            "type": "standard"
+          },
+          {
+            "text": "给咖啡杯分类量子态",
+            "type": "standard"
+          },
+          {
+            "text": "解释笑话比讲笑话时间长",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "疯狂研究小众爱好",
-                "type": "standard"
-            },
-            {
-                "text": "泪点虐点都很怪",
-                "type": "standard"
-            },
-            {
-                "text": "记忆力黑洞忘性很大",
-                "type": "standard"
-            },
-            {
-                "text": "大难临头我先躺会",
-                "type": "standard"
-            },
-            {
-                "text": "“关我屁事”",
-                "type": "standard"
-            }
+          {
+            "text": "衣柜里有元素周期表T恤",
+            "type": "standard"
+          },
+          {
+            "text": "认为'差不多'是危险词汇",
+            "type": "standard"
+          },
+          {
+            "text": "给扫地机器人写优化代码",
+            "type": "standard"
+          },
+          {
+            "text": "用贝叶斯定理决定吃啥",
+            "type": "standard"
+          },
+          {
+            "text": "觉得彩虹是光谱诈骗",
+            "type": "standard"
+          }
         ]
-    ],
+      ],
       "category": "MBTI",
       "tags": [
         "人格测试",
@@ -1578,116 +1578,116 @@ const bingos = {
       },
       "gridContent": [
         [
-            {
-                "text": "喜欢翻聊天记录",
-                "type": "standard"
-            },
-            {
-                "text": "讨厌冷暴力",
-                "type": "standard"
-            },
-            {
-                "text": "渴望深度精神交流",
-                "type": "standard"
-            },
-            {
-                "text": "低攻低防",
-                "type": "standard"
-            },
-            {
-                "text": "准备礼物会很用心",
-                "type": "standard"
-            }
+          {
+            "text": "记得十年前借出的橡皮",
+            "type": "standard"
+          },
+          {
+            "text": "聚会后默默收拾所有杯子",
+            "type": "standard"
+          },
+          {
+            "text": "认为'不用谢'是客套话",
+            "type": "standard"
+          },
+          {
+            "text": "给邻居门把挂自制小点心",
+            "type": "standard"
+          },
+          {
+            "text": "觉得被需要是最高赞美",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "爱好者偶像剧",
-                "type": "standard"
-            },
-            {
-                "text": "愿望是世界和平",
-                "type": "standard"
-            },
-            {
-                "text": "恋旧脑",
-                "type": "standard"
-            },
-            {
-                "text": "遇弱则强",
-                "type": "standard"
-            },
-            {
-                "text": "自言自语",
-                "type": "standard"
-            }
+          {
+            "text": "手机存着82个用药提醒",
+            "type": "standard"
+          },
+          {
+            "text": "超市特价会帮老人代购",
+            "type": "standard"
+          },
+          {
+            "text": "把倾听当作心灵瑜伽",
+            "type": "standard"
+          },
+          {
+            "text": "认为感谢信要手写三遍",
+            "type": "standard"
+          },
+          {
+            "text": "给共享单车装防雨座套",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "共情力拉满",
-                "type": "standard"
-            },
-            {
-                "text": "体质泪失禁",
-                "type": "standard"
-            },
-            {
-                "text": "心软的神",
-                "type": "standard"
-            },
-            {
-                "text": "“看你们”“我都可以”",
-                "type": "standard"
-            },
-            {
-                "text": "边界感强",
-                "type": "standard"
-            }
+          {
+            "text": "衣柜里有应急爱心包裹",
+            "type": "standard"
+          },
+          {
+            "text": "觉得没回消息让人担心",
+            "type": "standard"
+          },
+          {
+            "text": "把调解称为'和平维护'",
+            "type": "standard"
+          },
+          {
+            "text": "认为细节是爱的密码",
+            "type": "standard"
+          },
+          {
+            "text": "给电梯按钮消毒并贴花",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "重视传统和家庭价值观",
-                "type": "standard"
-            },
-            {
-                "text": "会压抑自己的情绪",
-                "type": "standard"
-            },
-            {
-                "text": "包容力强",
-                "type": "standard"
-            },
-            {
-                "text": "不好意思表达拒绝",
-                "type": "standard"
-            },
-            {
-                "text": "讨好重灾区",
-                "type": "standard"
-            }
+          {
+            "text": "看天气预报像战备检查",
+            "type": "standard"
+          },
+          {
+            "text": "'你需要吗'是本能问候",
+            "type": "standard"
+          },
+          {
+            "text": "把独处称为'服务待机'",
+            "type": "standard"
+          },
+          {
+            "text": "认为关怀是基本义务",
+            "type": "standard"
+          },
+          {
+            "text": "给流浪云朵准备虚拟伞",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "利他主义",
-                "type": "standard"
-            },
-            {
-                "text": "追求确定性",
-                "type": "standard"
-            },
-            {
-                "text": "安静专注",
-                "type": "standard"
-            },
-            {
-                "text": "内耗王者工",
-                "type": "standard"
-            },
-            {
-                "text": "保护欲强",
-                "type": "standard"
-            }
+          {
+            "text": "备忘录记着同事过敏源",
+            "type": "standard"
+          },
+          {
+            "text": "觉得植物需要睡前故事",
+            "type": "standard"
+          },
+          {
+            "text": "给打印机喂“心灵鸡汤”",
+            "type": "standard"
+          },
+          {
+            "text": "认为点赞是能量补给",
+            "type": "standard"
+          },
+          {
+            "text": "把数据线缠绕当拥抱",
+            "type": "standard"
+          }
         ]
-    ],
+      ],
       "category": "MBTI",
       "tags": [
         "人格测试",
@@ -1834,116 +1834,116 @@ const bingos = {
       },
       "gridContent": [
         [
-            {
-                "text": "顶配打工人",
-                "type": "standard"
-            },
-            {
-                "text": "契约精神",
-                "type": "standard"
-            },
-            {
-                "text": "可以接受剧透",
-                "type": "standard"
-            },
-            {
-                "text": "喜欢的菜会反复点",
-                "type": "standard"
-            },
-            {
-                "text": "比水还淡",
-                "type": "standard"
-            }
+          {
+            "text": "十年前收据还按月份装订",
+            "type": "standard"
+          },
+          {
+            "text": "手机相册全是说明书照片",
+            "type": "standard"
+          },
+          {
+            "text": "认为'突发惊喜'是矛盾词",
+            "type": "standard"
+          },
+          {
+            "text": "衣柜像博物馆标本陈列",
+            "type": "standard"
+          },
+          {
+            "text": "给遥控器穿防尘外套",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "遵守时间讨厌迟到",
-                "type": "standard"
-            },
-            {
-                "text": "慕强",
-                "type": "standard"
-            },
-            {
-                "text": "说话从不拐弯",
-                "type": "standard"
-            },
-            {
-                "text": "厌恶风险",
-                "type": "standard"
-            },
-            {
-                "text": "不懂得如何安慰别人",
-                "type": "standard"
-            }
+          {
+            "text": "旅行前做79页应急预案",
+            "type": "standard"
+          },
+          {
+            "text": "觉得创新需要风险评估",
+            "type": "standard"
+          },
+          {
+            "text": "冰箱食物按保质期列队",
+            "type": "standard"
+          },
+          {
+            "text": "认为感情应该定期审计",
+            "type": "standard"
+          },
+          {
+            "text": "给多肉植物写生长日志",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "用实际行动表达爱",
-                "type": "standard"
-            },
-            {
-                "text": "低攻高防",
-                "type": "standard"
-            },
-            {
-                "text": "谁也别打乱我的计划",
-                "type": "standard"
-            },
-            {
-                "text": "无病呻吟有什么用啊",
-                "type": "standard"
-            },
-            {
-                "text": "谁影响我我就放弃谁",
-                "type": "standard"
-            }
+          {
+            "text": "看剧必须按出品年代排序",
+            "type": "standard"
+          },
+          {
+            "text": "'让我查下手册'是本能",
+            "type": "standard"
+          },
+          {
+            "text": "把突发聚会视为系统攻击",
+            "type": "standard"
+          },
+          {
+            "text": "手机闹钟误差不超过3秒",
+            "type": "standard"
+          },
+          {
+            "text": "认为彩虹应该标准七色",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "道德标准很高",
-                "type": "standard"
-            },
-            {
-                "text": "其实内心戏很足",
-                "type": "standard"
-            },
-            {
-                "text": "喜欢极简主义设计",
-                "type": "standard"
-            },
-            {
-                "text": "睡前忍不住想明天的计划",
-                "type": "standard"
-            },
-            {
-                "text": "大量时间需要独处",
-                "type": "standard"
-            }
+          {
+            "text": "超市购物像精密实验",
+            "type": "standard"
+          },
+          {
+            "text": "书柜按国际标准分类法",
+            "type": "standard"
+          },
+          {
+            "text": "把散步称为'地形勘察'",
+            "type": "standard"
+          },
+          {
+            "text": "认为幽默需要提前排练",
+            "type": "standard"
+          },
+          {
+            "text": "给WiFi信号画覆盖地图",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "没什么情绪起伏",
-                "type": "standard"
-            },
-            {
-                "text": "想的多讲的少",
-                "type": "standard"
-            },
-            {
-                "text": "手机常年开静音",
-                "type": "standard"
-            },
-            {
-                "text": "喜欢上网冲浪但懒得点赞",
-                "type": "standard"
-            },
-            {
-                "text": "完美主义",
-                "type": "standard"
-            }
+          {
+            "text": "看云朵像在检查生产瑕疵",
+            "type": "standard"
+          },
+          {
+            "text": "觉得'差不多'是危险词汇",
+            "type": "standard"
+          },
+          {
+            "text": "把生日称为'年度维护日'",
+            "type": "standard"
+          },
+          {
+            "text": "认为混乱是可控变量",
+            "type": "standard"
+          },
+          {
+            "text": "给咖啡杯做使用登记表",
+            "type": "standard"
+          }
         ]
-    ],
+      ],
       "category": "MBTI",
       "tags": [
         "人格测试",
@@ -1962,116 +1962,116 @@ const bingos = {
       },
       "gridContent": [
         [
-            {
-                "text": "不爱闲聊几乎没有分享欲",
-                "type": "standard"
-            },
-            {
-                "text": "享受孤独",
-                "type": "standard"
-            },
-            {
-                "text": "不喜欢麻烦别人，反之亦然",
-                "type": "standard"
-            },
-            {
-                "text": "三分钟热度",
-                "type": "standard"
-            },
-            {
-                "text": "情感麻木",
-                "type": "standard"
-            }
+          {
+            "text": "拆家电当冥想",
+            "type": "standard"
+          },
+          {
+            "text": "认为说明书是剧透",
+            "type": "standard"
+          },
+          {
+            "text": "把团建视为刑期",
+            "type": "standard"
+          },
+          {
+            "text": "手机存着零件3D图",
+            "type": "standard"
+          },
+          {
+            "text": "给咖啡机做外科手术",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "看不下去长篇大论",
-                "type": "standard"
-            },
-            {
-                "text": "“有必要吗”",
-                "type": "standard"
-            },
-            {
-                "text": "你退1步我退99步",
-                "type": "standard"
-            },
-            {
-                "text": "不以物喜不以己悲",
-                "type": "standard"
-            },
-            {
-                "text": "事不关己高高挂起",
-                "type": "standard"
-            }
+          {
+            "text": "看爱情片在研究打光",
+            "type": "standard"
+          },
+          {
+            "text": "觉得社交是耗电行为",
+            "type": "standard"
+          },
+          {
+            "text": "用扳手开红酒瓶",
+            "type": "standard"
+          },
+          {
+            "text": "备忘录记着材料参数",
+            "type": "standard"
+          },
+          {
+            "text": "认为彩虹需要光谱分析",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "已经尽力对每个人礼貌了",
-                "type": "standard"
-            },
-            {
-                "text": "不爱说场面话",
-                "type": "standard"
-            },
-            {
-                "text": "很注重边界感",
-                "type": "standard"
-            },
-            {
-                "text": "喜新厌旧",
-                "type": "standard"
-            },
-            {
-                "text": "地狱笑话爱好者",
-                "type": "standard"
-            }
+          {
+            "text": "超市排队研究货架结构",
+            "type": "standard"
+          },
+          {
+            "text": "把多肉当机械养护",
+            "type": "standard"
+          },
+          {
+            "text": "认为感情需要调试",
+            "type": "standard"
+          },
+          {
+            "text": "给遥控器装涡轮增压",
+            "type": "standard"
+          },
+          {
+            "text": "觉得云层是故障代码",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "审美在线",
-                "type": "standard"
-            },
-            {
-                "text": "回避型依恋人格",
-                "type": "standard"
-            },
-            {
-                "text": "慕强",
-                "type": "standard"
-            },
-            {
-                "text": "不爱看说明书",
-                "type": "standard"
-            },
-            {
-                "text": "因为交流不够容易产生误会",
-                "type": "standard"
-            }
+          {
+            "text": "电梯故障反而兴奋",
+            "type": "standard"
+          },
+          {
+            "text": "用焊接技术修眼镜",
+            "type": "standard"
+          },
+          {
+            "text": "把生日蛋糕当工程",
+            "type": "standard"
+          },
+          {
+            "text": "认为植物需要校准",
+            "type": "standard"
+          },
+          {
+            "text": "给WiFi信号画电路图",
+            "type": "standard"
+          }
         ],
         [
-            {
-                "text": "别整无用的浪漫",
-                "type": "standard"
-            },
-            {
-                "text": "志向高但忍不住摆烂",
-                "type": "standard"
-            },
-            {
-                "text": "爱一个人时行动>表达",
-                "type": "standard"
-            },
-            {
-                "text": "经常性无语",
-                "type": "standard"
-            },
-            {
-                "text": "“你说得对”",
-                "type": "standard"
-            }
+          {
+            "text": "看雨滴计算落点",
+            "type": "standard"
+          },
+          {
+            "text": "觉得拥抱是接口对接",
+            "type": "standard"
+          },
+          {
+            "text": "给手机装液压支架",
+            "type": "standard"
+          },
+          {
+            "text": "认为彩虹是光学bug",
+            "type": "standard"
+          },
+          {
+            "text": "把沉默当系统待机",
+            "type": "standard"
+          }
         ]
-    ],
+      ],
       "category": "MBTI",
       "tags": [
         "人格测试",

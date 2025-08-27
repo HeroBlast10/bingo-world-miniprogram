@@ -1,50 +1,125 @@
 {
-    "bingoId": "mbti-intj",
+    "bingoId": "intj",
     "title": "INTJ宾果",
     "creator": "请手动填写",
-    "description": "五个连成一线，那么你可能是高冷战略家",
+    "description": "五个连成一条线，你就是一只紫老头",
     "gridSize": {
         "rows": 5,
         "cols": 5
     },
     "gridContent": [
         [
-            {"text": "看到低效方案会瞳孔地震", "type": "standard"},
-            {"text": "人生计划精确到五年后周二", "type": "standard"},
-            {"text": "辩论时像在下一盘大棋", "type": "standard"},
-            {"text": "对'感情用事'这个词过敏", "type": "standard"},
-            {"text": "手机备忘录全是思维导图", "type": "standard"}
+            {
+                "text": "冷静克制",
+                "type": "standard"
+            },
+            {
+                "text": "咖啡和茶纳入医保就好了",
+                "type": "standard"
+            },
+            {
+                "text": "噪音过敏",
+                "type": "standard"
+            },
+            {
+                "text": "面无表情是在节能",
+                "type": "standard"
+            },
+            {
+                "text": "努力合群时有种伪人感",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "认为拥抱不如解决方案实在", "type": "standard"},
-            {"text": "深夜思考人类文明存续问题", "type": "standard"},
-            {"text": "把社交称为'能量回收时间'", "type": "standard"},
-            {"text": "衣柜只有黑白灰三色战袍", "type": "standard"},
-            {"text": "被夸'你好有人情味'会愣住", "type": "standard"}
+            {
+                "text": "多层面具",
+                "type": "standard"
+            },
+            {
+                "text": "超多后备Plan",
+                "type": "standard"
+            },
+            {
+                "text": "我没事我就是想安静会儿",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢悬疑题材",
+                "type": "standard"
+            },
+            {
+                "text": "有一些异想天开的梦想",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "看爱情片在分析人物动机", "type": "standard"},
-            {"text": "觉得团建是反人类发明", "type": "standard"},
-            {"text": "书架上尼采旁边放着《君主论》", "type": "standard"},
-            {"text": "用SWOT分析早餐吃什么", "type": "standard"},
-            {"text": "'随便'是最可怕的答案", "type": "standard"}
+            {
+                "text": "细节完美才算整体及格",
+                "type": "standard"
+            },
+            {
+                "text": "平时沉默寡言，发言一针见血",
+                "type": "standard"
+            },
+            {
+                "text": "八卦一听就忘，仇人能记十年",
+                "type": "standard"
+            },
+            {
+                "text": "路上遇见熟人宁愿绕远路",
+                "type": "standard"
+            },
+            {
+                "text": "奇怪的笑点",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "电脑桌面整洁得像手术室", "type": "standard"},
-            {"text": "认为眼泪是决策干扰项", "type": "standard"},
-            {"text": "对'你太较真了'感到困惑", "type": "standard"},
-            {"text": "秘密梦想是设计乌托邦", "type": "standard"},
-            {"text": "安慰人时像在写可行性报告", "type": "standard"}
+            {
+                "text": "世界的旁观者",
+                "type": "standard"
+            },
+            {
+                "text": "在疯癫和死亡之间心态平和",
+                "type": "standard"
+            },
+            {
+                "text": "随缘恋爱真无所谓",
+                "type": "standard"
+            },
+            {
+                "text": "会断崖式放弃一些人或事",
+                "type": "standard"
+            },
+            {
+                "text": "自虐王者",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "看到漏洞会忍不住修改", "type": "standard"},
-            {"text": "'我觉得'后面必跟数据支撑", "type": "standard"},
-            {"text": "把人生当战略游戏在玩", "type": "standard"},
-            {"text": "认为小丑表情包是最高赞美", "type": "standard"},
-            {"text": "遇到彩虹屁会反向技术拆解", "type": "standard"}
+            {
+                "text": "蠢而不自知的人请滚",
+                "type": "standard"
+            },
+            {
+                "text": "对边界感很执着",
+                "type": "standard"
+            },
+            {
+                "text": "小动物比人强一万倍",
+                "type": "standard"
+            },
+            {
+                "text": "看起来顺从其实是无视权威",
+                "type": "standard"
+            },
+            {
+                "text": "因为深谙人性所以慢热",
+                "type": "standard"
+            }
         ]
     ],
-    "category": "MBTI",
-    "tags": ["人格测试", "心理学"],
+    "category": "待分类",
+    "tags": [],
     "createdAt": ""
 }

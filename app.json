@@ -8,7 +8,8 @@
     "pages/settings/settings",
     "pages/saved/saved",
     "pages/debug/debug",
-    "pages/debug/debug-me"
+    "pages/debug/debug-me",
+    "pages/webview/webview"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -38,7 +39,7 @@
     ]
   },
   "permission": {
-    "scope.writePhotosAlbum": {
+    "writePhotosAlbum": {
       "desc": "保存宾果图片到相册"
     }
   },

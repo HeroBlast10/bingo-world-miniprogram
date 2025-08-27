@@ -1,47 +1,125 @@
 {
-    "bingoId": "mbti-istj",
+    "bingoId": "istj",
     "title": "ISTJ宾果",
     "creator": "请手动填写",
-    "description": "五个连成一线，那么你可能是可靠卫士",
-    "gridSize": {"rows":5,"cols":5},
+    "description": "五个连成一条线，你就是一只蓝老头",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
     "gridContent": [
         [
-            {"text": "十年前收据还按月份装订", "type":"standard"},
-            {"text": "手机相册全是说明书照片", "type":"standard"},
-            {"text": "认为'突发惊喜'是矛盾词", "type":"standard"},
-            {"text": "衣柜像博物馆标本陈列", "type":"standard"},
-            {"text": "给遥控器穿防尘外套", "type":"standard"}
+            {
+                "text": "顶配打工人",
+                "type": "standard"
+            },
+            {
+                "text": "契约精神",
+                "type": "standard"
+            },
+            {
+                "text": "可以接受剧透",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢的菜会反复点",
+                "type": "standard"
+            },
+            {
+                "text": "比水还淡",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "旅行前做79页应急预案", "type":"standard"},
-            {"text": "觉得创新需要风险评估", "type":"standard"},
-            {"text": "冰箱食物按保质期列队", "type":"standard"},
-            {"text": "认为感情应该定期审计", "type":"standard"},
-            {"text": "给多肉植物写生长日志", "type":"standard"}
+            {
+                "text": "遵守时间讨厌迟到",
+                "type": "standard"
+            },
+            {
+                "text": "慕强",
+                "type": "standard"
+            },
+            {
+                "text": "说话从不拐弯",
+                "type": "standard"
+            },
+            {
+                "text": "厌恶风险",
+                "type": "standard"
+            },
+            {
+                "text": "不懂得如何安慰别人",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "看剧必须按出品年代排序", "type":"standard"},
-            {"text": "'让我查下手册'是本能", "type":"standard"},
-            {"text": "把突发聚会视为系统攻击", "type":"standard"},
-            {"text": "手机闹钟误差不超过3秒", "type":"standard"},
-            {"text": "认为彩虹应该标准七色", "type":"standard"}
+            {
+                "text": "用实际行动表达爱",
+                "type": "standard"
+            },
+            {
+                "text": "低攻高防",
+                "type": "standard"
+            },
+            {
+                "text": "谁也别打乱我的计划",
+                "type": "standard"
+            },
+            {
+                "text": "无病呻吟有什么用啊",
+                "type": "standard"
+            },
+            {
+                "text": "谁影响我我就放弃谁",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "超市购物像精密实验", "type":"standard"},
-            {"text": "书柜按国际标准分类法", "type":"standard"},
-            {"text": "把散步称为'地形勘察'", "type":"standard"},
-            {"text": "认为幽默需要提前排练", "type":"standard"},
-            {"text": "给WiFi信号画覆盖地图", "type":"standard"}
+            {
+                "text": "道德标准很高",
+                "type": "standard"
+            },
+            {
+                "text": "其实内心戏很足",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢极简主义设计",
+                "type": "standard"
+            },
+            {
+                "text": "睡前忍不住想明天的计划",
+                "type": "standard"
+            },
+            {
+                "text": "大量时间需要独处",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "看云朵像在检查生产瑕疵", "type":"standard"},
-            {"text": "觉得'差不多'是危险词汇", "type":"standard"},
-            {"text": "把生日称为'年度维护日'", "type":"standard"},
-            {"text": "认为混乱是可控变量", "type":"standard"},
-            {"text": "给咖啡杯做使用登记表", "type":"standard"}
+            {
+                "text": "没什么情绪起伏",
+                "type": "standard"
+            },
+            {
+                "text": "想的多讲的少",
+                "type": "standard"
+            },
+            {
+                "text": "手机常年开静音",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢上网冲浪但懒得点赞",
+                "type": "standard"
+            },
+            {
+                "text": "完美主义",
+                "type": "standard"
+            }
         ]
     ],
-    "category": "MBTI",
-    "tags": ["人格测试","心理学"],
+    "category": "待分类",
+    "tags": [],
     "createdAt": ""
 }

@@ -145,25 +145,12 @@ Page({
    * 关注公众号
    */
   onFollowWechat() {
-    wx.showModal({
-      title: '关注公众号',
-      content: '请关注我们的微信公众号"宾果世界"获取最新资讯和更多有趣的宾果游戏！',
-      showCancel: true,
-      cancelText: '取消',
-      confirmText: '复制公众号名',
-      success: (res) => {
-        if (res.confirm) {
-          wx.setClipboardData({
-            data: '宾果世界',
-            success: () => {
-              wx.showToast({
-                title: '已复制到剪贴板',
-                icon: 'success'
-              });
-            }
-          });
-        }
-      }
+    // 直接跳转到webview页面显示公众号链接
+    const url = 'https://mp.weixin.qq.com/s/70aqUQcqzGGnJj5r93jSuQ';
+    const title = '宾果世界';
+    
+    wx.navigateTo({
+      url: `/pages/webview/webview?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`
     });
   },
 
@@ -173,7 +160,7 @@ Page({
   onFeedback() {
     wx.showModal({
       title: '联系我们',
-      content: '如有问题或建议，请通过以下方式联系我们：公众号“宾果世界”\n\n邮箱：binlegeguo@163.com',
+      content: '如有问题或建议，\n\n请通过以下方式联系我们：\n\n公众号"宾果世界"\n\n邮箱：binlegeguo@163.com',
       showCancel: false,
       confirmText: '知道了'
     });

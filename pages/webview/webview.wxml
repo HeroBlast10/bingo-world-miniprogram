@@ -1,0 +1,17 @@
+<!--pages/webview/webview.wxml-->
+<view class="webview-container">
+  <web-view 
+    wx:if="{{url}}" 
+    src="{{url}}" 
+    bindload="onWebViewLoad"
+    binderror="onWebViewError">
+  </web-view>
+  
+  <!-- 加载提示 -->
+  <view wx:else class="loading-container">
+    <view class="loading-content">
+      <text class="loading-text">正在加载...</text>
+      <text class="loading-tip">如果在开发环境无法正常显示，请在真机上测试</text>
+    </view>
+  </view>
+</view>

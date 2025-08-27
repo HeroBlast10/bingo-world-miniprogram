@@ -1,47 +1,125 @@
 {
-    "bingoId": "mbti-entj",
+    "bingoId": "entj",
     "title": "ENTJ宾果",
     "creator": "请手动填写",
-    "description": "五个连成一线，那么你可能是天生领袖",
-    "gridSize": {"rows":5,"cols":5},
+    "description": "五个连成一条线，你就是一只大姐头",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
     "gridContent": [
         [
-            {"text": "团建时自动接管话筒", "type":"standard"},
-            {"text": "把闲聊视为资源浪费", "type":"standard"},
-            {"text": "认为感情需要KPI考核", "type":"standard"},
-            {"text": "手机壁纸是'世界地图作战版'", "type":"standard"},
-            {"text": "安慰人像在做战前动员", "type":"standard"}
+            {
+                "text": "感情废物",
+                "type": "standard"
+            },
+            {
+                "text": "爱TA就成为TA",
+                "type": "standard"
+            },
+            {
+                "text": "不开心果然因为还不够强",
+                "type": "standard"
+            },
+            {
+                "text": "容易被温柔且强大的人吸引",
+                "type": "standard"
+            },
+            {
+                "text": "购物遵从长期主义",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "看爱情片在分析权力结构", "type":"standard"},
-            {"text": "'我建议'其实是命令", "type":"standard"},
-            {"text": "把度假村当临时指挥部", "type":"standard"},
-            {"text": "认为效率是最高美德", "type":"standard"},
-            {"text": "给朋友发人生规划建议书", "type":"standard"}
+            {
+                "text": "更高更快更强",
+                "type": "standard"
+            },
+            {
+                "text": "“按计划来”",
+                "type": "standard"
+            },
+            {
+                "text": "莫名其妙胜负欲",
+                "type": "standard"
+            },
+            {
+                "text": "终极目标全面发展",
+                "type": "standard"
+            },
+            {
+                "text": "相册里很多聊天记录截屏",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "谈判时像在占领高地", "type":"standard"},
-            {"text": "手机备忘录标题带'战略'二字", "type":"standard"},
-            {"text": "把宠物当部下训练", "type":"standard"},
-            {"text": "认为犹豫是决策系统漏洞", "type":"standard"},
-            {"text": "健身时像在军事训练", "type":"standard"}
+            {
+                "text": "为自己的计划被别人接受而绞尽脑汁",
+                "type": "standard"
+            },
+            {
+                "text": "注重形象",
+                "type": "standard"
+            },
+            {
+                "text": "复盘一下",
+                "type": "standard"
+            },
+            {
+                "text": "“就这么定了”",
+                "type": "standard"
+            },
+            {
+                "text": "一直吃一道菜到吃腻",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "超市购物像物资调配", "type":"standard"},
-            {"text": "'五分钟'是最大时间单位", "type":"standard"},
-            {"text": "把生日派对当项目管理", "type":"standard"},
-            {"text": "认为眼泪是战略失误信号", "type":"standard"},
-            {"text": "给咖啡因摄入做效益分析", "type":"standard"}
+            {
+                "text": "大忙人",
+                "type": "standard"
+            },
+            {
+                "text": "最爽时刻是给ToDoList都打上勾",
+                "type": "standard"
+            },
+            {
+                "text": "摆烂也是计划的一环",
+                "type": "standard"
+            },
+            {
+                "text": "不会安慰人",
+                "type": "standard"
+            },
+            {
+                "text": "我一定能做到",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "看云朵像在看战场态势", "type":"standard"},
-            {"text": "把休闲称为'战术调整'", "type":"standard"},
-            {"text": "认为妥协是阶段性策略", "type":"standard"},
-            {"text": "给植物下达生长指令", "type":"standard"},
-            {"text": "觉得彩虹需要优化色谱", "type":"standard"}
+            {
+                "text": "DDL终结者",
+                "type": "standard"
+            },
+            {
+                "text": "强控制欲",
+                "type": "standard"
+            },
+            {
+                "text": "很讲义气",
+                "type": "standard"
+            },
+            {
+                "text": "没有敌人全是老师",
+                "type": "standard"
+            },
+            {
+                "text": "硬通货是最好的礼物",
+                "type": "standard"
+            }
         ]
     ],
-    "category": "MBTI",
-    "tags": ["人格测试","心理学"],
+    "category": "待分类",
+    "tags": [],
     "createdAt": ""
 }

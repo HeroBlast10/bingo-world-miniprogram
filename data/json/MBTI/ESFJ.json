@@ -1,47 +1,125 @@
 {
-    "bingoId": "mbti-esfj",
+    "bingoId": "esfj",
     "title": "ESFJ宾果",
     "creator": "请手动填写",
-    "description": "五个连成一线，那么你可能是暖心组织者",
-    "gridSize": {"rows":5,"cols":5},
+    "description": "五个连成一条线，你就是一只蛋糕哥",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
     "gridContent": [
         [
-            {"text": "手机存着82人的饮食禁忌", "type":"standard"},
-            {"text": "聚会时自动成为食物分配员", "type":"standard"},
-            {"text": "认为没回复'收到'是紧急事件", "type":"standard"},
-            {"text": "给邻居家的狗准备生日礼物", "type":"standard"},
-            {"text": "觉得冷场是重大安全事故", "type":"standard"}
+            {
+                "text": "对别人的评价很敏感",
+                "type": "standard"
+            },
+            {
+                "text": "一切顺利真是太好了",
+                "type": "standard"
+            },
+            {
+                "text": "会替别人感到尴尬",
+                "type": "standard"
+            },
+            {
+                "text": "在宇宙中心呼唤爱",
+                "type": "free_space"
+            },
+            {
+                "text": "容易让人感到信赖",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "备忘录记着同事小孩名字", "type":"standard"},
-            {"text": "超市买三送一会分给邻居", "type":"standard"},
-            {"text": "把调解纠纷当日常健身", "type":"standard"},
-            {"text": "认为独处需要申请许可证", "type":"standard"},
-            {"text": "给外卖小哥准备感谢卡片", "type":"standard"}
+            {
+                "text": "我的朋友不会有错",
+                "type": "standard"
+            },
+            {
+                "text": "不喜欢被催促",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢组织安排活动",
+                "type": "standard"
+            },
+            {
+                "text": "朋友们的树洞",
+                "type": "standard"
+            },
+            {
+                "text": "擅长解决人际关系问题",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "团建照片按人脸分类归档", "type":"standard"},
-            {"text": "觉得没人夸赞的菜会伤心", "type":"standard"},
-            {"text": "把社区公告当情书阅读", "type":"standard"},
-            {"text": "认为和谐高于事实真相", "type":"standard"},
-            {"text": "给电梯按钮贴暖心标语", "type":"standard"}
+            {
+                "text": "身边低气压会想逃离",
+                "type": "standard"
+            },
+            {
+                "text": "也需要获得足够情绪价值",
+                "type": "standard"
+            },
+            {
+                "text": "妈感十足",
+                "type": "standard"
+            },
+            {
+                "text": "很关注家庭氛围的和谐",
+                "type": "standard"
+            },
+            {
+                "text": "被需要时很有成就感",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "看天气预报像读亲友近况", "type":"standard"},
-            {"text": "'大家都开心吗'是灵魂拷问", "type":"standard"},
-            {"text": "把独处称为'社交待机'", "type":"standard"},
-            {"text": "认为反馈是精神维生素", "type":"standard"},
-            {"text": "给共享单车系蝴蝶结", "type":"standard"}
+            {
+                "text": "真心是最宝贵的",
+                "type": "standard"
+            },
+            {
+                "text": "善于资源整合",
+                "type": "standard"
+            },
+            {
+                "text": "牢牢记住朋友的喜好",
+                "type": "standard"
+            },
+            {
+                "text": "对喜欢的人害羞又直球",
+                "type": "standard"
+            },
+            {
+                "text": "对冲突感到不安",
+                "type": "standard"
+            }
         ],
         [
-            {"text": "手机电量低于50%就焦虑", "type":"standard"},
-            {"text": "觉得云朵需要社交陪伴", "type":"standard"},
-            {"text": "给植物播放交友广播", "type":"standard"},
-            {"text": "认为点赞是生存必需品", "type":"standard"},
-            {"text": "把垃圾分类当联谊活动", "type":"standard"}
+            {
+                "text": "总能把朋友照顾得很周到",
+                "type": "standard"
+            },
+            {
+                "text": "太阳能",
+                "type": "standard"
+            },
+            {
+                "text": "生气时会隐藏聊天对话框",
+                "type": "standard"
+            },
+            {
+                "text": "爱操心劳碌命",
+                "type": "standard"
+            },
+            {
+                "text": "强大的共情能力",
+                "type": "standard"
+            }
         ]
     ],
-    "category": "MBTI",
-    "tags": ["人格测试","心理学"],
+    "category": "待分类",
+    "tags": [],
     "createdAt": ""
 }
