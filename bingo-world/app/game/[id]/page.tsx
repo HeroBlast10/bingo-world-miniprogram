@@ -157,7 +157,7 @@ export default function BingoGamePage({ params }: { params: { id: string } }) {
                     }
                   `}
                 >
-                  <span className="leading-tight">{cell.text}</span>
+                  <span className="leading-tight break-words hyphens-auto">{cell.text}</span>
                 </button>
               )
             })}

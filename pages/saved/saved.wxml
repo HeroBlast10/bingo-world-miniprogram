@@ -52,7 +52,7 @@
               wx:for-index="cellIndex"
               wx:key="cellIndex"
             >
-              <text class="cell-text">{{cell.text && cell.text.length > 6 ? cell.text.slice(0, 4) + '...' : (cell.text || '')}}</text>
+              <text class="cell-text">{{cell.displayText || ''}}</text>
             </view>
           </view>
         </view>

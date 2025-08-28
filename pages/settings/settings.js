@@ -148,22 +148,8 @@ Page({
     const url = 'https://mp.weixin.qq.com/s/70aqUQcqzGGnJj5r93jSuQ';
     const title = '宾果世界';
 
-    // 显示选择对话框
-    wx.showModal({
-      title: '关注公众号',
-      content: '即将跳转到"宾果世界"公众号页面\n\n如果无法正常打开，可以选择复制链接',
-      confirmText: '立即跳转',
-      cancelText: '复制链接',
-      success: (res) => {
-        if (res.confirm) {
-          // 用户选择跳转
-          this.openWebView(url, title);
-        } else {
-          // 用户选择复制链接
-          this.copyLinkToClipboard(url);
-        }
-      }
-    });
+    // 直接跳转到WebView页面，不显示选择对话框
+    this.openWebView(url, title);
   },
 
   /**

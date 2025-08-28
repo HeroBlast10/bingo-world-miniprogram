@@ -544,69 +544,69 @@ Page({
       return;
     }
 
-    // 画布尺寸（高分辨率）- 增加高度确保底部文字完整显示
-    const canvasWidth = 750;
-    const canvasHeight = 1050; // 增加高度确保底部推广文字完整显示
+    // 画布尺寸（超高分辨率）- 进一步提高分辨率
+    const canvasWidth = 1200; // 从750提高到1200
+    const canvasHeight = 1680; // 从1050提高到1680，保持比例
 
     // 设置背景色
     ctx.setFillStyle('#f9fafb');
     ctx.fillRect(0, 0, canvasWidth, canvasHeight);
 
-    // 绘制小程序标识
+    // 绘制小程序标识（按比例放大）
     ctx.setFillStyle('#9ca3af');
-    ctx.setFontSize(24);
+    ctx.setFontSize(38); // 从24放大到38
     ctx.setTextAlign('center');
-    ctx.fillText('小程序@宾了个果', canvasWidth / 2, 40);
+    ctx.fillText('小程序@宾了个果', canvasWidth / 2, 64); // 从40放大到64
 
     // 绘制游戏标题 - 稍微增加与小程序标识的间距
     ctx.setFillStyle('#1f2937');
-    ctx.setFontSize(36);
+    ctx.setFontSize(58); // 从36放大到58
     ctx.setTextAlign('center');
-    ctx.fillText(game.title, canvasWidth / 2, 88); // 从80增加到85，增加5px间距
+    ctx.fillText(game.title, canvasWidth / 2, 140); // 从88放大到140
 
-    // 计算网格参数（先计算网格位置）
+    // 计算网格参数（按比例放大）
     const gridSize = Math.min(game.gridSize.rows, game.gridSize.cols);
-    const maxGridWidth = 680; // 增加网格宽度，减少左右边距
+    const maxGridWidth = 1088; // 从680按比例放大到1088 (680 * 1.6)
     const cellSize = maxGridWidth / Math.max(game.gridSize.rows, game.gridSize.cols);
     const gridWidth = cellSize * game.gridSize.cols;
     const gridHeight = cellSize * game.gridSize.rows;
     const gridStartX = (canvasWidth - gridWidth) / 2;
-    
-    // 计算网格位置 - 紧凑布局，网格从描述后开始
-    const topContentHeight = 180; // 减少顶部内容预估高度
-    const bottomReservedSpace = 180; // 增加底部预留空间，确保推广文字完整显示
+
+    // 计算网格位置 - 紧凑布局，网格从描述后开始（按比例放大）
+    const topContentHeight = 288; // 从180按比例放大到288 (180 * 1.6)
+    const bottomReservedSpace = 288; // 从180按比例放大到288，确保推广文字完整显示
     const availableHeight = canvasHeight - topContentHeight - bottomReservedSpace;
     
     // 网格从描述后适当距离开始
     let gridStartY = topContentHeight;
 
-    // 绘制游戏描述（如果有）- 优化间距
-    let descriptionEndY = 90; // 标题结束位置（标题现在在Y=85）
+    // 绘制游戏描述（如果有）- 优化间距（按比例放大）
+    let descriptionEndY = 144; // 标题结束位置（标题现在在Y=140）
     if (game.description && game.description.trim() !== '' && game.description !== '五个连成一线...') {
       // 描述与标题间距优化
-      const descriptionStartY = 140; // 标题下方45px开始描述，保持合适间距
-      
+      const descriptionStartY = 224; // 从140按比例放大到224
+
       ctx.setFillStyle('#6b7280');
-      ctx.setFontSize(24);
+      ctx.setFontSize(38); // 从24按比例放大到38
       ctx.setTextAlign('center');
 
       // 处理长文本换行
-      const maxWidth = 600;
+      const maxWidth = 960; // 从600按比例放大到960
       const lines = this.wrapText(ctx, game.description, maxWidth);
-      
+
       // 从描述起始位置开始绘制
       lines.forEach((line, index) => {
-        ctx.fillText(line, canvasWidth / 2, descriptionStartY + (index * 30));
+        ctx.fillText(line, canvasWidth / 2, descriptionStartY + (index * 48)); // 从30按比例放大到48
       });
-      
+
       // 更新描述结束位置
-      descriptionEndY = descriptionStartY + (lines.length * 30);
-      
+      descriptionEndY = descriptionStartY + (lines.length * 48);
+
       // 重新计算网格位置，紧跟在描述后面
-      gridStartY = descriptionEndY + 22; // 描述后留20px空间，更紧凑
+      gridStartY = descriptionEndY + 35; // 从22按比例放大到35
     } else {
       // 没有描述时，网格从标题后开始
-      gridStartY = 128; // 标题后留40px空间（标题现在在Y=85）
+      gridStartY = 205; // 从128按比例放大到205
     }
 
     // 绘制网格背景
@@ -649,21 +649,21 @@ Page({
           continue;
         }
 
-        // 根据文字长度调整字体大小，优化字体尺寸使其更大更清晰
+        // 根据文字长度调整字体大小，按比例放大以提高清晰度
         let fontSize;
         const textLength = cellData.text.length;
         if (textLength <= 4) {
-          fontSize = 30; // 增大超短文本字体
+          fontSize = 48; // 从30按比例放大到48
         } else if (textLength <= 8) {
-          fontSize = 26; // 增大短文本字体
+          fontSize = 42; // 从26按比例放大到42
         } else if (textLength <= 12) {
-          fontSize = 24; // 增大中等文本字体
+          fontSize = 38; // 从24按比例放大到38
         } else if (textLength <= 18) {
-          fontSize = 22; // 增大长文本字体
+          fontSize = 35; // 从22按比例放大到35
         } else if (textLength <= 25) {
-          fontSize = 20; // 增大很长文本字体
+          fontSize = 32; // 从20按比例放大到32
         } else {
-          fontSize = 18; // 增大极长文本字体
+          fontSize = 29; // 从18按比例放大到29
         }
 
         // 先设置字体，确保measureText正确工作
@@ -680,10 +680,10 @@ Page({
         }
 
         // 处理文字换行（在设置字体后调用）
-        const maxTextWidth = cellSize - 20; // 增加padding，给文字更多空间
+        const maxTextWidth = cellSize - 32; // 从20按比例放大到32，给文字更多空间
         const allLines = this.wrapText(ctx, cellData.text, maxTextWidth);
         const lines = allLines.length > 4 ? allLines.slice(0, 4) : allLines; // 最多显示4行
-        const lineHeight = fontSize * 1.2; // 稍微减少行高，使文字更紧凑
+        const lineHeight = fontSize * 1.2; // 保持行高比例
         const totalTextHeight = lines.length * lineHeight;
 
         // 修正垂直居中计算（微信小程序Canvas文字绘制的基线问题）
@@ -698,33 +698,33 @@ Page({
       }
     }
 
-    // 绘制底部推广文字（居中显示）
-    const bottomStartY = gridStartY + gridHeight + 40; // 网格下方40px开始，增加间距
+    // 绘制底部推广文字（居中显示）- 按比例放大
+    const bottomStartY = gridStartY + gridHeight + 64; // 从40按比例放大到64
 
     // 绘制分隔线
     ctx.setStrokeStyle('#e9ecef');
-    ctx.setLineWidth(2);
+    ctx.setLineWidth(3); // 从2放大到3
     ctx.beginPath();
-    ctx.moveTo(60, bottomStartY);
-    ctx.lineTo(canvasWidth - 60, bottomStartY);
+    ctx.moveTo(96, bottomStartY); // 从60按比例放大到96
+    ctx.lineTo(canvasWidth - 96, bottomStartY);
     ctx.stroke();
 
     // 居中绘制推广文字
     const centerX = canvasWidth / 2; // 画布中心
-    const textStartY = bottomStartY + 60; // 分隔线下方60px开始，增加间距
+    const textStartY = bottomStartY + 96; // 从60按比例放大到96
 
     // 第一行文字：发现更多好玩的宾果游戏！
     ctx.setFillStyle('#555555');
-    ctx.setFontSize(32); // 增大字体
+    ctx.setFontSize(51); // 从32按比例放大到51
     ctx.setTextAlign('center');
     ctx.fillText('发现更多好玩的宾果游戏！', centerX, textStartY);
 
     // 空行间距
-    const lineSpacing = 50; // 增加行间距
+    const lineSpacing = 80; // 从50按比例放大到80
 
     // 第二行文字：小程序@宾了个果
     ctx.setFillStyle('#777777');
-    ctx.setFontSize(28); // 增大字体
+    ctx.setFontSize(45); // 从28按比例放大到45
     ctx.setTextAlign('center');
     ctx.fillText('小程序@宾了个果', centerX, textStartY + lineSpacing);
     
@@ -734,31 +734,61 @@ Page({
 
 
   /**
-   * 文字换行处理
+   * 文字换行处理 - 智能处理英文单词，避免单词中间断裂
    */
   wrapText(ctx, text, maxWidth) {
-    const words = text.split('');
     const lines = [];
     let currentLine = '';
 
-    for (let i = 0; i < words.length; i++) {
-      const testLine = currentLine + words[i];
+    // 将文本按空格和标点符号分割，保留分隔符
+    const tokens = text.split(/(\s+|[.,!?;:])/);
+
+    for (let i = 0; i < tokens.length; i++) {
+      const token = tokens[i];
+      const testLine = currentLine + token;
       const metrics = ctx.measureText(testLine);
       const testWidth = metrics.width;
 
       if (testWidth > maxWidth && currentLine !== '') {
-        lines.push(currentLine);
-        currentLine = words[i];
+        // 如果当前行不为空且添加新token会超出宽度，则换行
+        lines.push(currentLine.trim());
+        currentLine = token;
       } else {
         currentLine = testLine;
       }
     }
 
-    if (currentLine !== '') {
-      lines.push(currentLine);
+    // 添加最后一行
+    if (currentLine.trim() !== '') {
+      lines.push(currentLine.trim());
     }
 
-    return lines;
+    // 如果还是有超长的行（比如单个英文单词太长），则按字符分割
+    const finalLines = [];
+    for (const line of lines) {
+      const lineMetrics = ctx.measureText(line);
+      if (lineMetrics.width <= maxWidth) {
+        finalLines.push(line);
+      } else {
+        // 单个token太长，按字符分割
+        let charLine = '';
+        for (let j = 0; j < line.length; j++) {
+          const testCharLine = charLine + line[j];
+          const charMetrics = ctx.measureText(testCharLine);
+          if (charMetrics.width > maxWidth && charLine !== '') {
+            finalLines.push(charLine);
+            charLine = line[j];
+          } else {
+            charLine = testCharLine;
+          }
+        }
+        if (charLine !== '') {
+          finalLines.push(charLine);
+        }
+      }
+    }
+
+    return finalLines;
   },
 
   /**
@@ -1350,29 +1380,7 @@ Page({
     });
   },
 
-  /**
-   * 文字换行处理
-   */
-  wrapText(ctx, text, maxWidth) {
-    const words = text.split('');
-    const lines = [];
-    let currentLine = '';
-    
-    for (let i = 0; i < words.length; i++) {
-      const testLine = currentLine + words[i];
-      const metrics = ctx.measureText(testLine);
-      const testWidth = metrics.width;
-      
-      if (testWidth > maxWidth && currentLine !== '') {
-        lines.push(currentLine);
-        currentLine = words[i];
-      } else {
-        currentLine = testLine;
-      }
-    }
-    lines.push(currentLine);
-    return lines.length > 4 ? lines.slice(0, 4) : lines; // 最多显示4行
-  },
+
 
   /**
    * 完成图片生成
@@ -1386,8 +1394,8 @@ Page({
           y: 0,
           width: canvasWidth,
           height: canvasHeight,
-          destWidth: canvasWidth * 2,  // 2倍分辨率，平衡清晰度和文件大小
-          destHeight: canvasHeight * 2,
+          destWidth: canvasWidth * 3,  // 3倍分辨率，进一步提高清晰度
+          destHeight: canvasHeight * 3,
           fileType: 'png',
           quality: 1.0,  // 最高质量
           success: (res) => {

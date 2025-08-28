@@ -114,9 +114,11 @@ page {
 .bingo-container {
   background-color: #ffffff;
   border-radius: 24rpx;
-  padding: 24rpx; /* 减少padding */
-  margin: 0 0 32rpx 0; /* 移除上边距 */
+  padding: 16rpx; /* 进一步减少padding以适应小屏幕 */
+  margin: 0 16rpx 32rpx 16rpx; /* 添加左右边距，防止贴边 */
   box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.04);
+  box-sizing: border-box;
+  max-width: calc(100vw - 32rpx); /* 确保不超出屏幕宽度 */
 }
 
 /* 网格容器 - 实现 grid-template-columns: repeat(5, 1fr) */
@@ -125,6 +127,8 @@ page {
   grid-template-columns: repeat(5, 1fr);
   gap: 8rpx;
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* 网格行 */
@@ -208,7 +212,10 @@ page {
   text-align: center;
   line-height: 1.3;
   color: #374151;
-  word-break: break-all;
+  word-break: break-word; /* 改为break-word，避免英文单词中间断裂 */
+  word-wrap: break-word; /* 兼容性属性 */
+  overflow-wrap: break-word; /* 现代标准属性 */
+  hyphens: auto; /* 启用连字符断词 */
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
@@ -334,5 +341,20 @@ page {
 
   .cell-text {
     font-size: 20rpx;
+  }
+
+  /* 小屏幕下进一步优化宾果容器 */
+  .bingo-container {
+    padding: 12rpx;
+    margin: 0 8rpx 24rpx 8rpx;
+  }
+
+  .grid-container {
+    gap: 6rpx;
+  }
+
+  .cell {
+    padding: 6rpx;
+    border-radius: 8rpx;
   }
 }

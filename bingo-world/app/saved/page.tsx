@@ -211,8 +211,10 @@ export default function SavedBingosPage() {
                           }
                         `}
                       >
-                        <span className="truncate">
-                          {cell.text && cell.text.length > 6 ? cell.text.slice(0, 4) + "..." : (cell.text || "")}
+                        <span className="truncate break-words hyphens-auto">
+                          {cell.text && typeof cell.text === 'string' && cell.text.length > 6
+                            ? cell.text.slice(0, 4) + "..."
+                            : (cell.text && typeof cell.text === 'string' ? cell.text : "")}
                         </span>
                       </div>
                     ))}

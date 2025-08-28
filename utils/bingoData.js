@@ -10182,7 +10182,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "虫或长得像虫如士笋冻",
+            "text": "虫或长得像虫如土笋冻",
             "type": "standard"
           }
         ],

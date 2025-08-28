@@ -138,6 +138,16 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  word-break: break-word; /* 改为break-word，避免英文单词中间断裂 */
+  word-wrap: break-word; /* 兼容性属性 */
+  overflow-wrap: break-word; /* 现代标准属性 */
+  hyphens: auto; /* 启用连字符断词 */
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .thumbnail-cell.selected .cell-text {
