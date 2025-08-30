@@ -1,0 +1,50 @@
+{
+    "bingoId": "kuaile",
+    "title": "快乐宾果",
+    "creator": "请手动填写",
+    "description": "不必连成一条线，祝你永远快乐幸福",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "因为幸福流泪", "type": "standard"},
+            {"text": "和朋友牵手漫步", "type": "standard"},
+            {"text": "观察过自己的影子", "type": "standard"},
+            {"text": "用心拥抱过他人", "type": "standard"},
+            {"text": "有梦想并为此付出过努力", "type": "standard"}
+        ],
+        [
+            {"text": "发自内心称赞过某人", "type": "standard"},
+            {"text": "夏天在空调房吃冰西瓜", "type": "standard"},
+            {"text": "为别人的经历流泪", "type": "standard"},
+            {"text": "有良好的睡眠", "type": "standard"},
+            {"text": "为自己的爱好付出过精力时间金钱并不后悔", "type": "standard"}
+        ],
+        [
+            {"text": "想到自己的家庭就觉得美好感受到归属感", "type": "standard"},
+            {"text": "做过永远都不会后悔的重大选择", "type": "standard"},
+            {"text": "成功安利自己喜欢的艺术作品", "type": "standard"},
+            {"text": "经历过一次没有心理负担的考试", "type": "standard"},
+            {"text": "无论结果如何有过勇敢尝试的经历", "type": "standard"}
+        ],
+        [
+            {"text": "和朋友待在一起会觉得幸福", "type": "standard"},
+            {"text": "用心安慰过别人", "type": "standard"},
+            {"text": "记录过使自己幸福的事", "type": "standard"},
+            {"text": "创作过自己满意的作品", "type": "standard"},
+            {"text": "保持对生活的好奇", "type": "standard"}
+        ],
+        [
+            {"text": "做过让自己自豪的事情", "type": "standard"},
+            {"text": "玩过雪", "type": "standard"},
+            {"text": "把树叶夹在书里做书签", "type": "standard"},
+            {"text": "和他人有过关于“永远”的承诺", "type": "standard"},
+            {"text": "和喜欢的人在一起了", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
+}

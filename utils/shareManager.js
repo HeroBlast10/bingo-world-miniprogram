@@ -51,14 +51,14 @@ ShareManager.prototype.generateShareData = function(gameData, shareType) {
       break;
       
     case 'timeline':
-      title = '我在「宾了个果」发现了一个有趣的' + gameData.category + '宾果：' + baseTitle;
+      title = '我在「宾了个果」发现了一个有趣的' + gameData.category + '宾果游戏：' + baseTitle;
       desc = baseDesc;
       path = '/pages/game/game?id=' + gameData.id + '&from=timeline';
       break;
       
     case 'group':
       title = '🎯 一起来玩「' + baseTitle + '」宾果游戏';
-      desc = baseDesc + ' 快来挑战吧！';
+      desc = baseDesc + ' 一起来点亮吧！';
       path = '/pages/game/game?id=' + gameData.id + '&from=group';
       break;
       
@@ -190,7 +190,7 @@ ShareManager.prototype.shareApp = function() {
 ShareManager.prototype.shareAppToTimeline = function() {
   const self = this;
   return {
-    title: '宾了个果 - 有趣的宾果游戏合集，快来挑战各种有趣的宾果！',
+    title: '宾了个果 - 快来点亮各种有趣的宾果游戏！',
     query: '',
     imageUrl: '/images/placeholder-logo.png',
     success: function(res) {

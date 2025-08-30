@@ -11,37 +11,37 @@
         [
             {"text": "学会用英式假笑", "type": "standard"},
             {"text": "吐槽过炸鱼薯条", "type": "standard"},
-            {"text": "在摄政街被鸽子袭击", "type": "standard"},
+            {"text": "喂过鸽子", "type": "standard"},
             {"text": "遭遇过罢工取消行程", "type": "standard"},
-            {"text": "把中超当精神家园", "type": "standard"}
+            {"text": "生病等待就医期间病好了", "type": "standard"}
         ],
         [
             {"text": "练成雨天不打伞神功", "type": "standard"},
             {"text": "分得清各种口音鄙视链", "type": "standard"},
             {"text": "在图书馆抢不到座位", "type": "standard"},
             {"text": "被英国水质逼到秃头", "type": "standard"},
-            {"text": "有Tesco会员卡", "type": "standard"}
+            {"text": "写过投诉信", "type": "standard"}
         ],
         [
-            {"text": "参加过于无聊的pub聚会", "type": "standard"},
+            {"text": "在租房里被邻居趴体吵醒", "type": "standard"},
             {"text": "学会吐槽天气开场白", "type": "standard"},
             {"text": "被火车延误坑过", "type": "standard"},
-            {"text": "在博物馆打过地铺", "type": "standard"},
+            {"text": "从0开始学做饭", "type": "standard"},
             {"text": "买过天价教材", "type": "standard"}
         ],
         [
-            {"text": "被误认为日韩游客", "type": "standard"},
-            {"text": "在康沃尔冻成狗", "type": "standard"},
+            {"text": "被误认为日本人/韩国人", "type": "standard"},
+            {"text": "至少去了4个英国城市旅游", "type": "standard"},
             {"text": "学会用\"Cheers\"代替谢谢", "type": "standard"},
             {"text": "被英国菜逼成大厨", "type": "standard"},
             {"text": "在巨石阵拍过游客照", "type": "standard"}
         ],
         [
             {"text": "参加哈利波特巡礼", "type": "standard"},
-            {"text": "有英超球队周边", "type": "standard"},
-            {"text": "在公寓防火演习中冻醒", "type": "standard"},
-            {"text": "学会优雅排队", "type": "standard"},
-            {"text": "把\"Sorry\"当口头禅", "type": "standard"}
+            {"text": "赶due赶到大哭", "type": "standard"},
+            {"text": "体验过公寓防火演习", "type": "standard"},
+            {"text": "永远高峰换汇", "type": "standard"},
+            {"text": "熬着时差和国内家人朋友聊天", "type": "standard"}
         ]
     ],
     "category": "待分类",

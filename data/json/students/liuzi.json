@@ -24,7 +24,7 @@
         ],
         [
             {"text": "把IKEA当第二个家", "type": "standard"},
-            {"text": "用计算器心算汇率", "type": "standard"},
+            {"text": "在超市熟练心算汇率", "type": "standard"},
             {"text": "遭遇过种族歧视", "type": "standard"},
             {"text": "靠泡面活过期末周", "type": "standard"},
             {"text": "在唐人街找乡愁", "type": "standard"}
@@ -37,7 +37,7 @@
             {"text": "在机场丢过行李", "type": "standard"}
         ],
         [
-            {"text": "把微信当生命线", "type": "standard"},
+            {"text": "签证过期", "type": "standard"},
             {"text": "看过急诊破产", "type": "standard"},
             {"text": "用VPN比用筷子熟", "type": "standard"},
             {"text": "对家乡菜产生执念", "type": "standard"},

@@ -1,0 +1,50 @@
+{
+    "bingoId": "yinshiqingchun",
+    "title": "阴湿的青春宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你度过了一个阴湿的青春",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "有过喜欢的人但没被对方喜欢", "type": "standard"},
+            {"text": "没和喜欢的人一起吃东西过", "type": "standard"},
+            {"text": "从来都是一个人吃饭", "type": "standard"},
+            {"text": "成绩中游或者更差", "type": "standard"},
+            {"text": "暴饮暴食或者食欲不振", "type": "standard"}
+        ],
+        [
+            {"text": "没参加过学校组织的表演活动", "type": "standard"},
+            {"text": "曾试图以某种方式对某人/某群人/整个世界进行诅咒", "type": "standard"},
+            {"text": "有一个对你不好/你很讨厌的姐姐/妹妹/哥哥/弟弟", "type": "standard"},
+            {"text": "各种深色系换着穿，发型很凌乱或者很士", "type": "standard"},
+            {"text": "不敢争取自己应得之物", "type": "standard"}
+        ],
+        [
+            {"text": "喜欢的人最后和别人在一起了", "type": "standard"},
+            {"text": "歌力普通或者不怎么好听", "type": "standard"},
+            {"text": "听Vocaloid", "type": "standard"},
+            {"text": "以任意方式自残过", "type": "standard"},
+            {"text": "遭遇过校园霸凌", "type": "standard"}
+        ],
+        [
+            {"text": "从没在任何一个情人节收到过任何礼物", "type": "standard"},
+            {"text": "曾出于自己主观意愿过量用药", "type": "standard"},
+            {"text": "在校期间没被人称赞过外貌", "type": "standard"},
+            {"text": "家庭关系不和，父母是垃圾", "type": "standard"},
+            {"text": "丢脸地丢掉初吻，和无感甚至反感的家伙", "type": "standard"}
+        ],
+        [
+            {"text": "穷，或者说没有/不敢自由支配财产", "type": "standard"},
+            {"text": "一个人逛展并在这期间没敢进行任何社交", "type": "standard"},
+            {"text": "体脂过高或过低", "type": "standard"},
+            {"text": "高强度穿校服", "type": "standard"},
+            {"text": "日没有拿得出手的特长", "type": "standard"}
+        ]
+    ],
+    "category": "生活方式",
+    "tags": [],
+    "createdAt": ""
+}

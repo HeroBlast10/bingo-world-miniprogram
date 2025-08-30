@@ -105,7 +105,7 @@ Page({
    */
   onShareTimeline() {
     return {
-      title: '宾了个果 - 有趣的宾果游戏合集，快来挑战各种有趣的宾果！',
+      title: '宾了个果 - 快来点亮各种有趣的宾果游戏！',
       query: '',
       imageUrl: '/images/placeholder-logo.png'
     };

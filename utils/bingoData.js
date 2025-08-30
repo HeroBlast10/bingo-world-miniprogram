@@ -5865,11 +5865,11 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "为角色哭湿三包纸巾",
+            "text": "为角色流泪",
             "type": "standard"
           },
           {
-            "text": "收藏不同版本",
+            "text": "收藏不同版本的单行本",
             "type": "standard"
           },
           {
@@ -5920,7 +5920,7 @@ const bingos = {
       "gridContent": [
         [
           {
-            "text": "家里藏书超200本",
+            "text": "家里藏书超500本",
             "type": "standard"
           },
           {
@@ -7485,7 +7485,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "After all this time?Always.",
+            "text": "After all this time? Always.",
             "type": "standard"
           },
           {
@@ -7541,7 +7541,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "llove you three thousand",
+            "text": "I love you three thousand",
             "type": "standard"
           }
         ]
@@ -11103,11 +11103,11 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "哪怕悲伤痛苦",
+            "text": "哪怕悲伤痛苦也难以哭出眼泪",
             "type": "standard"
           },
           {
-            "text": "看6时",
+            "text": "家庭关系不和",
             "type": "standard"
           }
         ]
@@ -11471,6 +11471,56 @@ const bingos = {
       "category": "生活",
       "tags": ["童心", "纯真", "生活乐趣"],
       "createdAt": "2025-01-21T10:08:00.000Z"
+    },
+    "kuaile": {
+      "bingoId": "kuaile",
+    "title": "快乐宾果",
+    "creator": "请手动填写",
+    "description": "不必连成一条线，祝你永远快乐幸福",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "因为幸福流泪", "type": "standard"},
+            {"text": "和朋友牵手漫步", "type": "standard"},
+            {"text": "观察过自己的影子", "type": "standard"},
+            {"text": "用心拥抱过他人", "type": "standard"},
+            {"text": "有梦想并为此付出过努力", "type": "standard"}
+        ],
+        [
+            {"text": "发自内心称赞过某人", "type": "standard"},
+            {"text": "夏天在空调房吃冰西瓜", "type": "standard"},
+            {"text": "为别人的经历流泪", "type": "standard"},
+            {"text": "有良好的睡眠", "type": "standard"},
+            {"text": "为自己的爱好付出过精力时间金钱并不后悔", "type": "standard"}
+        ],
+        [
+            {"text": "想到自己的家庭就觉得美好感受到归属感", "type": "standard"},
+            {"text": "做过永远都不会后悔的重大选择", "type": "standard"},
+            {"text": "成功安利自己喜欢的艺术作品", "type": "standard"},
+            {"text": "经历过一次没有心理负担的考试", "type": "standard"},
+            {"text": "无论结果如何有过勇敢尝试的经历", "type": "standard"}
+        ],
+        [
+            {"text": "和朋友待在一起会觉得幸福", "type": "standard"},
+            {"text": "用心安慰过别人", "type": "standard"},
+            {"text": "记录过使自己幸福的事", "type": "standard"},
+            {"text": "创作过自己满意的作品", "type": "standard"},
+            {"text": "保持对生活的好奇", "type": "standard"}
+        ],
+        [
+            {"text": "做过让自己自豪的事情", "type": "standard"},
+            {"text": "玩过雪", "type": "standard"},
+            {"text": "把树叶夹在书里做书签", "type": "standard"},
+            {"text": "和他人有过关于“永远”的承诺", "type": "standard"},
+            {"text": "和喜欢的人在一起了", "type": "standard"}
+        ]
+    ],
+    "category": "待分类",
+    "tags": [],
+    "createdAt": ""
     },
     "tegongshenghuo": {
       "bingoId": "tegongshenghuo",
@@ -11893,7 +11943,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "Free Space (自由发挥)",
+            "text": " 免费格子",
             "type": "standard"
           },
           {
@@ -13406,7 +13456,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "Free Space (自由发挥)",
+            "text": " 免费格子",
             "type": "standard"
           },
           {
@@ -13531,7 +13581,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "Free Space (自由发挥)",
+            "text": " 免费格子",
             "type": "standard"
           },
           {
@@ -13980,114 +14030,39 @@ const bingos = {
       },
       "gridContent": [
         [
-          {
-            "text": "食堂菜吃出橡皮",
-            "type": "standard"
-          },
-          {
-            "text": "暗恋对象有12个情敌",
-            "type": "standard"
-          },
-          {
-            "text": "月考总在生病",
-            "type": "standard"
-          },
-          {
-            "text": "被补习班掏空钱包",
-            "type": "standard"
-          },
-          {
-            "text": "校服总大两码",
-            "type": "standard"
-          }
+            {"text": "食堂菜吃出异物", "type": "standard"},
+            {"text": "暗恋有多个个情敌", "type": "standard"},
+            {"text": "重要考试前生病", "type": "standard"},
+            {"text": "被补习班掏空钱包", "type": "standard"},
+            {"text": "校服很丑不合身", "type": "standard"}
         ],
         [
-          {
-            "text": "自行车总掉链子",
-            "type": "standard"
-          },
-          {
-            "text": "偷带手机被没收",
-            "type": "standard"
-          },
-          {
-            "text": "家长会前夜失眠",
-            "type": "standard"
-          },
-          {
-            "text": "写小说被当检讨书收",
-            "type": "standard"
-          },
-          {
-            "text": "表白撞上对方恋爱",
-            "type": "standard"
-          }
+            {"text": "偷看小说被没收", "type": "standard"},
+            {"text": "偷带手机被没收", "type": "standard"},
+            {"text": "家长会前夜失眠", "type": "standard"},
+            {"text": "写小说被没收", "type": "standard"},
+            {"text": "表白被拒绝", "type": "standard"}
         ],
         [
-          {
-            "text": "永远抢不到球场",
-            "type": "standard"
-          },
-          {
-            "text": "饭卡总在最饿时没钱",
-            "type": "standard"
-          },
-          {
-            "text": "剪发像劳改犯",
-            "type": "standard"
-          },
-          {
-            "text": "假期作业最后一天抄",
-            "type": "standard"
-          },
-          {
-            "text": "被比较\"别人家孩子\"",
-            "type": "standard"
-          }
+            {"text": "永远抢不到球场", "type": "standard"},
+            {"text": "饭卡没钱吃饭", "type": "standard"},
+            {"text": "剪了头发后被同学嘲笑", "type": "standard"},
+            {"text": "假期作业最后一天抄", "type": "standard"},
+            {"text": "被比较\"别人家孩子\"", "type": "standard"}
         ],
         [
-          {
-            "text": "偶像塌房在你生日",
-            "type": "standard"
-          },
-          {
-            "text": "长痘长在鼻尖正中间",
-            "type": "standard"
-          },
-          {
-            "text": "重要考试必拉肚子",
-            "type": "standard"
-          },
-          {
-            "text": "全班就你没情侣",
-            "type": "standard"
-          },
-          {
-            "text": "手机掉进汤碗里",
-            "type": "standard"
-          }
+            {"text": "偶像塌房", "type": "standard"},
+            {"text": "长痘长在鼻尖正中间", "type": "standard"},
+            {"text": "重要考试中拉肚子", "type": "standard"},
+            {"text": "遭遇过校园霸凌", "type": "standard"},
+            {"text": "家庭关系不和", "type": "standard"}
         ],
         [
-          {
-            "text": "熬夜复习却考原题",
-            "type": "standard"
-          },
-          {
-            "text": "新鞋必被踩脏",
-            "type": "standard"
-          },
-          {
-            "text": "抽卡永远保底",
-            "type": "standard"
-          },
-          {
-            "text": "追公交摔个劈叉",
-            "type": "standard"
-          },
-          {
-            "text": "存钱买的东西降价",
-            "type": "standard"
-          }
+            {"text": "考试考原题但是不会做", "type": "standard"},
+            {"text": "从没在情人节收到过礼物", "type": "standard"},
+            {"text": "抽卡永远保底", "type": "standard"},
+            {"text": "下楼梯摔倒被同学嘲笑", "type": "standard"},
+            {"text": "喜欢的人最后和别人在一起了", "type": "standard"}
         ]
       ],
       "category": "学生",
@@ -14154,7 +14129,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "用计算器心算汇率",
+            "text": "在超市熟练心算汇率",
             "type": "standard"
           },
           {
@@ -14194,7 +14169,7 @@ const bingos = {
         ],
         [
           {
-            "text": "把微信当生命线",
+            "text": "签证过期",
             "type": "standard"
           },
           {
@@ -15027,7 +15002,7 @@ const bingos = {
         ],
         [
           {
-            "text": "参加过抗议活动",
+            "text": "偶遇过明星",
             "type": "standard"
           },
           {
@@ -15035,7 +15010,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "被菲佣姐姐照顾过",
+            "text": "每周都会自己做饭",
             "type": "standard"
           },
           {
@@ -15049,7 +15024,7 @@ const bingos = {
         ],
         [
           {
-            "text": "在旺角街头被推销",
+            "text": "在街头被推销/传教",
             "type": "standard"
           },
           {
@@ -15057,7 +15032,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "被繁体字作业逼疯",
+            "text": "被繁体字逼疯",
             "type": "standard"
           },
           {
@@ -15116,7 +15091,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "在摄政街被鸽子袭击",
+            "text": "喂过鸽子",
             "type": "standard"
           },
           {
@@ -15124,7 +15099,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "把中超当精神家园",
+            "text": "生病等待就医期间病好了",
             "type": "standard"
           }
         ],
@@ -15146,13 +15121,13 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "有Tesco会员卡",
+            "text": "写过投诉信",
             "type": "standard"
           }
         ],
         [
           {
-            "text": "参加过于无聊的pub聚会",
+            "text": "租房里被邻居趴体吵醒",
             "type": "standard"
           },
           {
@@ -15164,7 +15139,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "在博物馆打过地铺",
+            "text": "从0开始学做饭",
             "type": "standard"
           },
           {
@@ -15174,11 +15149,11 @@ const bingos = {
         ],
         [
           {
-            "text": "被误认为日韩游客",
+            "text": "被误认为日本人/韩国人",
             "type": "standard"
           },
           {
-            "text": "在康沃尔冻成狗",
+            "text": "至少去了4个英国城市旅游",
             "type": "standard"
           },
           {
@@ -15200,19 +15175,19 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "有英超球队周边",
+            "text": "赶due赶到大哭",
             "type": "standard"
           },
           {
-            "text": "在公寓防火演习中冻醒",
+            "text": "体验过公寓防火演习",
             "type": "standard"
           },
           {
-            "text": "学会优雅排队",
+            "text": "永远高峰换汇",
             "type": "standard"
           },
           {
-            "text": "把\"Sorry\"当口头禅",
+            "text": "熬着时差和国内家人朋友聊天",
             "type": "standard"
           }
         ]
@@ -15345,6 +15320,56 @@ const bingos = {
       "category": "学生",
       "tags": [],
       "createdAt": "2025-07-29T01:14:01.581Z"
+    },
+    "yinshiqingchun": {
+      "bingoId": "yinshiqingchun",
+    "title": "阴湿的青春宾果",
+    "creator": "请手动填写",
+    "description": "五个连成一线，说明你度过了一个阴湿的青春",
+    "gridSize": {
+        "rows": 5,
+        "cols": 5
+    },
+    "gridContent": [
+        [
+            {"text": "有过喜欢的人但没被对方喜欢", "type": "standard"},
+            {"text": "没和喜欢的人一起吃东西过", "type": "standard"},
+            {"text": "从来都是一个人吃饭", "type": "standard"},
+            {"text": "成绩中游或者更差", "type": "standard"},
+            {"text": "暴饮暴食或者食欲不振", "type": "standard"}
+        ],
+        [
+            {"text": "没参加过学校组织的表演活动", "type": "standard"},
+            {"text": "曾试图以某种方式对某人/某群人/整个世界进行诅咒", "type": "standard"},
+            {"text": "有一个对你不好/你很讨厌的姐姐/妹妹/哥哥/弟弟", "type": "standard"},
+            {"text": "各种深色系换着穿，发型很凌乱或者很士", "type": "standard"},
+            {"text": "不敢争取自己应得之物", "type": "standard"}
+        ],
+        [
+            {"text": "喜欢的人最后和别人在一起了", "type": "standard"},
+            {"text": "歌力普通或者不怎么好听", "type": "standard"},
+            {"text": "听Vocaloid", "type": "standard"},
+            {"text": "以任意方式自残过", "type": "standard"},
+            {"text": "遭遇过校园霸凌", "type": "standard"}
+        ],
+        [
+            {"text": "从没在任何一个情人节收到过任何礼物", "type": "standard"},
+            {"text": "曾出于自己主观意愿过量用药", "type": "standard"},
+            {"text": "在校期间没被人称赞过外貌", "type": "standard"},
+            {"text": "家庭关系不和，父母是垃圾", "type": "standard"},
+            {"text": "丢脸地丢掉初吻，和无感甚至反感的家伙", "type": "standard"}
+        ],
+        [
+            {"text": "穷，或者说没有/不敢自由支配财产", "type": "standard"},
+            {"text": "一个人逛展并在这期间没敢进行任何社交", "type": "standard"},
+            {"text": "体脂过高或过低", "type": "standard"},
+            {"text": "高强度穿校服", "type": "standard"},
+            {"text": "日没有拿得出手的特长", "type": "standard"}
+        ]
+    ],
+    "category": "生活方式",
+    "tags": [],
+    "createdAt": ""
     },
     "zhognxueshengweiji": {
       "bingoId": "zhognxueshengweiji",
