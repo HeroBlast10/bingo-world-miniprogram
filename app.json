@@ -43,6 +43,10 @@
       "desc": "保存宾果图片到相册"
     }
   },
+  "networkTimeout": {
+    "request": 60000,
+    "downloadFile": 60000
+  },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

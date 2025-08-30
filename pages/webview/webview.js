@@ -15,13 +15,15 @@ Page({
     // 从页面参数获取要显示的URL
     const url = decodeURIComponent(options.url || '');
     const title = decodeURIComponent(options.title || '网页浏览');
-    
+
+    console.log('WebView加载URL:', url);
+
     if (url) {
       this.setData({
         url: url
       });
     }
-    
+
     // 设置导航栏标题
     wx.setNavigationBarTitle({
       title: title
@@ -40,26 +42,7 @@ Page({
    */
   onWebViewError(e) {
     console.error('网页加载失败:', e);
-
-    // 延迟显示错误提示，避免与页面加载冲突
-    setTimeout(() => {
-      wx.showModal({
-        title: '无法打开页面',
-        content: '由于小程序限制，无法直接打开外部链接\n\n建议：\n• 复制链接在浏览器中打开\n• 或在微信中搜索"宾果世界"公众号',
-        showCancel: true,
-        cancelText: '返回',
-        confirmText: '复制链接',
-        success: (res) => {
-          if (res.confirm) {
-            // 复制链接到剪贴板
-            this.copyLinkAndBack();
-          } else {
-            // 返回上一页
-            wx.navigateBack();
-          }
-        }
-      });
-    }, 1000);
+    // 不显示错误弹窗，让WebView自己处理
   },
 
   /**

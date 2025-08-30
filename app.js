@@ -118,6 +118,6 @@ App({
   globalData: {
     userInfo: null,
     isLoggedIn: false,
-    version: '1.1.1'
+    version: '1.1.5'
   }
 })

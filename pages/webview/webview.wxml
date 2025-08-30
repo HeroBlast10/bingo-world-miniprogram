@@ -1,23 +1,7 @@
 <!--pages/webview/webview.wxml-->
-<view class="webview-container">
-  <!-- WebView组件 -->
-  <web-view
-    wx:if="{{url}}"
-    src="{{url}}"
-    bindload="onWebViewLoad"
-    binderror="onWebViewError">
-  </web-view>
-
-  <!-- 加载提示 -->
-  <view wx:else class="loading-container">
-    <view class="loading-content">
-      <view class="loading-icon">🌐</view>
-      <text class="loading-text">正在加载网页...</text>
-      <text class="loading-tip">如果长时间无法加载，请检查网络连接</text>
-      <view class="loading-actions">
-        <button class="action-btn" bindtap="copyLinkAndBack">复制链接</button>
-        <button class="action-btn secondary" bindtap="goBack">返回</button>
-      </view>
-    </view>
-  </view>
-</view>
+<web-view
+  wx:if="{{url}}"
+  src="{{url}}"
+  bindload="onWebViewLoad"
+  binderror="onWebViewError">
+</web-view>

@@ -148,41 +148,19 @@ Page({
     const url = 'https://mp.weixin.qq.com/s/70aqUQcqzGGnJj5r93jSuQ';
     const title = '宾果世界';
 
-    // 显示关注指引，提供多种方式
-    wx.showModal({
-      title: '关注公众号',
-      content: '请通过以下方式关注"宾果世界"公众号：\n\n1. 微信搜索"宾果世界"\n2. 复制链接在浏览器中打开\n3. 扫描公众号二维码',
-      confirmText: '复制链接',
-      cancelText: '知道了',
-      success: (res) => {
-        if (res.confirm) {
-          // 用户选择复制链接
-          this.copyLinkToClipboard(url);
-        }
-      }
-    });
+    // 直接跳转到WebView页面
+    this.openWebView(url, title);
   },
 
   /**
    * 打开WebView页面
    */
   openWebView(url, title) {
+    console.log('打开WebView:', url);
     wx.navigateTo({
       url: `/pages/webview/webview?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`,
       fail: (error) => {
         console.error('跳转WebView失败:', error);
-        // 跳转失败时，提供复制链接的选项
-        wx.showModal({
-          title: '跳转失败',
-          content: '无法打开页面，是否复制链接到剪贴板？',
-          confirmText: '复制链接',
-          cancelText: '取消',
-          success: (res) => {
-            if (res.confirm) {
-              this.copyLinkToClipboard(url);
-            }
-          }
-        });
       }
     });
   },
