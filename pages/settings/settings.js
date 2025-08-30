@@ -145,8 +145,11 @@ Page({
    * 关注公众号
    */
   onFollowWechat() {
+    // 使用完整的微信公众号文章URL
     const url = 'https://mp.weixin.qq.com/s/70aqUQcqzGGnJj5r93jSuQ';
     const title = '宾果世界';
+
+    console.log('准备打开公众号链接:', url);
 
     // 直接跳转到WebView页面
     this.openWebView(url, title);
@@ -157,8 +160,20 @@ Page({
    */
   openWebView(url, title) {
     console.log('打开WebView:', url);
+    console.log('页面标题:', title);
+
+    const encodedUrl = encodeURIComponent(url);
+    const encodedTitle = encodeURIComponent(title);
+    const navigateUrl = `/pages/webview/webview?url=${encodedUrl}&title=${encodedTitle}`;
+
+    console.log('编码后的URL:', encodedUrl);
+    console.log('导航URL:', navigateUrl);
+
     wx.navigateTo({
-      url: `/pages/webview/webview?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`,
+      url: navigateUrl,
+      success: () => {
+        console.log('成功跳转到WebView页面');
+      },
       fail: (error) => {
         console.error('跳转WebView失败:', error);
       }

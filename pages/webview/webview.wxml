@@ -1,7 +1,15 @@
 <!--pages/webview/webview.wxml-->
-<web-view
-  wx:if="{{url}}"
-  src="{{url}}"
-  bindload="onWebViewLoad"
-  binderror="onWebViewError">
-</web-view>
+<view class="webview-container">
+  <web-view
+    wx:if="{{url}}"
+    src="{{url}}"
+    bindload="onWebViewLoad"
+    binderror="onWebViewError"
+    style="width: 100%; height: 100vh;">
+  </web-view>
+
+  <!-- 调试信息 -->
+  <view wx:if="{{!url}}" class="debug-info">
+    <text>URL为空，无法加载WebView</text>
+  </view>
+</view>
