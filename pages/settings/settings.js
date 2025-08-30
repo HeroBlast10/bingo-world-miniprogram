@@ -145,14 +145,52 @@ Page({
    * 关注公众号
    */
   onFollowWechat() {
-    // 使用完整的微信公众号文章URL
     const url = 'https://mp.weixin.qq.com/s/70aqUQcqzGGnJj5r93jSuQ';
-    const title = '宾果世界';
 
     console.log('准备打开公众号链接:', url);
 
-    // 直接跳转到WebView页面
-    this.openWebView(url, title);
+    // 方法1: 尝试使用微信内置的公众号文章打开方式
+    if (wx.openOfficialAccountArticle) {
+      wx.openOfficialAccountArticle({
+        url: url,
+        success: () => {
+          console.log('使用内置方式打开公众号文章成功');
+        },
+        fail: (error) => {
+          console.log('内置方式失败，使用WebView:', error);
+          this.openWebViewForced(url);
+        }
+      });
+    } else {
+      // 方法2: 直接使用WebView强制打开
+      console.log('不支持内置方式，直接使用WebView');
+      this.openWebViewForced(url);
+    }
+  },
+
+  /**
+   * 强制使用WebView打开链接
+   */
+  openWebViewForced(url) {
+    const title = '宾果世界';
+    console.log('强制使用WebView打开:', url);
+
+    // 直接跳转到WebView页面，不管域名限制
+    const encodedUrl = encodeURIComponent(url);
+    const encodedTitle = encodeURIComponent(title);
+    const navigateUrl = `/pages/webview/webview?url=${encodedUrl}&title=${encodedTitle}&forced=1`;
+
+    console.log('强制模式导航URL:', navigateUrl);
+
+    wx.navigateTo({
+      url: navigateUrl,
+      success: () => {
+        console.log('强制模式：成功跳转到WebView页面');
+      },
+      fail: (error) => {
+        console.error('强制模式：跳转WebView失败:', error);
+      }
+    });
   },
 
   /**
