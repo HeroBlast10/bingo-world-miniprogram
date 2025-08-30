@@ -44,8 +44,8 @@ Page({
     // 延迟显示错误提示，避免与页面加载冲突
     setTimeout(() => {
       wx.showModal({
-        title: '页面加载失败',
-        content: '可能的原因：\n• 网络连接问题\n• 开发环境限制\n• 域名未配置\n\n建议复制链接在浏览器中打开',
+        title: '无法打开页面',
+        content: '由于小程序限制，无法直接打开外部链接\n\n建议：\n• 复制链接在浏览器中打开\n• 或在微信中搜索"宾果世界"公众号',
         showCancel: true,
         cancelText: '返回',
         confirmText: '复制链接',
@@ -78,8 +78,8 @@ Page({
         // 显示使用提示
         setTimeout(() => {
           wx.showModal({
-            title: '使用提示',
-            content: '链接已复制到剪贴板\n\n请在浏览器中粘贴打开，或在微信中搜索"宾果世界"公众号关注',
+            title: '关注指引',
+            content: '链接已复制到剪贴板\n\n使用方法：\n1. 在浏览器中粘贴打开\n2. 或直接在微信搜索"宾果世界"关注公众号',
             showCancel: false,
             confirmText: '知道了',
             success: () => {
