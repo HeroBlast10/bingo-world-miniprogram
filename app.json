@@ -9,7 +9,8 @@
     "pages/saved/saved",
     "pages/debug/debug",
     "pages/debug/debug-me",
-    "pages/webview/webview"
+    "pages/webview/webview",
+    "pages/contact/contact"
   ],
   "window": {
     "backgroundTextStyle": "light",

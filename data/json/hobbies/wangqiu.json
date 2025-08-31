@@ -9,38 +9,38 @@
     },
     "gridContent": [
         [
-            {"text": "背得出大满贯年份", "type": "standard"},
-            {"text": "收藏比赛用球", "type": "standard"},
+            {"text": "背得出近几年所有大满贯单打冠军", "type": "standard"},
+            {"text": "请过一对一教练", "type": "standard"},
             {"text": "分得清所有握拍方式", "type": "standard"},
-            {"text": "用球员英文名", "type": "standard"},
-            {"text": "觉得草地赛最优雅", "type": "standard"}
+            {"text": "精通球员英文名/外号", "type": "standard"},
+            {"text": "摔过球拍", "type": "standard"}
         ],
         [
-            {"text": "买过RF帽子", "type": "standard"},
+            {"text": "相信未来十年是阿卡辛纳的时代", "type": "standard"},
             {"text": "为费纳决流泪", "type": "standard"},
-            {"text": "熬夜看澳网", "type": "standard"},
-            {"text": "收藏签名海报", "type": "standard"},
-            {"text": "能解说比赛", "type": "standard"}
+            {"text": "熬夜看大满贯", "type": "standard"},
+            {"text": "有球星亲签海报/网球/纪念品", "type": "standard"},
+            {"text": "买过专业网球包/网球服", "type": "standard"}
         ],
         [
-            {"text": "房间摆奖杯模型", "type": "standard"},
-            {"text": "用网球术语骂人", "type": "standard"},
+            {"text": "看球星访谈/传记", "type": "standard"},
+            {"text": "有适合自己的拍线参数", "type": "standard"},
             {"text": "追球员超十年", "type": "standard"},
-            {"text": "买过温网毛巾", "type": "standard"},
+            {"text": "买过澳网/温网/法网/美网的纪念品", "type": "standard"},
             {"text": "觉得现场听击球声最爽", "type": "standard"}
         ],
         [
-            {"text": "分析发球数据", "type": "standard"},
+            {"text": "分析比赛数据（发球/网前/破发...）", "type": "standard"},
             {"text": "为破发点紧张", "type": "standard"},
-            {"text": "收藏各代球拍", "type": "standard"},
+            {"text": "收藏球拍", "type": "standard"},
             {"text": "会模仿纳达尔习惯", "type": "standard"},
-            {"text": "嫌弃新生代不稳", "type": "standard"}
+            {"text": "嫌弃90后球员", "type": "standard"}
         ],
         [
-            {"text": "用网球游戏练反应", "type": "standard"},
-            {"text": "知道教练八卦", "type": "standard"},
-            {"text": "买过大师赛门票", "type": "standard"},
-            {"text": "在贴吧写技术帖", "type": "standard"},
+            {"text": "在各个平台关注网球博主", "type": "standard"},
+            {"text": "在硬地之外的场地打过球", "type": "standard"},
+            {"text": "买过大满贯/大师赛门票", "type": "standard"},
+            {"text": "写过网球技术帖", "type": "standard"},
             {"text": "觉得三巨头是神话", "type": "standard"}
         ]
     ],

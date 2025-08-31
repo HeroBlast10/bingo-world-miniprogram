@@ -1,0 +1,122 @@
+<!--pages/contact/contact.wxml-->
+<view class="container">
+  <!-- 页面标题 -->
+  <view class="header">
+    <text class="title">联系我们</text>
+    <text class="subtitle">如果您有任何想法或建议，欢迎给我们留言！欢迎分享您自己创建的宾果游戏，我们会在审核后更新到小程序中，并标注您的版权。您也可以通过"宾果世界"公众号后台给我们留言，或者发邮件给binlegeguo@163.com。</text>
+  </view>
+
+  <!-- 联系表单 -->
+  <view class="form-container">
+    <!-- 邮箱输入 -->
+    <view class="form-group">
+      <view class="form-label">您的电子邮箱</view>
+      <input 
+        class="form-input" 
+        type="text" 
+        placeholder="请输入您的邮箱地址"
+        value="{{formData.email}}"
+        bindinput="onEmailInput"
+      />
+    </view>
+
+    <!-- 标题输入 -->
+    <view class="form-group">
+      <view class="form-label">标题</view>
+      <input 
+        class="form-input" 
+        type="text" 
+        placeholder="请输入消息标题"
+        value="{{formData.title}}"
+        bindinput="onTitleInput"
+        maxlength="50"
+      />
+    </view>
+
+    <!-- 内容输入 -->
+    <view class="form-group">
+      <view class="form-label">内容（不超过1000字符）</view>
+      <textarea 
+        class="form-textarea" 
+        placeholder="请详细描述您的想法、建议或问题..."
+        value="{{formData.content}}"
+        bindinput="onContentInput"
+        maxlength="1000"
+        show-confirm-bar="{{false}}"
+        auto-height
+      />
+      <view class="char-count">{{formData.content.length}}/1000</view>
+    </view>
+
+    <!-- 图片上传 -->
+    <view class="form-group">
+      <view class="form-label">上传图片（可选）</view>
+      <view class="image-upload-container">
+        <view class="uploaded-images" wx:if="{{images.length > 0}}">
+          <view 
+            class="image-item" 
+            wx:for="{{images}}" 
+            wx:key="index"
+          >
+            <image 
+              class="uploaded-image" 
+              src="{{item}}" 
+              mode="aspectFill"
+              bindtap="onPreviewImage"
+              data-index="{{index}}"
+            />
+            <view 
+              class="image-delete" 
+              bindtap="onDeleteImage"
+              data-index="{{index}}"
+            >
+              <text class="delete-icon">×</text>
+            </view>
+          </view>
+        </view>
+        
+        <view 
+          class="upload-btn" 
+          bindtap="onChooseImage"
+          wx:if="{{images.length < 3}}"
+        >
+          <text class="upload-icon">📷</text>
+          <text class="upload-text">添加图片</text>
+          <text class="upload-limit">最多3张</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 提交按钮 -->
+    <button 
+      class="submit-btn {{isSubmitting ? 'submitting' : ''}}" 
+      bindtap="onSubmit"
+      disabled="{{isSubmitting}}"
+    >
+      {{isSubmitting ? '提交中...' : '提交'}}
+    </button>
+  </view>
+
+  <!-- 其他联系方式 -->
+  <view class="contact-methods">
+    <text class="methods-title">其他联系方式</text>
+    
+    <view class="method-item" bindtap="onFollowWechat">
+      <view class="method-icon wechat-icon">📱</view>
+      <view class="method-info">
+        <text class="method-name">微信公众号</text>
+        <text class="method-desc">关注"宾果世界"公众号</text>
+      </view>
+      <view class="method-arrow">›</view>
+    </view>
+
+    <view class="method-item" bindtap="onCopyEmail">
+      <view class="method-icon email-icon">📧</view>
+      <view class="method-info">
+        <text class="method-name">邮箱联系</text>
+        <text class="method-desc">binlegeguo@163.com</text>
+      </view>
+      <view class="method-arrow">›</view>
+    </view>
+  </view>
+</view>

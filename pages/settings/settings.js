@@ -256,11 +256,15 @@ Page({
    * 反馈联系
    */
   onFeedback() {
-    wx.showModal({
-      title: '联系我们',
-      content: '如有问题或建议，\n\n请通过以下方式联系我们：\n\n公众号"宾果世界"\n\n邮箱：binlegeguo@163.com',
-      showCancel: false,
-      confirmText: '知道了'
+    wx.navigateTo({
+      url: '/pages/contact/contact',
+      fail: (error) => {
+        console.error('跳转联系我们页面失败:', error);
+        wx.showToast({
+          title: '页面跳转失败',
+          icon: 'none'
+        });
+      }
     });
   },
 

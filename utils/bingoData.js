@@ -1627,7 +1627,7 @@ const bingos = {
                 "type": "standard"
             },
             {
-                "text": "体质泪失禁",
+                "text": "泪失禁体质",
                 "type": "standard"
             },
             {
@@ -5414,7 +5414,7 @@ const bingos = {
       "gridContent": [
         [
           {
-            "text": "背得出选秀顺位",
+            "text": "背得出近几年选秀顺位前几名",
             "type": "standard"
           },
           {
@@ -5426,7 +5426,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "用球星当微信名",
+            "text": "微信朋友圈背景是NBA相关",
             "type": "standard"
           },
           {
@@ -5466,21 +5466,21 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "追球星超十年",
+            "text": "追某个球星超十年",
             "type": "standard"
           },
           {
-            "text": "买过签名篮球",
+            "text": "有球星签名海报/纪念品",
             "type": "standard"
           },
           {
-            "text": "觉得现场比直播燃",
+            "text": "觉得现场比直播燃多了",
             "type": "standard"
           }
         ],
         [
           {
-            "text": "分析球员数据",
+            "text": "熟悉各个球员数据",
             "type": "standard"
           },
           {
@@ -5488,7 +5488,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "收藏各代球鞋",
+            "text": "收藏过球鞋",
             "type": "standard"
           },
           {
@@ -6172,114 +6172,39 @@ const bingos = {
       },
       "gridContent": [
         [
-          {
-            "text": "背得出大满贯年份",
-            "type": "standard"
-          },
-          {
-            "text": "收藏比赛用球",
-            "type": "standard"
-          },
-          {
-            "text": "分得清所有握拍方式",
-            "type": "standard"
-          },
-          {
-            "text": "用球员英文名",
-            "type": "standard"
-          },
-          {
-            "text": "觉得草地赛最优雅",
-            "type": "standard"
-          }
+            {"text": "背得出近几年所有大满贯单打冠军", "type": "standard"},
+            {"text": "请过一对一教练", "type": "standard"},
+            {"text": "分得清所有握拍方式", "type": "standard"},
+            {"text": "精通球员英文名/外号", "type": "standard"},
+            {"text": "摔过球拍", "type": "standard"}
         ],
         [
-          {
-            "text": "买过RF帽子",
-            "type": "standard"
-          },
-          {
-            "text": "为费纳决流泪",
-            "type": "standard"
-          },
-          {
-            "text": "熬夜看澳网",
-            "type": "standard"
-          },
-          {
-            "text": "收藏签名海报",
-            "type": "standard"
-          },
-          {
-            "text": "能解说比赛",
-            "type": "standard"
-          }
+            {"text": "相信未来十年是阿卡辛纳的时代", "type": "standard"},
+            {"text": "为费纳决流泪", "type": "standard"},
+            {"text": "熬夜看大满贯", "type": "standard"},
+            {"text": "有球星亲签海报/网球/纪念品", "type": "standard"},
+            {"text": "买过专业网球包/网球服", "type": "standard"}
         ],
         [
-          {
-            "text": "房间摆奖杯模型",
-            "type": "standard"
-          },
-          {
-            "text": "用网球术语骂人",
-            "type": "standard"
-          },
-          {
-            "text": "追球员超十年",
-            "type": "standard"
-          },
-          {
-            "text": "买过温网毛巾",
-            "type": "standard"
-          },
-          {
-            "text": "觉得现场听击球声最爽",
-            "type": "standard"
-          }
+            {"text": "看球星访谈/传记", "type": "standard"},
+            {"text": "有适合自己的拍线参数", "type": "standard"},
+            {"text": "追球员超十年", "type": "standard"},
+            {"text": "买过澳网/温网/法网/美网的纪念品", "type": "standard"},
+            {"text": "觉得现场听击球声最爽", "type": "standard"}
         ],
         [
-          {
-            "text": "分析发球数据",
-            "type": "standard"
-          },
-          {
-            "text": "为破发点紧张",
-            "type": "standard"
-          },
-          {
-            "text": "收藏各代球拍",
-            "type": "standard"
-          },
-          {
-            "text": "会模仿纳达尔习惯",
-            "type": "standard"
-          },
-          {
-            "text": "嫌弃新生代不稳",
-            "type": "standard"
-          }
+            {"text": "分析比赛数据（发球/网前/破发...）", "type": "standard"},
+            {"text": "为破发点紧张", "type": "standard"},
+            {"text": "收藏球拍", "type": "standard"},
+            {"text": "会模仿纳达尔习惯", "type": "standard"},
+            {"text": "嫌弃90后球员", "type": "standard"}
         ],
         [
-          {
-            "text": "用网球游戏练反应",
-            "type": "standard"
-          },
-          {
-            "text": "知道教练八卦",
-            "type": "standard"
-          },
-          {
-            "text": "买过大师赛门票",
-            "type": "standard"
-          },
-          {
-            "text": "在贴吧写技术帖",
-            "type": "standard"
-          },
-          {
-            "text": "觉得三巨头是神话",
-            "type": "standard"
-          }
+            {"text": "在各个平台关注网球博主", "type": "standard"},
+            {"text": "在硬地之外的场地打过球", "type": "standard"},
+            {"text": "买过大满贯/大师赛门票", "type": "standard"},
+            {"text": "写过网球技术帖", "type": "standard"},
+            {"text": "觉得三巨头是神话", "type": "standard"}
         ]
       ],
       "category": "爱好",
@@ -6435,7 +6360,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "梦想能得到垃圾目录",
+            "text": "在农场建了自己的博物馆",
             "type": "standard"
           },
           {
@@ -6445,7 +6370,7 @@ const bingos = {
         ],
         [
           {
-            "text": "告诉潘姆是谁给她建了房学",
+            "text": "告诉潘姆是谁给她建了房子",
             "type": "standard"
           },
           {
@@ -6489,7 +6414,7 @@ const bingos = {
         ],
         [
           {
-            "text": "为了改外貌和法师装燕",
+            "text": "必挖地上会动的蚯蚓",
             "type": "standard"
           },
           {
@@ -6505,7 +6430,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "显示高级打造信息",
+            "text": "被火车撞过",
             "type": "standard"
           }
         ],
