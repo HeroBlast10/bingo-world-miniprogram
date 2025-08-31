@@ -12903,7 +12903,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "没有穿鞋出门",
+            "text": "喜欢ACG/二次元",
             "type": "standard"
           },
           {
@@ -12921,7 +12921,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "出门习惯性戴☐罩",
+            "text": "不喜欢主动打招呼",
             "type": "standard"
           },
           {

@@ -82,5 +82,7 @@
     "include": []
   },
   "appid": "wx478e6c32261db2e9",
-  "editorSetting": {}
+  "editorSetting": {},
+  "cloudfunctionRoot": "cloudfunctions/",
+  "cloudbaseRoot": "cloudbase/"
 }

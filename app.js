@@ -5,7 +5,16 @@ const shareManager = require('./utils/shareManager.js');
 App({
   onLaunch() {
     console.log('应用启动');
-    
+
+    // 初始化云开发
+    if (wx.cloud) {
+      wx.cloud.init({
+        env: 'cloud1-7geb06r844eff3c0', // 您的云开发环境ID
+        traceUser: true
+      });
+      console.log('云开发初始化成功');
+    }
+
     // 展示本地存储能力
     const logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -13,7 +22,7 @@ App({
 
     // 初始化用户状态
     this.initUser();
-    
+
     // 检查应用更新
     this.checkForUpdate();
   },

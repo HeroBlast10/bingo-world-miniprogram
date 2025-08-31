@@ -169,15 +169,17 @@ Page({
     });
     
     try {
-      // 这里应该调用后端API提交数据
-      // 目前先模拟提交成功
-      await this.simulateSubmit();
-      
+      // 上传图片到云存储
+      const imageUrls = await this.uploadImages();
+
+      // 保存到云数据库
+      await this.saveToDatabase(imageUrls);
+
       wx.showToast({
         title: '提交成功',
         icon: 'success'
       });
-      
+
       // 清空表单
       this.setData({
         formData: {
@@ -187,7 +189,7 @@ Page({
         },
         images: []
       });
-      
+
       // 延迟返回上一页
       setTimeout(() => {
         wx.navigateBack();
@@ -207,18 +209,53 @@ Page({
   },
 
   /**
-   * 模拟提交（实际项目中应该调用真实的API）
+   * 上传图片到云存储
    */
-  simulateSubmit() {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        console.log('提交的数据:', {
-          formData: this.data.formData,
-          images: this.data.images
+  async uploadImages() {
+    if (this.data.images.length === 0) {
+      return [];
+    }
+
+    const uploadPromises = this.data.images.map(async (imagePath, index) => {
+      try {
+        const result = await wx.cloud.uploadFile({
+          cloudPath: `contact_images/${Date.now()}_${index}.jpg`,
+          filePath: imagePath
         });
-        resolve();
-      }, 2000);
+        return result.fileID;
+      } catch (error) {
+        console.error('图片上传失败:', error);
+        throw error;
+      }
     });
+
+    return Promise.all(uploadPromises);
+  },
+
+  /**
+   * 保存到云数据库
+   */
+  async saveToDatabase(imageUrls) {
+    try {
+      const db = wx.cloud.database();
+      const result = await db.collection('contact_messages').add({
+        data: {
+          email: this.data.formData.email,
+          title: this.data.formData.title,
+          content: this.data.formData.content,
+          images: imageUrls,
+          createTime: new Date(),
+          userInfo: wx.getStorageSync('userInfo') || null,
+          status: 'pending' // 待处理状态
+        }
+      });
+
+      console.log('消息保存成功:', result);
+      return result;
+    } catch (error) {
+      console.error('保存到数据库失败:', error);
+      throw error;
+    }
   },
 
   /**
