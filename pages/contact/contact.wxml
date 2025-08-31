@@ -1,8 +1,7 @@
 <!--pages/contact/contact.wxml-->
 <view class="container">
-  <!-- 页面标题 -->
+  <!-- 页面说明 -->
   <view class="header">
-    <text class="title">联系我们</text>
     <text class="subtitle">如果您有任何想法或建议，欢迎给我们留言！欢迎分享您自己创建的宾果游戏，我们会在审核后更新到小程序中，并标注您的版权。您也可以通过"宾果世界"公众号后台给我们留言，或者发邮件给binlegeguo@163.com。</text>
   </view>
 
@@ -11,10 +10,10 @@
     <!-- 邮箱输入 -->
     <view class="form-group">
       <view class="form-label">您的电子邮箱</view>
-      <input 
-        class="form-input" 
-        type="text" 
-        placeholder="请输入您的邮箱地址"
+      <input
+        class="form-input"
+        type="text"
+        placeholder="您的电子邮箱"
         value="{{formData.email}}"
         bindinput="onEmailInput"
       />
@@ -23,10 +22,10 @@
     <!-- 标题输入 -->
     <view class="form-group">
       <view class="form-label">标题</view>
-      <input 
-        class="form-input" 
-        type="text" 
-        placeholder="请输入消息标题"
+      <input
+        class="form-input"
+        type="text"
+        placeholder="标题"
         value="{{formData.title}}"
         bindinput="onTitleInput"
         maxlength="50"
@@ -36,8 +35,8 @@
     <!-- 内容输入 -->
     <view class="form-group">
       <view class="form-label">内容（不超过1000字符）</view>
-      <textarea 
-        class="form-textarea" 
+      <textarea
+        class="form-textarea"
         placeholder="请详细描述您的想法、建议或问题..."
         value="{{formData.content}}"
         bindinput="onContentInput"

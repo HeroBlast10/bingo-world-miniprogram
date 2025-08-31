@@ -12825,7 +12825,7 @@ const bingos = {
       "gridContent": [
         [
           {
-            "text": "不玩王者吃鸡，",
+            "text": "不玩王者吃鸡",
             "type": "standard"
           },
           {
@@ -13956,7 +13956,7 @@ const bingos = {
       "gridContent": [
         [
             {"text": "食堂菜吃出异物", "type": "standard"},
-            {"text": "暗恋有多个个情敌", "type": "standard"},
+            {"text": "暗恋有情敌", "type": "standard"},
             {"text": "重要考试前生病", "type": "standard"},
             {"text": "被补习班掏空钱包", "type": "standard"},
             {"text": "校服很丑不合身", "type": "standard"}
@@ -15334,7 +15334,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "染发,或奇装异服",
+            "text": "染发/奇装异服",
             "type": "standard"
           },
           {
@@ -15364,7 +15364,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "美甲/化妆上学",
+            "text": "戴首饰/美甲/化妆上学",
             "type": "standard"
           },
           {
@@ -15382,7 +15382,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "扰乱课堂/自戴首饰上学习秩序",
+            "text": "扰乱课堂秩序",
             "type": "standard"
           },
           {
@@ -15400,7 +15400,7 @@ const bingos = {
             "type": "standard"
           },
           {
-            "text": "旗不参加",
+            "text": "不参加升旗",
             "type": "standard"
           },
           {
