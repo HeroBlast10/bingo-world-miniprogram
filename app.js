@@ -127,6 +127,6 @@ App({
   globalData: {
     userInfo: null,
     isLoggedIn: false,
-    version: '1.1.5'
+    version: '1.1.6'
   }
 })

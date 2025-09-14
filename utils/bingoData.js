@@ -431,7 +431,7 @@ const bingos = {
                 "type": "standard"
             },
             {
-                "text": "恐怖份子社交",
+                "text": "社交恐怖份子",
                 "type": "standard"
             },
             {
@@ -14505,114 +14505,114 @@ const bingos = {
       },
       "gridContent": [
         [
-          {
-            "text": "朋友圈发过粉色夕阳照片",
-            "type": "standard"
-          },
-          {
-            "text": "在便利店打过工",
-            "type": "standard"
-          },
-          {
-            "text": "听不懂大学或专门老师的日语",
-            "type": "standard"
-          },
-          {
-            "text": "被亲戚说过汉奸",
-            "type": "standard"
-          },
-          {
-            "text": "认识的人在小红书上被挂过",
-            "type": "standard"
-          }
+            {
+                "text": "朋友圈发过粉色夕阳照片",
+                "type": "standard"
+            },
+            {
+                "text": "在便利店打过工",
+                "type": "standard"
+            },
+            {
+                "text": "听不懂大学或专门老师的日语",
+                "type": "standard"
+            },
+            {
+                "text": "被亲戚说过汉奸",
+                "type": "standard"
+            },
+            {
+                "text": "认识的人在小红书上被挂过",
+                "type": "standard"
+            }
         ],
         [
-          {
-            "text": "身边有同学穿山本耀司",
-            "type": "standard"
-          },
-          {
-            "text": "囤的食物过期",
-            "type": "standard"
-          },
-          {
-            "text": "在新宿駔迷路过",
-            "type": "standard"
-          },
-          {
-            "text": "在高马/大久保上过语校",
-            "type": "standard"
-          },
-          {
-            "text": "拍过留学生活vlog",
-            "type": "standard"
-          }
+            {
+                "text": "身边有同学穿山本耀司",
+                "type": "standard"
+            },
+            {
+                "text": "囤的食物过期",
+                "type": "standard"
+            },
+            {
+                "text": "在新宿駅迷路过",
+                "type": "standard"
+            },
+            {
+                "text": "能吃惯生鸡蛋、纳豆。梅干、刺身",
+                "type": "standard"
+            },
+            {
+                "text": "拍过留学生vlog",
+                "type": "standard"
+            }
         ],
         [
-          {
-            "text": "叉里之前会接代购",
-            "type": "standard"
-          },
-          {
-            "text": "被私塾坑过",
-            "type": "standard"
-          },
-          {
-            "text": "免费格子",
-            "type": "standard"
-          },
-          {
-            "text": "有东北人朋友",
-            "type": "standard"
-          },
-          {
-            "text": "自己的透明伞被别人拿走",
-            "type": "standard"
-          }
+            {
+                "text": "回国之前会接代购",
+                "type": "standard"
+            },
+            {
+                "text": "被私塾坑过",
+                "type": "standard"
+            },
+            {
+                "text": "自动扶梯无意识靠左站",
+                "type": "standard"
+            },
+            {
+                "text": "有东北人朋友",
+                "type": "standard"
+            },
+            {
+                "text": "自己的透明伞被别人拿走",
+                "type": "standard"
+            }
         ],
         [
-          {
-            "text": "冬天去过北海道",
-            "type": "standard"
-          },
-          {
-            "text": "半夜被警报声_ (地震、警车吵醒",
-            "type": "standard"
-          },
-          {
-            "text": "喜欢二次元",
-            "type": "standard"
-          },
-          {
-            "text": "路上被日本人撞过",
-            "type": "standard"
-          },
-          {
-            "text": "出闲置被鸽过",
-            "type": "standard"
-          }
+            {
+                "text": "冬天去过北海道",
+                "type": "standard"
+            },
+            {
+                "text": "半夜被警报声（地震、警车..）吵醒",
+                "type": "standard"
+            },
+            {
+                "text": "喜欢二次元",
+                "type": "standard"
+            },
+            {
+                "text": "路上被日本人撞过",
+                "type": "standard"
+            },
+            {
+                "text": "出闲置被鸽过",
+                "type": "standard"
+            }
         ],
         [
-          {
-            "text": "平常都只吃中餐",
-            "type": "standard"
-          },
-          {
-            "text": "说过本来要去其他国家留学",
-            "type": "standard"
-          },
-          {
-            "text": "转运被没收过肉制品",
-            "type": "standard"
-          },
-          {
-            "text": "不吃早餐",
-            "type": "standard"
-          },
-          {
-            "text": "接过自称是大使馆的诈骗电话",
-            "type": "standard"
-          }
+            {
+                "text": "平常经常去吃中餐",
+                "type": "standard"
+            },
+            {
+                "text": "说过本来要去其他国家留学",
+                "type": "standard"
+            },
+            {
+                "text": "转运被没收过肉制品",
+                "type": "standard"
+            },
+            {
+                "text": "不吃早餐",
+                "type": "standard"
+            },
+            {
+                "text": "接过自称是大使馆的诈骗电话",
+                "type": "standard"
+            }
         ]
       ],
       "category": "学生",

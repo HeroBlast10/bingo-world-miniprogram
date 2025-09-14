@@ -98,6 +98,6 @@
 
   <!-- 版本信息 -->
   <view class="version-section">
-    <text class="version-text">宾了个果 v1.1.5</text>
+    <text class="version-text">宾了个果 v1.1.6</text>
   </view>
 </view>
