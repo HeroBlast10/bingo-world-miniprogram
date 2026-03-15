@@ -177,7 +177,7 @@ Page({
    */
   onShareAppMessage() {
     return {
-      title: `宾果世界 - ${this.data.categoryName}`,
+      title: `宾了个果 - ${this.data.categoryName}`,
       path: `/pages/category/category?slug=${this.data.categorySlug}`
     };
   },

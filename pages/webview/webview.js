@@ -121,7 +121,7 @@ Page({
         setTimeout(() => {
           wx.showModal({
             title: '关注指引',
-            content: '链接已复制到剪贴板\n\n使用方法：\n1. 在浏览器中粘贴打开\n2. 或直接在微信搜索"宾果世界"关注公众号',
+            content: '链接已复制到剪贴板\n\n使用方法：\n1. 在浏览器中粘贴打开\n2. 或直接在微信搜索"宾了个果"关注公众号',
             showCancel: false,
             confirmText: '知道了',
             success: () => {
@@ -156,8 +156,8 @@ Page({
    */
   onShareAppMessage() {
     return {
-      title: '宾果世界',
-      path: `/pages/webview/webview?url=${encodeURIComponent(this.data.url)}&title=${encodeURIComponent('宾果世界')}`
+      title: '宾了个果',
+      path: `/pages/webview/webview?url=${encodeURIComponent(this.data.url)}&title=${encodeURIComponent('宾了个果')}`
     };
   },
 
@@ -166,8 +166,8 @@ Page({
    */
   onShareTimeline() {
     return {
-      title: '宾果世界 - 有趣的宾果游戏合集',
-      query: `url=${encodeURIComponent(this.data.url)}&title=${encodeURIComponent('宾果世界')}`,
+      title: '宾了个果 - 有趣的宾果游戏合集',
+      query: `url=${encodeURIComponent(this.data.url)}&title=${encodeURIComponent('宾了个果')}`,
       imageUrl: '/images/placeholder-logo.png'
     };
   }

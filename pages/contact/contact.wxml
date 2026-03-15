@@ -104,7 +104,7 @@
       <view class="method-icon wechat-icon">📱</view>
       <view class="method-info">
         <text class="method-name">微信公众号</text>
-        <text class="method-desc">关注"宾果世界"公众号</text>
+        <text class="method-desc">关注"宾了个果"公众号</text>
       </view>
       <view class="method-arrow">›</view>
     </view>

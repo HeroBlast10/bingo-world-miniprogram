@@ -108,7 +108,7 @@ export default function MePage() {
                   </button>
                 </div>
               )}
-              <p className="text-sm text-gray-500 mt-1">宾果世界探索者</p>
+              <p className="text-sm text-gray-500 mt-1">宾了个果探索者</p>
             </div>
           </div>
 
