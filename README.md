@@ -1,7 +1,3 @@
-<div align="center">
-
-<img src="images/qrcode.png" alt="QRcode" width="120" />
-
 # 🎯 宾果世界 (Bingo World)
 
 一个功能丰富的宾果游戏平台，上线微信小程序，让用户体验各种主题的宾果游戏并创造属于自己的宾果内容。
